@@ -1,0 +1,4 @@
+function consultasaldocarteira(valorcarteira, valorlote) {
+
+
+}
