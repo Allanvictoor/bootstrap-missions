@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula 1</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <script>
+            document.write("<h1>olá mundo!</h1>");
+            document.write("esse é meu <strong>segundo</strong> programa");
+        </script>
+        
+        <script>
+            document.write("Minha idade é: " + 33);
+            document.write("A média das nossas idades é: " + ((33 + 34 + 18)/ 3));     
+        </script>
+        
+        <!-- Atividade 3 -->
+        <hr />
+        <script>
+            /* 1. declaração */
+            var ano = 2020;
+            var idade_bona = 33;
+            var idade_reis = 34;
+            var idade_anderson = 18;
+            
+            /* 2. processamento */
+            var total = idade_bona + idade_reis + idade_anderson;
+            var media = Math.round(total / 3);
+            
+            /* 3. saida */
+            document.write("Eu nasci em: " + (ano - idade_bona));
+            document.write("<br />");
+            document.write("Reis nasceu: " + (ano - idade_reis));
+            document.write("<br />");
+            document.write("Anderson nasceu: " + (ano - idade_anderson));
+            document.write("<br /><br />");
+            document.write("A soma das idades é: ");
+            document.write(total);
+            document.write("<br />");
+            document.write("A média de idades é: ");
+            document.write(media);
+        </script>
+    </body>
+</html>
