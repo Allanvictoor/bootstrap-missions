@@ -28,6 +28,17 @@
 
             ];
 
+            var somaValorLotes = ((lotes[0]+lotes[1]+lotes[2]+lotes[3]+lotes[4]+lotes[5]+lotes[6]+lotes[7]+lotes[8]+lotes[9])*100)
+            
+            if (valorCarteira < somaValorLotes) {
+                alert('Não é possível calcular');
+            }
+
+            if (valorCarteira >= somaValorLotes) {
+                //
+            }
+                
+
             var lotesPorEmpresa = [
                 (valorDivididoEmLotes / (lotes[0] * 100)),
 
@@ -51,27 +62,29 @@
 
             ];
 
+            document.write("Valor minimo para distribuir carteira: " + somaValorLotes)
+            document.write('<br> <br />')
             document.write("Para equilibrar sua conta deve comprar: ")
             document.write('<br> <br />')
-            document.write('COGN4: ' + Math.round(lotesPorEmpresa[0]) * 100)
+            document.write('COGN4: ' + (lotesPorEmpresa[0]) * 100)
             document.write('<br> <br />')
-            document.write('CMIG4: ' + Math.round(lotesPorEmpresa[1]) * 100)
+            document.write('CMIG4: ' + (lotesPorEmpresa[1]) * 100)
             document.write('<br> <br />')
-            document.write('CEAB3: ' + Math.round(lotesPorEmpresa[2]) * 100)
+            document.write('CEAB3: ' +(lotesPorEmpresa[2]) * 100)
             document.write('<br> <br />')
-            document.write('KLBN11: ' + Math.round(lotesPorEmpresa[3]) * 100)
+            document.write('KLBN11: ' + (lotesPorEmpresa[3]) * 100)
             document.write('<br> <br />')
-            document.write('MRVE3: ' + Math.floor(lotesPorEmpresa[4]) * 100)
+            document.write('MRVE3: ' + (lotesPorEmpresa[4]) * 100)
             document.write('<br> <br />')
-            document.write('LCAM3: ' + Math.round(lotesPorEmpresa[5]) * 100)
+            document.write('LCAM3: ' + (lotesPorEmpresa[5]) * 100)
             document.write('<br> <br />')
-            document.write('CRDT3: ' + Math.round(lotesPorEmpresa[6]) * 100)
+            document.write('CRDT3: ' + (lotesPorEmpresa[6]) * 100)
             document.write('<br> <br />')
-            document.write('BRFS3: ' + Math.floor(lotesPorEmpresa[7]) * 100)
+            document.write('BRFS3: ' + (lotesPorEmpresa[7]) * 100)
             document.write('<br> <br />')
-            document.write('ITUB4: ' + Math.floor(lotesPorEmpresa[8]) * 100)
+            document.write('ITUB4: ' + (lotesPorEmpresa[8]) * 100)
             document.write('<br> <br />')
-            document.write('TGMA3: ' + Math.round(lotesPorEmpresa[9]) * 100)
+            document.write('TGMA3: ' + (lotesPorEmpresa[9]) * 100)
             document.write('<br> <br />')
 
 
