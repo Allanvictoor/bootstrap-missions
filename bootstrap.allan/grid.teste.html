@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+
+ <div id="cabecalho" class="contairner-fluid">
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://vivaweb.net/css/img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          </a>
+          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="https://bulma.io/">
+              Home
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                Docs
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                  Overview
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                  Modifiers
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                  Columns
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                  Layout
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                  Form
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                  Elements
+                </a>
+                <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                  Components
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>
+                      GitHub
+                    </span>
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
+                    <span class="icon">
+                      <i class="fas fa-download"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+ </div>
+ 
+ <div id="corpo" class="container" >
+     <div class="row" >
+        <div class="col-sm-2" >
+            <aside class="menu">
+                <p class="menu-label">
+                  General
+                </p>
+                <ul class="menu-list">
+                  <li><a href="https://bulma.io/documentation/components/breadcrumb/"> Dashboard</a></li>
+                  <li><a>Customers</a></li>
+                </ul>
+                <p class="menu-label">
+                  Administration
+                </p>
+                <ul class="menu-list">
+                  <li><a>Team Settings</a></li>
+                  <li>
+                   
+                    <ul>
+                      <li><a>Members</a></li>
+                      <li><a>Plugins</a></li>
+                      <li><a>Add a member</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Invitations</a></li>
+                  <li><a>Cloud Storage Environment Settings</a></li>
+                  <li><a>Authentication</a></li>
+                </ul>
+                <p class="menu-label">
+                  Transactions
+                </p>
+                <ul class="menu-list">
+                  <li><a>Payments</a></li>
+                  <li><a>Transfers</a></li>
+                  <li><a>Balance</a></li>
+                </ul>
+              </aside>
+          </div>
+          <div class="col-sm">
+            <div class="col-sm">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="card">
+                            <div class="card-content">
+                              <p class="title">
+                                “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+                              </p>
+                              <p class="subtitle">
+                                Jeff Atwood
+                              </p>
+                            </div>
+                            <footer class="card-footer">
+                              <p class="card-footer-item">
+                                <span>
+                                  View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                                </span>
+                              </p>
+                              <p class="card-footer-item">
+                                <span>
+                                  Share on <a href="#">Facebook</a>
+                                </span>
+                              </p>
+                            </footer>
+                          </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="card">
+                            <div class="card-content">
+                              <p class="title">
+                                “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+                              </p>
+                              <p class="subtitle">
+                                Jeff Atwood
+                              </p>
+                            </div>
+                            <footer class="card-footer">
+                              <p class="card-footer-item">
+                                <span>
+                                  View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                                </span>
+                              </p>
+                              <p class="card-footer-item">
+                                <span>
+                                  Share on <a href="#">Facebook</a>
+                                </span>
+                              </p>
+                            </footer>
+                          </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="card">
+                            <div class="card-content">
+                              <p class="title">
+                                “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+                              </p>
+                              <p class="subtitle">
+                                Jeff Atwood
+                              </p>
+                            </div>
+                            <footer class="card-footer">
+                              <p class="card-footer-item">
+                                <span>
+                                  View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                                </span>
+                              </p>
+                              <p class="card-footer-item">
+                                <span>
+                                  Share on <a href="#">Facebook</a>
+                                </span>
+                              </p>
+                            </footer>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+     </div>
+ </div>
+
+</body>
+
+</html>
+

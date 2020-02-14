@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calcula consumo</title>
+ </head>
+   <body>
+     <h3>Alcool ou Gasolina?</h3>
+    
+     <script>
+    var tanque = 40;
+    var valorGasolina = 10;
+    var caminhoComGasolina = 360;
+    var valorAlcool = 6.9;
+    var caminhoComAlcool = 240;
+
+    // prompt aparece uma caixa de dialogo para o usuario
+    // alert da uma caixa de alerta para o usuario
+    // confirm pergunta ao usuario se ele quer confirmar o dados
+    // slim jquery e bootstrap
+    var consumoDeGasolina = calculaConsumo(tanque / caminhoComGasolina);
+    var indiceGasolina = (consumoDeGasolina / valorGasolina);
+    var consumoDeAlcool = (caminhoComAlcool / tanque);
+    var indiceAlcool = (consumoDeAlcool / valorAlcool);
+    if (indiceGasolina == indiceAlcool) {
+       var compensa = "ambos";
+    }
+    if (indiceGasolina > indiceAlcool) {
+       var compensa = "gasolina";
+    }
+    if (indiceGasolina < indiceAlcool) {
+       var compensa = "alcool";
+    }
+    
+    // declarar uma funcao com retorno
+    function calculaConsumo(tanque, caminho) {
+
+    }
+ 
+    document.write("o valor de gasolina consumido foi: " + consumoDeGasolina + " km/l");
+    document.write("<br /><br />");
+    document.write("o valor de alcool consumido foi: " + consumoDeAlcool + " km/l");
+    document.write("<br /><br />");
+    document.write("indice de gasolina é: " + indiceGasolina);
+    document.write("<br /><br />");
+    document.write("indice de alcool é: " + indiceAlcool);
+    document.write("<br /><br />");
+    document.write("vale a pena: " + compensa);
+ 
+     </script>
+   </body>
+ </html>
