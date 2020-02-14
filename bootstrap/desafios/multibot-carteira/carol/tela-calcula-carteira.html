@@ -10,9 +10,9 @@
 <body>
 <!--Cabeçalho-->
     <div class="container-fluid">
-        <div class="row" style="background-color: darkorchid">
-            <nav class="navbar navbar-expand" >
-                <a class="navbar-brand ">Calculadora MultiBot</a>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <span class="navbar-brand "><b>Desafio MultiBot</b></span>
             </nav>
         </div>
     </div>
@@ -121,16 +121,21 @@
             <div class="col-sm p-3">
                 <div class="col">
                     <form>
-                        <label><b>Valor total do lote:</b></label>
-                        <input type="text" id="Contato" name="Contato" value="351" style="width:150px" required ></form>
-                    </div>
-                <form>
-                    <div class="form-row" class="form-group" class="col-6 p-3">
-                        <label> <b> Qual o valor em carteira?</b></label>
-                        <input type="text" name="valorcarteira" id="valor-carteira" class="form-control" />
-                    </div>
-                    <button type="submit" class="btn btn-primary">Calcular</button>
-                </form>
+                        <div class="input-group inpute-group-lg p-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text " ><b>Valor do lote: </b></span>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="valorlote">24140.00</span>
+                            </div>
+                        </div>
+                        <div class="form-row" class="form-group" class="col-6 p-3">
+                            <label> <b> Qual o valor em carteira?</b></label>
+                            <input type="text" name="valorcarteira" id="valor-carteira" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-primary p-3">Calcular</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
