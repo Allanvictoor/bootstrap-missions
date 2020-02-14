@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Teste</title>
+        <meta charset="UTF-8" />
+        <script src="calculaconsumo.js"></script>
+    </head>
+    <body>
+        <script>
+            var passou = 0;
+            var naopassou = 0;
+
+            var tanque1 = 40;
+            var caminho1 = 200;
+            var consumoEsperado = 5;
+            var consumo = calculaConsumo(tanque1,caminho1);
+            if (consumo != consumoEsperado) {
+                naopassou = naopassou + 1;
+                alert('Não passou no teste1');
+            } else {
+                passou = passou + 1;
+            }
+
+            var indice = calculaIndice(100, 2.00);
+            var indiceEsperado = 50;
+            if (indice != indiceEsperado) {
+                naopassou = naopassou + 1;
+                alert('Não passou no teste índice');
+            } else {
+                passou = passou + 1;
+            }
+
+            var combustivel = definirCombustivel(3, 2);
+            var combustivelEsperado = 'gasolina';
+            if (combustivel != combustivelEsperado) {
+                naopassou = naopassou + 1;
+                alert('Não passou no teste alcool');
+            } else {
+                passou = passou + 1;
+            }
+
+            var combustivel = definirCombustivel(2, 3);
+            var combustivelEsperado = 'alcool';
+            if (combustivel != combustivelEsperado) {
+                naopassou = naopassou + 1;
+                alert('Não passou no teste gasolina');
+            } else {
+                passou = passou + 1;
+            }
+
+            var combustivel = definirCombustivel(3, 3);
+            var combustivelEsperado = 'ambos';
+            if (combustivel != combustivelEsperado) {
+                naopassou = naopassou + 1;
+                alert('Não passou no teste ambos');
+            } else {
+                passou = passou + 1;
+            }
+
+            document.write("Passou em " + passou + " testes.");
+            document.write("<br />");
+            document.write("Não Passou em " + naopassou + " testes.");
+        </script>
+    </body>
+</html>
