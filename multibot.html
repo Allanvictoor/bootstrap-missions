@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>MULTIBOT</title>
+    <meta charset="utf-8" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    
+    <div class="jumbotron">
+      <h4>MULTIBOT</h4>
+      <p class="lead"></p>
+    </div>
+	
+    <script>
+      //Ações
+      var TGMA3  = 40.29 * 100;
+      var ITUB4  = 32.80 * 100;
+      var BRFS3  = 30.57 * 100;
+      var BRDT3  = 28.45 * 100;
+      var LCAM3  = 24.22 * 100;
+      var MRVE3  = 21.20 * 100;
+      var KLBN11 = 21.15 * 100;
+      var CEAB3  = 16.20 * 100;
+      var CMIG4  = 15.11 * 100;
+      var COGN3  = 11.41 * 100;
+      //Contador ações
+      var TGMA3c  = 0;
+      var ITUB4c  = 0;
+      var BRFS3c  = 0;
+      var BRDT3c  = 0;
+      var LCAM3c  = 0;
+      var MRVE3c  = 0;
+      var KLBN11c = 0;
+      var CEAB3c  = 0;
+      var CMIG4c  = 0;
+      var COGN3c  = 0;      
+       
+      var carteira = 102000; 
+
+
+      do {
+        if (carteira > TGMA3){
+          carteira = carteira - TGMA3;
+          TGMA3c ++;
+        }
+        if (carteira > ITUB4){
+          carteira = carteira - ITUB4;
+          ITUB4c ++;
+        }
+        if (carteira > BRFS3){
+          carteira = carteira - BRFS3;
+          BRFS3c ++;
+        }
+        if (carteira > BRDT3){
+          carteira = carteira - BRDT3;
+          BRDT3c ++;
+        }
+        if (carteira > LCAM3){
+          carteira = carteira - LCAM3;
+          LCAM3c ++;
+        }
+        if (carteira > MRVE3){
+          carteira = carteira - MRVE3;
+          MRVE3c ++;
+        }
+        if (carteira > KLBN11){
+          carteira = carteira - KLBN11;
+          KLBN11c ++;
+        }
+        if (carteira > CEAB3){
+          carteira = carteira - CEAB3;
+          CEAB3c ++;
+        }
+        if (carteira > CMIG4){
+          carteira = carteira - CMIG4;
+          CMIG4c ++;
+        }
+        if (carteira > COGN3){
+          carteira = carteira - COGN3;
+          COGN3c ++;
+        }
+      } while (carteira > 1141);
+
+      document.write ("Você pode comprar:");
+      document.write ("<br/>");
+      document.write ((TGMA3c * 100) + " ações da TGMA3");
+      document.write ("<br/>");
+      document.write ((ITUB4c * 100) + " ações da ITUB4");
+      document.write ("<br/>");
+      document.write ((BRFS3c * 100) + " ações da BRFS3");
+      document.write ("<br/>");
+      document.write ((BRDT3c * 100) + " ações da BRDT3");
+      document.write ("<br/>");
+      document.write ((LCAM3c * 100) + " ações da LCAM3");
+      document.write ("<br/>");
+      document.write ((MRVE3c * 100) + " ações da MRVE3");
+      document.write ("<br/>");
+      document.write ((KLBN11c * 100) + " ações da KLBN11");
+      document.write ("<br/>");
+      document.write ((CEAB3c * 100) + " ações da CEAB3");
+      document.write ("<br/>");
+      document.write ((CMIG4c * 100) + " ações da CMIG4");
+      document.write ("<br/>");
+      document.write ((COGN3c * 100) + " ações da COGN3");
+      document.write ("<br/>");
+      document.write ("Valor atual da carteira: " + carteira);
+
+    </script>
+  </body>
+</html>
