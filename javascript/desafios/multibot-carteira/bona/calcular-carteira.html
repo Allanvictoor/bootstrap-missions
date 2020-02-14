@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+            var total_disponivel = 23000;
+
+
+            var p1_valor = 10;
+            var p2_valor = 50;
+            var p3_valor = 50;
+            var p4_valor = 50;
+            var p5_valor = 50;
+            var p6_valor = 50;
+            var p7_valor = 50;
+            var p8_valor = 50;
+            var p9_valor = 50;
+            var p10_valor = 50;
+
+
+            var p1_lote = p1_valor * 100;
+            var p2_lote = p2_valor * 100;
+            var p3_lote = p3_valor * 100;
+            var p4_lote = p4_valor * 100;
+            var p5_lote = p5_valor * 100;
+            var p6_lote = p6_valor * 100;
+            var p7_lote = p7_valor * 100;
+            var p8_lote = p8_valor * 100;
+            var p9_lote = p9_valor * 100;
+            var p10_lote = p10_valor * 100;
+
+            var total_carteira = p1_lote + p2_lote + p3_lote + p4_lote + p5_lote + p6_lote + p7_lote + p8_lote +  + p9_lote  + p10_lote;
+
+            console.log('Total da Carteira: ', total_carteira);
+
+            if (total_disponivel < total_carteira) {
+                alert('Não é possível calcular');
+            }
+
+            if (total_disponivel >= total_carteira) {
+                //
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
