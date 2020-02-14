@@ -1,4 +1,0 @@
-function consultasaldocarteira(valorcarteira, valorlote) {
-
-
-}
