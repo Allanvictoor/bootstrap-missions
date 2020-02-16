@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Codigo do multibot</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        
+        var moneydisponivel = prompt("Quanto você possui para podermos investir?");
+
+        var acao1 = 1.499;
+        var acao2 = 2.845;
+        var acao3 = 2.101;
+        var acao4 = 3.280;
+        var acao5 = 1.620;
+        var acao6 = 3.057;
+        var acao7 = 1.141;
+        var acao8 = 2.115;
+        var acao9 = 2.370;
+        var acao10 = 3.960;
+
+
+        function pulalinha () {
+            document.write("<br>")
+        }
+
+
+        var compraminima = (acao1 + acao2 + acao3 + acao4 + acao5 + acao6 + acao7 + acao8 + acao9 + acao10)
+        var moneyparaacao = moneydisponivel / 10;
+
+
+
+            if (moneydisponivel < compraminima) {
+                    alert("Saldos insuficientes para investimentos mínimos.")
+                    
+            }
+
+            if (moneydisponivel == compraminima) {
+                alert("Você consegue fazer uma compra minima.")
+
+
+            }
+
+            if (moneydisponivel > compraminima) {
+                alert("vamos investir!")
+            }
+
+            do{
+
+               calcacao = (acao1 + acao1) - moneyparaacao;
+            }
+            while(moneyparaacao > acao1)
+
+                document.write(calcacao);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
