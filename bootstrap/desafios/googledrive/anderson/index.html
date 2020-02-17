@@ -12,6 +12,14 @@
 			color:gray;
 
 		}
+
+		#caixa-busca {
+			margin-top: 6px;
+		}
+
+		#logo{
+			margin-right:10px;
+		}
 	</style>
 
 </head>
@@ -19,24 +27,21 @@
 	<div class="container-fluid"><!--inicio cabecalho-->
 		<div class="row" style="height: 53px;"><!--inicio row-->
 
-			<div class="col-md-2" id="logo"><!--inicio logo-->
-				<nav class="navbar nabar-light bg-light"><!--Inicio navegação-->
+			<div class="col-md-2"><!--inicio logo-->
+				<nav class="navbar nabar-light bg-light" id="logo"><!--Inicio navegação-->
   				<a class="navbar-brand" href="#">
-   				 <img src="logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+   				 <img id="logo" src="logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
    				<span>Drive</span>
   				</a>
 				</nav><!--fim da navegação-->
 
 			</div><!--fim logo-->
+ 
 
+			<div class="col-md-8" id="busca"><!--inicio-busca-->
+				 <input id="caixa-busca" type="text" class="form-control" placeholder="Pesquisar no Drive">
+			</div><!--fim-busca-->
 
-			<div class="col-md-8" id="busca">
-				
-
-
-
-
-			</div>
 
 			<div class="col-md-2" style="background: purple;">
 				ICONES
@@ -67,7 +72,7 @@
 	</div><!--fim segunda linha-->
 
 
-	<div class="container-fluid"><!--Inicio da Segunda linha-->
+	<div class="container-fluid"><!--Inicio do corpo-->
 		<div class="row" style="height: 50px;">
 			<div class="col-sm-2" style="background: green;"><!--inicio da barra de progresso-->
 				BARRA DE PROGRESSO
@@ -79,7 +84,7 @@
 
 
 		</div>
-	</div><!--fim da segunda linha-->
+	</div><!--fim do corpo-->
 
 </body>
 </html>

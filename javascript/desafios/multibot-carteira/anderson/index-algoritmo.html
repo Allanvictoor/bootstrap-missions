@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <script type="text/javascript">
         
-        var moneydisponivel = prompt("Quanto você possui para podermos investir?");
+        var moneydisponivel = prompt("Qual o valor que deseja investir?");
 
         var acao1 = 1.499;
         var acao2 = 2.845;
@@ -18,9 +18,14 @@
         var acao9 = 2.370;
         var acao10 = 3.960;
 
-
+        var cont = 1
         function pulalinha () {
             document.write("<br>")
+        }
+
+        function mostraresultado (acao) {
+
+            document.write(acao);
         }
 
 
@@ -31,30 +36,22 @@
 
             if (moneydisponivel < compraminima) {
                     alert("Saldos insuficientes para investimentos mínimos.")
-                    
             }
 
             if (moneydisponivel == compraminima) {
                 alert("Você consegue fazer uma compra minima.")
-
-
             }
 
             if (moneydisponivel > compraminima) {
                 alert("vamos investir!")
             }
 
-            do{
+                
 
-               calcacao = (acao1 + acao1) - moneyparaacao;
-            }
-            while(moneyparaacao > acao1)
 
-                document.write(calcacao);
+     </script>
+    </head>
+     <body>
 
-    </script>
-</head>
-<body>
-
-</body>
+    </body>
 </html>
