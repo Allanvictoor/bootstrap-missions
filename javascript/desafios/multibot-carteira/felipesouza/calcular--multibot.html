@@ -1,1 +1,68 @@
-.
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Calcular--multibot</title>
+        <meta charset="utf-8">
+
+        <script>
+
+            var total_disponivel = 23000;
+
+            <!-- Empresas e seus respectivos valores -->
+            var p1_valor = ;
+            var p2_valor = ;
+            var p3_valor = ;
+            var p4_valor = ;
+            var p5_valor = ;
+            var p6_valor = ;
+            var p7_valor = ;
+            var p8_valor = ;
+            var p9_valor = ;
+            var p10_valor = ;
+
+            <!-- Calculo das empresas e seus respectivos valores em LOTE de 100 -->
+            var p1_lote = p1_valor * 100;
+            var p2_lote = p2_valor * 100;
+            var p3_lote = p3_valor * 100;
+            var p4_lote = p4_valor * 100;
+            var p5_lote = p5_valor * 100;
+            var p6_lote = p6_valor * 100;
+            var p7_lote = p7_valor * 100;
+            var p8_lote = p8_valor * 100;
+            var p9_lote = p9_valor * 100;
+            var p10_lote = p10_valor * 100;
+
+            <!-- Calculo do total da carteira -->
+            var total_carteira = p1_lote + p2_lote + p3_lote + p4_lote + p5_lote + p6_lote + p7_lote + p8_lote +  + p9_lote  + p10_lote;
+
+
+            console.log('Total da Carteira: ', total_carteira);
+
+
+
+            if (total_disponivel < total_carteira) {
+                alert('Não é possível calcular');
+            }
+
+
+
+            if (total_disponivel >= total_carteira) {
+                //
+            }
+
+
+        </script>
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+</html>
+
