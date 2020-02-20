@@ -1,42 +1,258 @@
 <html>
     <head>
         <script>
-            var total_disponivel = 23000;
+            // valor digitado pelo usuário
+            var total_disponivel = 102000;
 
+            // valor recebido dinamicamente para cada papel
+            // muda mensalmente
+            var p1_valor = 15.11;
+            var p2_valor = 28.45;
+            var p3_valor = 21.20;
+            var p4_valor = 32.80;
+            var p5_valor = 16.20;
+            var p6_valor = 30.57;
+            var p7_valor = 11.41;
+            var p8_valor = 21.15;
+            var p9_valor = 24.22;
+            var p10_valor = 40.29;
 
-            var p1_valor = 10;
-            var p2_valor = 50;
-            var p3_valor = 50;
-            var p4_valor = 50;
-            var p5_valor = 50;
-            var p6_valor = 50;
-            var p7_valor = 50;
-            var p8_valor = 50;
-            var p9_valor = 50;
-            var p10_valor = 50;
+            // valor definido por regra de negócios
+            var p1_lote = 100;
+            var p2_lote = 100;
+            var p3_lote = 100;
+            var p4_lote = 100;
+            var p5_lote = 100;
+            var p6_lote = 100;
+            var p7_lote = 100;
+            var p8_lote = 100;
+            var p9_lote = 100;
+            var p10_lote = 100;
 
+            // valor calculado
+            var p1_lote_valor = p1_valor * p1_lote;
+            var p2_lote_valor = p2_valor * p2_lote;
+            var p3_lote_valor = p3_valor * p3_lote;
+            var p4_lote_valor = p4_valor * p4_lote;
+            var p5_lote_valor = p5_valor * p5_lote;
+            var p6_lote_valor = p6_valor * p6_lote;
+            var p7_lote_valor = p7_valor * p7_lote;
+            var p8_lote_valor = p8_valor * p8_lote;
+            var p9_lote_valor = p9_valor * p9_lote;
+            var p10_lote_valor = p10_valor * p10_lote;
 
-            var p1_lote = p1_valor * 100;
-            var p2_lote = p2_valor * 100;
-            var p3_lote = p3_valor * 100;
-            var p4_lote = p4_valor * 100;
-            var p5_lote = p5_valor * 100;
-            var p6_lote = p6_valor * 100;
-            var p7_lote = p7_valor * 100;
-            var p8_lote = p8_valor * 100;
-            var p9_lote = p9_valor * 100;
-            var p10_lote = p10_valor * 100;
-
-            var total_carteira = p1_lote + p2_lote + p3_lote + p4_lote + p5_lote + p6_lote + p7_lote + p8_lote +  + p9_lote  + p10_lote;
-
-            console.log('Total da Carteira: ', total_carteira);
+            total_carteira = calcularCarteiraValor();
 
             if (total_disponivel < total_carteira) {
                 alert('Não é possível calcular');
             }
 
+            var sobra_carteira = total_disponivel - total_carteira;
+            console.log('Sobrou: ', sobra_carteira);
+
             if (total_disponivel >= total_carteira) {
-                //
+                var maximo_por_lote = total_disponivel / 10;
+                p1_lote = Math.floor(maximo_por_lote / (p1_valor*100)) * 100;
+                p2_lote = Math.floor(maximo_por_lote / (p2_valor*100)) * 100;
+                p3_lote = Math.floor(maximo_por_lote / (p3_valor*100)) * 100;
+                p4_lote = Math.floor(maximo_por_lote / (p4_valor*100)) * 100;
+                p5_lote = Math.floor(maximo_por_lote / (p5_valor*100)) * 100;
+                p6_lote = Math.floor(maximo_por_lote / (p6_valor*100)) * 100;
+                p7_lote = Math.floor(maximo_por_lote / (p7_valor*100)) * 100;
+                p8_lote = Math.floor(maximo_por_lote / (p8_valor*100)) * 100;
+                p9_lote = Math.floor(maximo_por_lote / (p9_valor*100)) * 100;
+                p10_lote = Math.floor(maximo_por_lote / (p10_valor*100)) * 100;
+
+                console.log(p1_lote, p2_lote, p3_lote, p4_lote, p5_lote, p6_lote, p7_lote, p8_lote, p9_lote, p10_lote)
+
+                // começar novo ciclo
+                calcularLoteValor();
+                total_carteira = calcularCarteiraValor();
+                calcularLotePercentual();
+                console.log('Percentuais são: ', p1_lote_perc, p2_lote_perc, p3_lote_perc, p4_lote_perc, p5_lote_perc, p6_lote_perc, p7_lote_perc, p8_lote_perc, p9_lote_perc, p10_lote_perc);
+                var sobra_carteira = total_disponivel - total_carteira;
+                console.log('Sobrou: ', sobra_carteira);
+
+                papelMenor = retornarPapelMenorPercentual();
+                adicionarLoteNoPapel(papelMenor);
+                console.log('papel com menor percentual: ', papelMenor);
+
+                // começar novo ciclo
+                calcularLoteValor();
+                total_carteira = calcularCarteiraValor();
+                calcularLotePercentual();
+                console.log('Percentuais são: ', p1_lote_perc, p2_lote_perc, p3_lote_perc, p4_lote_perc, p5_lote_perc, p6_lote_perc, p7_lote_perc, p8_lote_perc, p9_lote_perc, p10_lote_perc);
+                var sobra_carteira = total_disponivel - total_carteira;
+                console.log('Sobrou: ', sobra_carteira);
+
+                papelMenor = retornarPapelMenorPercentual();
+                adicionarLoteNoPapel(papelMenor);
+                console.log('papel com menor percentual: ', papelMenor);
+
+                // começar novo ciclo
+                calcularLoteValor();
+                total_carteira = calcularCarteiraValor();
+                calcularLotePercentual();
+                console.log('Percentuais são: ', p1_lote_perc, p2_lote_perc, p3_lote_perc, p4_lote_perc, p5_lote_perc, p6_lote_perc, p7_lote_perc, p8_lote_perc, p9_lote_perc, p10_lote_perc);
+                var sobra_carteira = total_disponivel - total_carteira;
+                console.log('Sobrou: ', sobra_carteira);
+
+                papelMenor = retornarPapelMenorPercentual();
+                adicionarLoteNoPapel(papelMenor);
+                console.log('papel com menor percentual: ', papelMenor);
+
+                // começar novo ciclo
+                calcularLoteValor();
+                total_carteira = calcularCarteiraValor();
+                calcularLotePercentual();
+                console.log('Percentuais são: ', p1_lote_perc, p2_lote_perc, p3_lote_perc, p4_lote_perc, p5_lote_perc, p6_lote_perc, p7_lote_perc, p8_lote_perc, p9_lote_perc, p10_lote_perc);
+                var sobra_carteira = total_disponivel - total_carteira;
+                console.log('Sobrou: ', sobra_carteira);
+
+                papelMenor = retornarPapelMenorPercentual();
+                adicionarLoteNoPapel(papelMenor);
+                console.log('papel com menor percentual: ', papelMenor);
+
+                // começar novo ciclo
+                calcularLoteValor();
+                total_carteira = calcularCarteiraValor();
+                calcularLotePercentual();
+                console.log('Percentuais são: ', p1_lote_perc, p2_lote_perc, p3_lote_perc, p4_lote_perc, p5_lote_perc, p6_lote_perc, p7_lote_perc, p8_lote_perc, p9_lote_perc, p10_lote_perc);
+                var sobra_carteira = total_disponivel - total_carteira;
+                console.log('Sobrou: ', sobra_carteira);
+
+                papelMenor = retornarPapelMenorPercentual();
+                adicionarLoteNoPapel(papelMenor);
+                console.log('papel com menor percentual: ', papelMenor);
+
+                // começar novo ciclo
+                calcularLoteValor();
+                total_carteira = calcularCarteiraValor();
+                calcularLotePercentual();
+                console.log('Percentuais são: ', p1_lote_perc, p2_lote_perc, p3_lote_perc, p4_lote_perc, p5_lote_perc, p6_lote_perc, p7_lote_perc, p8_lote_perc, p9_lote_perc, p10_lote_perc);
+                var sobra_carteira = total_disponivel - total_carteira;
+                console.log('Sobrou: ', sobra_carteira);
+
+                papelMenor = retornarPapelMenorPercentual();
+                adicionarLoteNoPapel(papelMenor);
+                console.log('papel com menor percentual: ', papelMenor);
+
+            }
+
+            function calcularCarteiraValor() {
+                total_carteira = p1_lote_valor + p2_lote_valor + p3_lote_valor + p4_lote_valor + p5_lote_valor + p6_lote_valor + p7_lote_valor + p8_lote_valor +  p9_lote_valor  + p10_lote_valor;
+                console.log('Total da Carteira: ', total_carteira);
+                return total_carteira;
+            }
+
+            function calcularLoteValor() {
+                p1_lote_valor = p1_valor * p1_lote;
+                p2_lote_valor = p2_valor * p2_lote;
+                p3_lote_valor = p3_valor * p3_lote;
+                p4_lote_valor = p4_valor * p4_lote;
+                p5_lote_valor = p5_valor * p5_lote;
+                p6_lote_valor = p6_valor * p6_lote;
+                p7_lote_valor = p7_valor * p7_lote;
+                p8_lote_valor = p8_valor * p8_lote;
+                p9_lote_valor = p9_valor * p9_lote;
+                p10_lote_valor = p10_valor * p10_lote;
+            }
+
+            function calcularLotePercentual() {
+                p1_lote_perc = (p1_lote_valor*100) / total_carteira;
+                p2_lote_perc = (p2_lote_valor*100) / total_carteira;
+                p3_lote_perc = (p3_lote_valor*100) / total_carteira;
+                p4_lote_perc = (p4_lote_valor*100) / total_carteira;
+                p5_lote_perc = (p5_lote_valor*100) / total_carteira;
+                p6_lote_perc = (p6_lote_valor*100) / total_carteira;
+                p7_lote_perc = (p7_lote_valor*100) / total_carteira;
+                p8_lote_perc = (p8_lote_valor*100) / total_carteira;
+                p9_lote_perc = (p9_lote_valor*100) / total_carteira;
+                p10_lote_perc = (p10_lote_valor*100) / total_carteira;
+            }
+
+            function adicionarLoteNoPapel(papel) {
+                switch (papel) {
+                    case 1:
+                        p1_lote = p1_lote + 100;
+                        break;
+                    case 2:
+                        p2_lote = p2_lote + 100;
+                        break;
+                    case 3:
+                        p3_lote = p3_lote + 100;
+                        break;
+                    case 4:
+                        p4_lote = p4_lote + 100;
+                        break;
+                    case 5:
+                        p5_lote = p5_lote + 100;
+                        break;
+                    case 6:
+                        p6_lote = p6_lote + 100;
+                        break;
+                    case 7:
+                        p7_lote = p7_lote + 100;
+                        break;
+                    case 8:
+                        p8_lote = p8_lote + 100;
+                        break;
+                    case 9:
+                        p9_lote = p9_lote + 100;
+                        break;
+                    case 10:
+                        p10_lote = p10_lote + 100;
+                        break;
+                }
+            }
+
+            function retornarPapelMenorPercentual() {
+                var menor = 10000000000000;
+                var menorPapel = false;
+
+                if (p1_lote_perc < menor) {
+                    menor = p1_lote_perc;
+                    menorPapel = 1;
+                }
+                if (p2_lote_perc < menor) {
+                    menor = p2_lote_perc;
+                    menorPapel = 2;
+                }
+                if (p3_lote_perc < menor) {
+                    menor = p3_lote_perc;
+                    menorPapel = 3;
+                }
+                if (p4_lote_perc < menor) {
+                    menor = p4_lote_perc;
+                    menorPapel = 4;
+                }
+                if (p5_lote_perc < menor) {
+                    menor = p5_lote_perc;
+                    menorPapel = 5;
+                }
+                if (p6_lote_perc < menor) {
+                    menor = p6_lote_perc;
+                    menorPapel = 6;
+                }
+                if (p7_lote_perc < menor) {
+                    menor = p7_lote_perc;
+                    menorPapel = 7;
+                }
+                if (p8_lote_perc < menor) {
+                    menor = p8_lote_perc;
+                    menorPapel = 8;
+                }
+                if (p9_lote_perc < menor) {
+                    menor = p9_lote_perc;
+                    menorPapel = 9;
+                }
+                if (p10_lote_perc < menor) {
+                    menor = p10_lote_perc;
+                    menorPapel = 10;
+                }
+
+                return menorPapel;
+                console.log('O menor percentual é: ', menor, menorPapel);
             }
         </script>
     </head>
