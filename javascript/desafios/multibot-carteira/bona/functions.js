@@ -6,7 +6,6 @@ function iniciar() {
     }
 
     calcularLoteInicial();
-
     do {
         atualizaValores();
         papelMenor = retornarPapelMenorPercentual();
@@ -43,11 +42,12 @@ function atualizaValores() {
     calcularLotePercentual();
 }
 
+const somar = function (soma, item) {
+    return soma + item;
+};
+
 function calcularCarteiraValor() {
-    total_carteira = 0;
-    for (i=0; i<lotes_valor.length; i++) {
-        total_carteira = total_carteira + lotes_valor[i];
-    }
+    total_carteira = lotes_valor.reduce(somar);
 }
 
 function calcularLoteValor() {
@@ -57,41 +57,31 @@ function calcularLoteValor() {
 }
 
 function calcularLotePercentual() {
-    lotes_perc[0] = (lotes_perc[0] < 100) ? (lotes_valor[0]*100) / total_carteira : 100;
-    lotes_perc[1] = (lotes_perc[1] < 100) ? (lotes_valor[1]*100) / total_carteira : 100;
-    lotes_perc[2] = (lotes_perc[2] < 100) ? (lotes_valor[2]*100) / total_carteira : 100;
-    lotes_perc[3] = (lotes_perc[3] < 100) ? (lotes_valor[3]*100) / total_carteira : 100;
-    lotes_perc[4] = (lotes_perc[4] < 100) ? (lotes_valor[4]*100) / total_carteira : 100;
-    lotes_perc[5] = (lotes_perc[5] < 100) ? (lotes_valor[5]*100) / total_carteira : 100;
-    lotes_perc[6] = (lotes_perc[6] < 100) ? (lotes_valor[6]*100) / total_carteira : 100;
-    lotes_perc[7] = (lotes_perc[7] < 100) ? (lotes_valor[7]*100) / total_carteira : 100;
-    lotes_perc[8] = (lotes_perc[8] < 100) ? (lotes_valor[8]*100) / total_carteira : 100;
-    lotes_perc[9] = (lotes_perc[9] < 100) ? (lotes_valor[9]*100) / total_carteira : 100;
-
-    // console.log('Percentuais são: ', p1_lote_perc, p2_lote_perc, p3_lote_perc, p4_lote_perc, p5_lote_perc, p6_lote_perc, p7_lote_perc, p8_lote_perc, p9_lote_perc, p10_lote_perc);
+    for (i=0; i<lotes_perc.length; i++) {
+        lotes_perc[i] = (lotes_perc[i] < 100) ? (lotes_valor[i]*100) / total_carteira : 100;
+    }
 }
 
 function adicionarLoteNoPapel(papel) {
     lotes[papel] = lotes[papel] + 100;
     atualizaValores();
     if (total_carteira > total_disponivel) {
-        lotes[papel] = lotes[papel] - 100;
+        lotes[papel] -= 100;
         atualizaValores();
         lotes_perc[papel] = 100;
     }
 }
 
 function retornarPapelMenorPercentual() {
-    var tenhoMenorParaRetornar = false;
-    for (i=0; i<lotes_perc.length; i++) {
-        if (lotes_perc[i] < 100) {
-            tenhoMenorParaRetornar = true;
-        }
-    }
-    if (tenhoMenorParaRetornar == false) {
+    total_perc = lotes_perc.reduce(somar);
+    if (total_perc == lotes_perc.length * 100) {
         return false;
     }
 
+    return retornarMenor();
+}
+
+function retornarMenor() {
     var menor = 99999999999;
     var menorPapel = false;
     for (i=0; i<lotes_perc.length; i++) {
@@ -100,7 +90,5 @@ function retornarPapelMenorPercentual() {
             menorPapel = i;
         }
     }
-
-    // console.log('O menor percentual é: ', menor, menorPapel);
     return menorPapel;
 }
