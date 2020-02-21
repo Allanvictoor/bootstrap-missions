@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style type="text/css">
+		span{
+			font-size:27px;
+			color:gray;
+
+		}
+
+		#caixa-busca {
+			margin-top: 6px;
+		}
+
+		#logo{
+			margin-right:10px;
+		}
+
+		.icones{
+			width: 40px;
+			height: 40px;
+			padding: 2px;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<div class="container-fluid"><!--inicio cabecalho-->
+		<div class="row" style="height: 33px;"><!--inicio row-->
+
+			<div class="col-md-2"><!--inicio logo-->
+				<nav class="navbar nabar-light bg-light" id="logo"><!--Inicio navegação-->
+  				<a class="navbar-brand" href="#">
+   				 <img id="logo" src="logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+   				<span>Drive</span>
+  				</a>
+				</nav><!--fim da navegação-->
+			</div><!--fim logo-->
+ 
+
+	 		<div class="col-md-6" id="busca"><!--inicio-busca-->
+				 <input id="caixa-busca" type="text" class="form-control" placeholder="Pesquisar no Drive">
+			</div><!--fim-busca-->
+
+					<!--inicio-icones-->
+			<div class="col-md-2"><!--inicio-icones-1-->
+					<img class="icones" src="index.png">
+					<img src="pause.png" class="icones">
+					<img src="home.png" class="icones">
+			</div><!--fim-icones-1-->
+
+			<div  class="col-md-2"><!--inicio-icones-2-->
+				<img class="icones" src="anexar.png">
+				<img class="icones" src="perfil.png">
+			</div><!--fim-icones-2-->
+				<!--fim-icones-->
+
+		</div><!--fim-row-->
+		<hr>
+	</div><!--fim cabeçalho-->
+
+	<div class="container-fluid" style="background-color: hotpink;"><!--inicio segunda linha-->
+		<div class="row" style="height:37px;">
+
+			<div class="col-2"><!--botao mais-->
+				<div><!--inicio-->
+					<button type="button" class="btn btn-secondary btn-lg"><img src="add.png">Meu Drive</button>
+				</div><!--fim-->
+
+			</div><!--fim-botao mais-->
+
+			<div class="col-9"><!--inicio-dropdown-->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Meu Drive
+					</a>
+					</li>
+			</div><!--fim dropdown-->
+
+			<div class="col-sm-1"><!--inicio-icones-->
+				<img src="list.jpg" style="width:30px; height: 30px;">
+				<img src="details.png" style="width: 30px; height: 30px;">
+			</div><!--fim-icones-->
+		</div><!--fim segundo menu-->
+	</div><!--fim segunda linha-->
+
+
+	<div class="container-fluid"><!--Inicio do corpo-->
+		<div class="row" style="height: 50px;">
+			<div class="col-sm-2" style="background: green;"><!--inicio da barra de progresso-->
+				BARRA DE PROGRESSO
+			</div><!--fim da barra de progresso-->
+
+			<div class="col-sm" style="background: orange"><!--inicio do conteúdo-->
+				CONTEUDO
+			</div><!--fim do conteudo-->
+		</div>
+	</div><!--fim do corpo-->
+
+</body>
+</html>
