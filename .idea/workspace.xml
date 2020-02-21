@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3b37946-0e0f-4d39-9436-51a3722d84de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/2020-carol-estudos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/googledrive/carol/carddrive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/brdt3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/brfs3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/calcular-carteira.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/ceab3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/cmig4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/cogn3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/itub4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/klbn11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/lcam3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/mrve3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/multibot-carteira/carol/tgma3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/vivaintra-diretorio/carol/detalhar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/desafios/vivaintra-diretorio/carol/diretorioextranet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/desafios/multibot-carteira/carol/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/desafios/googledrive/carol/telagoogledrive.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/desafios/googledrive/carol/telagoogledrive.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XwSLPfWkL8R6TpBQi5h13HO53M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documentos/Estagio/2020-01-estudos/HTML - Atividades/calculaconsumo.html" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3b37946-0e0f-4d39-9436-51a3722d84de" name="Default Changelist" comment="" />
+      <created>1581955606350</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581955606350</updated>
+      <workItem from="1581955611343" duration="132000" />
+      <workItem from="1582231024123" duration="1737000" />
+      <workItem from="1582236590891" duration="5789000" />
+      <workItem from="1582243147722" duration="65000" />
+      <workItem from="1582291147847" duration="11228000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="306" y="169" width="744" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582291582273">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state x="306" y="169" width="744" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.676@0.27.1366.676" timestamp="1582291582273" />
+    <state x="466" y="122" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582317566848">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state x="466" y="122" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.676@0.27.1366.676" timestamp="1582317566848" />
+  </component>
+</project>

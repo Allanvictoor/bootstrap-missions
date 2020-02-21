@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <title>Calcula Carteira</title>
+        <script src="functions.js"></script>
+        <script>
+            // valor digitado pelo usuário
+            var total_disponivel = 102000;
+
+            // valor recebido dinamicamente para cada papel
+            // muda mensalmente
+            var valores = [
+                15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+            ];
+
+            var lotes = [
+                100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+            ];
+            var lotes_valor = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
+            var lotes_perc = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
+
+            // INICIO DO CODIGO
+            iniciar();
+            console.log(lotes);
+        </script>
+    </head>
+
+    <body>
+
+    <!--Cabeçalho-->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-light bg-light col-sm">
+                <a class="navbar-brand small font-weight-bold">MultiBot</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <!------Corpo------>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-8 w-100 mh-100 p-3">
+                <table class="col table-striped table-bordered my-1" >
+                    <thead>
+                    <tr>
+                        <th scope="col"><p class="text-center font-weight-light my-1"><b>Empresa</b></p></th>
+                        <th scope="col"><p class="text-center font-weight-light my-1">Ação</p></th>
+                        <th scope="col"><p class="text-center font-weight-light my-1">R$ Unitário</p></th>
+                        <th scope="col"><p class="text-center font-weight-light my-1">Quantidade</p></th>
+                        <th scope="col"><p class="text-center font-weight-light my-1">% Percent.</p></th>
+                        <th scope="col"><p class="text-center font-weight-light my-1">R$ Total</p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <p>
+                        <th scope="row"><img src="cmig4.jpg" height="50" width="50"></th>
+                        <p class="center">
+                        <td>CMIG4</td>
+                        <td id="emp1_valor">-</td>
+                        <td id="emp1_lote">-</td>
+                        <td id="emp1_lote_perc">-</td>
+                        <td id="emp1_valor_lote">-</td></p>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="brdt3.jpg" height="50" width="50" ></th>
+                        <td>BRDT3</td>
+                        <td id="emp2_valor">-</td>
+                        <td id="emp2_lote">-</td>
+                        <td id="emp2_lote_perc">-</td>
+                        <td id="emp2_valor_lote">-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="mrve3.jpg" height="50" width="50" ></th>
+                        <td>MRVE3</td>
+                        <td id="emp3_valor">-</td>
+                        <td id="emp3_lote">-</td>
+                        <td id="emp3_lote_perc">-</td>
+                        <td id="emp3_valor_lote">-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="itub4.jpg" height="50px" width="50px" ></th>
+                        <td>ITUB4</td>
+                        <td>$ 32.80</td>
+                        <td>100</td>
+                        <td>% 13.59</td>
+                        <td>$ 3280.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="ceab3.png" height="50px" width="50px" ></th>
+                        <td>CEAB3</td>
+                        <td>$ 16.20</td>
+                        <td>100</td>
+                        <td>% 6.71</td>
+                        <td>$ 1620.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="brfs3.jpg" height="50px" width="50px" ></th>
+                        <td>BRFS3</td>
+                        <td>$ 30.57</td>
+                        <td>100</td>
+                        <td>% 12.66</td>
+                        <td>$ 3057.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="cogn3.png" height="50px" width="50px" ></th>
+                        <td>COGN3</td>
+                        <td>$ 11.41</td>
+                        <td>100</td>
+                        <td>% 4.73</td>
+                        <td>$ 1141.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="klbn11.jpg" height="50px" width="50px" ></th>
+                        <td>KLBN11</td>
+                        <td>$ 21.15</td>
+                        <td>100</td>
+                        <td>% 8.76</td>
+                        <td>$ 2115.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="lcam3.png" height="50px" width="50px" ></th>
+                        <td>LCAM3</td>
+                        <td>$ 24.22</td>
+                        <td>100</td>
+                        <td>% 10.03</td>
+                        <td>$ 2422.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="tgma3.png" height="50px" width="50px" ></th>
+                        <td>TGMA3</td>
+                        <td>$ 40.29</td>
+                        <td>100</td>
+                        <td>% 16.69</td>
+                        <td>$ 4029.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+                <div class="col-sm p-3">
+                    <div class="col">
+                        <form>
+                            <div class="input-group inpute-group-lg p-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text " ><b>Valor do lote: </b></span>
+                                </div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="total_carteira"></span>
+                                </div>
+                            </div>
+                            <div class="form-row" class="form-group" class="col-6 p-3">
+                                <label> <b> Qual o valor em carteira?</b></label>
+                                <input type="text" name="valorcarteira" id="valor-carteira" class="form-control" />
+                            </div>
+                            <button type="submit" class="btn btn-primary p-3">Calcular</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+</html>
