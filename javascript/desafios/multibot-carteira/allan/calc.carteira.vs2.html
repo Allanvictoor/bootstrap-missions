@@ -11,8 +11,9 @@
 <body class="contairner">
     <div>
         <script>
-            var valorCarteira = 102000;
+            var valorCarteira = 24140;
             var valorDivididoEmLotes = valorCarteira / 10;
+           // sobraCarteira = 0;
 
 
             var cogn4 = 11.41;
@@ -38,9 +39,20 @@
             var totalitub4 = 32.80 * 100;
             var totaltgma3 = 40.29 * 100;
 
-
             var somaTotalLotes = totalcogn4 + totalcmig4 + totalceab3 + totalklbn11 + totalmrve3 + totallcam3 + totalcrdt3 + totalbrfs3 + totalitub4 + totaltgma3;
 
+            porcentagem = [
+            (totalcogn4 * 100) / somaTotalLotes,
+            (totalcmig4 * 100) / somaTotalLotes,
+            (totalceab3 * 100) / somaTotalLotes,
+            (totalklbn11 * 100) / somaTotalLotes,
+            (totalmrve3 * 100) / somaTotalLotes,
+            (totallcam3 * 100) / somaTotalLotes,
+            (totalcrdt3 * 100) / somaTotalLotes,
+            (totalbrfs3 * 100) / somaTotalLotes,
+            (totalitub4 * 100) / somaTotalLotes,
+            (totaltgma3 * 100) / somaTotalLotes
+            ];
 
 
             if (valorCarteira < somaTotalLotes) {
@@ -52,25 +64,48 @@
        }
 
 
+       
+/*
+       while(totalcogn4 <= valorCarteira){
+           sobraCarteira = valorCarteira - totalcogn4
+           
+       }
+       document.write(sobraCarteira)
 
-        if(totalcogn4<valorCarteira){
+       while(totalcogn4 <= valorCarteira){
+           sobraCarteira = valorCarteira - totalcogn4
+           
+       }
+       document.write(sobraCarteira)
+
+    */   
+       
+      /* for (valorCarteira ; sobraCarteira < valorCarteira; sobraCarteira = valorCarteira - totalcogn4){
+        document.write(sobraCarteira)
+       }
+       */
+
+
+
+       if(totalcogn4 <= valorCarteira){
             sobraCarteira = valorCarteira - totalcogn4
         }
-        document.write(sobraCarteira)
+        document.write("Comprando o minimo de 100 lotes ainda sobra na carteira: " + sobraCarteira)
+        
 
         document.write('<br> <br />')
 
         if(totalcmig4 <= sobraCarteira){
             sobraCarteira = sobraCarteira - totalcmig4
         }
-        document.write(sobraCarteira)
+        document.write("Ainda sobra na carteira: " + sobraCarteira)
 
         document.write('<br> <br />')
 
         if(totalceab3 <= sobraCarteira){
             sobraCarteira = sobraCarteira - totalceab3
         }
-        document.write(sobraCarteira)
+        document.write("Comprando o minimo de 100 lotes ainda sobra na carteira: " + sobraCarteira)
 
         document.write('<br> <br />')
 
@@ -112,6 +147,69 @@
         if(totalitub4 <= sobraCarteira){
             sobraCarteira = sobraCarteira - totalitub4
         }
+        document.write(Math.round(sobraCarteira))
+
+        document.write('<br> <br />')
+
+        if(totaltgma3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totaltgma3
+        }
+        document.write(Math.round(sobraCarteira))
+
+        document.write('<br> <br />')
+
+       /* if(totalcogn4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcogn4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalcmig4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcmig4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalceab3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalceab3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalklbn11 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalklbn11
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalmrve3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalmrve3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totallcam3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totallcam3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalcrdt3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcrdt3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalitub4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalitub4
+        }
         document.write(sobraCarteira)
 
         document.write('<br> <br />')
@@ -121,22 +219,204 @@
         }
         document.write(sobraCarteira)
 
+        document.write('<br> <br />')
+
+        document.write('<br> <br />')
+
+        if(totalcogn4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcogn4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalcmig4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcmig4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalceab3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalceab3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalklbn11 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalklbn11
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalmrve3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalmrve3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totallcam3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totallcam3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalcrdt3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcrdt3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalitub4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalitub4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totaltgma3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totaltgma3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        document.write('<br> <br />')
+
+        if(totalcogn4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcogn4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalcmig4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcmig4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalceab3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalceab3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalklbn11 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalklbn11
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalmrve3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalmrve3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totallcam3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totallcam3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalcrdt3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcrdt3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalitub4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalitub4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totaltgma3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totaltgma3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        document.write('<br> <br />')
+
+        if(totalcogn4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcogn4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalcmig4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcmig4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalceab3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalceab3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalklbn11 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalklbn11
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalmrve3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalmrve3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totallcam3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totallcam3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalcrdt3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalcrdt3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totalitub4 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totalitub4
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+
+        if(totaltgma3 <= sobraCarteira){
+            sobraCarteira = sobraCarteira - totaltgma3
+        }
+        document.write(sobraCarteira)
+
+        document.write('<br> <br />')
+*/
         
-
-            porcentagem = [
-            (totalcogn4 * 100) / somaTotalLotes,
-            (totalcmig4 * 100) / somaTotalLotes,
-            (totalceab3 * 100) / somaTotalLotes,
-            (totalklbn11 * 100) / somaTotalLotes,
-            (totalmrve3 * 100) / somaTotalLotes,
-            (totallcam3 * 100) / somaTotalLotes,
-            (totalcrdt3 * 100) / somaTotalLotes,
-            (totalbrfs3 * 100) / somaTotalLotes,
-            (totalitub4 * 100) / somaTotalLotes,
-            (totaltgma3 * 100) / somaTotalLotes
-            ];
-
-
 /*
             while (porcentagem[0] > 10) {
                 porcentagem[0]++
@@ -177,12 +457,8 @@
             while (porcentagem[9] < 10) {
                 porcentagem[9]++
   
-            }
+            };
 */
-
-
-
-
         </script>
     </div>
 </body>
