@@ -24,7 +24,7 @@
 
     <!------Corpo------>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="background-color: gainsboro">
             <div class=" col-8 w-90 mh-90 p-2">
                 <table class="col table-striped table-bordered my-1" >
                     <thead>
@@ -38,14 +38,14 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <p>
+                    <tr>
                         <th scope="row"><img src="cmig4.jpg" height="50" width="50"></th>
                         <p class="center">
                         <td>CMIG4</td>
                         <td id="emp1_valor">-</td>
                         <td id="emp1_lote">-</td>
                         <td id="emp1_lote_perc">-</td>
-                        <td id="emp1_valor_lote">-</td></p>
+                        <td id="emp1_valor_lote">-</td>
                     </tr>
                     <tr>
                         <th scope="row"><img src="brdt3.jpg" height="50" width="50" ></th>
@@ -127,19 +127,15 @@
                 <div class="col-sm p-3">
                     <div class="col">
                         <form>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <label><b>Valor total do lote: </b></label>
-                                    <div class="col">
-                                   <span class="input-group-text" id="lotes_valor"> 0.00</span>
-                                    </div>
-                                </div>
+                            <label><b>Valor total do lote: </b></label>
+                            <div class="col">
+                                <label name="valor_carteira" id="valor_carteira">-</label>
                             </div>
                             <div class="form-row" class="form-group" class="col-6 p-3">
                                 <label><b> Qual o valor em carteira?</b></label>
-                                <input type="text" name="valorcarteira" id="valor-carteira" class="form-control" />
+                                <input type="text" name="total_disponivel" id="total_disponivel" class="form-control" />
                             </div>
-                            <input id="calcular" type="submit" value="calcular" class="btn btn-primary" />
+                            <input id="calcular" type="submit" value="Calcular" class="btn btn-primary btn-lg m-1" />
                         </form>
                     </div>
                 </div>
@@ -148,38 +144,84 @@
     </div>
 
 <script>
+    // $(document).ready(function () {
+    //
+    //     $("#calcular").click(function () {
+    //         $("#calcular").show;
 
-    $(document).ready(function() {
-        $("#calcular").hide();
+            // valor digitado pelo usuário
+            var total_disponivel = parseFloat($("#total_disponivel").val());
 
-    $("#calcular").click(function() {
-        $("#tabela").show();
+            // valor recebido dinamicamente para cada papel
+            // muda mensalmente
+            var valores = [
+                15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+            ];
+
+            var
+                lotes = [
+                    100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+                ];
+            var lotes_valor = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
+            var lotes_perc = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
 
 
+            $("#emp1_valor").text(valores[0]);
+            $("#emp2_valor").text(valores[1]);
+            $("#emp3_valor").text(valores[2]);
+            $("#emp4_valor").text(valores[3]);
+            $("#emp5_valor").text(valores[4]);
+            $("#emp6_valor").text(valores[5]);
+            $("#emp7_valor").text(valores[6]);
+            $("#emp8_valor").text(valores[7]);
+            $("#emp9_valor").text(valores[8]);
+            $("#emp10_valor").text(valores[9]);
 
-        // valor digitado pelo usuário
-        var total_disponivel = parseFloat($("#total_disponivel").val());
+            $("#emp1_lote").text(lotes[0]);
+            $("#emp2_lote").text(lotes[1]);
+            $("#emp3_lote").text(lotes[2]);
+            $("#emp4_lote").text(lotes[3]);
+            $("#emp5_lote").text(lotes[4]);
+            $("#emp6_lote").text(lotes[5]);
+            $("#emp7_lote").text(lotes[6]);
+            $("#emp8_lote").text(lotes[7]);
+            $("#emp9_lote").text(lotes[8]);
+            $("#emp10_lote").text(lotes[9]);
 
-        // valor recebido dinamicamente para cada papel
-        // muda mensalmente
-        var valores = [
-            15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
-        ];
+            $("#emp1_lote_perc").text(lotes_perc[0]);
+            $("#emp2_lote_perc").text(lotes_perc[1]);
+            $("#emp3_lote_perc").text(lotes_perc[2]);
+            $("#emp4_lote_perc").text(lotes_perc[3]);
+            $("#emp5_lote_perc").text(lotes_perc[4]);
+            $("#emp6_lote_perc").text(lotes_perc[5]);
+            $("#emp7_lote_perc").text(lotes_perc[6]);
+            $("#emp8_lote_perc").text(lotes_perc[7]);
+            $("#emp9_lote_perc").text(lotes_perc[8]);
+            $("#emp10_lote_perc").text(lotes_perc[9]);
 
-        var lotes = [
-            100, 100, 100, 100, 100, 100, 100, 100, 100, 100
-        ];
-        var lotes_valor = [
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        ];
-        var lotes_perc = [
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-        ];
+            $("#emp1_valor_lote").text(lotes_valor[0]);
+            $("#emp2_valor_lote").text(lotes_valor[1]);
+            $("#emp3_valor_lote").text(lotes_valor[2]);
+            $("#emp4_valor_lote").text(lotes_valor[3]);
+            $("#emp5_valor_lote").text(lotes_valor[4]);
+            $("#emp6_valor_lote").text(lotes_valor[5]);
+            $("#emp7_valor_lote").text(lotes_valor[6]);
+            $("#emp8_valor_lote").text(lotes_valor[7]);
+            $("#emp9_valor_lote").text(lotes_valor[8]);
+            $("#emp10_valor_lote").text(lotes_valor[9]);
 
-        // INICIO DO CODIGO
-        iniciar();
-        console.log(lotes);
-    }
+
+            // INICIO DO CODIGO
+            iniciar();
+            console.log(lotes);
+
+    //     });
+    // });
+
     </script>
     </body>
 </html>
