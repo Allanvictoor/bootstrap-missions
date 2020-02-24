@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Calcula consumo</title>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="calculaconsumo.js"></script>
+  </head>
+
+  <body>
+    <h3>Alcool ou Gasolina?</h3>
+
+    <form>
+      <label>Qual a capacidades do tanque?</label>
+      <input type="text" name="tanque" id="tanque" />
+
+      <br />
+      <label>Qual o valor da Gasolina?</label>
+      <input type="text" name="valorGasolina" id="valorGasolina" />
+
+      <br />
+      <label>Qual a caminho percorrido com Gasolina?</label>
+      <input type="text" name="caminhoComGasolina" id="caminhoComGasolina" />
+
+      <br />
+      <label>Qual o valor do Alcool?</label>
+      <input type="text" name="valorAlcool" id="valorAlcool" />
+
+      <br />
+      <label>Qual o caminho percorrido com Alcool?</label>
+      <input type="text" name="caminhoComAlcool" id="caminhoComAlcool" />
+
+      <br />
+      <input id="calcular" type="submit" value="Calcular" />
+    </form>
+
+    <br /><br />
+
+    <div id="resultado">
+      Preencha os dados e clique em Calcular para realizar a operação.
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $("#calcular").click(function() {
+          var tanque = parseFloat($("#tanque").val());
+          var valorGasolina = parseFloat($("#valorGasolina").val());
+          var caminhoComGasolina = parseFloat($("#caminhoComGasolina").val());
+          var valorAlcool = parseFloat($("#valorAlcool").val());
+          var caminhoComAlcool = parseFloat($("#caminhoComAlcool").val());
+
+          var consumoDeGasolina = calculaConsumo(tanque, caminhoComGasolina);
+          var indiceGasolina = calculaIndice(consumoDeGasolina, valorGasolina);
+          var consumoDeAlcool = calculaConsumo(tanque, caminhoComAlcool);
+          var indiceAlcool = calculaIndice(consumoDeAlcool, valorAlcool);
+          var compensa = definirCombustivel(indiceGasolina, indiceAlcool);
+
+          $("#resultado").empty();
+          $("#resultado")
+            .append("o valor de gasolina consumido foi: " + consumoDeGasolina + " km/l")
+            .append("<br /><br />")
+            .append("o valor de alcool consumido foi: " + consumoDeAlcool + " km/l")
+            .append("<br /><br />")
+            .append("indice de gasolina é: " + indiceGasolina)
+            .append("<br /><br />")
+            .append("indice de alcool é: " + indiceAlcool)
+            .append("<br /><br />")
+            .append("vale a pena: " + compensa);
+
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

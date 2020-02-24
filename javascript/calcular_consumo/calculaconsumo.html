@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Calcula consumo</title>
+    <meta charset="utf-8" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="calculaconsumo.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h4>Álcool ou gasolina?</h4>
+        <p class="lead">Reponda o formulário e descubra.</p>
+      </div>
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label>Qual a capacidades do tanque?</label>
+            <input type="text" name="tanque" id="tanque" class="form-control" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label>Qual o valor da Gasolina?</label>
+            <input type="text" name="valorGasolina" id="valorGasolina" class="form-control" />
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Qual a caminho percorrido com Gasolina?</label>
+            <input type="text" name="caminhoComGasolina" id="caminhoComGasolina" class="form-control" />
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Qual o valor do Alcool?</label>
+            <input type="text" name="valorAlcool" id="valorAlcool" class="form-control" />
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Qual o caminho percorrido com Alcool?</label>
+            <input type="text" name="caminhoComAlcool" id="caminhoComAlcool" class="form-control" />
+          </div>
+
+        </div>
+
+        <input id="calcular" type="submit" value="Calcular" class="btn btn-primary" />
+      </form>
+
+      <br /><br />
+
+      <div id="resultado">
+        <div id="mensagemInicio" class="alert alert-warning" role="alert">
+          Preencha os dados e clique em Calcular para realizar a operação.
+        </div>
+
+        <div>
+          <div id="compensa" class="alert alert-success" role="alert">
+            Vale a pena <strong>-</strong>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Tipo</th>
+                <th>Consumo por Km</th>
+                <th>Índice</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gasolina</td>
+                <td id="consumoGasolina">-</td>
+                <td id="indiceGasolina">-</td>
+              </tr>
+              <tr>
+                <td>Álcool</td>
+                <td id="consumoAlcool">-</td>
+                <td id="indiceAlcool">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $("#compensa").hide();
+
+        $("#calcular").click(function() {
+          $("#mensagemInicio").hide();
+          $("#compensa").show();
+
+          var tanque = parseFloat($("#tanque").val());
+          var valorGasolina = parseFloat($("#valorGasolina").val());
+          var caminhoComGasolina = parseFloat($("#caminhoComGasolina").val());
+          var valorAlcool = parseFloat($("#valorAlcool").val());
+          var caminhoComAlcool = parseFloat($("#caminhoComAlcool").val());
+
+          var consumoDeGasolina = calculaConsumo(tanque, caminhoComGasolina);
+          var indiceGasolina = calculaIndice(consumoDeGasolina, valorGasolina);
+          var consumoDeAlcool = calculaConsumo(tanque, caminhoComAlcool);
+          var indiceAlcool = calculaIndice(consumoDeAlcool, valorAlcool);
+          var compensa = definirCombustivel(indiceGasolina, indiceAlcool);
+
+          $("#consumoGasolina").text(consumoDeGasolina);
+          $("#indiceGasolina").text(indiceGasolina);
+          $("#consumoAlcool").text(consumoDeAlcool);
+          $("#indiceAlcool").text(indiceAlcool);
+          $("#compensa strong").text(compensa);
+
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>
