@@ -2,10 +2,9 @@
     <head>
         <meta charset="UTF-8" />
         <script src="functions.js"></script>
-        <script>
-            // valor digitado pelo usuário
-            var total_disponivel = 102000;
+        <script src="jquery-3.4.1.slim.min.js"></script>
 
+        <script>
             // valor recebido dinamicamente para cada papel
             // muda mensalmente
             var valores = [
@@ -22,12 +21,45 @@
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
             ];
 
-            // INICIO DO CODIGO
-            iniciar();
-            console.log(lotes);
+            var total_disponivel;
+
+            $(document).ready(function() {
+                popularTabela();
+
+                $("#form-valor").submit(function() {
+                    total_disponivel = parseFloat($("#valor").val());
+                    iniciar();
+                    popularTabela();
+                    event.preventDefault();
+                });
+            });
+
+            function popularTabela()
+            {
+                var tableBody = $("#carteira tbody").empty();
+                for (i=0; i<valores.length; i++) {
+                    var tr = $("<tr></tr>");
+                    tr.append($("<td></td>").text(valores[i]));
+                    tr.append($("<td></td>").text(lotes[i]));
+                    tableBody.append(tr);
+                }
+            }
         </script>
     </head>
     <body>
-        Olá
+        <form id="form-valor">
+            <input id="valor" type="text" />
+            <input type="submit" />
+        </form>
+
+        <table id="carteira">
+            <thead>
+                <tr>
+                    <th>Valor</th>
+                    <th>Lote</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </body>
 </html>
