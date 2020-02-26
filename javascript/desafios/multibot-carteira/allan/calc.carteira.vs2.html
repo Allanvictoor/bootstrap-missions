@@ -11,8 +11,9 @@
 <body class="contairner">
     <div>
         <script>
-            var valorCarteira = 24140;
-            var valorDivididoEmLotes = valorCarteira / 10;
+            var valorCarteira = 102000;
+            var valorDivididoEmLotes = valorCarteira / 10; 
+            
            // sobraCarteira = 0;
 
 
@@ -90,7 +91,7 @@
        if(totalcogn4 <= valorCarteira){
             sobraCarteira = valorCarteira - totalcogn4
         }
-        document.write("Comprando o minimo de 100 lotes ainda sobra na carteira: " + sobraCarteira)
+        document.write(sobraCarteira)
         
 
         document.write('<br> <br />')
@@ -98,14 +99,14 @@
         if(totalcmig4 <= sobraCarteira){
             sobraCarteira = sobraCarteira - totalcmig4
         }
-        document.write("Ainda sobra na carteira: " + sobraCarteira)
+        document.write(sobraCarteira)
 
         document.write('<br> <br />')
 
         if(totalceab3 <= sobraCarteira){
             sobraCarteira = sobraCarteira - totalceab3
         }
-        document.write("Comprando o minimo de 100 lotes ainda sobra na carteira: " + sobraCarteira)
+        document.write(sobraCarteira)
 
         document.write('<br> <br />')
 
