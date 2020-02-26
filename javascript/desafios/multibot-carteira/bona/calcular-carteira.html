@@ -2,10 +2,9 @@
     <head>
         <meta charset="UTF-8" />
         <script src="functions.js"></script>
-        <script>
-            // valor digitado pelo usuário
-            var total_disponivel = 102000;
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
+        <script>
             // valor recebido dinamicamente para cada papel
             // muda mensalmente
             var valores = [
@@ -22,12 +21,80 @@
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
             ];
 
-            // INICIO DO CODIGO
-            iniciar();
-            console.log(lotes);
+            var total_disponivel;
+
+            $(document).ready(function() {
+                $("#form-valor").submit(function() {
+                    total_disponivel = parseFloat($("#valor").val());
+
+                    iniciar();
+
+                    for (i=0; i<valores.length; i++) {
+                        var trPai = $("tr[data-posicao=" + i + "]");
+                        trPai.find("td[data-coluna=valor]").text(valores[i]);
+                        trPai.find("td[data-coluna=lote]").text(lotes[i]);
+                    }
+
+                    event.preventDefault();
+                });
+            });
         </script>
     </head>
     <body>
-        Olá
+        <form id="form-valor">
+            <input id="valor" type="text" />
+            <input type="submit" />
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Valor</th>
+                    <th>Lote</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-posicao="0">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="1">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="2">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="3">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="4">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="5">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="6">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="7">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="8">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+                <tr data-posicao="9">
+                    <td data-coluna="valor">-</td>
+                    <td data-coluna="lote">-</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
