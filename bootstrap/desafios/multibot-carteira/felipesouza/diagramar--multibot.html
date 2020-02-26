@@ -44,8 +44,26 @@
         </div>
 
         <br>
+        
+        <div>
+            <form id="form-valor">
+                <input id="valor" type="text" />
+                <input type="submit" />
+            </form>
 
-        <!-- Corpo/Tabela -->
+            <table id="carteira">
+                <thead>
+                <tr>
+                    <th>Valor</th>
+                    <th>Lote</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+
+        <!-- Corpo/Tabela alternativo
         <div class="container">
             <table class="table table-striped">
                 <thead>
@@ -224,7 +242,7 @@
                 </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
 
         <br>
 
@@ -282,6 +300,48 @@
         </div> -->
 
 
+
+        <script>
+            // valor recebido dinamicamente para cada papel
+            // muda mensalmente
+            var valores = [
+                15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+            ];
+
+            var lotes = [
+                100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+            ];
+            var lotes_valor = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
+            var lotes_perc = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
+
+            var total_disponivel;
+
+            $(document).ready(function() {
+                popularTabela();
+
+                $("#form-valor").submit(function() {
+                    total_disponivel = parseFloat($("#valor").val());
+                    iniciar();
+                    popularTabela();
+                    event.preventDefault();
+                });
+            });
+
+            function popularTabela()
+            {
+                var tableBody = $("#carteira tbody").empty();
+                for (i=0; i<valores.length; i++) {
+                    var tr = $("<tr></tr>");
+                    tr.append($("<td></td>").text(valores[i]));
+                    tr.append($("<td></td>").text(lotes[i]));
+                    tableBody.append(tr);
+                }
+            }
+        </script>
 
 
 
