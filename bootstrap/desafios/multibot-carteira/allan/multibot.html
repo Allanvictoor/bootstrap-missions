@@ -61,7 +61,7 @@
           tr.append($("<td></td>").text(valores[i]+"R$"));
           tr.append($("<td></td>").text(lotes_perc[i]+"%"));
           tr.append($("<td></td>").text(lotes[i]));
-          tr.append($("<td></td>").text(valoresMininmos[i]+"R$"));
+          tr.append($("<td></td>").text(valoresMininmos[i]+" R$"));
           tr.append($("<td></td>").text(lotes[i]));
           tableBody.append(tr);
         }
@@ -69,13 +69,13 @@
     </script>
   </head>
   
-  <body>
+  <body;">
     <div class="container-fluid" style="background-color: #780191;">
       <!-- Image and text -->
       <nav class="navbar " style="background-color: #780191;">
         <a class="navbar-brand">
               <img src=" imagens/app.png" width="50" height="50" class="d-inline-block align-top" alt="">
-          <span class="text-white m-1 my-3">Multibot</span>
+          <span class="text-white m-1 my-1">Multibot</span>
         </a>
   
         <form class="form-inline my-2 my-lg-0">
@@ -86,6 +86,24 @@
     </nav>
     <br>
     <div class="containerp-fluid col-sm-12">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-home mx-2"></i>Home</a>
+            <div style="text-align: center;"><strong>Ferramentas</strong></div>
+            <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-star mx-2"></i>Recomendações</a>
+            <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-wallet mx-2"></i>Carteira</a>
+            <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-book-open mx-2"></i>Cursos</a>
+            <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-microphone-alt mx-2"></i>Sala ao vivo</a>
+            <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-hotel mx-2"></i>Sobre nós</a>
+            <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-map mx-2"></i>Nossos planos</a>
+            <a href="#" class="list-group-item list-group-item-action "><i class="fas fa-question-circle mx-2"></i>Ajuda</a>
+            <a href="#" class="list-group-item list-group-item-action " style="text-align: center;"><i class="fab fa-app-store-ios mx-2"></i>App store</a>
+            <a href="#" class="list-group-item list-group-item-action " style="text-align: center;"><i class="fab fa-google-play mx-2"></i>Google play</a>
+            
+          </div>
+        </div>
+        <div class="col-sm-10">
     <form id="form-valor">
       <input  id="valor" type="text" placeholder="Valor a ser investido"/>
       <button  class ="btn btn-outline-success" type="submit">Calcular<i class="fas fa-calculator mx-1"></i></button>
@@ -107,6 +125,8 @@
         </tr>
       </tbody>
     </table>
+  </div>
+  </div>
   </div>
   <br>
   <div id="rodape" style="background-color: ivory;" class="container-fluid" >
