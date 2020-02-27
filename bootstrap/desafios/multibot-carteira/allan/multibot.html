@@ -16,10 +16,17 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   
     <script>
-      // valor recebido dinamicamente para cada papel
-      // muda mensalmente
+      
+      var nomeEmpresa = [
+        'CMIG4', 'BRDT3', 'MRVE3', 'ITUB4', 'CEAB3', 'BRFS3', 'COGN3', 'KLBN11', 'LCAM3', 'TGMA3'
+      ];
+
       var valores = [
         15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+      ];
+
+      var valoresMininmos = [
+        15.11*100, 28.45*100, 21.20*100, 32.80*100, 16.20*100, 30.57*100, 11.41*100, 21.15*100, 24.22*100, 40.29*100
       ];
   
       var lotes = [
@@ -29,7 +36,7 @@
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0
       ];
       var lotes_perc = [
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        10, 10, 10, 10, 10, 10, 10, 10, 10, 10
       ];
   
       var total_disponivel;
@@ -49,7 +56,11 @@
         var tableBody = $("#carteira tbody").empty();
         for (i = 0; i < valores.length; i++) {
           var tr = $("<tr></tr>");
-          tr.append($("<td></td>").text(valores[i]));
+          tr.append($("<td></td>").text(nomeEmpresa[i]));
+          tr.append($("<td></td>").text(valores[i]+"R$"));
+          tr.append($("<td></td>").text(lotes_perc[i]+"%"));
+          tr.append($("<td></td>").text(lotes[i]));
+          tr.append($("<td></td>").text(valoresMininmos[i]+"R$"));
           tr.append($("<td></td>").text(lotes[i]));
           tableBody.append(tr);
         }
@@ -73,7 +84,7 @@
     </div>
     </nav>
     <br>
-    <div class="container col-sm-12">
+    <div class="containerp-fluid col-sm-12">
     <form id="form-valor">
       <input  id="valor" type="text" placeholder="Valor a ser investido"/>
       <button  class ="btn btn-outline-success" type="submit">Calcular</button>
@@ -81,11 +92,11 @@
     <table id="carteira" class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Valor</th>
-          <th scope="col">Lote</th>
-          <th scope="col"></th>
-          <th scope="col">---</th>
-          <th scope="col">---</th>
+          <th scope="col">Empresa</th>
+          <th scope="col">Entrada</th>
+          <th scope="col">Participação</th>
+          <th scope="col">Lotes</th>
+          <th scope="col">Valor minimo</th>
           <th scope="col">---</th>
         </tr>
       </thead>
