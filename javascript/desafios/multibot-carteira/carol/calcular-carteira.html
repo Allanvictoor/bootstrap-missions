@@ -9,7 +9,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <title>Calcula Carteira</title>
-
+        <script src="functions.js"></script>
     </head>
 
     <body>
@@ -87,8 +87,10 @@
     // valor digitado pelo usuário
     var total_disponivel;
 
+
     // valor recebido dinamicamente para cada papel
     // muda mensalmente
+
     // var logos = [
     //     'cmig4.jpg', 'brdt3.jpg', 'mrve3.jpg', 'itub4.jpg', 'ceab3.png',
     //     'brfs3.jpg', 'cogn3.png', 'klbn11.jpg', 'lcam3.png', 'tgma3.png'
@@ -110,32 +112,31 @@
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     ];
 
+
     $(document).ready(function() {
         popularTabela();
 
-        $("#calcular").submit(function () {
+        $("#calcular").click(function () {
             total_disponivel = parseFloat($("#valorDisponivel").val());
-            $("#modalComprar").submit(function () {
-                iniciar();
-                popularTabela();
-                event.preventDefault();
-            });
+            iniciar();
+            popularTabela();
+            event.preventDefault();
         });
-
-        function popularTabela() {
-            var tableBody = $("#carteira tbody").empty();
-            for (i = 0; i < valores.length; i++) {
-                var tr = $("<tr></tr>");
-                // tr.append($("<td></td>").text('-'));
-                tr.append($("<td></td>").text(nomes[i]));
-                tr.append($("<td></td>").text(valores[i]));
-                tr.append($("<td></td>").text(lotes[i]));
-                tr.append($("<td></td>").text(lotes_perc[i]));
-                tr.append($("<td></td>").text(lotes_valor[i]));
-                tableBody.append(tr);
-            }
-        }
     });
+
+    function popularTabela() {
+        var tableBody = $("#carteira tbody").empty();
+        for (i = 0; i < valores.length; i++) {
+            var tr = $("<tr></tr>");
+            tr.append($("<td></td>").text('-'));
+            tr.append($("<td></td>").text(nomes[i]));
+            tr.append($("<td></td>").text(valores[i]));
+            tr.append($("<td></td>").text(lotes[i]));
+            tr.append($("<td></td>").text(lotes_perc[i]));
+            tr.append($("<td></td>").text(lotes_valor[i]));
+            tableBody.append(tr);
+        }
+    }
 
     </script>
     </body>
