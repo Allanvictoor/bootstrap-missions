@@ -1,137 +1,102 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>Teste</title>
-  <link href="teste.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-
-
-
-<body>
-  <div class="container-fluid" style="background-color: purple;">
-    <!-- Image and text -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-    <nav class="navbar " style="background-color: purple;">
-      <a class="navbar-brand" ">
-        <img src="imagens/app.png" width="30" height="30" class="d-inline-block align-top"  alt="" >
-        <span class="text-monospace">Multibot</span>
-      </a>
-      
-      <form class="form-inline my-2 my-lg-0">
-        <button type="button" class="btn btn-primary btn-lg">Acessar</button>
-        <button type="button" class="btn btn-secondary btn-lg">Cadastre-se</button>
-      </form>
-  </div>
-  </nav>
-  </div>
-  <br>
-  <div id="calcular" class="col-12">
-    <div>
-      <form class="form-inline">
-        <div class="">
-          <label class="sr-only form-group mx-sm-3 mb-2">Valor a ser investido</label>
-          <input class="form-control" id="inputPassword2" placeholder="Valor a ser investido">
-        </div>
-        <button type="submit" class="btn btn-outline-success">CALCULAR</button>
-      </form>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="functions.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/4790b2bf20.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  
+    <script>
+      // valor recebido dinamicamente para cada papel
+      // muda mensalmente
+      var valores = [
+        15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+      ];
+  
+      var lotes = [
+        100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+      ];
+      var lotes_valor = [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      ];
+      var lotes_perc = [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+      ];
+  
+      var total_disponivel;
+  
+      $(document).ready(function () {
+        popularTabela();
+  
+        $("#form-valor").submit(function () {
+          total_disponivel = parseFloat($("#valor").val());
+          iniciar();
+          popularTabela();
+          event.preventDefault();
+        });
+      });
+  
+      function popularTabela() {
+        var tableBody = $("#carteira tbody").empty();
+        for (i = 0; i < valores.length; i++) {
+          var tr = $("<tr></tr>");
+          tr.append($("<td></td>").text(valores[i]));
+          tr.append($("<td></td>").text(lotes[i]));
+          tableBody.append(tr);
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div class="container-fluid" style="background-color: #780191;">
+      <!-- Image and text -->
+      <nav class="navbar " style="background-color: #780191;">
+        <a class="navbar-brand" ">
+              <img src=" imagens/app.png" width="50" height="50" class="d-inline-block align-top" alt="">
+          <span class="text-white m-1">Multibot</span>
+        </a>
+  
+        <form class="form-inline my-2 my-lg-0">
+          <button type="button" class="btn btn-primary btn-md m-1" >Acessar</button>
+          <button type="button" class="btn btn-secondary btn-md m-1">Cadastre-se</button>
+        </form>
     </div>
+    </nav>
     <br>
-  </div>
-  <div class="col-12" id="corpo">
-    <table class="table table-striped">
+    <div class="container col-sm-12">
+    <form id="form-valor">
+      <input  id="valor" type="text" placeholder="Valor a ser investido"/>
+      <button  class ="btn btn-outline-success" type="submit">Calcular</button>
+    </form>
+    <table id="carteira" class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Empresa</th>
-          <th scope="col">Entrada</th>
-          <th scope="col">Participação</th>
-          <th scope="col">Handle</th>
-          <th scope="col">Handle</th>
-          <th scope="col">Handle</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Lote</th>
+          <th scope="col"></th>
+          <th scope="col">---</th>
+          <th scope="col">---</th>
+          <th scope="col">---</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row"><a><img src="imagens/ceab3.png" width="30" height="30" alt=""></a> CEAB3</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <td></td>
+        
         </tr>
-        <tr>
-          <th scope="row"><a><img src="imagens/cmig4.jpg" width="30" height="30" alt=""> CMIG4</a></th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row"><a><img src="imagens/cogn3.png" width="30" height="30" alt=""> COGN3</a></th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row"><a><img src="imagens/itub4.jpg" width="30" height="30" alt=""></a> ITUB4</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row"><a><img src="imagens/klbn11.jpg" width="30" height="30" alt=""> KLBN11</a></th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row"><a><img src="imagens/lcam3.png" width="30" height="30" alt=""> LCAM3</a></th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row"><a><img src="imagens/mrve3.jpg" width="30" height="30" alt=""></a> MRVE3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row">
-            <a><img src="imagens/brdt3.jpg" width="30" height="30" alt=""> BRDT3</a>
-          </th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        <tr>
-          <th scope="row"><a><img src="imagens/tgma3.png" width="30" height="30" alt=""> TGMA3</a></th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-
       </tbody>
     </table>
   </div>
-  <hr>
   <br>
   <div id="rodape" style="background-color: ivory;" class="container-fluid" >
     <div class="row">
