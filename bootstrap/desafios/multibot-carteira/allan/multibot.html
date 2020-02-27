@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
   <head>
+    <title>carteira multibot</title>
     <meta charset="UTF-8" />
     <script src="functions.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
@@ -22,11 +23,11 @@
       ];
 
       var valores = [
-        15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+        15.11, 28.45, 21.20, 32.81, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
       ];
 
       var valoresMininmos = [
-        15.11*100, 28.45*100, 21.20*100, 32.80*100, 16.20*100, 30.57*100, 11.41*100, 21.15*100, 24.22*100, 40.29*100
+        15.11*100, 28.45*100, 21.20*100, 32.81*100, 16.20*100, 30.57*100, 11.41*100, 21.15*100, 24.22*100, 40.29*100
       ];
   
       var lotes = [
@@ -72,22 +73,22 @@
     <div class="container-fluid" style="background-color: #780191;">
       <!-- Image and text -->
       <nav class="navbar " style="background-color: #780191;">
-        <a class="navbar-brand" ">
+        <a class="navbar-brand">
               <img src=" imagens/app.png" width="50" height="50" class="d-inline-block align-top" alt="">
-          <span class="text-white m-1">Multibot</span>
+          <span class="text-white m-1 my-3">Multibot</span>
         </a>
   
         <form class="form-inline my-2 my-lg-0">
           <button type="button" class="btn btn-primary btn-md m-1" >Acessar</button>
           <button type="button" class="btn btn-secondary btn-md m-1">Cadastre-se</button>
         </form>
-    </div>
+      </div>
     </nav>
     <br>
     <div class="containerp-fluid col-sm-12">
     <form id="form-valor">
       <input  id="valor" type="text" placeholder="Valor a ser investido"/>
-      <button  class ="btn btn-outline-success" type="submit">Calcular</button>
+      <button  class ="btn btn-outline-success" type="submit">Calcular<i class="fas fa-calculator mx-1"></i></button>
     </form>
     <table id="carteira" class="table table-striped">
       <thead>
@@ -103,7 +104,6 @@
       <tbody>
         <tr>
           <td></td>
-        
         </tr>
       </tbody>
     </table>
@@ -169,9 +169,6 @@
         </ul>
       </div>
     </div>
-   
-  </div>
-  </div>
   </div>
 </body>
 </html>
