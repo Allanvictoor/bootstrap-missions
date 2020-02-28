@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+        <script src="functions.js"></script>
     </head>
 
 
@@ -44,90 +45,216 @@
 
         <br>
 
-        <!-- Corpo/Tabela -->
+        <div>
+            <form id="form-valor">
+                <input id="valor" type="text" />
+                <input type="submit" />
+            </form>
+
+            <table id="carteira">
+                <thead>
+                <tr>
+                    <th>Valor</th>
+                    <th>Lote</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+
+        <!-- Corpo/Tabela alternativo
         <div class="container">
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Empresas</th>
+                    <th scope="col">Lote 10%</th>
+                    <th scope="col">Lote Mínimo</th>
+                    <th scope="col">Ações</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <th scope="row">
-                        <a><img src="imagens/ceab3.png" width="25" height="25" alt=""></a> CEAB3</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                        <a><img src="imagens/cogn3.png" width="25" height="25" alt="">COGN4</a></th>
+                    <td>11.41 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">
                         <a><img src="imagens/cmig4.jpg" width="25" height="25" alt="">CMIG4</a></th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td>15.11 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">
-                        <a><img src="imagens/cogn3.png" width="25" height="25" alt=""> COGN3</a></th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                        <a><img src="imagens/ceab3.png" width="25" height="25" alt="">CEAB3</a></th>
+                    <td>16.20 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">
-                        <a><img src="imagens/itub4.jpg" width="25" height="25" alt=""></a> ITUB4</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                        <a><img src="imagens/klbn11.jpg" width="25" height="25" alt="">KLBN11</a></th>
+                    <td>21.15 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">
-                        <a><img src="imagens/klbn11.jpg" width="25" height="25" alt=""> KLBN11</a></th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                        <a><img src="imagens/mrve3.jpg" width="25" height="25" alt="">MRVE3</a></th>
+                    <td>21.20 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <th scope="row"><a><img src="imagens/lcam3.png" width="25" height="25" alt=""> LCAM3</a></th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row"><a><img src="imagens/lcam3.png" width="25" height="25" alt="">LCAM3</a></th>
+                    <td>24.22 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <th scope="row"><a><img src="imagens/mrve3.jpg" width="25" height="25" alt=""></a> MRVE3</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row"><a><img src="imagens/brdt3.jpg" width="25" height="25" alt="">BRDT3</a></th>
+                    <td>28.45 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <th scope="row"><a><img src="imagens/brdt3.jpg" width="25" height="25" alt=""> BRDT3</a></th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row"><a><img src="imagens/brfs3.png" width="25" height="25" alt="">BRFS3</a></th>
+                    <td>30.57 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <th scope="row"><a><img src="imagens/tgma3.png" width="25" height="25" alt=""> TGMA3</a></th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row"><a><img src="imagens/itub4.jpg" width="25" height="25" alt="">ITUB4</a></th>
+                    <td>32.80 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <th scope="row">10</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row"><a><img src="imagens/tgma3.png" width="25" height="25" alt="">TGMA3</a></th>
+                    <td>40.29 R$</td>
+                    <td>100</td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ações
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Comprar</a>
+                                <a class="dropdown-item" href="#">X</a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
 
         <br>
 
-        <div class="container">
+        <nav class="container" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="col-4 breadcrumb-item"><a href="#">Sobre nós</a></li>
+                <li class="col-4 breadcrumb-item"><a href="#">Trabalhe conosco</a></li>
+                <li class="col-4 breadcrumb-item"><a href="#">Avisos</a></li>
+            </ol>
+        </nav>
+
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-sm">
                     <a href="#">
@@ -174,6 +301,47 @@
 
 
 
+        <script>
+            // valor recebido dinamicamente para cada papel
+            // muda mensalmente
+            var valores = [
+                15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+            ];
+
+            var lotes = [
+                100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+            ];
+            var lotes_valor = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
+            var lotes_perc = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
+
+            var total_disponivel;
+
+            $(document).ready(function() {
+                popularTabela();
+
+                $("#form-valor").submit(function() {
+                    total_disponivel = parseFloat($("#valor").val());
+                    iniciar();
+                    popularTabela();
+                    event.preventDefault();
+                });
+            });
+
+            function popularTabela()
+            {
+                var tableBody = $("#carteira tbody").empty();
+                for (i=0; i<valores.length; i++) {
+                    var tr = $("<tr></tr>");
+                    tr.append($("<td></td>").text(valores[i]));
+                    tr.append($("<td></td>").text(lotes[i]));
+                    tableBody.append(tr);
+                }
+            }
+        </script>
 
 
 
@@ -183,23 +351,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
