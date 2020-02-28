@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <script src="functions.js"></script>
+        <script src="jquery-3.4.1.slim.min.js"></script>
+
     </head>
 
 
@@ -34,10 +36,10 @@
 
         <!-- entrada de dinheiro e botao de calculo-->
         <div class="col-12">
-            <form class="form-inline">
+            <form id="form-valor" class="form-inline">
                 <div>
                     <!-- <label class="sr-only form-group mx-sm-3">Investimento</label>  é necessario essa linha? -->
-                    <input class="form-control" style="text-align: center" id="inputPassword2" placeholder="Investimento">
+                    <input id="valor" class="form-control" style="text-align: center" id="inputPassword2" placeholder="Investimento">
                     <button type="submit" class="btn btn-outline-sucess btn-dark">CALCULAR</button>
                 </div>
             </form>
@@ -46,11 +48,6 @@
         <br>
 
         <div>
-            <form id="form-valor">
-                <input id="valor" type="text" />
-                <input type="submit" />
-            </form>
-
             <table id="carteira">
                 <thead>
                 <tr>
