@@ -3,92 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carteira</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="functions.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        var nomeEmpresa = [
+            'CMIG4', 'BRDT3', 'MRVE3', 'ITUB4', 'CEAB3', 'BRFS3', 'COGN3', 'KLBN11', 'LCAM3', 'TGMA3'
+        ];
+
+        var valores = [
+            15.11, 28.45, 21.20, 32.81, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+        ];
+
+        var valoresMininmos = [
+            15.11 * 100, 28.45 * 100, 21.20 * 100, 32.81 * 100, 16.20 * 100, 30.57 * 100, 11.41 * 100, 21.15 * 100,
+            24.22 * 100, 40.29 * 100
+        ];
+
+        var lotes = [
+            100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+        ];
+        var lotes_valor = [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        ];
+        var lotes_perc = [
+            10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+        ];
+
+        var total_disponivel;
+
+        $(document).ready(function () {
+            popularTabela();
+
+            $("#form-valor").submit(function () {
+                total_disponivel = parseFloat($("#valor").val());
+                iniciar();
+                popularTabela();
+                event.preventDefault();
+            });
+        });
+
+        function popularTabela() {
+            var tableBody = $("#carteira tbody").empty();
+            for (i = 0; i < valores.length; i++) {
+                var tr = $("<tr></tr>");
+                tr.append($("<td></td>").text(nomeEmpresa[i]));
+                tr.append($("<td></td>").text("R$" + valores[i]));
+                tr.append($("<td></td>").text(lotes_perc[i] + "%"));
+                tr.append($("<td></td>").text(lotes[i]));
+                tr.append($("<td></td>").text(" R$" + valoresMininmos[i]));
+                tr.append($("<td></td>").text(lotes[i]));
+                tableBody.append(tr);
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light m-0 p-2">
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <nav class="navbar navbar-light bg-light">
 
-            <a class="navbar-brand">
-                <a href="multibot.html">
-                    <img src="imagens/multi.png" class="ml-" cwidth="100" height="50" alt="inicio">
-                </a>
-                Multibot
+
+            <a href="multibot.html">
+                <img src="imagens/multi.png" class="ml-auto" cwidth="100" height="50" alt="inicio">
             </a>
+            Multibot
+            </a>
+            <a href="https://www.instagram.com/vivaweb_/" class="social-icons ml-5"><i
+                    class="fa fa-instagram fa-align-right"></i></a>
+            <a href="https://pt-br.facebook.com/vivaweb.internet/" class="social-icons ml-1 p-1"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UC4JQZ8yOsKHcjIecx_HlNOg" class="social-icons ml-1 p-1"><i
+                    class="fa fa-youtube"></i></a>
+            <a href="https://twitter.com/vivaweb" class="social-icons ml-1 p-1"><i class="fa fa-twitter"></i></a>
         </nav>
     </nav>
 
-    <div class="container-fluid">
+    
         <div class="row">
             <nav class="col-12 m-0 p-0">
                 <img src="imagens/multibot.jpeg" class="img-fluid" alt="">
 
             </nav>
         </div>
-        <div class="row" style="background-color:rgb(206, 72, 196);">
-            <table class="table table-sm table-dark m-5">
-                <tbody>
-                    <tr>
-                        <th> <img src="imagens/brdt3.jpg" width="25px"></th>
-                        <td scope="col">Brdt3</td>
-                        <th scope="col">Handle</th>
-                    </tr>
-                    <tr>
-                        <th><img src="imagens/klbn11.jpg" width="25px"></th>
-
-                        <td>klbn11</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th><img src="imagens/cmig4.jpg" width="25px"></th>
-
-                        <td>cmig4</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th><img src="imagens/cogn3.png" width="25px"></th>
-
-                        <td>cogn3</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th><img src="imagens/lcam3.png" width="25px"></th>
-
-                        <td>lcam3</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th><img src="imagens/klbn11.jpg" width="25px"></th>
-
-                        <td>Klbn11</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th><img src="imagens/itub4.jpg" width="25px"></th>
-                        <td>itub4</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th><img src="imagens/ceab3.png" width="25px"></th>
-                        <td>ceab3</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="row" align="center">
+            <nav class="col-md p-1 m-5">
+                <form id="form-valor">
+                    <input id="valor" type="text" placeholder="insira o valor">
+                    <button class="btn btn-outline-dark" type="submit">Calcular</button>
+                        
+                </form>
+            </nav>
         </div>
-
+        <div class="row">
+            <nav class="col-md-12 p-5">
+                <table id="carteira" class="table table-active">
+                    <thead class="thead-primary">
+                        <tr>
+                            <th scope="col">Empresa</th>
+                            <th scope="col">Participação</th>
+                            <th scope="col">Valor minimo</th>
+                            <th scope="col">Entrada</th>
+                            <th scope="col">Lotes</th>
+                            <th scope="col">Total lotes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </div>     
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-    </script>
+
+
 </body>
 
 </html>
