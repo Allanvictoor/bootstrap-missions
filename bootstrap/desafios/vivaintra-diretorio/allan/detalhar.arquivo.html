@@ -11,6 +11,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .modal-backdrop{
+        z-index: 0;
+    }
+    </style>
 </head>
 
 <body>
@@ -34,23 +39,24 @@
             <div class="col-sm-8" style="text-align: right;">
                 <button type="button" class="btn btn-primary m-2">Acesse</button>
             </div>
-            <div id="corpo" class="container">
+            <div id="corpo" class="container" style="background-color: #f8f9fa;">
 
                 <div class="row">
 
 
                     <div class="col-sm-3">
                         <div class="row">
-                            <div class="  col-sm-12 right" >
+                            <div class="  col-sm-12 right ">
 
                                 <!-- Botão para acionar modal -->
-                                <button type="button" class="btn btn-primary sm" data-toggle="modal"
+                                <br>
+                                <button type="button" class="btn btn-info sm" data-toggle="modal"
                                     data-target="#ExemploModalCentralizado">
-                                    detalhar do arquivo
+                                    Detalhes do arquivo
                                 </button>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                                <div class="modal fade" id="ExemploModalCentralizado"  tabindex="-1" role="dialog"
                                     aria-labelledby="TituloModalCentralizado" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
@@ -81,7 +87,7 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
                                                     data-dismiss="modal">Fechar</button>
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -144,8 +150,8 @@
     </div>
 
 
-
-
 </body>
 
 </html>
+
+
