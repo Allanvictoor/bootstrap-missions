@@ -16,17 +16,28 @@
     </head>
 
 
-    <body>
+    <body style="background-color:#f2f2f2">
 
         <!-- Cabeçalho -->
-        <div class="container-fluid" style="background-color: white;">
-            <nav class="navbar" style="background-color: white">
+        <div class="container-fluid" >
+            <nav class="navbar row" style="background-color:#780191">
                 <a class="navbar-brand">
-                    <img src="imagens/app.png" width="25" height="25" class="d-inline-block align-top" alt="">
-                    <span class="text-monospace">Multibot</span>
+                    <img src="imagens/app.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                    <span class="text-monospace text-white">Multibot</span>
                 </a>
-                <form class="form-inline">
-                    <button type="button" class="btn btn-primary btn-sm">Acessar</button>
+                <form class="form-inline my-2 my-lg-0">
+                    <button type="button" class="btn  dropdown-toggle text-white mx-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #780191;">
+                        <img src="user.png" alt="Avatar" class="md-avatar rounded-circle" width="50" height="50">
+                        Felipe Souza
+                    </button>
+                    <button " type="button" class="btn  btn-md m-1 text-white"><i class="fas fa-bell w-3"  ></i></button>
+                </form>
+            </nav>
+        </div>
+
+                <!-- acessar e cadastrar
+                <!-- <form class="form-inline">
+                    <button type="button" class="btn btn-primary btn-sm mr-2">Acessar</button>
                     <button type="button" class="btn btn-secundary btn-sm btn-warning">Cadastre-se</button>
                 </form>
             </nav>
@@ -35,9 +46,9 @@
 
 
         <!-- entrada de dinheiro e botao de calculo-->
-        <div class="col-12">
+        <div class="container">
             <form id="form-valor" class="form-inline">
-                <div>
+                <div class="mt-3 ">
                     <!-- <label class="sr-only form-group mx-sm-3">Investimento</label>  é necessario essa linha? -->
                     <input id="valor" class="form-control" style="text-align: center" id="inputPassword2" placeholder="Investimento">
                     <button type="submit" class="btn btn-outline-sucess btn-dark">CALCULAR</button>
@@ -45,20 +56,22 @@
             </form>
         </div>
 
-        <br>
 
-        <div>
-            <table id="carteira">
-                <thead>
-                <tr>
-                    <th>Valor</th>
+
+        </div>
+        <div class="mt-3">
+            <table class="table table-striped container" id="carteira">
+                <thead class="thead">
+                <tr class=text-white  style="background-color: #780191">
+                    <th>Empresas</th>
+                    <th>Entrada</th>
+                    <th>Lote</th>
                     <th>Lote</th>
                 </tr>
                 </thead>
                 <tbody></tbody>
             </table>
         </div>
-
 
         <!-- Corpo/Tabela alternativo
         <div class="container">
@@ -242,14 +255,18 @@
         </div> -->
 
         <br>
+        <div class="row">
+            <nav class="container">
+                <ol style="background-color: #780191" class="breadcrumb">
+                    <li class="col-4 "><a href="#">Sobre nós</a></li>
+                    <li class="col-4 "><a href="#">Trabalhe conosco</a></li>
+                    <li class="col-4 "><a href="#">Avisos</a></li>
+                </ol>
 
-        <nav class="container" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="col-4 breadcrumb-item"><a href="#">Sobre nós</a></li>
-                <li class="col-4 breadcrumb-item"><a href="#">Trabalhe conosco</a></li>
-                <li class="col-4 breadcrumb-item"><a href="#">Avisos</a></li>
-            </ol>
-        </nav>
+
+            </nav>
+        </div>
+
 
         <!-- <div class="container">
             <div class="row">
@@ -271,7 +288,7 @@
             </div>
         </div>
 
-        <!-- Rodapé alternativo
+             Rodapé alternativo
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
@@ -299,6 +316,21 @@
 
 
         <script>
+
+
+            var enterprise = [
+                {
+                    id: 0,
+                    name: 'CMIG4',
+                    img : 'imagens/ceab3.png'
+
+                }
+            ];
+
+            var empresas = [
+                'CMIG4', 'BRDT3', 'MRVE3', 'ITUB4', 'CEAB3', 'BRFS3', 'COGN3', 'KLBN11', 'LCAM3', 'TGMA3'
+            ];
+
             // valor recebido dinamicamente para cada papel
             // muda mensalmente
             var valores = [
@@ -333,7 +365,9 @@
                 var tableBody = $("#carteira tbody").empty();
                 for (i=0; i<valores.length; i++) {
                     var tr = $("<tr></tr>");
+                    tr.append($("<td></td>").text(empresas[i]));
                     tr.append($("<td></td>").text(valores[i]));
+                    tr.append($("<td></td>").text(lotes[i]));
                     tr.append($("<td></td>").text(lotes[i]));
                     tableBody.append(tr);
                 }
@@ -349,7 +383,7 @@
 
 
         
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
