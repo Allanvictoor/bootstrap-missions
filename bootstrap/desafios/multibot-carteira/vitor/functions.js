@@ -1,3 +1,4 @@
+
 function iniciar() {
     atualizaValores();
     if (total_disponivel < total_carteira) {
@@ -92,3 +93,4 @@ function retornarMenor() {
     }
     return menorPapel;
 }
+
