@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Extranet</title>
+    <title>Diretorio de Arquivo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,6 +11,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .modal-backdrop {
+            z-index: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,46 +39,73 @@
             <div class="col-sm-8" style="text-align: right;">
                 <button type="button" class="btn btn-primary m-2">Acesse</button>
             </div>
-            <div id="corpo" class="container">
+            <div id="corpo" class="container" style="background-color: #f8f9fa;">
 
                 <div class="row">
 
 
-                    <div class="col-sm-12" >
+                    <div class="col-sm-3">
                         <div class="row">
-                            <div class="card  col-sm-12" style="text-align: right;">
+                            <div class="  col-sm-12 right ">
 
-                              <!-- Botão para acionar modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
-    Abrir modal de demonstração
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Salvar mudanças</button>
-        </div>
-      </div>
-    </div>
-  </div>
+                                <!-- Botão para acionar modal -->
+                                <br>
+                                <button type="button" class="btn btn-info sm" data-toggle="modal"
+                                    data-target="#ExemploModalCentralizado">
+                                    Detalhes do arquivo
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                                    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="TituloModalCentralizado">Detalhes
+                                                </h5>
+                                                <button type="button" class="close " data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table class="table">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th>---</th>
+                                                            <th>---</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>---</td>
+                                                            <td>---</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Fechar</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
                     </div>
                     <div class="card my-3">
-                        <div class="card-header p-2 small font-weight-bold">Arquivo</div>
+                        <div class="card-header p-2  font-weight-bold"> Arquivo
+                            <nav aria-label="breadcrumb" class="mx-3">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dados</li>
+                                </ol>
+                            </nav>
+                        </div>
                         <div class="card-body p-1">
                             <div class="row ">
                                 <div class="col-sm-">
@@ -124,8 +156,6 @@
     </div>
     </div>
     </div>
-
-
 
 
 </body>

@@ -1,7 +1,8 @@
+
 function iniciar() {
     atualizaValores();
     if (total_disponivel < total_carteira) {
-        alert('Saldo Insuficiente!');
+        alert('Não é possível calcular');
         return false;
     }
 
@@ -92,3 +93,4 @@ function retornarMenor() {
     }
     return menorPapel;
 }
+
