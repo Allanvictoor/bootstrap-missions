@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/4790b2bf20.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .modal-backdrop{
+        z-index: 0;
+    }
+    </style>
 </head>
 
 <body>
@@ -39,7 +44,7 @@
                 <button type="button" class="btn btn-primary m-2">Acesse</button>
             </div>
 
-            <div id="corpo" class="container">
+            <div id="corpo" class="container" style="background-color: #f8f9fa;">
 
                 <div class="row">
 
@@ -47,9 +52,9 @@
                         <div class="btn-group-vertical">
                             <div>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-info dropdown-toggle mt-3"
+                                    <button type="button" class="btn btn-info dropdown-toggle mt-3 mx-1 p-1"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-box-open mx-1"></i>Compartilhados
+                                        <i class="fas fa-box-open mp-2"></i>Compartilhados
                                     </button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#"><i class="fas fa-folder-open"></i> Multibot
@@ -105,8 +110,10 @@
                                         </div>
                                         <div class="col-md-2 m-0 p-1">
                                             <div class="card pt-0">
+                                                <a href="detalhar.arquivo.html">
                                                 <img src="https://images.vexels.com/media/users/3/153781/isolated/preview/53b5a3e15f663bd6129aadbe940a10c7---cone-de-tra--o-colorido-de-lupa-by-vexels.png"
                                                     alt="" class="card-img-top" />
+                                                </a>
                                                 <div class="card-body py-2">
                                                     <h5 class="card-title mb-0">Formulário de Inscrição</h5>
                                                     <small>há 2 dias</small>
@@ -473,9 +480,18 @@
     <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="ModalLongoExemplo"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content " z-index="20">
                 <div class="modal-header">
                     <h5 class="modal-title" id="TituloModalLongoExemplo">Nome do arquivo</h5>
+                    
+                      
+                      <nav aria-label="breadcrumb" class="mx-3">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Dados</li>
+                        </ol>
+                      </nav>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -484,16 +500,16 @@
                     <iframe src="exemplo.pdf" width="600" height="500" style="border: none;"></iframe>
                 </div>
                 <div>
-                    <table>
-                        <thead>
+                    <table class="table">
+                        <thead class="thead-dark">
                             <tr>
-                                <th>Tamanho do arquivo</th>
-                                <th>Ultima atualização</th>
+                                <th scope="col">Tamanho do arquivo</th>
+                                <th scope="col">Ultima atualização</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>***</td>
+                                <td scope="row">***</td>
                                 <td>****</td>
                             </tr>
                         </tbody>
@@ -501,7 +517,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                    <button type="button" class="btn btn-primary">Compartilhar</button>
                 </div>
             </div>
         </div>
