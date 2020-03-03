@@ -1,193 +1,153 @@
-<!DOCTYPE html>
-<html lang="pt">
 <html>
-<head>
-  <title>Multibot-Lidando com os altos e baixos da vida</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="functions.js"></script>
-  <script>
-     // valor digitado pelo usuário
-     var total_disponivel = 102000;
+    <head>
+        <meta charset="UTF-8" />
+        <script src="functions.js"></script>
+        <script src="jquery-3.4.1.slim.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script>
+            // valor recebido dinamicamente para cada papel
+            // muda mensalmente
+            var nomes = [
+              'CMIG4', 'BRDT3', 'MRVE3', 'ITUB4', 'CEAB3', 'BRFS3', 'COGN3', 'KLBN11', 'LCAM3', 'TGMA3'
+            ];
+            var valores = [
+                15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
+            ];
 
-// valor recebido dinamicamente para cada papel
-// muda mensalmente
-var p1_valor = 15.11;
-var p2_valor = 28.45;
-var p3_valor = 21.20;
-var p4_valor = 32.80;
-var p5_valor = 16.20;
-var p6_valor = 30.57;
-var p7_valor = 11.41;
-var p8_valor = 21.15;
-var p9_valor = 24.22;
-var p10_valor = 40.29;
+            var lotes = [
+                100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+            ];
+            var lotes_valor = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
+            var lotes_perc = [
+                0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            ];
 
-// valor definido por regra de negócios
-var p1_lote = 100;
-var p2_lote = 100;
-var p3_lote = 100;
-var p4_lote = 100;
-var p5_lote = 100;
-var p6_lote = 100;
-var p7_lote = 100;
-var p8_lote = 100;
-var p9_lote = 100;
-var p10_lote = 100;
+            var total_disponivel;
 
-var p1_lote_perc = 0;
-var p2_lote_perc = 0;
-var p3_lote_perc = 0;
-var p4_lote_perc = 0;
-var p5_lote_perc = 0;
-var p6_lote_perc = 0;
-var p7_lote_perc = 0;
-var p8_lote_perc = 0;
-var p9_lote_perc = 0;
-var p10_lote_perc = 0;
+            $(document).ready(function() {
+                popularTabela();
 
-// INICIO DO CODIGO
-iniciar();
-console.log(p1_lote, p2_lote, p3_lote, p4_lote, p5_lote, p6_lote, p7_lote, p8_lote, p9_lote, p10_lote)
-  </script>
-	<style type="text/css">
-		#principal{
-			
-		}
-		img{
-			width: 30px;
-			height: 30px;
-		}
-		#apresentacao{
-			background-color: purple;
-		}
+                $("#form-valor").submit(function() {
+                    total_disponivel = parseFloat($("#valor").val());
+                    iniciar();
+                    popularTabela();
+                    event.preventDefault();
+                });
+            });
 
-		td{
-			color:green;
-		}
-	</style>
-</head>
-<body>
-	<div class="container-fluid" id="principal">
-		<div class="container">
-  <div class="row">
+            function popularTabela()
+            {
+                var tableBody = $("#carteira tbody").empty();
+                for (i=0; i<valores.length; i++) {
+                    var tr = $("<tr></tr>");
+                    tr.append($("<td></td>").text(nomes[i]));
+                    tr.append($("<td></td>").text(valores[i]));
+                    tr.append($("<td></td>").text(lotes[i]));
+                    tr.append($("<td></td>").text(lotes_perc[i]));
+                    tableBody.append(tr);
+                }
+            }
+        </script>
+        <style>
+          a{
+            color:gray;
+          }
+        a:hover{
+            color:purple
+          }
 
-  	<div id="apresentacao" class="container-fluid">		
-  		<img style="width: 70px; height: 70px; border: solid 2px white;" src="/imagens/app.png">
-  		<h1 style="color: white">MultiBot</h1>
-  		<h5 style="color: white">Sua carteira de investimentos</h5>
-  		
-  		<form class="form-inline">
-  <div class="form-group mb-2">
-    <label for="staticEmail2" class="sr-only">Investimento</label>
-    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Investimento">
-  </div>
-  <div class="form-group mx-sm-3 mb-2">
-    <label for="inputPassword2" class="sr-only">valor</label>
-    <input type="password" class="form-control" id="inputPassword2" placeholder="valor">
-  </div>
-  <button type="submit" class="btn btn-primary mb-2">Calcular</button>
-</form>
-  	</div>
+           img:hover{
+            color: purple;
+          }
 
+        </style>
 
-  	<table class="table table-striped table-dark"><!--Inicio da tabela -->
-  <thead>
-    <tr>
-      <th scope="col">LOGO</th>
-      <th scope="col">PAPEL</th>
-      <th scope="col">VALOR</th>
-      <th scope="col">PERCENTUAL</th>
-      <th scope="col">QUANTIDADE</th>
-      <th scope="col">VALOR</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><img src="imagens/cmig4.jpg"></th>
-      <td>CMIG4</td>
-      <td>R$14,99</td>
-      <td>10%</td>
-      <td>100x</td>
-      <td>R$1.499,00</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="imagens/brdt3.jpg"></th>
-      <td>BRDT3</td>
-      <td>R$28,45</td>
-      <td>10%</td>
-      <td>100x</td>
-      <td>R$2.845,00</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="imagens/mrve3.jpg"></th>
-      <td>MRVE3</td>
-      <td>R$21,01</td>
-      <td>10%</td>
-      <td>100x</td>
-      <td>R$2.101,00</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="imagens/itub4.jpg"></th>
-      <td>ITUB4</td>
-      <td>R$32,80</td>
-      <td>10%</td>
-      <td>100x</td>
-      <td>R$3.280,00</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="imagens/ceab3.png"></th>
-      <td>CEAB3</td>
-      <td>R$16,20</td>
-      <td>10%</td>
-      <td>100x</td>
-      <td>R$1.620,00</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="imagens/brfs3.jpg"></th>
-      <td>BRSF3</td>
-      <td>R$30,57</td>
-      <td>10%</td>
-      <td>100x</td>
-      <td>R$3.057,00</td>
-    </tr>
-    <tr>
-    	<th scope="row"><img src="imagens/cogn3.png"></th>
-    	<td>COGN3</td>
-    	<td>RS11,41</td>
-    	<td>10%</td>
-    	<td>100x</td>
-    	<td>R$1.141,00</td>
-    </tr>
-    <tr>
-    	<th scope="row"><img src="imagens/klbn11.jpg"></th>
-    	<td>KLBN11</td>
-    	<td>R$21,15</td>
-    	<td>10%</td>
-    	<td>100x</td>
-    	<td>R$2.115,00</td>
-    </tr>
-    <tr>
-    	<th scope="row"><img src="imagens/lcam3.png"></th>
-    	<td>LCAM3</td>
-    	<td>R$23,70</td>
-    	<td>10%</td>
-    	<td>100x</td>
-    	<td>R$2.370,00</td>
-    </tr>
-    <tr>
-    	<th scope="row"><img src="imagens/tgma3.png"></th>
-    	<td>TGMA3</td>
-    	<td>R$39,60</td>
-    	<td>10%</td>
-    	<td>100x</td>
-    	<td>R$3.960,00</td>
-    </tr>
+    </head>
+    <body style="background-color:#ddd;">
+      <nav class="navbar" style="background:#780191;">
+        <a style="text-decoration: none;" href="https://www.multibot.com.br/"><img src="imagens/logomulti.png" height="51" width="149" alt=""></a>
+         <div class="float-left">
+           <form id="form-valor" class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" type="search" id="valor" placeholder="Digite o investimento" aria-label="Pesquisar">
+             <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><img src="imagens/pesquisar.png" width="30" height="30"  alt=""></button>
+           </form>
+         </div><!--fim do logo e da caixa de pesquisa-->
 
-  </tbody>
-</table>
+             <div class="float-right">
+             <a href="https://www.multibot.com.br/cadastro" class="mr-2" style="text-decoration: none; color: white;">Cadastre-se</a>
+            <a style="text-decoration: none;" href="https://www.multibot.com.br/login"><button type="button" class="btn btn-outline-light">Acessar</button></a>
+             </div><!--fim dos botoes-->
+          
+        </nav>
 
-	</div>
+        <div class="container-fluid"><!--inicio do container-->
+             <div class="row"><!--inicio do segundo row-->
+              <div class="col-2 pt-2">
 
+                <ul class="nav flex-column pb-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.multibot.com.br/">  <img src="imagens/home.png" width="30" style="" height="30" class="mr-2" alt="">Home</a>
+                  </li>
+                  </ul>
 
+                  <span class="pl-3" style="font-size:10px;">FERRAMENTAS</span>
+
+                <ul class="nav flex-column pt-3 pb-2" class="links">
+                  <li class="nav-item">
+                    <a class="nav-link " href="https://www.multibot.com.br/login?url=L3JlY29tZW5kYWNhbw%3D%3D"><img src="imagens/star.png" width="30" height="30" class="mr-2" alt=""> Recomendações</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.multibot.com.br/noticia"><img src="imagens/news.png" width="30" height="30" class="mr-2" alt=""> Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.multibot.com.br/login?url=L2NhcnRlaXJh"><img src="imagens/wallet.png" width="30" height="30" class="mr-2" alt=""> Carteira</a>
+                  </li>
+                  <li class="na-item">
+                    <a class="nav-link" href="https://www.multibot.com.br/login?url=L2N1cnNv"><img src="imagens/mortarboard.png" width="30" height="30" class="mr-2" alt=""> Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.multibot.com.br/login?url=L2xpdmU%3D"><img src="imagens/mic.png" width="30" height="30" class="mr-2" alt=""> Sala ao vivo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.multibot.com.br/sobre"><img src="imagens/company.png" width="30" height="30" class="mr-2" alt=""> Sobre Nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.multibot.com.br/planos"><img src="imagens/sheet.png" width="30" height="30" class="mr-2" alt=""> Nossos Planos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.multibot.com.br/ajuda"><img src="imagens/question.png" width="30" height="30" class="mr-2" alt=""> Ajuda?</a>
+                  </li>
+                </ul>
+                <div class="mt-2">
+                  <span class="pl-3" style="font-size:14px;" style="color: gray;">Baixe nosso aplicativo</span>
+                 <a href="https://play.google.com/store/apps/details?id=app.multibot.com"><span class="badge badge-secondary ml-5 mt-1"><img src="imagens/google-play.png" width="20" height="20" alt=""><span>Google Play</span></span></a>
+                 <a href="https://itunes.apple.com/bs/app/multibot/id1457235772"><span class="badge badge-secondary ml-5 mt-2"><img src="imagens/apple.png" width="20" height="20" alt=""><span>Apple Store</span></span></a>
+                </div>
+              </div><!--Fim do menu lateral-->
+        <div class="col-8"><!--inicio da tabela-->
+          <div class="alert alert-danger" role="alert">
+            Nossos lotes são separados em 100 unidades.
+          </div>
+        <table id="carteira" class="table table-bordered table-dark table-hover">
+            <thead class="bg-warning">
+                <tr>  
+                    <th>Empresa</th>
+                    <th>Valor</th>
+                    <th>Lotes Comprados</th>
+                    <th>Percentual</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        </div><!--fim da tabela-->
+
+        <div class="col-2" class="top-fixed ">
+          <a href="https://www.multibot.com.br/login?url=L3BlcmZpbC9wbGFubw==" style="text-decoration: none;"><img src="imagens/propaganda.png" class="pr-2 pt-0" width="210" alt=""></a>
+          </div><!--fim do card-->
+        </div><!--fim da faixa-->
+        </div><!--fim do row-->
+        </div><!--fim do conwtainer-->
+    </body>
+</html>
