@@ -112,7 +112,6 @@
 
     $(document).ready(function() {
         popularTabela();
-
         $("#calcular").submit(function () {
             total_disponivel = parseFloat($("#valorDisponivel").val());
             $("#modalComprar").submit(function () {
@@ -121,6 +120,7 @@
                 event.preventDefault();
             });
         });
+
 
         function popularTabela() {
             var tableBody = $("#carteira tbody").empty();
