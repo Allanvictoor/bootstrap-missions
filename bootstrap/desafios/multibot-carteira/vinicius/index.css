@@ -1,0 +1,36 @@
+#navBar {
+    background-color: #780191;
+}
+#botaoAcessar {
+    background-color: transparent;
+    color: white;
+}
+#botaoCadastrar {
+    color: white;
+}
+#botao {
+    color: black;
+}
+ a.selectede {
+     color: #634c68;
+     text-decoration: none;
+ }
+a.selected {
+    color: grey;
+    text-decoration: none;
+}
+.fa-buil {
+    font-size: 23px;
+}
+.corBody {
+    background-color: #f2f2f2;
+}
+.modal-header {
+    background-color: #780191;
+}
+.modal-title {
+    color: white;
+}
+.input {
+    background: #eee;
+}
