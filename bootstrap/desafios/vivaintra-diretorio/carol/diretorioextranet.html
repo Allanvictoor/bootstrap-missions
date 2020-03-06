@@ -8,19 +8,49 @@
 
 <body>
 <!--Cabeçalho--->
-<div class= "container-fluid">
-    <div class= "row">
-        <div class="col-12" style="background-color: darkgray">
-            <h3>Imagem Logo</h3>
-        </div>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-light navbar-expand-lg bg-light col-sm-12" style="background-color: #fcfafb">
+            <a class="navbar-brand"><img src="imagens/logo.png"></a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destaques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem somos</a>
+                    </li>
+                </ul>
+                <form class="form-inline d-flex w-100">
+                    <div class="form-group justify-content-end w-100">
+                        <input class="form-control "  style="margin-right: 10px" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success small" style="margin-right: 10px" type="submit">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
     </div>
 </div>
+
 <!--Corpo--->
 <div class="container-fluid">
     <div class="row" >
-        <div class="col-2" style="background-color: yellow">
-            Menu com listas
-        </div>
+        <div class="col-2">
+            <div class="col text-center">
+                <img src="imagens/cloud-backup-up-arrow.svg" class="btn btn-button" style="width: 90px">
+            </div>
+            <div class="row">
+                <div class="col w-100">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item-action"><p class="small font-weight-bold text-left ml-4" style="margin-top: 10px">Meus Arquivos</p></a>
+                        <a href="#" class="list-group-item-action" style="background-color: #f2f2f2"><p class="small font-weight-bold text-left ml-4" style="margin-top: 10px">Compartilhados Comigo</p></a>
+                        <a href="#" class="list-group-item-action"><p class="small font-weight-bold text-left ml-4" style="margin-top: 10px">Publico</p></a>
+                    </div>
+                </div>
+            </div>        </div>
         <div class="col-2" style="background-color: burlywood">
             Menu com pastas
         </div>
