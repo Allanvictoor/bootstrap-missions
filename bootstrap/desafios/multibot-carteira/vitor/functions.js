@@ -1,8 +1,11 @@
+
 function iniciar() {
     atualizaValores();
     if (total_disponivel < total_carteira) {
         alert('Não é possível calcular');
+        return false;
     }
+
     calcularLoteInicial();
     do {
         atualizaValores();
@@ -11,10 +14,6 @@ function iniciar() {
     } while (papelMenor != false);
 }
 
-function percentual() {
-    for (i=0; i<lotes_perc.length; i++){
-    lotes_perc[i] = ((lotes_valor[i]*100) / total_carteira) * 100;
-}}
 function calcularLoteInicial() {
     var maximo_por_lote = total_disponivel / 10;
     for (i=0; i<lotes.length; i++) {
@@ -94,3 +93,4 @@ function retornarMenor() {
     }
     return menorPapel;
 }
+
