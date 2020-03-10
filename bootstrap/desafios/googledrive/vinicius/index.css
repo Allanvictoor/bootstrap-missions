@@ -1,0 +1,52 @@
+#form {
+    border: none;
+    border-color: #cccccc;
+    box-shadow: none;
+}
+
+#form1 {
+    border: none;
+    border-color: #cccccc;
+    box-shadow: none;
+    border-radius: 100%;
+}
+
+#fonts-size {
+    font-size: 23px;
+}
+#fonts-sizem {
+    font-size: 30px;
+}
+#cor-input-nav {
+    background-color: #f8f9fa;
+}
+#novo-buttom {
+    border-radius: 100px;
+    width: 130px;
+}
+
+#button-lateral {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#button-lateral-azul {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: #e8f0fe;
+}
+
+#link-buttom-azul {
+    text-decoration: none;
+    color: blue;
+}
+
+#link-buttom-preto {
+    text-decoration: none;
+    color: black;
+}
+
+#progressbar {
+    height: 5px;
+    width: 160px
+}
