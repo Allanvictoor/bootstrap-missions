@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Arquivos</title>
 </head>
 
@@ -38,6 +40,7 @@
 <!--Corpo--->
 <div class="container-fluid">
     <div class="row" >
+        <!-- primeira coluna -- adicionar-->
         <div class="col-2">
             <div class="col text-center">
                 <img src="imagens/cloud-backup-up-arrow.svg" class="btn btn-button" style="width: 90px">
@@ -45,30 +48,109 @@
             <div class="row">
                 <div class="col w-100">
                     <div class="list-group">
-                        <a href="#" class="list-group-item-action"><p class="small font-weight-bold text-left ml-4" style="margin-top: 10px">Meus Arquivos</p></a>
-                        <a href="#" class="list-group-item-action" style="background-color: #f2f2f2"><p class="small font-weight-bold text-left ml-4" style="margin-top: 10px">Compartilhados Comigo</p></a>
+                        <a href="#" class="list-group-item-action" style="background-color: #f2f2f2"><p class="small font-weight-bold text-left ml-4" style="margin-top: 10px">Meus Arquivos</p></a>
+                        <a href="#" class="list-group-item-action" ><p class="small font-weight-bold text-left ml-4" style="margin-top: 10px">Compartilhados Comigo</p></a>
                         <a href="#" class="list-group-item-action"><p class="small font-weight-bold text-left ml-4" style="margin-top: 10px">Publico</p></a>
                     </div>
                 </div>
-            </div>        </div>
-        <div class="col-2" style="background-color: burlywood">
-            Menu com pastas
+            </div>
         </div>
-        <div class="col-sm">
-            <div class="col-sm-12">
-                <div class="card my-3">
+        <!--linha separando colunas-->
+        <div>
+            <table border=0 align=left width=1 height=800 style="margin-top: 16px" >
+                <tr><td style="background-color: gainsboro"></td></tr>
+            </table>
+        </div>
+        <!--coluna minhas pastas-->
+        <div class="col-2">
+            <div class="card my-3">
+                <div class="card-header p-2 small font-weight-bold">Recentes</div>
+                <div class="card-body p-1">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Apresentações - Departamento xxxxxx</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Album de fotos - Eventos 2020</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Formulários </p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Apresentações - Departamento yyyyyy</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Apresentações - Departamento zzzzz</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Testes</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Arquivos Diversos</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Reclamações e Sujestões</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Fechamento Mensal - Departamento xxxxxx</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Fechamento Mensal - Departamento yyyyyy</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Fechamento Mensal - Departamento zzzzzz</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Fechamento Mensal - Departamento zzzzzz</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Fechamento Mensal - Departamento zzzzzz</p></th>
+                        </tr>
+                        <tr>
+                            <th><img src="https://pt.seaicons.com/wp-content/uploads/2016/10/folder-black-mydocuments-icon.png"  style="width: 30px" /></th>
+                            <th><p class="small font-weight-light-bold" style="margin-top: 10px;margin-bottom: 10px">Fechamento Mensal - Departamento zzzzzz</p></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--linha separando colunas-->
+        <div>
+            <table border=0 align=left width=1 height=800 style="margin-top: 16px" >
+                <tr><td style="background-color: gainsboro"></td></tr>
+            </table>
+        </div>
+        <!--coluna arquivos-->
+        <div class="col-sm w-100">
+            <div class="col-sm-12 w-100" style="margin-left: -15px">
+                <div class="card w-100 my-3">
                     <div class="card-header p-2 small font-weight-bold">Recentes</div>
-                    <div class="card-body p-1">
+                    <div class="card-body p-1" style="margin: 10px">
                         <div class="row">
                             <div class="col mx-0 ">
-                            <div class="card pt-0">
-                                <img src="https://png.pngtree.com/png-vector/20190227/ourlarge/pngtree-vector-pdf-icon-png-image_708329.jpg" alt="" class="card-img-top" />
-                                <div class="card-body py-1 px-1">
-                                    <h6 class="card-title"><small>Formulário de Inscrição</small></h6>
-                                    <small>há 2 dias</small>
+                                <div class="card pt-0">
+                                    <img src="https://png.pngtree.com/png-vector/20190227/ourlarge/pngtree-vector-pdf-icon-png-image_708329.jpg" alt="" class="card-img-top" />
+                                    <div class="card-body py-1 px-1">
+                                        <h6 class="card-title"><small>Formulário de Inscrição</small></h6>
+                                        <small>há 2 dias</small>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                             <div class="col mx-0 ">
                                 <div class="card pt-0">
                                     <img src="https://png.pngtree.com/png-vector/20190227/ourlarge/pngtree-vector-pdf-icon-png-image_708329.jpg" alt="" class="card-img-top" />
@@ -117,7 +199,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="card my-3">
                     <div class="card-header p-2 small font-weight-bold">Diretórios</div>
                     <div class="card-body p-1">
@@ -133,7 +214,7 @@
                                             <div class="card-title ml-3 small">Formulários de Inscrição para 2023</div>
                                             <small>há 2 dias</small>
                                         </div>
-                                     </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-3 col-sm-3 p-0 ml-4">
@@ -153,71 +234,153 @@
                         </div>
                     </div>
                 </div>
-
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Compartilhados Comigo</a></li>
-                    <li class="breadcrumb-item"><a href="#">2020</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Formulários</li>
-                </ol>
-                <table class="table table-striped table-md small"y565>
-                    <thead>
-                    <tr>
-                        <th class="text-center">-</th>
-                        <th>Nome</th>
-                        <th>Atualização</th>
-                        <th>Tamanho</th>
-                        <th>Ações</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="text-center">
-                            <i class="far fa-file"></i>
-                        </td>
-                        <td>Formulário para Inscrição</td>
-                        <td>20/12/2019 08:15</td>
-                        <td>200 Kb</td>
-                        <td>
-                            (dropdown)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <i class="far fa-file"></i>
-                        </td>
-                        <td>Formulário para Inscrição</td>
-                        <td>20/12/2019 08:15</td>
-                        <td>200 Kb</td>
-                        <td>
-                            (dropdown)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <i class="far fa-file"></i>
-                        </td>
-                        <td>Formulário para Inscrição</td>
-                        <td>20/12/2019 08:15</td>
-                        <td>200 Kb</td>
-                        <td>
-                            (dropdown)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text-center">
-                            <i class="far fa-file"></i>
-                        </td>
-                        <td>Formulário para Inscrição</td>
-                        <td>20/12/2019 08:15</td>
-                        <td>200 Kb</td>
-                        <td>
-                            (dropdown)
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="col-sm w-100">
+                    <div class="col-sm w-100">
+                        <table class="table table-striped table-md small w-100" id="arquivosTabela">
+                            <thead>
+                            <tr>
+                                <th class="text-center">-</th>
+                                <th><p class="font-weight-light-bold m-1">Nome</th>
+                                <th><p class="font-weight-light-bold m-1">Atualização</th>
+                                <th><p class="font-weight-light-bold m-1">Tamanho</th>
+                                <th><p class="font-weight-light-bold m-1">Ações</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center">
+                                    <img src="imagens/excel.png" style="width: 20px">
+                                </td>
+                                <td>Formulário para Inscrição</td>
+                                <td>20/12/2019 08:15</td>
+                                <td>200 Kb</td>
+                                <td><button type="button" class="small btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalFormularioPdf">Detalhar</button></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <img src="imagens/pdf.png" style="width: 20px">
+                                </td>
+                                <td>Manual do Colaborador</td>
+                                <td>20/12/2019 08:15</td>
+                                <td>200 Kb</td>
+                                <td><button type="button" class="small btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalFormularioPdf">Detalhar</button></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <img src="imagens/link.png" style="width: 20px">
+                                </td>
+                                <td>Endereço web</td>
+                                <td>20/12/2019 08:15</td>
+                                <td>200 Kp</td>
+                                <td><button type="button" class="small btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalFormularioPdf">Detalhar</button></td>
+                            <tr>
+                                <td class="text-center">
+                                    <img src="imagens/video.png" style="width: 20px">
+                                </td>
+                                <td>Apresentação do novo módulo</td>
+                                <td>20/12/2019 08:15</td>
+                                <td>200 Kb</td>
+                                <td><button type="button" class="small btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalFormularioPdf">Detalhar</button></td>
+                            <tr>
+                                <td class="text-center">
+                                    <img src="imagens/compactados.png" style="width: 20px">
+                                </td>
+                                <td>Arquivos para Instalação de Aplicativo XXX</td>
+                                <td>20/12/2019 08:15</td>
+                                <td>200 Kb</td>
+                                <td><button type="button" class="small btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalFormularioPdf">Detalhar</button></td>
+                            <tr>
+                                <td class="text-center">
+                                    <img src="imagens/photo.png" style="width: 20px">
+                                </td>
+                                <td>Fotos Evento XXX</td>
+                                <td>20/12/2019 08:15</td>
+                                <td>200 Kb</td>
+                                <td><button type="button" class="small btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalFormularioPdf">Detalhar</button></td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="modal fade bd-formulario-modal-lg" id="modalFormularioPdf" tabindex="-1" role="dialog" aria-labelledby="modalFormularioPdf" aria-hidden="true" >
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background-color:#f8f9fa">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModal">Formulário de Inscrição</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row" >
+                        <div class="col"><p class="small font-weight-bold" style="margin-bottom: auto">Enviado por:</p><small class="m-auto font-weight">Usuário XXXX </small></div>
+                        <div class="col"><p class="small font-weight-bold" style="margin-bottom: auto">Data de envio:</p><small class="font-weight">20/12/2019 as 08:15 </small></div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col"><p class="small font-weight-bold" style="margin-bottom: auto">Ultima Alteração:</p><small class="m-auto font-weight">20/01/2020 as 10:00 </small></div>
+                        <div class="col"><p class="small font-weight-bold" style="margin-bottom: auto">Local:</p><small class="m-auto font-weight">Pasta XX </small></div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col"><p class="small font-weight-bold" style="margin-bottom: auto">Tipo:</p><small class="m-auto font-weight">Arquivo xls </small></div>
+                        <div class="col"><p class="small font-weight-bold" style="margin-bottom: auto">Tamanho:</p><small class="m-auto font-weight">200 Kb</small></div>
+                    </div>
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col"><p class="small font-weight-bold" style="margin-bottom: auto">Descrição do Arquivo:</p>
+                            <p class="small font-weight"> Formulário para inscrição do evento XXX que será realizado no dia xx/xx/xxxx as xx:xx </p>
+                        </div>
+                    </div>
+                    <div class="row w-100 m-0" style="margin-top: 20px; background-color: gainsboro">
+                        <table >
+                            <thead>
+                            <tr>
+                                <th><p class="small ml-3 font-weight-bold" style="text-align: left; margin-bottom: auto">Usuario X:</p></th>
+                                <th><small class="m-auto font-weight" style="text-align: left">Comentário Comentário Comentário Comentário </small></th>
+                            </tr>
+                            <tr>
+                                <th><p class="small ml-3 font-weight-bold" style="text-align: left; margin-bottom: auto">Usuario X:</p></th>
+                                <th><small class="m-auto font-weight" style="text-align: left">Comentário Comentário Comentário Comentário </small></th>
+                            </tr>
+                            <tr>
+                                <th><p class="small ml-3 font-weight-bold" style="text-align: left; margin-bottom: auto">Usuario X:</p></th>
+                                <th><small class="m-auto font-weight" style="text-align: left">Comentário Comentário Comentário Comentário </small></th>
+                            </tr>
+                            <tr>
+                                <th><p class="small ml-3 font-weight-bold" style="text-align: left; margin-bottom: auto">Usuario X:</p></th>
+                                <th><small class="m-auto font-weight" style="text-align: left">Comentário Comentário Comentário Comentário </small></th>
+                            </tr>
+                            <tr>
+                                <th><p class="small ml-3 font-weight-bold" style="text-align: left; margin-bottom: auto">Usuario X:</p></th>
+                                <th><small class="m-auto font-weight" style="text-align: left">Comentário Comentário Comentário Comentário </small></th>
+                            </tr>
+                            <tr>
+                                <th><p class="small ml-3 font-weight-bold" style="text-align: left; margin-bottom: auto">Usuario X:</p></th>
+                                <th><small class="m-auto font-weight" style="text-align: left">Comentário Comentário Comentário Comentário </small></th>
+                            </tr>
+                            <tr>
+                                <th><p class="small ml-3 font-weight-bold" style="text-align: left; margin-bottom: auto">Usuario X:</p></th>
+                                <th><small class="m-auto font-weight" style="text-align: left">Comentário Comentário Comentário Comentário </small></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Baixar Arquivo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<script>-->
+        <!--    var imagens = [-->
+        <!--        'imagens/excel.png', 'imagens/link.png', 'imagens/pdf.png', 'imagens/photo.png', 'imagens/video.png', 'imagens/compactados.png'-->
+        <!--    ]-->
+
+        <!--    var tipo = [-->
+        <!--        'Formulário de inscrição', 'Link', 'Arquivo de Texto', 'Imagem', 'Video', 'Arquivo(s) Compactado(s)'-->
+        <!--    ]-->
+
+        <!--</script>-->
     </div>
 </div>
 </body>
