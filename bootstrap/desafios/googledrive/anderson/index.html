@@ -13,49 +13,98 @@
 	<div class="container-fluid">
 		<div class="row" style="border:1px solid blue;"><!--cabecalho/nav-->
 				<div class="col-2">
-					logo
+					<a href=""><img src="imagens/google-drive.png" width="30" height="30" alt=""><span class="text-muted">Drive</span></a>
 				</div>
-				<div class="col-8">
-					busca
-				</div>
+				<div class="col-8 bg-primary"><!--inicio da caixa de busca-->
+					<div class="input-group my-1">
+						<div class="input-group-prepend">
+						  <span class="input-group-text">@</span>
+						</div>
+						<input type="text" class="form-control" placeholder="Pesquisar no Drive" aria-label="Username" aria-describedby="basic-addon1">
+						<div class="input-group-append">
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								  <a class="dropdown-item" href="#">Action</a>
+								  <a class="dropdown-item" href="#">Another action</a>
+								  <a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							  </div>
+						</div>
+					  </div>
+				</div><!--fim da caixa de busca-->
 				<div class="col-2">
-					
+					<div class="d-flex justify-content-between bg-danger mt-3">
+						<div class="d-flex">
+							addsad
+						</div>
+						<div class="d-flex">
+							sadsa
+						</div>
+					</div>
 				</div>
 		</div><!--fim do cabecalho/nav-->
 
 		<div class="row"><!--segunda linha-->
-			<div class="col-2" style="border: 1px solid green;"><!--menu lateral-->
-					<div class="row">
-						<div class="border-primary">
-							menu-lateral
-						</div>
-					</div>	
+			<div class="col-2 border border-secondary">
+				<div class="row">
+					<div class="col-12">
+					<button class="btn btn-primary mt-2">NOVO</button>
+					</div>
+				</div>
+				<div class="row"><!--inicio da linha 1 menu-->
 
-					<div class="row">
-						<div class="bg-danger">
-							armazenamento
+					<ul class="nav flex-column">
+						<li class="nav-item"><a href="" class="nav-link">BOTAO</a></li>
+						<li class="nav-item"><a href="" class="nav-link">BOTAO</a></li>
+						<li class="nav-item"><a href="" class="nav-link">BOTAO</a></li>
+						<li class="nav-item"><a href="" class="nav-link">BOTAO</a></li>
+						<li class="nav-item"><a href="" class="nav-link">BOTAO</a></li>
+					</ul>
+				</div><!--fim da linha 1 menu-->
+				<hr>
+				<div class="row">
+					<div class="col-12">
+					<span><img src="" alt="">ARMAZENAMENTO</span>
+					<div class="progress">
+						<div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100">sad</div>
+					</div>
+					  <h6 class="text-mutted">16GB de 200GB Usados</h6>
+					  <a href="" class="text-primary">Comprar Armazenamento</a>
+					  </div>
+				</div><!--fim da row de armazenamento-->
+			</div><!--fim do menu-->
+
+			<div class="col-9 border border-secondary">
+				<div class="row">
+					<div class="col-12">
+						<div class="d-flex justify-content-between">
+							<div class="d-flex">
+								dsadas
+							</div>
+							<div class="d-flex">
+								sadass
+							</div>
 						</div>
 					</div>
-
-			</div><!--fim do menu lateral-->
-
-			<div class="col-9" style="border: 1px solid purple;"><!--conteudo principal-->
-					<div class="row">
-						<div class="border-primary">
-							sub menu
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="border-sucess">
-							conteudo principal
-						</div>
-					</div>
+				</div><!--fim da row do sub menu-->
+				<hr> 
+				<div class="row">
+					conteudo principal
+				</div><!--fim da row do conteudo principal-->
 			</div><!--fim do conteudo principal-->
 
-			<div class="col-1" style="border: 1px solid red;">
-					menuzinho
-			</div><!--fim da segunda linha-->
-	</div>
+			<div class="col-1 border border-secondary">
+				<div class="col-12">
+						<div class="d-flex justify-content-between align-items-end flex-column">
+							<div class="p-2 d-flex">Flex item</div>
+							<div class="p-2 d-flex">Flex item</div>
+							<div class="p-2 d-flex">Flex item</div>
+						  </div>
+				</div>
+			</div><!--fim do menuzinho-->
+		</div><!--fim da segunda linha-->
+	</div><!--fim do container-->
 </body>
 </html>
