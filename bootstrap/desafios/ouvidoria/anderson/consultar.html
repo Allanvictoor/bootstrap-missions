@@ -13,7 +13,7 @@
 
         <div class="row"><!--Inicio do menu de navegacao-->
                 <nav class="navbar navbar-light bg-light col-12 border border-primary">
-                    <a class="navbar-brand"><img src="imagens/LogoUniCesumar.ed0da1be569842ee98d1.png" width="200" height="50" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="imagens/LogoUniCesumar.ed0da1be569842ee98d1.png" width="200" height="50" alt=""></a>
                     <form class="form-inline">
                       <input class="form-control mr-sm-2" type="search" placeholder="Digite aqui" aria-label="Search">
                       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
@@ -21,35 +21,46 @@
                   </nav>
         </div><!--fim do menu de navegacao-->
 
-        <div class="row pt-1">
+        <div class="row pt-1 pb-2">
             <div class="col-2">
-                
+              <div class="bg-light">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><img class="" src="imagens/sydney-opera-house.png" width="30" height="30" alt=""><span class="text-danger">Página Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadastrar.html" class="nav-link"><img src="imagens/add.png" height="30" width="30" alt=""><span class="text-success">Cadastrar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="consultar.html" class="nav-link"><img src="imagens/view.png" width="30" height="30" alt=""><span class="text-success">Consultar</span></a>
+                    </li>
+                </ul>
+                </div>
             </div>
-            <div class="col-8 pt-2">
-                <div class="card" class="bg-light">
-                    <div class="card-header">
-                     Manisfestações
-                    </div>
+                <div class="col-8 pt-2"> 
+                  <div class="card">
+                    <div class="card-header"><span>Andamento da Solicitação</span></div>
                     <div class="card-body">
-                      <h5 class="card-title">Online</h5>
-                      <p class="card-text">Para manifestação online, clique no botão "CADASTRAR MANIFESTAÇÃO" e, caso opte por se identificar, insira os seus dados e a manifestação nos campos exigidos. Um protocolo será gerado para acompanhamento. Caso opte pelo anonimato, insira apenas os dados da manifestação.</p>
-                      <a href="cadastrar.html" class="btn btn-danger"><span class="text-white font-weight-bold">CADASTRAR MANIFESTAÇÃO</span></a>
-                    </div>
+                      <h5 class="card-title">Quais são as etapas?</h5>
+                      <ol>
+                        <li>Visualizarmos a sua manifestação</li>
+                        <li>Analisarmos sua solicitação</li>
+                        <li>Daremos um retorno sobre qual será nosso posicionamento via email</li>
+                      </ol>
+                      <div class="progress">
+                        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100" style="width: 25%"><span>25%</span></div>
+                      </div>
+                      <ul>
+                        <li>Se estiver em 25% quer dizer que ainda não visualizamos</li>
+                        <li>Se estiver em 50% quer dizer que já estamos averiguando a denúncia</li>
+                        <li>Se estiver em 75% quer dizer que a sua solicitação está sendo atendida</li>
+                        <li>Se estiver em 100%, basta aguardar no máximo de 3 dias que já entraremos em contato</li>
+                      </ul>
+
+                      <h2>Caso haja dúvidas, pode entrar em contato conosco em <a href="" class="badge badge-dark">prefeituracesumar.net</a></h2>
+                    </div>  
                   </div>
-
-                  <div class="card mt-2 bg-light mb-2">
-                    <div class="card-header">
-                      Consultar Reclamações
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Número da ocorrência</h5>
-                      <input type="email" class="form-control" id="" placeholder="Digite aqui o número">
-                      <a href="consultar.html" class="btn btn-danger mt-1"><span class="text-white font-weight-bold">CONSULTAR</span></a>
-                    </div>
-                  </div>
-
-
-            </div>
+                </div>
             <div class="col-2 bg-secondary">
                 
             </div>
