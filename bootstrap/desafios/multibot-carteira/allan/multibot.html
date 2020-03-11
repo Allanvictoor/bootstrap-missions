@@ -44,8 +44,7 @@
   
       $(document).ready(function () {
         popularTabela();
-  
-        $("#form-valor").submit(function () {
+          $("#form-valor").submit(function () {
           total_disponivel = parseFloat($("#valor").val());
           iniciar();
           popularTabela();
@@ -56,7 +55,6 @@
       function popularTabela() {
         var tableBody = $("#carteira tbody").empty();
         for (i = 0; i < valores.length; i++) {
-          
           var tr = $("<tr></tr>");
           tr.append($("<td></td>").text(nomeEmpresa[i]));
           tr.append($("<td></td>").text(valores[i]+"R$"));
