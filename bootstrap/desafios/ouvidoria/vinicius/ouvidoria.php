@@ -109,7 +109,7 @@ include("../vinicius/nav.php")
                             <label>UF</label>
                             <div class="form-group " id="formPrincipal:uf">
                                 <select id="formPrincipal:ufInner" name="formPrincipal:ufInner"
-                                        class="form-control  bf-required"
+                                        class="form-control"
                                         required>
                                     <option data-label="Selecione" value="">Selecione</option>
                                     <option data-label="Acre" value="AC">Acre</option>
@@ -220,8 +220,7 @@ include("../vinicius/nav.php")
                 </div>
             </div>
         </div>
-</div>
-</form>
+    </form>
 </div>
 <?php
 include("../vinicius/rodape.php");
