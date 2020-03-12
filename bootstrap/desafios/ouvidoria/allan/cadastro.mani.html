@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Cadastro Ouvidoria</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="validacao.js"></script>
+ 
+</head>
+
+<body>
+<form id="formulariopai">
+    <div class="container">
+        <h2>Dados Pessoais</h2>
+        <hr>
+        <form class="form-group" method="post">
+  <div class="row">
+    <div class="col">
+        <strong>Nome </strong>
+      <input type="text"  id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo">
+    </div>
+    <div class="col">
+        <strong>E-mail</strong>
+      <input type="text" class="form-control cpf-mask" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+        <strong>CPF/CNPJ</strong>
+      <input type="number" name="cpf" id="cpf" class="form-control" placeholder="">
+    </div>
+    <div class="col">
+        <strong>RG</strong>
+      <input type="number" name="rg" id="rg" class="form-control" placeholder="">
+    </div>
+  </div>
+</form>
+<h2>Dados Residenciais</h2>
+<hr>
+<form>
+    <div class="row">
+      <div class="col">
+        <strong>CEP</strong>
+        <input type="number" name="cep" id="mascaCep" class="form-control" placeholder="">
+      </div>
+      <div class="col">
+        <strong>Lograudo</strong>
+        <input type="text" name="lograudo" id="lograoudo" class="form-control" placeholder="">
+      </div>
+      <div class="col">
+        <strong>Número</strong>
+        <input input pattern="^\d{2}-\d{4}-\d{4}$" type="tel" name="numeroCasa" id="numeroCasa" class="form-control" >
+      </div>
+    </div>
+    
+  </form>
+  <form>
+    <div class="row">
+      <div class="col">
+          <strong>Complemento</strong>
+        <input type="text" name="complemento" id="complemento" class="form-control" placeholder=>
+      </div>
+      <div class="col">
+        <strong>Bairro</strong>
+        <input type="text" id="bairro" name="bairro" class="form-control" placeholder="">
+      </div>
+      <div class="col">
+        <strong>Cidade</strong>
+        <input type="text" name="cidade" id="cidade" class="form-control" placeholder="">
+      </div>
+    </div>
+    
+  </form>
+  <form>
+  <div class="row">
+    <div class="col-sm-4">
+        <strong>UF</strong>
+      <input type="text" name="uf" id="uf" class="form-control" placeholder="">
+    </div>
+    <div class="col-sm-4">
+      <strong>País</strong>
+      <input type="text" name="pais" id="pais" class="form-control" placeholder="">
+    </div>
+    <div class="col-sm-1">
+      <strong>DDD</strong>
+      <input type="number" name="dddtel" id="dddtel" class="form-control" placeholder="">
+    </div>
+    <div class="col-sm-3">
+        <strong>Telefone</strong>
+        <input type="number" id="telefone" name="telefone" class="form-control" placeholder="">
+      </div>
+  </div>
+  
+</form>
+<form>
+<div class="row">
+   <div class="col-sm-1">
+    <strong>DDD</strong>
+    <input type="number" name="dddCel" id="dddCel" class="form-control" placeholder="">
+  </div>
+  <div class="col-sm-3">
+      <strong>Celular</strong>
+      <input type="number" name="celular" id="celular" class="form-control" placeholder="">
+    </div>
+</div>
+</form>
+<br>
+<form class="form-group" >
+    <h3>Dados da mensagem</h3>
+    <hr>
+    Descrição
+    <div class="form-group" ><textarea required="required" class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
+      </div>
+</form>
+<form>
+ <button type="submit" type="button" class="btn btn-danger">ENVIAR</button>
+</form>
+    </div>
+  </form>
+</body>
+
+</html>

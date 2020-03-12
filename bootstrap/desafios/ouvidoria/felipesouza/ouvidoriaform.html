@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+ 
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <title>Form-ouvidoria</title>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+        <script src="http://malsup.github.com/jquery.form.js"></script>
+
+
+        <script>
+            $("#myform").validate({
+                invalidHandler: function(event, validator) {
+                    // 'this' refers to the form
+                    var errors = validator.numberOfInvalids();
+                    if (errors) {
+                        var message = errors == 1
+                            ? 'You missed 1 field. It has been highlighted'
+                            : 'You missed ' + errors + ' fields. They have been highlighted';
+                        $("div.error span").html(message);
+                        $("div.error").show();
+                    } else {
+                        $("div.error").hide();
+                    }
+                }
+            });
+        </script>
+
+
+
+    </head>
+
+        <body>
+            <hr>
+            <!-- título 1-->
+            <div style="text-align: center" class="container mt-4">
+                <h4 class="header"><b>Dados pessoais</b></h4>
+                <hr/>
+            </div>
+            <hr>
+            <!--Formulário NOME/EMAIL/CPF,CNPJ/RG-->
+            <div style="text-align: center" class="container mt-4">
+                <form>
+                    <!--linha 1-->
+                    <div class="row">
+                        <div class="col">
+                            <h6><b>Nome</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <h6><b>Email</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <!--linha 2-->
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h6><b>CPF/CNPJ</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <h6><b>RG</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <hr/>
+
+    
+            <!-- título 2-->
+            <div style="text-align: center" class="container mt-4">
+                <h4><b>Dados Residenciais</b></h4>
+                <hr/>
+            </div>
+
+            <!--Formulário CEP/LOGRADOURO/NÚMERO/COMPLEMENTE/BAIRRO/CIDADE/UF/PÁIS/DDD,TELEFONE/DDD,CELULAR-->
+            <div style="text-align: center" class="container mt-4">
+                <form>
+                    <!-- linha 1 CEP/LOGRADOURO/NÚMERO-->
+                    <div class="row">
+                        <div class="col">
+                            <h6><b>CEP</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <h6><b>Logradouro</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <h6><b>Número</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- linha 2 COMPLEMENTE/BAIRRO/CIDADE-->
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h6><b>Complemento</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <h6><b>Bairro</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                            <h6><b>Cidade</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <!--linha 3 UF/PÁIS/DDD,TELEFONE-->
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <h6><b>UF</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-4">
+                            <h6><b>País</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <!--DDD TELEFONE-->
+                        <div class="col-1">
+                            <h6><b>DDD</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <h6><b>Telefone</b></h6>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </form>
+
+                <hr>
+
+                <!--DADOS DA MENSAGEM/DESCRIÇÃO-->
+                <div class="container mt-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"><h6><b>Descrição</b></h6></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <hr>
+                    
+                    </form>
+                    <div class="box-actions mt-4">
+                        <button type="submit" class="btn btn-danger">Enviar</button>
+                    </div>
+                </div>
+            
+                <br>
+                <br>
+                    
+                
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+
+</html>
