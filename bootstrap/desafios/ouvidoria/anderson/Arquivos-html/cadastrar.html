@@ -10,6 +10,7 @@
     <script src="../Arquivos-Js/cadastrar.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1"></script>
+   <script src="../jquery/textarea-limit-counter/plugin-jqtarea.js"></script>
 </head>
 <body class="bg-secondary">
     <div class="container border border-white">
@@ -131,7 +132,9 @@
                                 <div class="col">
                                     <h5 class="card-title">Mensagem</h5>
                                     <hr>
-                                    <textarea name="" id="texto" cols="70" rows="10" class="border border-muted" required placeholder="Digite aqui seu manifesto"></textarea>
+                                    <textarea name=""  id="texto" cols="70" rows="10" class="border border-muted" required placeholder="Digite aqui seu manifesto" onkeyup="countChar(this)" maxlength="500"></textarea>
+                                    <!--<div id="charNum" class="badge badge-danger"> restante(s)</div>-->
+                                    <h6 class="bg-danger text-white text-bold border border-success rounded-pill d-inline px-1">Caracteres Restantes:<span id="charNum" class="badge badge-danger"></span></h6>
                                 </div>
                                </div>
                                <div class="form-row mt-1">
