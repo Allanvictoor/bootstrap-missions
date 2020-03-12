@@ -1,104 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Calcula Carteira</title>
+    <script src="functions.js"></script>
+</head>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-        <title>Calcula Carteira</title>
-
-    </head>
-
-    <body>
-    <!--Cabeçalho-->
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="navbar navbar-light bg-light col-sm">
-                <a class="navbar-brand small font-weight-bold">MultiBot</a>
-            </nav>
-        </div>
-    </div>
-    <!------Corpo------>
-    <div class="container-fluid">
-        <div class="row">
-            <div class=" col-8 w-90 mh-90 p-2">
-                <table class="col table-striped table-bordered my-1" id="carteira" >
-                    <thead>
-                    <tr>
-                        <th scope="col"><p class="text-center font-weight-light my-1">Empresa</p></th>
-                        <th scope="col"><p class="text-center font-weight-light my-1">Ação</p></th>
-                        <th scope="col"><p class="text-center font-weight-light my-1">R$ Unitário</p></th>
-                        <th scope="col"><p class="text-center font-weight-light my-1">Quantidade</p></th>
-                        <th scope="col"><p class="text-center font-weight-light my-1">% Percent.</p></th>
-                        <th scope="col"><p class="text-center font-weight-light my-1">R$ Total</p></th>
-                    </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
+<body>
+<!--Cabeçalho-->
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-light col-sm-12" style="background-color: #780191">
+            <a class="navbar-brand col-sm-10"><img src="logoenome.png"></a>
+            <div class="navbar navbrand col-sm">
+                <button type="button" style="margin-top: auto" class="btn btn-outline border border-outline">
+                    <p style="color: #f2f2f2">Inicio</p>
+                </button>
             </div>
+        </nav>
+    </div>
+</div>
+<!------Corpo------>
+<div class="container-fluid" style="background-color: #f2f2f2">
+    <div class="row">
+        <div class="col-8 w-90 mh-90 p-2">
+            <table class="col table-striped table-bordered my-1" id="carteira">
+                <thead>
+                <tr>
+                    <th scope="col"><p class="text-center font-weight-light my-1">Empresa</p></th>
+                    <th scope="col"><p class="text-center font-weight-light my-1">Ação</p></th>
+                    <th scope="col"><p class="text-center font-weight-light my-1">R$ Unitário</p></th>
+                    <th scope="col"><p class="text-center font-weight-light my-1">Quantidade</p></th>
+                    <th scope="col"><p class="text-center font-weight-light my-1">% Percent.</p></th>
+                    <th scope="col"><p class="text-center font-weight-light my-1">R$ Total</p></th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
 
-            <div class="row">
-                <div class="col-sm p-3">
-                    <div class="col" style="background-color: ghostwhite">
-
-                        <form>
-                            <label><b>Valor total do lote: </b></label>
-                            <div class="col">
-                                <label name="valor_carteira" id="valor_carteira">-</label>
-                            </div>
-                            <div class="form-row" class="form-group" class="col-6 p-3">
-                                <!-- Button trigger modal -->
-
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalComprar">
-                                    Comprar
-                                </button>
-                                <!-- Modal -->
-                                <div class="modal fade" id="modalComprar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Qual valor disponivel?</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <input id="valorDisponivel" type="text" class="form-control"/>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary" id="calcular" data-dismiss="modal">Calcular</button>
-                                            </div>
+        <div class="row">
+            <div class="col-sm p-3">
+                <div class="col-sm-12" style="background-color: ghostwhite">
+                    <form style="inline-size: auto">
+                        <label><b>Valor total do lote: </b></label>
+                        <div class="col">
+                            <label name="valor_carteira" placeholder="valor_carteira" id="valor_carteira">-</label>
+                        </div>
+                        <div class="form-row" class="form-group" class="col-6 p-3">
+                            <button type="button" class="btn btn-primary m-2 btn-lg" data-toggle="modal" data-target="#modalComprar">Comprar</button>
+                            <div class="modal fade" id="modalComprar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Qual valor disponivel?</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <input type="text" id="valorDisponivel" required name="valorDisponivel"  class="form-control" />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                                            <button type="button" class="btn btn-primary" id="calcular" data-dismiss="modal">Calcular</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
 <script>
     // valor digitado pelo usuário
     var total_disponivel;
-
     // valor recebido dinamicamente para cada papel
     // muda mensalmente
-    // var logos = [
-    //     'cmig4.jpg', 'brdt3.jpg', 'mrve3.jpg', 'itub4.jpg', 'ceab3.png',
-    //     'brfs3.jpg', 'cogn3.png', 'klbn11.jpg', 'lcam3.png', 'tgma3.png'
-    // ];
-    var nomes = [
-        'cmig4', 'brdt3', 'mrve3', 'itub4', 'ceab3', 'brfs3', 'cogn3', 'klbn11', 'lcam3', 'tgma3'
+    var logos = [
+        'cmig4.jpg', 'brdt3.jpg', 'mrve3.jpg', 'itub4.jpg', 'ceab3.png',
+        'brfs3.jpg', 'cogn3.png', 'klbn11.jpg', 'lcam3.png', 'tgma3.png'
     ];
+
+    var nomes = [
+        'CMIG4', 'BRDT3', 'MRVE3', 'ITUB4', 'CEAB3', 'BRFS3', 'COGN3', 'KLBN11', 'LCAM3', 'TGMA3'
+    ];
+
     var valores = [
         15.11, 28.45, 21.20, 32.80, 16.20, 30.57, 11.41, 21.15, 24.22, 40.29
     ];
+
     var
         lotes = [
             100, 100, 100, 100, 100, 100, 100, 100, 100, 100
@@ -106,37 +106,38 @@
     var lotes_valor = [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     ];
+
     var lotes_perc = [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     ];
 
+
     $(document).ready(function() {
         popularTabela();
-        $("#calcular").submit(function () {
+        $("#calcular").click(function () {
             total_disponivel = parseFloat($("#valorDisponivel").val());
-            $("#modalComprar").submit(function () {
-                iniciar();
-                popularTabela();
-                event.preventDefault();
-            });
+            iniciar();
+            popularTabela();
+            event.preventDefault();
         });
 
+    })
 
-        function popularTabela() {
-            var tableBody = $("#carteira tbody").empty();
-            for (i = 0; i < valores.length; i++) {
-                var tr = $("<tr></tr>");
-                // tr.append($("<td></td>").text('-'));
-                tr.append($("<td></td>").text(nomes[i]));
-                tr.append($("<td></td>").text(valores[i]));
-                tr.append($("<td></td>").text(lotes[i]));
-                tr.append($("<td></td>").text(lotes_perc[i]));
-                tr.append($("<td></td>").text(lotes_valor[i]));
-                tableBody.append(tr);
-            }
+    function popularTabela() {
+        var tableBody = $("#carteira tbody").empty();
+        for (i = 0; i < valores.length; i++) {
+            var tr = $("<tr></tr>");
+            tr.append($("<td></td>").text(''));
+            tr.append($("<td></td>").text(nomes[i]));
+            tr.append($("<td></td>").text(valores[i]));
+            tr.append($("<td></td>").text(lotes[i]));
+            tr.append($("<td></td>").text(lotes_perc[i]));
+            tr.append($("<td></td>").text(lotes_valor[i]));
+            tableBody.append(tr);
         }
-    });
+    }
 
-    </script>
-    </body>
+
+</script>
+</body>
 </html>
