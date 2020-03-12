@@ -9,7 +9,7 @@
 <?php
 include("../vinicius/nav.php")
 ?>
-<div class="container border my-3">
+<div class="container my-3">
     <form action="../vinicius/banco.php">
         <div class="form-group">
             <div class="panel panel-primary">
@@ -76,7 +76,7 @@ include("../vinicius/nav.php")
                     <div class="border-bottom border-top d-flex justify-content-center">
                         <h3 class="my-2">Dados Residenciais</h3>
                     </div>
-                    <div class="row">
+                    <div class="row mt-3">
                         <div class="col-md-4 col-sm-12">
                             <label>CEP</label>
                             <input id="cep" class="w-100 form-control" type="text" required/>
@@ -90,7 +90,7 @@ include("../vinicius/nav.php")
                             <input class="w-100 form-control" type="text" required/>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mt-3">
                         <div class="col-md-4 col-sm-12">
                             <label>Complemento</label>
                             <input class="w-100 form-control" type="text" required/>
@@ -104,7 +104,7 @@ include("../vinicius/nav.php")
                             <input class="w-100 form-control" type="text" required/>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mt-3">
                         <div class="col-md-4 col-sm-12">
                             <label>UF</label>
                             <div class="form-group " id="formPrincipal:uf">
