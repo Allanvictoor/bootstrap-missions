@@ -9,22 +9,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="validacao.js"></script>
+ 
 </head>
 
 <body>
-
+<form id="formulariopai">
     <div class="container">
         <h2>Dados Pessoais</h2>
         <hr>
-        <form class="form-group">
+        <form class="form-group" method="post">
   <div class="row">
     <div class="col">
         <strong>Nome </strong>
-      <input type="text" name="nome" id="nome" class="form-control" placeholder="">
+      <input type="text"  id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo">
     </div>
     <div class="col">
         <strong>E-mail</strong>
-      <input type="email" name="email" id="email" class="form-control" placeholder="">
+      <input type="text" class="form-control cpf-mask" placeholder="">
     </div>
   </div>
   <div class="row">
@@ -44,7 +46,7 @@
     <div class="row">
       <div class="col">
         <strong>CEP</strong>
-        <input type="number" name="cep" id="cep" class="form-control" placeholder="">
+        <input type="number" name="cep" id="mascaCep" class="form-control" placeholder="">
       </div>
       <div class="col">
         <strong>Lograudo</strong>
@@ -52,7 +54,7 @@
       </div>
       <div class="col">
         <strong>Número</strong>
-        <input type="number" name="numeroCasa" id="numeroCasa" class="form-control" placeholder="">
+        <input input pattern="^\d{2}-\d{4}-\d{4}$" type="tel" name="numeroCasa" id="numeroCasa" class="form-control" >
       </div>
     </div>
     
@@ -108,16 +110,18 @@
 </div>
 </form>
 <br>
-<form class="form-group">
+<form class="form-group" >
     <h3>Dados da mensagem</h3>
     <hr>
     Descrição
-    <div class="form-group"><textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
+    <div class="form-group" ><textarea required="required" class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
       </div>
 </form>
-<a href="cadastro.mani.html" class="btn btn-danger">ENVIAR</a>
+<form>
+ <button type="submit" type="button" class="btn btn-danger">ENVIAR</button>
+</form>
     </div>
-
+  </form>
 </body>
 
 </html>
