@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Petrobras</title>
+</head>
+<body>
+    <!--Vamos diagramar cada tela individual como uma row e dividir em 3 cols sendo uma para o número grande, outra para o texto interior e outra para a imagem de canto que vai ficar-->
+    <div class="container-fluid"><!--corpo principal-->
+        <!--Col-2 recebe o número, col-5 recebe o texto e o último col-5 recebe a imagem-->
+        <!--Vou dividir o texto em 3 partes sendo 1 titulo, 2 o texto em si e em 3 o link, vai ser uma semi nav bar com 4 icones-->
+        <div class="row"><!--inicio da linha 1-->
+            <div class="col-12 border border-bottom">
+                <span class="text-success">Petrobras:10 respostas para as suas dúvidas sobre o preço da gasolina</span>
+            </div>
+        </div><!--fim da linha 1-->   
+                <!--fim da linha-->
+
+        <div class="row bg-warning"><!--inicio da primeira tela-->
+           <div class="col-2 bg-white">
+                <a href="#"><img class="mt-3" src="../imagens/logo.png" width="150" height="30" alt=""></a>
+                    <img class="pr-2 pb-2" src="../imagens/mob-poly-g.png" width="200" height="50" alt="">
+           </div>
+           <div class="col-5"><!--inicio texto-->
+                <div class="row mt-5 ml-4">
+                    <h1 class="text-success ml-5 font-weight-bold">10</h1><h3 class="text-success ml-2">respostas</h3>
+                </div>
+                <div class="row mt-3 ml-4">
+                    <h3 class="text-success ml-5 font-weight-bold">para suas dúvidas</h3>
+                </div>
+                <div class="row mt-3 ml-4">
+                    <h3 class="text-success ml-5 font-weight-bold">sobre o preço da</h3>
+                </div>
+                <div class="row mt-3 ml-4">
+                    <h1 class="text-success ml-5 font-weight-bold">gasolina</h1>
+                </div>
+                <img src="../imagens/poly-g.png" width="500" height="400" alt="">
+           </div><!--fim do texto-->
+           <div class="col-5 bg-success">  
+           </div>
+        </div><!--fim da primeira  tela-->
+                <!--fim de uma tela-->
+
+        <div class="row bg-success pt-5 pb-5"><!--inicio da segunda tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold ml-5 mt-2 pl-5">1</h1>
+            </div>
+            <div class="col-5"><!--inicio do texto-->
+                <div class="row mb-4">
+                    <h5 class="text-warning font-weight-bold mt-2 font-italic">Como é feita a composição do preço da gasolina do consumidor?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white">
+                        O valor pago pelo consumidor final não está sob gestão da Petrobras e é composto por 4 fatores: 1) Preços do produtor ou importador de gasolina “A” 2) Carga tributária 3) Custo do etanol obrigatório 4) Margens da distribuição e revenda. 
+                    </p>
+                    <p class="text-white font-weight-bold text-monospace">
+                        Nossa parcela é a primeira, referente ao preço do combustível em nossas refinarias. A carga tributária responde por parte relevante do preço final. 
+                    </p>
+                    <p class="text-white">
+                        Os demais agentes da cadeia de comercialização, como importadores, distribuidores, revendedores e produtores de biocombustíveis, também influenciam na formação do preço final.
+                    </p>
+                    <p class="text-white">
+                        Período da coleta de 23/02/2020 a 29/02/2020.
+                        Cálculo baseado nos preços médios da Petrobras (gasolina A) e nos preços médios ao consumidor final (gasolina C) em 13 capitais e regiões metropolitanas brasileiras. 
+                    </p>
+                        <a href="" class="text-white mt-0 mb-2">Fonte do gráfico</a>
+                </div>
+
+                <div class="row border border-white border-top-1 mb-2 border-left-0 border-right-0 border-bottom-0 mt-4"><!--inicio do mini menu-->
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a>
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 pt-5 ml-3" src="../imagens/bomba-transparente.png" alt="">
+            </div>
+        </div><!--fim da segunda tela-->
+                <!--fim de uma tela-->
+
+        <div class="row bg-secondary"><!--inicio da terceira tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold mt-5 ml-5 pl-5">2</h1>
+            </div>
+            <div class="col-5"><!--inicio do texto-->
+                <div class="row ">
+                    <h5 class="text-warning font-weight-bold mb-5 mt-5 font-italic">A Petrobras controla o preço nos postos?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white font-weight-bold text-monospace">
+                        Não. Os preços são livres nos postos e somos apenas um dos agentes na produção e na comercialização da gasolina no Brasil. 
+                    </p>
+                    <p class="text-white">
+                        O valor do combustível nas nossas refinarias e terminais é muito inferior ao pago pelo consumidor final. Somente uma parte do preço é da Petrobras. O preço na bomba incorpora a carga tributária e a ação dos demais agentes do setor de comercialização como: importadores, distribuidores, revendedores e produtores de biocombustíveis – fatores sobre os quais não possuímos controle.
+                    </p>
+                </div>
+                <div class="row  border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a>
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 ml-3 pt-5" src="../imagens/2.png" alt="">
+            </div>
+        </div><!--fim da terceira tela-->
+                <!--fim de uma tela-->
+
+        <div class="row bg-info"><!--inicio da quarta tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold mt-5 ml-5 pl-5">3</h1>
+            </div>
+            <div class="col-5"><!--inicio texto-->
+                <div class="row">
+                    <h5 class="text-warning font-weight-bold mt-5 mb-5 font-italic">Como é calculdao o preço da gasolina nas refinarias?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white mb-3">
+                        <span class="text-white font-weight-bold">Os combustíveis derivados de petróleo são commodities e têm seus preços atrelados aos mercados internacionais,</span>cujas cotações variam diariamente, para cima e para baixo. Essa lógica se aplica a outros tipos de commodities nas economias abertas, onde é possível importar e exportar como, por exemplo, trigo, café, metais, etc. 
+                    </p>
+                    <p class="text-white">
+                        Num ambiente de economia aberta e liberdade de preços enfrentamos a concorrência dos importadores de combustíveis, cujos preços acompanham o mercado internacional. Assim, a variação dos preços nas refinarias é importante para que possamos competir de forma eficiente no mercado brasileiro. 
+                    </p>
+                    <a class="text-white" href="">Acompanhe os preços médios dos combustíveis que saem das nossas refinarias</a>
+                </div>
+                <div class="row border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a> 
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 ml-4 pt-5" src="../imagens/3.png" alt="">
+            </div>
+        </div><!--fim da quarta tela-->
+                <!--fim de uma tela-->
+
+        <div class="row bg-secondary"><!--inicio da quinta tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold ml-5 mt-5 pl-5">4</h1>
+            </div>
+            <div class="col-5"><!--inicio do text-->
+                <div class="row">
+                    <h5 class=" mt-5 mb-5 text-warning font-weight-bold font-italic">Por que a Petrobras adotou a estratégia de variar os preços da gasolina em intervalos curtos de tempo?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white">
+                        <span class="text-white font-weight-bold">Os combustíveis derivados de petróleo são commodities e têm seus preços atrelados aos mercados internacionais, cujas cotações variam diariamente. É natural, portanto, que os preços no Brasil também acompanhem o mercado internacional, para cima e para baixo. </span>É importante acompanharmos o mercado para que possamos competir de forma eficiente no mercado brasileiro com os nossos concorrentes, principalmente os importadores, cujos preços podem variar diariamente. 
+                    </p>
+                    <p class="text-white mt-2">
+                        Estamos focados em prover a energia para mobilidade com foco em resultados e orientação ao mercado. 
+                    </p>
+                        <a class="text-white" href="">Acompanhe os preços médios que saem das nossas refinarias</a>
+                </div>
+                <div class="row border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a> 
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 ml-5 pt-5" src="../imagens/10.png" alt="">
+            </div>
+        </div><!--fim da quinta tela-->
+            <!--fim de uma tela-->
+
+        <div class="row bg-success"><!--inicio da sexta tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold ml-5 mt-5 pl-5">5</h1>
+            </div>
+            <div class="col-5"><!--inicio do texto-->
+                <div class="row">
+                    <h5 class=" mt-5 mb-5 text-warning font-weight-bold font-italic">Há monopólio no setor de combustíveis?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white font-weight-bold">
+                        Não há monopólio neste setor no Brasil desde 2002,<a class="text-white font-weight-bold" href="">com base na Lei 9.478</a>, a Lei do Petróleo.
+                    </p>
+                    <p class="text-white mt-2">
+                        Assim, existem outros agentes na indústria de petróleo, as importações e exportações foram permitidas e os preços são livres, estabelecidos pelos agentes de mercado, sem tabelamento por parte do governo. 
+                    </p>
+                    <p class="text-white">
+                        <span class="text-white font-weight-bold">Neste contexto, enfrentamos a concorrência de outros agentes, principalmente os importadores,</span>cujos preços de combustíveis acompanham a oscilação no mercado internacional (para cima e para baixo).
+                    </p>
+                    <p class="text-white">
+                        Somos apenas um dos agentes na produção e comercialização de combustíveis no Brasil. O preço final da gasolina é composto pela produção da Petrobras, mais carga tributária, distribuição, etanol obrigatório e revenda. 
+                    </p>
+                </div>
+                <div class="row border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a> 
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="ml-4 mt-5 pt-5" src="../imagens/5.png" alt="">
+            </div>
+        </div><!--fim da sexta tela-->
+            <!--fim de uma tela-->
+
+        <div class="row bg-secondary"><!--inicio da setima tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold ml-5 mt-5 pl-5">6</h1>
+            </div>
+            <div class="col-5"><!--inicio do texto-->
+                <div class="row">
+                    <h5 class=" mt-5 mb-5 text-warning font-weight-bold font-italic">Se a Petrobras aumentar a produção de Petróleo, isso impactará o preço da gasolina?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white">
+                        O aumento da produção de petróleo contribui como insumo para o fornecimento da energia que move a sociedade.<span class="text-white font-weight-bold">Os nossos custos de extração de petróleo não definem o preço da gasolina nas refinarias, pois se trata de um mercado de commodities</span>, atrelado à variação internacional. Isso ocorre em qualquer país cuja economia é aberta, onde pode haver importações e exportações e onde haja a livre concorrência. 
+                    </p>
+                    <p class="text-white mt-2">
+                        O preço final da gasolina é composto pela produção da Petrobras, mais carga tributária, distribuição, etanol obrigatório e revenda. 
+                    </p>
+                </div>
+                <div class="row border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a> 
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 ml-3 pt-5" src="../imagens/6.png" alt="">
+            </div>
+        </div><!--fim da setima tela-->
+            <!--fim de uma tela-->
+
+        <div class="row bg-info"><!--inicio da oitava tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold ml-5 mt-5 pl-5">7</h1>
+            </div>
+            <div class="col-5"><!--inicio do texto-->
+                <div class="row">
+                    <h5 class="mb-5 mt-5 text-warning font-weight-bold font-italic">Por que é acionado etano na gasolina?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white">
+                        <span class="text-white font-weight-bold font-italic">A adição do etanol é uma obrigação legal</span> dos distribuidores de combustíveis. A Lei N°8.723, de 1993, estipulou a mistura de álcool anidro na gasolina. Em poucos anos, novos decretos alteraram a porcentagem da mistura. Desde março de 2015, o percentual obrigatório de etanol anidro combustível na gasolina comum é de 27%. O percentual na gasolina premium é de 25%. 
+                    </p>
+                </div>
+                <div class="row border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a> 
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 mb-2 ml-5 pt-2" src="../imagens/7.png" alt="">
+            </div>
+        </div><!--fim da oitava tela-->
+            <!--fim de uma tela-->
+
+        <div class="row bg-secondary"><!--inicio da nona tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold ml-5 mt-5 pl-5">8</h1>
+            </div>  
+            <div class="col-5"><!--inicio do texto-->
+                <div class="row">
+                    <h5 class="mb-5 mt-5 text-warning font-weight-bold font-italic">A Petrobras vende a gasolina mais barata em outros países do que no Brasil?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white font-weight-bold">
+                        O preço cobrado no Brasil pela gasolina que sai da refinaria equipara-se aos preços de outros países que possuem mercados de derivados abertos e competitivos. No entanto, há uma grande variação na lógica de formação de preços de bomba em cada país. 
+                    </p>
+                    <p class="text-white">
+                        Além de eventuais diferenças nos preços de produtores, distribuidores e revendedores, o ambiente regulatório dos países pode diferir, devido aos impostos e eventuais subsídios governamentais.
+
+                    </p>
+                    <p class="text-white mt-2">
+                        Portanto, a comparação dos preços de combustíveis em diferentes países deve ser feita com ressalvas. As comparações pontuais podem ser prejudicadas pela velocidade com que as variações dos preços do petróleo no mercado internacional são repassadas aos preços domésticos. 
+                    </p>
+                </div>
+                <div class="row border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a> 
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 ml-2" src="../imagens/8_new.png" width="450" height="450" alt="">
+            </div>
+        </div><!--fim da nona tela-->
+            <!--fim de uma tela-->
+
+        <div class="row bg-info"><!--inicio da decima tela-->
+            <div class="col-2 mt-5">   
+                <h1 class="text-warning font-weight-bold ml-5 mt-5 pl-5">9</h1>
+            </div>
+            <div class="col-5"><!--inicio do texto-->
+                <div class="row">
+                    <h5 class="mb-5 mt-5 text-warning font-weight-bold font-italic">A Petrobras usa o preço da gasolina para compensar perdas em outros setores?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white font-weight-bold font-italic">
+                        Não há relação direta com a situação conjuntural da empresa, nem mesmo com seus resultados financeiros. O que determina os ajustes é a variação do valor do petróleo e seus derivados no mercado internacional, associada às condições locais de mercado. 
+                    </p>
+                    <p class="text-white mt-1">
+                        A formação de preços dos combustíveis nas refinarias da Petrobras segue a dinâmica dos mercados de commodities em ambiente de livre competição, acompanhando os movimentos do mercado internacional (para cima ou para baixo).<a class="text-white" href="">Confira o preço médio da gasolina ao sair das nossas refinarias.</a>
+                    </p>
+                </div>
+                <div class="row  border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a> 
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 ml-3 pt-5" src="../imagens/9.png" alt="">
+            </div>
+        </div><!--fim da decima tela-->
+            <!--fim de uma tela-->
+
+        <div class="row bg-success"><!--inicio da decima primeira tela-->
+            <div class="col-2 mt-5">
+                <h1 class="text-warning font-weight-bold ml-5 mt-5 pl-5">10</h1>
+            </div>
+            <div class="col-5"><!--inicio do texto-->
+                <div class="row">
+                    <h5 class="mb-5 mt-5 text-warning font-weight-bold font-italic">Como funciona o fornecimento de gasolina no Brasil?</h5>
+                </div>
+                <div class="row">
+                    <p class="text-white">
+                        Ao abastecer seu veículo no posto, o consumidor adquire a gasolina “C”, uma mistura de gasolina “A” com etanol anidro, feita pelos distribuidores. A gasolina “A” pode ser produzida em nossas refinarias, por outros refinadores do país, por formuladores, pelas centrais petroquímicas ou, ainda, importada por empresas autorizadas pela ANP. 
+                    </p>
+                    <p class="text-white">
+                        A <a class="text-white" href=""> estratégia de preços</a>que anunciamos em 2016 se refere aos preços cobrados nas nossas refinarias e terminais para venda às distribuidoras. 
+                    </p>
+                    <p class="text-white font-weight-bold">
+                        <span class="text-white">Portanto</span>a Petrobras Holding e a Petrobras Distribuidora atuam em ambientes de negócio diferentes e são empresas independentes, com autonomia na formação de seus preços.
+                    </p>
+                    <p class="text-white">
+                        A Petrobras Distribuidora é uma subsidiária que atua livremente e em iguais condições às demais, tendo independência para seu posicionamento de preços e escolha de fornecedores.
+                    </p>
+                </div>
+                <div class="row border border-white border-top-1 mb-5 border-left-0 border-right-0 border-bottom-0 mt-4">
+                    <h6 class="text-warning font-weight-bold mt-4">compartilhe</h6>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                    <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a> 
+                </div>
+            </div><!--fim do texto-->
+            <div class="col-5">
+                <img class="mt-5 ml-3 pt-5" src="../imagens/4.png" alt="">
+            </div>
+        </div><!--fim da decima primeira tela-->
+            <!--fim de uma tela-->
+
+        <div class="row bg-success"><!--inicio dos cards-->
+
+            <div class="col-4 mt-5 mb-5"><!--inicio do card 1-->
+                <div class="card bg-primary p-4 card-rounded">
+                    <img class="card-img-top" src="../imagens/mito1.png" width="300" height="300" alt="">
+                    <div class="card-body">
+                        <span class="text-warning font-weight-bold mt-4">compartilhe</span>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a>
+                    </div>
+                </div>
+            </div><!--fim do card 1-->
+
+            <div class="col-4 mt-5 mb-5"><!--inicio do card 2-->
+                <div class="card bg-primary border border-info border-rounded p-4">
+                    <img class="card-img-top" src="../imagens/mitosharenew2.jpg" width="300" height="300" alt="">
+                    <div class="card-body">
+                        <span class="text-warning font-weight-bold mt-5">compartilhe</span>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a>
+                    </div>
+                </div>
+            </div><!--fim do card 2-->
+
+            <div class="col-4 mt-5 mb-5"><!--inicio do card 3-->
+                <div class="card bg-primary p-4">
+                    <img class="card-img-top" src="../imagens/mito3.png" width="300" height="300" alt="">
+                    <div class="card-body">
+                        <span class="text-warning font-weight-bold mt-4">compartilhe</span>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/linkedin.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/facebook.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/twitter.png" width="30" height="30" alt=""></a>
+                        <a href=""><img class="ml-3 mt-4" src="../imagens/whatsapp.png" width="30" height="30" alt=""></a>
+                    </div>
+                </div>
+            </div><!--fim do card 3-->
+        </div><!--fim dos cards-->
+        <div class="row bg-white"><!--inicio rodape-->
+            <div class="col-4 bg-white">
+                <a class="mt-2 mb-2" href=""><img src="../imagens/petrobras-small.png" width="200" height="70" alt=""></a>
+            </div>
+            <div class="col-4 primary">
+                <h6 class="text-success mt-3 pt-2 mb-1">@ Copyright 2018 Petrobras-Todos os direitos reservados</h6>
+            </div>
+            <div class="col-4">
+                <h6 class="text-success mt-3 pt-2 mb-1 font-weight-bold">Conheça os nossos canais</h6>
+            </div>
+        </div><!--fim do rodapé-->
+    </div><!--fim do corpo principal-->
+</body>
+</html>
