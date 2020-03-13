@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <title>Ouvidoria</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row border p-3">
@@ -51,7 +53,7 @@
                                             <input type="Nome" class="form-control" id="inputNome" placeholder="">
                                         </div>
                                         <div class="form-row">
-                                            
+
                                             <div class="form-group col-sm-6">
                                                 <label for="inputPassword4">E-mail</label>
                                                 <input type="E-mail" class="form-control" id="inputE-mail"
@@ -59,11 +61,12 @@
                                             </div>
                                             <div class="form-group col-sm-6">
                                                 <label for="inputEmail4">CPF</label>
-                                                <input type="text" class="form-control" maxlength="11" id="cpf" placeholder="" required>
+                                                <input type="text" class="form-control" maxlength="11" id="cpf"
+                                                    placeholder="" required>
                                             </div>
                                             <div class="form-group col-sm-6">
                                                 <label for="inputPassword4">RG</label>
-                                                <input type="text" class="form-control" id="inputRG" placeholder="" required>
+                                                <input type="text" class="form-control" id="rg" placeholder="" required>
                                             </div>
                                             <div class="form-group col-sm-6">
                                                 <label for="inputCEP">CEP</label>
@@ -79,7 +82,8 @@
                                             </div>
                                             <div class="form-group col-sm-6">
                                                 <label for="inputNumero">Número</label>
-                                                <input type="text" class="form-control" id="inputNumero" placeholder="" required>
+                                                <input type="text" class="form-control" id="inputNumero" placeholder=""
+                                                    required>
                                             </div>
 
                                             <div class="form-group col-sm-6">
@@ -89,7 +93,8 @@
                                             </div>
                                             <div class="form-group col-sm-6">
                                                 <label for="inputBairro">Bairro</label>
-                                                <input type="text" class="form-control" id="inputBairro" placeholder="" required>
+                                                <input type="text" class="form-control" id="inputBairro" placeholder=""
+                                                    required>
                                             </div>
                                         </div>
                                         <div class="form-row">
@@ -142,20 +147,23 @@
                                             </div>
                                             <div class="form-group col-sm-10">
                                                 <label for="inputddd">Telefone</label>
-                                                <input type="text" class="form-control" maxlength="10" id="Telefone" required>
+                                                <input type="text" class="form-control" maxlength="10" id="Telefone"
+                                                    required>
                                             </div>
                                             <div class="form-group col-sm-2">
                                                 <label for="inputddd">DDD</label>
-                                                <input type="text" class="form-control" maxlength="2" id="DDD2" required>
+                                                <input type="text" class="form-control" maxlength="2" id="DDD2"
+                                                    required>
                                             </div>
                                             <div class="form-group col-sm-10">
                                                 <label for="inputddd">Celular</label>
-                                                <input type="text" class="form-control" maxlength="10" id="Telefone2" required>
+                                                <input type="text" class="form-control" maxlength="10" id="Telefone2"
+                                                    required>
                                             </div>
                                             <div class="form-group col-sm-12">
                                                 <label for="FormControlTextarea1">Descrição</label>
-                                                <textarea class="form-control" maxlength="300"
-                                                    id="FormControlTextarea1" rows="3" required></textarea>
+                                                <textarea class="form-control" maxlength="300" id="FormControlTextarea1"
+                                                    rows="3" required></textarea>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-outline-info">Enviar</button>
@@ -173,31 +181,58 @@
                         <Strong><label for="usr">Número da ocorrência</label></Strong>
                         <input type="text" class="form-control" id="usr">
                     </div>
-                    <button class="btn btn-outline-info" type="submit" name="">Consultar</button>
+                    <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+                        Consultar
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Consultas de ocorrências</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-info"
+                                        data-dismiss="modal">Sair</button>
+                                    <!--Término Modal-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        <footer class="page-footer my-5">
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://instagram.com/vitorgoat"><i class="fab fa-instagram"></i></a>
+    <!-- Ínicio Footer-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <footer class="page-footer border">
+                    <div class="footer-copyright text-center m-0 p-3">© 2020 Copyright:
+                        <a href="https://instagram.com/vitorgoat"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </footer>
             </div>
-        </footer>  
+        </div>
+    </div>
+    <!--Término Footer-->
 </body>
 
 </html>
 <script>
-$(document).ready(function(){
-    $('#cpf').mask('000.000.000-00');
-    $('.time').mask('00:00:00');
-    $('.date_time').mask('99/99/9999 00:00:00');
-    $('#cep').mask('99999-999');
-    $('#DDD').mask('00');
-    $('#DDD2').mask('00');
-    $('#Telefone').mask('99999-9999');
-    $('#Telefone2').mask('99999-9999');
-    $('.mixed').mask('AAA 000-S0S');
-  });
-
-
+    $(document).ready(function () {
+        $('#cpf').mask('000.000.000-00');
+        $('#cep').mask('99999-999');
+        $('#DDD').mask('00');
+        $('#DDD2').mask('00');
+        $('#Telefone').mask('9 9999-9999');
+        $('#Telefone2').mask('9 9999-9999');
+    });
 </script>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script type="text/javascript" src="jquery-accordion/jquery.accordion.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>Petrobras</title>
+    <link href="imagens/iconpet.png" rel="icon" type="" />
+</head>
+<style>
+    .petrobras-header {
+        font-family: 'petrobras_sansregular';
+        font-size: .786em;
+        border-bottom: 1px solid #a0a0a0;
+        height: 29px;
+        overflow: hidden;
+        color: #008542;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .petrobras-header {
+        height: 32px !important;
+    }
+
+    .petrobras-header p a {
+        font-weight: 600;
+        color: #008542;
+        text-decoration: none;
+    }
+
+    .card {
+        background: #004974;
+        padding: 5%;
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        position: relative !important;
+    }
+
+    .footer {
+        height: 65px;
+        margin-top: -2px;
+    }
+
+    .pad {
+        padding: 0 1.5vw;
+    }
+</style>
+
+<body>
+
+    <div class="petrobras-header full p-2">
+        <p>
+            <a href="#" target="_blank">Petrobras.</a> 10 respostas para as suas dúvidas sobre o preço da gasolina
+        </p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="imagens/1.png" width="100%">
+                </a>
+
+                <div id="accordion">
+                    <h3 style="background-color:#00b2a9 ;">1</h3>
+                    <div style="background-color: #00b2a9;">
+                        <p>
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <div class="row cards">
+                <div class="pad col-md-4">
+                    <div class="card" style="width: 23rem;">
+                        <img class="card-img-top" src="imagens/m1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Compartilhe</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pad col-md-4">
+                    <div class="card" style="width: 23rem;">
+                        <img class="card-img-top" src="imagens/m2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Compartilhe</h5>
+                            <p class="card-text"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pad col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="card" style="width: 23rem;">
+                        <img class="card-img-top" src="imagens/m3.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Compartilhe</h5>
+                            <p class="card-text"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid border p-1">
+        <div class="col-md-12">
+            <div class="row">
+                <footer class="footer rel">
+                    <a href="imagens/iconpet.png" target="_blank" title="Petrobras"
+                        class="logo-footer logo-rodape-db">TESTE</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(function () {
+        $("#accordion").accordion();
+    });
+</script>
