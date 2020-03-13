@@ -8,7 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="../Arquivos-Js/cadastrar.js"></script>
-    <script src="../jquery/jquery-1.11.3.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1"></script>
+   <script src="../jquery/textarea-limit-counter/plugin-jqtarea.js"></script>
 </head>
 <body class="bg-secondary">
     <div class="container border border-white">
@@ -45,83 +47,79 @@
                         <div class="card-body">
                             <h5 class="card-title">Dados Pessoais</h5>
                             <hr>
-                            <form action="">
+                            <form id="pessoais" action="">
                                 <div class="form-row">
                                     <div class="col">
                                         <h6 class="mb-1">Nome</h6>
-                                        <input type="text" class="border border-muted" required>
+                                        <input type="text" id="nome" class="border border-muted" required>
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">E-mail</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="email" class="border border-muted">
                                     </div>
                                 </div>
-
                                 <div class="form-row mt-2">
                                     <div class="col">
                                         <h6 class="mb-1">CPF/CNPJ</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="cpf" class="border border-muted">
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">RG</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="rg" class="border border-muted">
                                     </div>
                                 </div>
                             </form>
                         </div>  
                     </div>
-
                     <div class="card mt-2">
                         <div class="card-body">
                             <h5 class="card-title">Dados Informacionais</h5>
                             <hr>
-                            <form action="">
+                            <form action="" id="informacionais">
                                 <div class="form-row">
                                     <div class="col">
                                         <h6 class="mb-1">CEP</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="cep" class="border border-muted">
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">Logradouro</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="logradouro" class="border border-muted">
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">Número</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="numero" class="border border-muted">
                                     </div>
                                 </div>
-
                                 <div class="form-row mt-2">
                                     <div class="col">
                                         <h6 class="mb-1">Complemento</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="complemento" class="border border-muted">
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">Bairro</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="bairro" class="border border-muted">
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">Cidade</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="cidade" class="border border-muted">
                                     </div>
                                 </div>
-
                                 <div class="form-row mt-2">
                                     <div class="col">
                                         <h6 class="mb-1">UF</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="uf" class="border border-muted">
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">País</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="pais" class="border border-muted">
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">DD</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="dd" class="border border-muted">
                                     </div>
                                     <div class="col">
                                         <h6 class="mb-1">Telefone</h6>
-                                        <input type="text" class="border border-muted">
+                                        <input type="text" id="telefone" class="border border-muted">
                                     </div>
                                 </div>
                             </form>
@@ -129,18 +127,20 @@
                     </div>
                     <div class="card mt-2">
                         <div class="card-body">
-                           <form action="">
+                           <form action="" id="mensageiro">
                                <div class="form-row">
                                 <div class="col">
                                     <h5 class="card-title">Mensagem</h5>
                                     <hr>
-                                    <textarea name="" id="" cols="70" rows="10" class="border border-muted" required placeholder="Digite aqui seu manifesto"></textarea>
+                                    <textarea name=""  id="texto" cols="70" rows="10" class="border border-muted" required placeholder="Digite aqui seu manifesto" onkeyup="countChar(this)" maxlength="500"></textarea>
+                                    <!--<div id="charNum" class="badge badge-danger"> restante(s)</div>-->
+                                    <h6 class="bg-danger text-white text-bold border border-success rounded-pill d-inline px-1">Caracteres Restantes:<span id="charNum" class="badge badge-danger"></span></h6>
                                 </div>
                                </div>
-
                                <div class="form-row mt-1">
                                 <div class="col">
-                                    <a href="#" class="btn btn-danger"><span class="text-white">Enviar</span></a>
+                                    <button class="btn btn-primary" type="submit">enviar</button>
+                                    <!--<a href="#" id="enviar" type="submit" class="btn btn-danger"><span class="text-white">Enviar</span></a>-->
                                 </div>
                                </div>
                             </form>

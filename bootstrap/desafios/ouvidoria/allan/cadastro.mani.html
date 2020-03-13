@@ -10,11 +10,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="validacao.js"></script>
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+ <script >
+   $(document).ready(function(){
+    $('#cpf').mask('000.000.000-00', {reverse: true});
+    $('#cep').mask('00000-000');
+    $('#celular').mask('(00) 0000-0000');
+   });
+ </script>
 </head>
 
 <body>
-<form id="formulariopai">
+  <div  id="formulariopai">
+<form>
     <div class="container">
         <h2>Dados Pessoais</h2>
         <hr>
@@ -32,7 +40,7 @@
   <div class="row">
     <div class="col">
         <strong>CPF/CNPJ</strong>
-      <input type="number" name="cpf" id="cpf" class="form-control" placeholder="">
+      <input type="text" name="cpf" id="cpf" class="form-control" placeholder="">
     </div>
     <div class="col">
         <strong>RG</strong>
@@ -46,7 +54,7 @@
     <div class="row">
       <div class="col">
         <strong>CEP</strong>
-        <input type="number" name="cep" id="mascaCep" class="form-control" placeholder="">
+        <input type="text" required name="cep" id="cep" class="form-control" placeholder="">
       </div>
       <div class="col">
         <strong>Lograudo</strong>
@@ -105,23 +113,25 @@
   </div>
   <div class="col-sm-3">
       <strong>Celular</strong>
-      <input type="number" name="celular" id="celular" class="form-control" placeholder="">
+      <input type="text" name="celular" id="celular" class="form-control" placeholder="">
     </div>
 </div>
 </form>
 <br>
-<form class="form-group" >
+<form >
     <h3>Dados da mensagem</h3>
     <hr>
     Descrição
-    <div class="form-group" ><textarea required="required" class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
+    <div class="form-group"  ><textarea class="form-control" id="mensagem" name="mensagem" rows="3" ></textarea>
+
       </div>
 </form>
 <form>
- <button type="submit" type="button" class="btn btn-danger">ENVIAR</button>
+ <button type="submit" id="botao" name="botao"  class="btn btn-danger">ENVIAR</button>
 </form>
     </div>
   </form>
+</div>
 </body>
 
 </html>
