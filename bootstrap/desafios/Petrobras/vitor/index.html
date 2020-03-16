@@ -10,16 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <script type="text/javascript" src="jquery-accordion/jquery.accordion.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <title>Petrobras</title>
+    <title>10 respostas para suas dúvidas sobre o preço da gasolina</title>
     <link href="imagens/iconpet.png" rel="icon" type="" />
 </head>
 <style>
     .petrobras-header {
-        font-family: 'petrobras_sansregular';
+
         font-size: .786em;
         border-bottom: 1px solid #a0a0a0;
         height: 29px;
@@ -42,6 +41,11 @@
         text-decoration: none;
     }
 
+    .cards {
+    padding: 5% 1.5vw;
+    width: 100%;
+}
+
     .card {
         background: #004974;
         padding: 5%;
@@ -50,57 +54,117 @@
         height: auto;
     }
 
-    .footer {
-        position: relative !important;
-    }
-
-    .footer {
-        height: 65px;
-        margin-top: -2px;
-    }
-
     .pad {
         padding: 0 1.5vw;
     }
+
+    .footer .rights {
+        display: block !important;
+        position: absolute !important;
+        top: 15px !important;
+        left: 0 !important;
+        right: 0 !important;
+        text-align: center !important;
+    }
+
+    .footer {
+    height: 65px;
+    margin-top: -2px;
+}
+
+    .green {
+        color: #018542;
+    }
+
+    .psr12 {
+        font-family: 'petrobras_sansregular';
+        font-size: 12px;
+    }
+
+    .fill-w {
+        width: 100%;
+    }
+
+    .footer .social .text {
+        top: 11px;
+    }
+
+    .psi12 {
+        font-family: 'petrobras_sansitalic';
+        font-size: 12px;
+    }
+
+    .mr8 {
+        margin-right: 8px;
+    }
+
+    .rel {
+        position: relative;
+    }
+
+    .sections hr.clear-content {
+    margin-bottom: 30px;
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.title-share {
+    font-size: 16px !important;
+    margin-right: 15px !important;
+    line-height: 30px !important;
+    padding-bottom: 10px;
+    float: left;
+    color: #FEE001;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
 </style>
 
 <body>
-
-    <div class="petrobras-header full p-2">
-        <p>
-            <a href="#" target="_blank">Petrobras.</a> 10 respostas para as suas dúvidas sobre o preço da gasolina
+    <div class="petrobras-header full">
+        <p class="m-2">
+            <a href="#">Petrobras.</a> 10 respostas para as suas dúvidas sobre o preço da
+            gasolina
         </p>
     </div>
-    <div class="container-fluid">
+
+    <div class="col-md-12">
         <div class="row">
-            <div class="col-md-12">
-                <img src="imagens/1.png" width="100%">
-                </a>
-
-                <div id="accordion">
-                    <h3 style="background-color:#00b2a9 ;">1</h3>
-                    <div style="background-color: #00b2a9;">
-                        <p>
-                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
+            <img src="imagens/1.png" width="100%" alt="">
+ 
         </div>
     </div>
-    
-    <div class="container-fluid">
+
+
+
+
+              <!-- Cards -->
+    <div class="container-fluid" style="background-color: #00b2aa;">
         <div class="col-md-12">
             <div class="row cards">
                 <div class="pad col-md-4">
                     <div class="card" style="width: 23rem;">
                         <img class="card-img-top" src="imagens/m1.png" alt="Card image cap">
+                        <hr class="clear-content">
                         <div class="card-body">
-                            <h5 class="card-title">Compartilhe</h5>
+                            <h3 class="title-share">Compartilhe</h5>
                             <p class="card-text"></p>
                         </div>
                     </div>
@@ -108,41 +172,53 @@
                 <div class="pad col-md-4">
                     <div class="card" style="width: 23rem;">
                         <img class="card-img-top" src="imagens/m2.png" alt="Card image cap">
+                        <hr class="clear-content">
                         <div class="card-body">
-                            <h5 class="card-title">Compartilhe</h5>
+                            <h3 class="title-share">Compartilhe</h5>
                             <p class="card-text"></p>
-
                         </div>
                     </div>
-                </div>
-                <div class="pad col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                </div>  <div class="pad col-md-4">
                     <div class="card" style="width: 23rem;">
                         <img class="card-img-top" src="imagens/m3.png" alt="Card image cap">
+                        <hr class="clear-content">
                         <div class="card-body">
-                            <h5 class="card-title">Compartilhe</h5>
+                            <h3 class="title-share">Compartilhe</h5>
                             <p class="card-text"></p>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid border p-1">
-        <div class="col-md-12">
-            <div class="row">
-                <footer class="footer rel">
-                    <a href="imagens/iconpet.png" target="_blank" title="Petrobras"
-                        class="logo-footer logo-rodape-db">TESTE</a>
-                </footer>
+              <!-- /Cards -->
+
+              <!-- Footer -->
+    <footer class="footer bkg-white oh rel">
+        <div class="container-fluid p-2">
+            <div class="col-md-12 bg-white">
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <img src="imagens/foot.png" width="150px" title="Petrobras"></a>
+                    </div>
+                    <div class="col-sm-5">
+                        <p class="rights psr12 green tc fill-w rel">© Copyright 2018 Petrobras – Todos os direitos
+                            reservados</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="social ib">
+                            <span class="text psi12 green mr8 rel">Conheça nossos canais</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
+             <!--/Footer-->
 </body>
 
 </html>
 <script>
-    $(function () {
-        $("#accordion").accordion();
-    });
+
 </script>
