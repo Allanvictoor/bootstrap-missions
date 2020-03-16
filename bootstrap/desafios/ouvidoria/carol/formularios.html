@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -14,13 +14,12 @@
 </head>
 <body>
 <!--Cabeçalho-->
-<div class="container-fluid">
-    <div class="row">
-        <nav class="navbar navbar-light navbar-expand-lg bg-light col-sm-12" style="background-color: #fcfafb">
-            <a href="ouvidoria.html" style="margin: auto" class="navbar-brand"><img src="imagens/logo.png" style="width: 100%; height: 100%"> </a>
-        </nav>
-    </div>
+<div class="row" style="border-bottom: 1px solid lightsteelblue">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light col-sm-12" style="background-color: #fcfafb">
+        <a href="ouvidoria.html"  style="margin-left: 9%" class="navbar-brand"><img src="imagens/logo.png" style="width: 100%; height: 100%"> </a>
+    </nav>
 </div>
+
 <!--Corpo-->
 <div class="container">
     <div class="col-sm my-2">
@@ -42,6 +41,7 @@
                             <input type="text" id="idManifesto" class="form-control" style="margin-left: -10px" placeholder=" Código: ---">
                         </div>
                     </fieldset>
+                    <form name="formulario" method="post">
                     <div class="col my-1">
                         <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" required>
                         <div class="invalid-feedback">
@@ -49,6 +49,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="form-row">
                     <div class="col my-1">
                         <input type="date" class="form-control" id="idade"  placeholder="Data de Nascimento" required>
@@ -83,9 +84,11 @@
                         </div>
                     </div>
                 </div>
+            </form>
+
                 <form class="form-inline" novalidate>
-                    <label class="mr-sm-2" for="tipoUsuario"><p class="small text-muted m-0">Tipo de Usuario</p> </label>
-                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="tipoUsuario">
+                    <label class="mr-sm-2 mt-3" for="tipoUsuario"><p class="small text-muted m-0">Tipo de Usuario</p> </label>
+                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 mt-3" id="tipoUsuario">
                         <option selected></option>
                         <option value="1">Estudante</option>
                         <option value="2">Colaborador</option>
@@ -93,8 +96,8 @@
                     </select>
                 </form>
                 <div class="form-group">
-                    <label for="manifestoUsuario"><p class="small text-muted m-0">Digite seu Manifesto</p> </label>
-                    <textarea class="form-control" id="manifestoUsuario" rows="3" required></textarea>
+                    <label for="manifestoUsuario" style="margin-top: 5%"><p class="small text-muted m-0">Digite seu Manifesto</p> </label>
+                    <textarea  class="form-control" id="manifestoUsuario" style="resize: none"  rows="3"  required></textarea>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox"id="invalidCheck" required>
@@ -108,6 +111,7 @@
                        <button class="btn btn-primary btn-lg my-1" data-target="#modalFormularioManifesto" data-toggle="modal" id="enviarFormularioManifesto" type="submit">Enviar</button>
                     </div>
                 </div>
+                <script src="js.js"></script>
             </form>
         </div>
     </div>
@@ -144,14 +148,10 @@
 </body>
 </html>
 
-<style type="text/css" media="all">
-    body{ font-family:Arial }
-    .erro{color:#ED1C24; margin:0}
-    .ok{color:#006633; margin:0}
-</style>
 
 <script type="text/javascript">
     $(document).ready(function() {
+
         $("#emailValido").hide();
         $('#verificar-email').click(function () {
             //desabilitando o submit do form
@@ -181,6 +181,8 @@
         $('#cep').mask('00000-000');
         $('#telefone').mask('(00) 0.0000-0000');
     });
+
+
 </script>
 
 

@@ -6,79 +6,92 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <title>Calcula Carteira</title>
     <script src="functions.js"></script>
 </head>
 
 <body>
 <!--Cabeçalho-->
-<div class="container-fluid">
-    <div class="row">
-        <nav class="navbar navbar-light col-sm-12" style="background-color: #780191">
-            <a class="navbar-brand col-sm-10"><img src="logoenome.png"></a>
-            <div class="navbar navbrand col-sm">
-                <button type="button" style="margin-top: auto" class="btn btn-outline border border-outline">
-                    <p style="color: #f2f2f2">Inicio</p>
-                </button>
-            </div>
-        </nav>
-    </div>
-</div>
-<!------Corpo------>
-<div class="container-fluid" style="background-color: #f2f2f2">
-    <div class="row">
-        <div class="col-8 w-90 mh-90 p-2">
-            <table class="col table-striped table-bordered my-1" id="carteira">
-                <thead>
-                <tr>
-                    <th scope="col"><p class="text-center font-weight-light my-1">Empresa</p></th>
-                    <th scope="col"><p class="text-center font-weight-light my-1">Ação</p></th>
-                    <th scope="col"><p class="text-center font-weight-light my-1">R$ Unitário</p></th>
-                    <th scope="col"><p class="text-center font-weight-light my-1">Quantidade</p></th>
-                    <th scope="col"><p class="text-center font-weight-light my-1">% Percent.</p></th>
-                    <th scope="col"><p class="text-center font-weight-light my-1">R$ Total</p></th>
-                </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+<div class="row">
+    <nav class="navbar navbar-light col-sm-12" style="background-color: #780191">
+        <a href="#"><img src="imagens/logoenome.png"></a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Destaques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fale Conosco</a>
+                </li>
+            </ul>
 
-        <div class="row">
-            <div class="col-sm p-3">
-                <div class="col-sm-12" style="background-color: ghostwhite">
-                    <form style="inline-size: auto">
-                        <label><b>Valor total do lote: </b></label>
-                        <div class="col">
-                            <label name="valor_carteira" placeholder="valor_carteira" id="valor_carteira">-</label>
-                        </div>
-                        <div class="form-row" class="form-group" class="col-6 p-3">
-                            <button type="button" class="btn btn-primary m-2 btn-lg" data-toggle="modal" data-target="#modalComprar">Comprar</button>
-                            <div class="modal fade" id="modalComprar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Qual valor disponivel?</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <input type="text" id="valorDisponivel" required name="valorDisponivel"  class="form-control" />
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
-                                            <button type="button" class="btn btn-primary" id="calcular" data-dismiss="modal">Calcular</button>
-                                        </div>
-                                    </div>
+        </div>
+    </nav>
+</div>
+
+<!------Corpo------>
+
+<div class="row">
+    <div class="col-sm-2 w-100">
+        <div class="row"> <i class="fas fa-home"></i></div>
+    </div>
+    <div class="col-sm-6 w-90 mh-90 p-2">
+        <table class="col table-striped table-bordered my-1" id="carteira">
+            <thead>
+            <tr>
+                <th scope="col"><p class="text-center font-weight-light my-1">Empresa</p></th>
+                <th scope="col"><p class="text-center font-weight-light my-1">Ação</p></th>
+                <th scope="col"><p class="text-center font-weight-light my-1">R$ Unitário</p></th>
+                <th scope="col"><p class="text-center font-weight-light my-1">Quantidade</p></th>
+                <th scope="col"><p class="text-center font-weight-light my-1">% Percent.</p></th>
+                <th scope="col"><p class="text-center font-weight-light my-1">R$ Total</p></th>
+            </tr><div class="row">
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="col-sm p-3">
+        <div class="col-sm-12" style="background-color: ghostwhite">
+            <form style="inline-size: auto">
+                <label><b>Valor total do lote: </b></label>
+                <div class="col">
+                    <label name="valor_carteira" id="valor_carteira">-</label>
+                </div>
+                <div class="form-row" class="form-group" class="col-6 p-3">
+                    <button type="button" class="btn btn-primary m-2 btn-lg" data-toggle="modal" data-target="#modalComprar">Comprar</button>
+                    <div class="modal fade" id="modalComprar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Qual valor disponivel?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" id="valorDisponivel" required name="valorDisponivel"  class="form-control" />
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                                    <button type="button" class="btn btn-primary" id="calcular" data-dismiss="modal">Calcular</button>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>
+
+
 
 
 <script>
@@ -87,8 +100,8 @@
     // valor recebido dinamicamente para cada papel
     // muda mensalmente
     var logos = [
-        'cmig4.jpg', 'brdt3.jpg', 'mrve3.jpg', 'itub4.jpg', 'ceab3.png',
-        'brfs3.jpg', 'cogn3.png', 'klbn11.jpg', 'lcam3.png', 'tgma3.png'
+        'imagens/cmig4.jpg', 'imagens/brdt3.jpg', 'imagens/mrve3.jpg', 'imagens/itub4.jpg', 'imagens/ceab3.png',
+        'imagens/brfs3.jpg', 'imagens/cogn3.png', 'imagens/klbn11.jpg', 'imagens/lcam3.png', 'imagens/tgma3.png'
     ];
 
     var nomes = [
@@ -104,7 +117,7 @@
             100, 100, 100, 100, 100, 100, 100, 100, 100, 100
         ];
     var lotes_valor = [
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        1511, 2845, 0, 0, 0, 0, 0, 0, 0, 0
     ];
 
     var lotes_perc = [
@@ -127,7 +140,7 @@
         var tableBody = $("#carteira tbody").empty();
         for (i = 0; i < valores.length; i++) {
             var tr = $("<tr></tr>");
-            tr.append($("<td></td>").text(''));
+            tr.append($(`<td width="5%"><img style="height: 60%; width: 60%" src="${logos[i]}"/></td>`));
             tr.append($("<td></td>").text(nomes[i]));
             tr.append($("<td></td>").text(valores[i]));
             tr.append($("<td></td>").text(lotes[i]));
@@ -138,6 +151,10 @@
     }
 
 
+
 </script>
 </body>
 </html>
+
+
+
