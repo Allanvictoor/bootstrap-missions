@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>corona</title>
+    <title>Corona Vírus</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -14,28 +14,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/animation.css">
 
 </head>
 <html>
 
 <body>
     <div class="container-fluid" style="background-color: #d9d9d9;">
-        <div class="col-sm-12 p-5">
+        <div class="col-sm-12 p-5 slideRight">
             <blockquote class="blockquote text-center pt-">
-                <h3 class="display-3">Coronavirus</h3>
-                <h5 class="display-4">Tudo o que você precisa saber sobre a epdemia</h5>
+                <h3 class="display-3">Coronavírus</h3>
+                <h5 class="display-3">Tudo o que você precisa saber sobre a epidemia</h5>
             </blockquote>
         </div>
         <div class="col-sm-12 mx-auto d-block">
-            <img class="mx-auto d-block p-3"
-                src="https://2.bp.blogspot.com/-cEBCBvxlbX0/VPhi5l_3vsI/AAAAAAAALxc/E6x1e44locA/s1600/01.gif" alt="">
+            <img class="mx-auto d-block p-4 slideLeft"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3SAssLGd7aRFIXrgDiPQOWwblPcKOsIj4_dRxn0m1llzQs2va"
+                alt="">
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
                 <img class="mx-auto d-block my-3"
-                    src="https://lh3.googleusercontent.com/proxy/NPZbg0-rt3efX0FCuxNY4toN5dwREVbm0Z6w_JycgeF3vgHLM-qn35H5_YItS1261Xe7QXSOUOQ5Cpb2C8vY8gXATPWzxMXn4eTmcmxD9zs0gWtKRx8xraiM0oSTklO-56hJNiQ3pYN_"
+                    src="https://www.freepnglogos.com/uploads/thinking-png/thinking-vexels-transparent-png-svg-download-32.png"
                     alt="">
             </div>
             <div class="col-sm" style="background-color: #f8f9ff;">
@@ -47,7 +49,7 @@
                         O grupo de pessoas com mais facilidade de serem atingidas são: com imunidade baixa, doenças
                         cronicas - como por exemplo pessoas com diabetes e hipertenção e acima dos 60 anos.
                         <p>
-                           
+
                 </blockquote>
 
             </div>
@@ -73,7 +75,7 @@
                                         <li>Tosse.</li>
                                         <li>Dificuldade para respirar.</li>
                                     </ul>
-                                   
+
                         </blockquote>
                     </div>
 
@@ -107,7 +109,7 @@
                                 <li>contato com objetos ou superfícies contaminadas, seguido de contato com a boca,
                                     nariz ou olhos.</li>
                             </ul>
-                            
+
                 </blockquote>
             </div>
         </div>
@@ -125,7 +127,7 @@
                         é:
 
                         <p>
-                            <ul class="m-3"> 
+                            <ul class="m-3">
                                 <li>Lave as mãos com água e sabão ou use álcool em gel.</li>
                                 <li>Cubra o nariz e boca ao espirrar ou tossir.</li>
                                 <li>Evite aglomerações se estiver doente.</li>
@@ -134,124 +136,138 @@
                                 <li>Limpe e desinfete objetos e superfícies tocados com frequência, como celulares e
                                     computadores.</li>
                             </ul>
-                            
+
                 </blockquote>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="display-4 text-center my-3">Perguntas frequentes</h4>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-body" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-danger" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="/imagens/add.svg" width="22rem" alt=""> Coronavirús ou gripe?
+                                </button>
+                            </h5>
+                        </div>
 
-        <div class="col-sm">
-            <h4 class="display-4 text-center my-3">Perguntas frequentes</h4>
-            <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-warning mx-auto d-block" data-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                De acordo com Luciana Costa, diretora adjunta do Instituto de Microbiologia da UFRJ e do
+                                Laboratório de Genética e Imunologia das Infecções Virais, não tem como diferenciar as
+                                doenças apenas analisando os sintomas. "Os sinais são muito parecidos. Para saber, só
+                                fazendo o teste" <a
+                                    href="https://www.uol.com.br/vivabem/noticias/redacao/2020/03/13/como-diferenciar-coronavirus-de-gripe-e-resfriado.htm?cmpid=copiaecola">Veja
+                                    mais</a>
 
-                                Coronavirús ou gripe?
-                            </button>
-                        </h5>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            De acordo com Luciana Costa, diretora adjunta do Instituto de Microbiologia da UFRJ e do
-                            Laboratório de Genética e Imunologia das Infecções Virais, não tem como diferenciar as
-                            doenças apenas analisando os sintomas. "Os sinais são muito parecidos. Para saber, só
-                            fazendo o teste" <a
-                                href="https://www.uol.com.br/vivabem/noticias/redacao/2020/03/13/como-diferenciar-coronavirus-de-gripe-e-resfriado.htm?cmpid=copiaecola">Veja
-                                mais</a>
-
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-warning collapsed mx-auto d-block" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Quando procurar um medico?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body mx-auto d-block">
 
-                            O Ministro da Saúde, Luis Henrique Mandetta, recomendou que as pessoas só devem procurar
-                            unidades de saúde caso seus cuidados normais para resfriados e gripe não estejam
-                            funcionando.
+                    <div class="card">
+                        <div class="card-body" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-danger " data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <img src="/imagens/add.svg" width="22rem" alt=""> Quando procurar um medico?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body ">
+
+                                O Ministro da Saúde, Luis Henrique Mandetta, recomendou que as pessoas só devem procurar
+                                unidades de saúde caso seus cuidados normais para resfriados e gripe não estejam
+                                funcionando.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingtres">
-                        <h5 class="mb-0">
-                            <button class="btn btn-warning collapsed mx-auto d-block" data-toggle="collapse"
-                                data-target="#collapsetres" aria-expanded="false" aria-controls="collapsetres">
-                                Pode beijo e aperto de mão?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapsetres" class="collapse" aria-labelledby="headingtres" data-parent="#accordion">
-                        <div class="card-body mx-auto d-block">
-                            O ideal é evitar contatos físicos, para minimizar a transmissão de vírus respiratórios.
+                    <div class="card">
+                        <div class="card-body" id="headingtres">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-danger" data-toggle="collapse"
+                                    data-target="#collapsetres" aria-expanded="false" aria-controls="collapsetres">
+                                    <img src="/imagens/add.svg" width="22rem" alt=""> Pode beijo e aperto de mão?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapsetres" class="collapse" aria-labelledby="headingtres" data-parent="#accordion">
+                            <div class="card-body ">
+                                O ideal é evitar contatos físicos, para minimizar a transmissão de vírus respiratórios.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingquatro">
-                        <h5 class="mb-0">
-                            <button class="btn btn-warning collapsed mx-auto d-block" data-toggle="collapse"
-                                data-target="#collapsequatro" aria-expanded="false" aria-controls="collapsequatro">
-                                O coronavírus tem cura?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapsequatro" class="collapse" aria-labelledby="headingquatro" data-parent="#accordion">
-                        <div class="card-body mx-auto d-block">
-                            Segundo a OMS, ainda não há cura e não há um tratamento medicamentoso definido. Mas, segundo
-                            o infectologista Queiroz, existe a chamada "cura espontânea", que ocorre quando o corpo
-                            reage à infecção.
+                    <div class="card">
+                        <div class="card-body" id="headingquatro">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-danger" data-toggle="collapse"
+                                    data-target="#collapsequatro" aria-expanded="false" aria-controls="collapsequatro">
+                                    <img src="/imagens/add.svg" width="22rem" alt=""> O coronavírus tem cura?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapsequatro" class="collapse" aria-labelledby="headingquatro"
+                            data-parent="#accordion">
+                            <div class="card-body ">
+                                Segundo a OMS, ainda não há cura e não há um tratamento medicamentoso definido. Mas,
+                                segundo
+                                o infectologista Queiroz, existe a chamada "cura espontânea", que ocorre quando o corpo
+                                reage à infecção.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingcinco">
-                        <h5 class="mb-0">
-                            <button class="btn btn-warning collapsed mx-auto d-block" data-toggle="collapse"
-                                data-target="#collapsecinco" aria-expanded="false" aria-controls="collapsecinco">
+                    <div class="card">
+                        <div class="card-body" id="headingcinco">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-danger" data-toggle="collapse"
+                                    data-target="#collapsecinco" aria-expanded="false" aria-controls="collapsecinco">
 
-                                Animais transmitem o corona virus?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapsecinco" class="collapse" aria-labelledby="headingcinco" data-parent="#accordion">
-                        <div class="card-body mx-auto d-block">
+                                    <img src="/imagens/add.svg" width="22rem" alt=""> Animais transmitem o corona virus?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapsecinco" class="collapse" aria-labelledby="headingcinco"
+                            data-parent="#accordion">
+                            <div class="card-body ">
 
-                            Não há nenhuma evidencia registrada de qualquer animal possa transmitir o virus.
+                                Não há nenhuma evidencia registrada de qualquer animal possa transmitir o virus.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingseis">
-                        <h5 class="mb-0">
-                            <button class="btn btn-warning collapsed mx-auto d-block" data-toggle="collapse"
-                                data-target="#collapseseis" aria-expanded="false" aria-controls="collapseseis">
-                                Gente com o vírus, mas sem os sintomas, pode transmitir a doença?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseseis" class="collapse" aria-labelledby="headingseis" data-parent="#accordion">
-                        <div class="card-body mx-auto d-block">
-                            Pessoas assintomáticas ou com muito poucos sintomas podem transmitir o vírus.
+                    <div class="card">
+                        <div class="card-body" id="headingseis">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-danger" data-toggle="collapse"
+                                    data-target="#collapseseis" aria-expanded="false" aria-controls="collapseseis">
+                                    <img src="/imagens/add.svg" width="22rem" alt=""> Pessoas com máscara podem pegar o
+                                    Coronavírus?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseseis" class="collapse" aria-labelledby="headingseis" data-parent="#accordion">
+                            <div class="card-body ">
+                                SIM. Se uma pessoa com máscara estiver em um transporte coletivo, por exemplo, encostar
+                                na barra de proteção que por acaso está contaminada e coçar os olhos pode pegar a
+                                doença.
 
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
+            </div>
+            <div class="col-sm">
+                <img class="mx-auto  d-block my-5" style="width: 32rem;"
+                    src="https://previews.123rf.com/images/tynyuk/tynyuk1705/tynyuk170500011/78025765-el-hombre-est%C3%A1-pensando-signo-de-interrogaci%C3%B3n-ilustraci%C3%B3n-vectorial-en-estilo-de-dibujos-animados.jpg"
+                    alt="">
+                    <img src="/imagens/back.svg" class="mx-auto d-block" alt="" style="width: 08rem;">
             </div>
         </div>
     </div>
@@ -262,7 +278,7 @@
                 <img class="img-fluid mx-auto my-auto d-block" style="width: 22rem;"
                     src="https://image.freepik.com/free-vector/young-man-workplace-avatar-character_24877-21135.jpg"
                     alt="">
-                    <img class="img-fluid mx-auto my-auto d-block pt-4" style="width: 22rem;"
+                <img class="img-fluid mx-auto my-auto d-block pt-4" style="width: 22rem;"
                     src="https://previews.123rf.com/images/classicvector/classicvector1905/classicvector190500085/130275226-business-partners-making-agreement-illustration-colleagues-shaking-hands-at-workplace-cartoon-charac.jpg"
                     alt="">
             </div>
@@ -334,10 +350,11 @@
 
 
                     <h4 class="display-5 text-center m-4"><strong>Em viagens de trabalho</strong>
-                        
+
                     </h4>
                     <div class="mx-auto d-block text center">
-                        <img class="img-fluid mx-auto d-block" style="width: 18rem;" src="https://svgsilh.com/svg/309386.svg" alt="">
+                        <img class="img-fluid mx-auto d-block" style="width: 18rem;"
+                            src="https://svgsilh.com/svg/309386.svg" alt="">
                     </div>
 
                     <ul class="m-5">
@@ -366,8 +383,8 @@
 
     <div class="container-fluid">
         <div class="row">
-        <iframe width="100%" height="450px" src="https://www.bing.com/covid" frameborder="0"></iframe>
-    </div>
+            <iframe width="100%" height="450px" src="https://www.bing.com/covid" frameborder="0"></iframe>
+        </div>
     </div>
 
     </div>
