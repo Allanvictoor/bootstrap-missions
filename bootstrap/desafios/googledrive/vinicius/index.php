@@ -25,11 +25,10 @@
         </div>
         <div class="col-7">
             <div class="input-group mt-2 ml-2 border" id="cor-input-nav">
-                <button id="form1" class="btn btn-default bg-light" type="button"><i class="fas fa-search"></i></button>
-                <input id="form" class="form-control bg-light" type="search" placeholder="Pesquisar no Drive"
+                <button id="form1" class="btn btn-default bg-light ml-1 my-1" type="button"><i class="fas fa-search"></i></button>
+                <input id="form" class="form-control bg-light mt-1" type="search" placeholder="Pesquisar no Drive"
                        arial-label="Search"/>
-                <button id="form1" class="btn btn-default bg-light" type="button"><i class="fas fa-sort-down"></i>
-                </button>
+                <button id="form1" class="btn btn-default bg-light mr-1 my-1" style="width: 37px" type="button"><i class="fas fa-sort-down"></i></button>
             </div>
         </div>
         <div class="col mt-2 d-flex justify-content-end" id="fonts-size">
@@ -57,7 +56,7 @@
             </div>
             <div class="row">
                 <div class="btn btn-light pr-5 w-100" id="button-lateral-azul">
-                    <a id="link-buttom" href="meu-drive"
+                    <a id="link-buttom-azul" href="meu-drive"
                        class="card-text d-flex justify-content-start">
                         <span><i class="mt-1 fas fa-caret-right"></i><i class="ml-2 mt-1 fab fa-google mr-2"></i><small>Meu Drive</small></span>
                     </a>
