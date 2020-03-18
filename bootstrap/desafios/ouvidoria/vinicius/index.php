@@ -15,7 +15,7 @@ session_destroy();
 <?php
 include("../vinicius/nav.php")
 ?>
-<div class="container border">
+<div class="container mt-3">
     <div class="row">
         <div class="col-md-12">
             <div class="mt-2">
