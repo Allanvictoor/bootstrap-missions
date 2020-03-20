@@ -1,3 +1,8 @@
+
+
+body{
+  font-family: 'Befonts';
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
@@ -42,4 +47,36 @@
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  .prevenir{
+    background-color: #ecf0f1;
+    width: 100%;
+  }
+  .text-previnir{
+    padding-bottom: 65px;
+  }
+  .up {
+    margin-top: -65px;
+  }
+  
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hexagono {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    transform: scale(1.25, .707) rotate(-45deg);
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .hexagono > img {
+    position: absolute;
+    transform: rotate(45deg) scale(.8, 1.404);
+    clip: rect(0, 120px, 200px, 2px);
   }
