@@ -103,6 +103,7 @@ body {
 
 .img-user {
     border-radius: 50%;
+    width: inherit;
 }
 
 .add-button {
