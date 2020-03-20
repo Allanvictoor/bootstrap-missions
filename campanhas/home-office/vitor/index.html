@@ -6,43 +6,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl/owl.carousel.js"></script>
+    <script src="assets/js/accordian.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Codelander</title>
+    <link rel="icon" type="" href=".../imagens/icon.png">
 </head>
 <style>
+    .header-scrolled {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75px;
+        background-color: #fff !important;
+        -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    }
+
     .navbar {
-    background-color: transparent;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    transition: all .2s linear;
-}
-fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
+        background-color: transparent;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .justify-content-around {
+        -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .collapse {
+        display: none;
+    }
+
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: 80%;
+        flex-grow: 1;
+    }
+
+    .menu-navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .nav-link-number {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200 !important;
+        font-size: 12px;
+        color: #ccc;
+        letter-spacing: 1.5px;
+        line-height: 1;
+    }
+
+    .nav-link-menu {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 18px;
+        color: #000;
+        line-height: 1;
+    }
+
+    .nav-item {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .header {
+        display: flex;
+        width: 100%;
+        padding: 175px 0 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-scrolled .navbar-brand img {
+        width: 125px;
+        height: auto;
+    }
+
+    .navbar-brand img {
+        margin-left: 15px;
+        width: 155px;
+        height: auto;
+    }
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+    }
 </style>
 
 <body>
 
-    <nav class="navbar fixed-top bg-light nav-expand-lg navbar-header navbar-mobile border">
-        <div class="navbar-container">
+    <nav class="navbar fixed-top bg-light nav-expand-lg navbar-header navbar-mobile header-scrolled">
+        <div class="navbar-container container">
             <div class="navbar-brand">
                 <a class="navbar-brand-logo" href="#">
-                <img src="" >
-            </a>
-                teste
+                    <img src="imagens/logo.png" width="155px">
+                </a>
             </div>
             <div class="collapse navbar-collapse justfy-content-around">
                 <ul class="navbar-nav menu-navbar-nav">
-                    teste
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">
+                            <p class="nav-link-number">01</p>
+                            <p class="nav-link-menu">Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            <p class="nav-link-number">02</p>
+                            <p class="nav-link-menu">Services</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">
+                            <p class="nav-link-number">03</p>
+                            <p class="nav-link-menu">Pricing</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clients">
+                            <p class="nav-link-number">04</p>
+                            <p class="nav-link-menu">Clients</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">
+                            <p class="nav-link-number">05</p>
+                            <p class="nav-link-menu">News</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <p class="nav-link-number">06</p>
+                            <p class="nav-link-menu">Contact</p>
+                        </a>
+                    </li>
                 </ul>
-                <ul class="navbar-nav menu-navbar-nav">
-                    teste                
-                </ul>
+
             </div>
         </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6 border">
+                    <img src="imagens/1.png" width="100%">
+                </div>
 
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+
+<script>
+    function checkScroll() {
+        var startY = $('.navbar').height() * 2;
+
+        if ($(window).scrollTop() > startY) {
+            $('.navbar').addClass("header-scrolled");
+        } else {
+            $('.navbar').removeClass("header-scrolled");
+        }
+    }
+
+    if ($('.navbar').length > 0) {
+        $(window).on("scroll load resize", function () {
+            checkScroll();
+        });
+    }
+</script>
