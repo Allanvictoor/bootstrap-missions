@@ -19,55 +19,56 @@
         <script src="http://malsup.github.com/jquery.form.js"></script>
 
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+        
+
         <script>
-            $("#myform").validate({
-                invalidHandler: function(event, validator) {
-                    // 'this' refers to the form
-                    var errors = validator.numberOfInvalids();
-                    if (errors) {
-                        var message = errors == 1
-                            ? 'You missed 1 field. It has been highlighted'
-                            : 'You missed ' + errors + ' fields. They have been highlighted';
-                        $("div.error span").html(message);
-                        $("div.error").show();
-                    } else {
-                        $("div.error").hide();
-                    }
-                }
+
+            $(document).ready(function () {
+               $('#cpf').mask('000.000.000-00',{reverse: true });
+               $('#cep').mask('00000-000');
+               $('#fone').mask('0000-0000');
             });
         </script>
 
+    
 
+        </script>
 
     </head>
 
-        <body>
+        <body style="background-color: #e6e6ee;">
             <hr>
+
             <!-- título 1-->
+
             <div style="text-align: center" class="container mt-4">
                 <h4 class="header"><b>Dados pessoais</b></h4>
                 <hr/>
             </div>
+
             <hr>
-            <!--Formulário NOME/EMAIL/CPF,CNPJ/RG-->
+
+            <!--Formulário NOME/EMAIL/CPF/RG-->
             <div style="text-align: center" class="container mt-4">
                 <form>
                     <!--linha 1-->
                     <div class="row">
                         <div class="col">
                             <h6><b>Nome</b></h6>
-                            <input type="text" class="form-control">
+                            <input type="text"  class="form-control">
                         </div>
                         <div class="col">
                             <h6><b>Email</b></h6>
-                            <input type="text" class="form-control">
+                            <input type="text"  class="form-control">
                         </div>
                     </div>
                     <!--linha 2-->
                     <div class="row mt-4">
                         <div class="col">
-                            <h6><b>CPF/CNPJ</b></h6>
-                            <input type="text" class="form-control">
+                            <h6><b>CPF</b></h6>
+                            <input type="text" id="cpf" class="form-control">
                         </div>
                         <div class="col">
                             <h6><b>RG</b></h6>
@@ -92,7 +93,7 @@
                     <div class="row">
                         <div class="col">
                             <h6><b>CEP</b></h6>
-                            <input type="text" class="form-control">
+                            <input type="text" id="cep" class="form-control">
                         </div>
                         <div class="col">
                             <h6><b>Logradouro</b></h6>
@@ -137,7 +138,7 @@
                         </div>
                         <div class="col-3">
                             <h6><b>Telefone</b></h6>
-                            <input type="text" class="form-control">
+                            <input type="text" id="fone" class="form-control">
                         </div>
                     </div>
                 </form>
