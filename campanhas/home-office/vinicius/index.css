@@ -1,0 +1,448 @@
+.espaco-icons {
+    margin-right: 17px;
+    font-size: 26px;
+}
+
+.footer-text-p {
+    max-width: 158px;
+}
+
+.footer-subsection-text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    max-width: 159px;
+}
+
+.footer-subsection-title {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 2.2;
+    margin-bottom: 10px;
+}
+
+.footer-section {
+    padding-top: 75px;
+    padding-bottom: 55px;
+    margin-bottom: 0!important;
+    position: relative;
+    background-color: #303669;
+    color: #fff;
+}
+
+.footer-section-bg-graphics {
+    position: absolute;
+    right: -10%;
+    bottom: 0%;
+}
+
+.blog-post-subtitle {
+    font-size: 18px;
+    color: #ccc;
+    font-family: Montserrat;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.blog-post-link {
+    color: #a4c4f3;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.blog-post-link:hover {
+    color: #ff3e81;
+}
+
+.blog-post-text {
+    font-size: 14px;
+    color: #000;
+    font-family: Poppins;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-post-title {
+    font-size: 20px;
+    color: #303669;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #b1b1b1 !important;
+}
+
+.carousel-indicators li:hover {
+    background-color: blue !important;
+}
+
+.espacamento {
+    margin-left: 35px;
+}
+
+.pricing-all-plan-features-section li {
+    font-size: 14px;
+    color: #000;
+    font-weight: 300;
+    line-height: 2;
+    background: url(https://www.codefest.co.uk/demo/codelander/assets/images/pricing-section-true.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 35px;
+    text-align: left;
+    margin-top: 5px;
+    list-style-type: none;
+}
+
+.featured .pricing-rate:before {
+    content: "Popular";
+    display: block;
+    width: 95px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 auto 15px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #78c2ff;
+    padding: 10px 15px;
+    margin-top: 45px;
+}
+
+.pricing-period {
+    font-size: 18px;
+    font-weight: 600;
+    color: #78c2ff;
+}
+
+.pricing-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
+}
+
+.pricing-rate {
+    color: #303669;
+    font-weight: 800;
+    font-size: 59px;
+    line-height: 1;
+}
+
+.scrolled_menu {
+    /*Regras fixas*/
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+    /*Customizações*/
+    background-color: white;
+}
+
+.cor {
+    background-color: red;
+}
+
+.pricing-card-section {
+    padding: 20px;
+    margin-bottom: 158px;
+}
+
+.featured {
+    height: 543px;
+    border: 7px dashed #78c2ff;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.featured-card-on {
+    height: 543px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.featured-card-on:hover {
+    box-shadow: 0px 0px 10px 10px #bdc3c7;
+}
+
+.featured:hover {
+    box-shadow: 0px 0px 10px 10px #bdc3c7;
+}
+
+.featured-card {
+    margin-top: 27px;
+    height: 489px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.featured-card:hover {
+    box-shadow: 0px 0px 10px 10px #bdc3c7;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 40px 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pricing-title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pricing-title h2 {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1;
+    color: #303669;
+    margin-bottom: 20px;
+    margin-top: 82px;
+}
+
+.pricing-title p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+
+.pricing-section-left-bg-graphics {
+    position: absolute;
+    top: 279%;
+    right: 0px;
+}
+
+.accordion-section {
+    width: 428px;
+    height: 56px;
+    border-radius: 2.25rem;
+    background-color: #3a88ec;
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 32px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.accordion-section:hover {
+    background-color: #78c2ff;
+}
+
+.iconW {
+    padding-left: 212px;
+}
+
+.iconA {
+    padding-left: 130px;
+}
+
+.services-section-bg-graphics {
+    position: absolute;
+    width: 22%;
+    left: -12%;
+    top: 130%;
+}
+
+.services-section-bg-graphics img {
+    width: 100%;
+}
+
+
+body {
+    font-family: Poppins!important;
+    background-color: #f2f2f2!important;
+    overflow-x: hidden;
+}
+
+/*navBar*/
+.altura-nav {
+    height: 75px;
+    margin-bottom: 75px;
+}
+
+.corNav {
+    background-color: white;
+}
+
+.list-nav {
+    font-size: 18px;
+    color: #000;
+    line-height: 1;
+    margin: auto;
+    margin-right: 48px;
+    text-decoration: none;
+}
+
+.list-nav:hover {
+    color: #ff3e81;
+}
+
+.img-nav {
+    margin-left: 110px;
+    margin-right: 123px;
+}
+
+.img-primary-section {
+    width: 100%;
+}
+
+.nav-link {
+    width: 140px;
+    height: 42px;
+    border-radius: 2.25rem;
+    cursor: pointer;
+    background-color: #3a88ec;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    background-color: #ff3e81;
+}
+
+.btn-nav {
+    width: 140px;
+    height: 51px;
+    background-color: #3a88ec;
+    color: white;
+    border: none;
+    border-radius: 2.25rem;
+    font-size: 18px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-left: 38px;
+}
+
+.btn-nav:hover {
+    background-color: #ff3e81;
+}
+
+
+.btn-section-um {
+    width: 177px;
+    height: 51px;
+    background-color: #ff3e81;
+    color: white;
+    border-radius: 2.25rem;
+    font-size: 18px;
+    padding-top: 11px;
+    padding-left: 36px;
+    cursor: pointer;
+}
+
+.btn-section-um:hover {
+    background-color: #3a88ec;
+}
+
+
+/*fontes*/
+.services-title {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1;
+    color: #303669;
+    margin-bottom: 20px;
+}
+
+.services-text-max {
+    max-width: 375px;
+}
+
+.services-title-max {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1;
+    color: #303669;
+    margin-bottom: 20px;
+    max-width: 238px;
+}
+
+.services-subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.header-title {
+    font-weight: 800;
+    font-size: 75px;
+    line-height: 1;
+    color: #303669;
+}
+
+.header-subtitle {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.header-title-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+.strategy-section-bg-graphics-section {
+    position: absolute;
+    width: 23%;
+    right: 0%;
+    top: 70%;
+}
+
+.strategy-section-bg-graphics-section img {
+    width: 100%;
+}
+
+
+.strategy-card-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.strategy-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.strategy-card h2 {
+    color: #303669;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 3;
+}
+
+.section-text-top {
+    margin: 74px;
+}
