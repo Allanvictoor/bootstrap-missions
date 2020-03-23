@@ -1,12 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light altura-nav">
+<nav class="navbar navbar-expand-lg sticky-top altura-nav">
     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/logo.png" height="75%" class="img-nav" alt="">
-    <ul class="d-flex">
-        <li class="list-nav"><b>Home</b></li>
-        <li class="list-nav"><b>Services</b></li>
-        <li class="list-nav"><b>pricing</b></li>
-        <li class="list-nav"><b>Clients</b></li>
-        <li class="list-nav"><b>News</b></li>
-        <li class="list-nav"><b>Contact</b></li>
-        <li class="btn-nav border"><b>SignUp</b></li>
-    </ul>
+    <div class="d-flex">
+        <a href="#" class="list-nav"><b>Home</b></a>
+        <a href="#" class="list-nav"><b>Services</b></a>
+        <a href="#" class="list-nav"><b>Pricing</b></a>
+        <a href="#" class="list-nav"><b>Clients</b></a>
+        <a href="#" class="list-nav"><b>News</b></a>
+        <a href="#" class="list-nav"><b>Contact</b></a>
+        <div class="btn-nav"><b>SignUp</b></div>
 </nav>
+<script>
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()) {
+            $('nav').addClass('corNav');
+        }
+        else {
+            $('nav').removeClass('corNav');
+        }
+    });
+</script>
