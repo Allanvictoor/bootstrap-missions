@@ -1,191 +1,253 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campanha VivIntra</title>
+    <title>Site do Viva Intra</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
     <div class="container-fluid">
-        <div class="row"><!--inicio do cabecalho-->
-           <div class="col-12 col-md-12 col-lg-12">
-            <nav class="navbar navbar-expand-lg navbar-fixed-top">
-                <img class="mr-5" src="../imagens/logo.png" width="155" height="60" alt="">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                  <ul class="navbar-nav mr-auto ml-5">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Contact</a>
-                    </li>
-                  </ul>
-                  <a href=""><span class="badge badge-primary badge-pill d-flex"><h4 class="text-white font-weight-bold p-2">Signup</h4></span></a>
+        <div class="row mb-5">
+            <div class="container">
+                <nav class="navbar bg-white fixed-top nav-fill navbar-expand-sm">
+                    <img class="navbar-brand ml-5" src="../imagens/logo.png" width="155" height="80" alt="">
+                        <div class="collapse navbar-collapse" id="menu">
+                            <ul class="navbar-nav mt-2 ml-auto col-md d-flex justify-content-center">
+                                <li class="nav-item d-flex justify-content-end">
+                                    <a class="nav-link" href="">Home</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-end">
+                                    <a class="nav-link" href="">Services</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-end">
+                                    <a class="nav-link" href="">Pricing</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-end">
+                                    <a class="nav-link" href="">Clientes</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-end">
+                                    <a class="nav-link" href="">News</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-end">
+                                    <a class="nav-link" href="#nos">Contact</a>
+                                </li>
+                                <li class="nav-item d-flex justify-content-end">
+                                    <a class="nav-link mr-5 " href=""><span class="badge badge-primary badge-pill px-4 py-2"><h3 class="text-white"></h3>Singup</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toogler-icon"><img src="../imagens/menu.png" width="30" height="30" alt=""></span>
+                          </button>
+                     </nav> 
+                <div class="row pt-5 mt-5 mb-5" id="nos">
+                    <div class="col-md-6 col-sm-12">
+                        <img src="../imagens/imagem1.png" width="500" height="400" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row">
+                            <h2>Multipurpose landing template</h2>
+                        </div>
+                        <div class="row">
+                            <h1 class="font-weight-bold">Beautifully <br> simple, code.</h1>
+                        </div>
+                        <div class="row mt-2">
+                            <h4>
+                                Codelander is a beautifully simple, clean and lightweight landing page template for all types of businesses, with bold and bright colours.
+                            </h4>
+                        </div>
+                        <div class="row mt-2">
+                            <a href=""><span class="badge badge-pill badge-danger"><h5 class="font-weight-bold text-white px-3 py-2">Learn More</h5></span></a>
+                        </div>
+                    </div>
                 </div>
-              </nav>
-           </div>
-        </div><!--fim do cabecalho-->
-        <div class="row mt-2"><!--primeira tela-->
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <img class="ml-5" src="../imagens/imagem1.png" width="500" height="500" alt="">
-            </div>
-            <div class=" col-sm-12 col-md-6 col-lg-6 mt-5">
-                <div class="row">
-                    <h1>Multipurpose landing template</h1>
+                <div class="row mt-5 mb-5">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <img src="../imagens/strategy-1.png" alt="">
+                        </div>
+                        <div class="row mt-2 d-flex justify-content-center">
+                            <h3 class="font-weight-bold">Strategy</h3>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <h5>We'll work with you to develop<br>the right strategy</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <img src="../imagens/strategy-2.png" width="100" height="80" alt="">
+                        </div>
+                        <div class="row mt-4 d-flex justify-content-center">
+                            <h3 class="font-weight-bold">Automation</h3>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <h5>Work synchronization and <br> automated services</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <img src="../imagens/strategy-3.png" width="100" height="80" alt="">
+                        </div>
+                        <div class="row mt-4 d-flex justify-content-center">
+                            <h3 class="font-weight-bold">Depolyment</h3>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <h5>Dedicated servers to deploy on all our tools and test applications.</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <img src="../imagens/strategy-4.png" alt="">
+                        </div>
+                        <div class="row mt-2 d-flex justify-content-center">
+                            <h3 class="font-weight-bold">Education</h3>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <h5>Stay informed on all our tools<br>and technologies.</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                <h1 class="text-black font-weight-bold">Beautifully <br> simple, code.</h1>
-                <h4>
-                    Codelander is a beautifully simple, clean and lightweight landing page template for all types of businesses, with bold and bright colours.
-                </h4>
+                <div class="row my-5">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row mt-2">
+                            <h4>Our services</h4>
+                        </div>
+                        <div class="row mt-2">
+                            <h1 class="font-weight-bold">Solving Problems</h1>
+                        </div>
+                        <div class="row mt-2">
+                            <h5>
+                                This is a great section to introduce your company and showcase your featured services.
+                            </h5>
+                        </div>
+                        <div class="row mt-2">
+                            <a href=""><span class="badge badge-pill badge-primary pb-3 pt-3"><h5 class="d-inline text-white font-weight-bold pb-5 px-4">Website Design</h5><h5 class="d-inline text-white font-weight-bold ml-5">+</h5></span></a>
+                            <a class="mt-2" href=""><span class="badge badge-pill badge-primary pb-3 pt-3"><h5 class="d-inline text-white font-weight-bold pb-5 px-4">Aplication Development</h5><h5 class="d-inline text-white font-weight-bold ml-5">+</h5></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <img class="ml-3" src="../imagens/services-header.png" width="550" height="450" alt="">
+                    </div>
                 </div>
-                <div class="row mt-4">
-                    <a href=""><span class="badge badge-danger badge-pill"><h5 class="font-weight-bold text-white p-3">Learn More</h5></span></a>
+                <div class="row my-5">
+                    <div class="col-md-6 col-sm-12">
+                        <img src="../imagens/services-sales-header.png" width="530" height="430" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row">
+                            <h2>Our Services</h2>
+                        </div>
+                        <div class="row">
+                            <h1 class="font-weight-bold">Sales Growth</h1>
+                        </div>
+                        <div class="row">
+                            <h5>
+                                You can talk about your secondary services here, or maybe promote your excellent customer service approach. Always grab your website visitors' attention.
+                            </h5>
+                        </div>
+                        <div class="row mt-3">
+                            <a href=""><span class="badge badge-pill badge-danger py-3 px-3"><h5 class="d-inline text-white font-weight-bold px-3 py-3">View Pricing</h5></span></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div><!--fim da primeira tela-->
-        <div class="row mt-3 mb-3"><!--segunda tela-->
-            <div class="col-md-2 col-lg-2">
-            </div>
-            <div class="col-md-2 col-lg-2">
-                <img src="../imagens/strategy-1.png" width="85" height="80" alt="">
-                <h4 class="mt-2 font-weight-bold">Strategy</h4>
-                <p>
-                    We'll work with you to develop the right strategy
-                </p>
-            </div>
-            <div class="col-md-2 col-lg-2">
-                <img src="../imagens/strategy-2.png" width="85" height="80" alt="">
-                <h4 class="mt-2 font-weight-bold" >Automation</h4>
-                <p>
-                    Work synchronization <br> and automated services 
-                </p>
-            </div>
-            <div class="col-md-2 col-lg-2">
-                <img src="../imagens/strategy-3.png" width="85" height="80" alt="">
-                <h4 class="mt-2 font-weight-bold" >Deployment</h4>
-                <p>
-                    Dedicated servers to deploy <br> and test applications
-                </p>
-            </div>
-            <div class="col-md-2 col-lg-2">
-                <img src="../imagens/strategy-4.png" width="85" height="80" alt="">
-                <h4 class="mt-2 font-weight-bold" >Education</h4>
-                <p>
-                    Stay informed on all our tools <br> and technologies
-                </p>
-            </div>
-            <div class="col-md-2 col-lg-2">
-            </div>
-        </div><!--fim da segunda tela-->
-        <div class="row ml-2 my-3 d-flex"><!--Terceira tela-->
-            <div class="col-md-6 col-lg-6">
-                <div class="row">
-                    <h3>Our Services</h3>
+                <div class="row my-5">
+                    <div class="col-md-12 col-sm-12">
+                        <h1 class="font-weight-bold d-flex justify-content-center mt-4">Pricing</h1>
+                        <h5 class="mt-5  d-flex justify-content-center">
+                            Offer multiple packages or monthly subscriptions? Why not showcase your featured <br> price plans here, bold and beautifully.
+                        </h5>
+                    </div>
                 </div>
-                <div class="row">
-                    <h1 class="font-weight-bold">Solving Problems</h1>
+                <div class="row bg-warning">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card border border-rounded">
+                            <h1 class="card-title  font-weight-bold d-flex justify-content-center mt-4">$199</h1>
+                            <h6 class="card-title text-info font-weight-bold d-flex justify-content-center pt-0 mt-0">Basic</h6>
+                            <div class="card-body">
+                                <h5 class="mt-4 d-flex justify-content-center">
+                                    Starter plan with all the <br> basics included
+                                </h5>
+                                <ul class="list-unstyled mt-5 ">
+                                    <li>
+                                        <span><img class="mr-1" src="../imagens/checklist.png" width="25" height="25" alt="">Core Business System</span>
+                                    </li>
+                                    <li>
+                                        <span><img class="mr-1" src="../imagens/checklist.png" width="25" height="25" alt="">Team Management</span>
+                                    </li>
+                                    <li>
+                                        <span><img class="mr-1" src="../imagens/checklist-branco.png" width="25" height="25" alt="">Dual Infrastructure</span>
+                                    </li>
+                                    <li>
+                                        <span><img class="mr-1" src="../imagens/checklist-branco.png" width="25" height="25" alt="">Customized Features</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        Card-2
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        Card-3
+                    </div>
                 </div>
-                <div class="row">
-                   <h5>
-                    This is a great section to introduce your company and showcase your featured services
-                   </h5>
+                <div class="row bg-success">
+                    <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+                        Texto
+                    </div>
                 </div>
-                <div class="row mt-2">
-                    <a href=""><span class="badge badge-primary badge-pill"><h4 class="text-white font-weight-bold py-1 px-2 mr-4">Website Design <span class=" ml-5 pl-5 text-white font-weight-bold">+</span></h4></span></a>
-                    <a class="mt-2" href=""><span class="badge badge-primary badge-pill"><h4 class="text-white font-weight-bold py-1 px-2 mr-4">Application Development <span class=" ml-5 pl-5 text-white font-weight-bold">+</span></h4></span></a>
+                <div class="row bg-warning">
+                   <div class="col-md-12 col-sm-12">
+                    Carrossel
+                   </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-6">
-                <img class="ml-5" src="../imagens/services-header.png" width="500" height="400" alt="">
-            </div>
-        </div><!--fim da terceira tela-->
-        <div class="row bg-secondary"><!--quarta tela-->
-            <div class="col-md-6">
-                imagem
-            </div>
-            <div class="col-md-6">
-                texto
-            </div>
-        </div><!--fim da quarta tela-->
-        <div class="row bg-light"><!--quinta parte-->
-            <div class="col-md-12 col-lg-12">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
+                <div class="row bg-secondary col-sm-12 col-md-12 d-flex justify-content-center">
+                    Texto   
+                </div>
+                <div class="row bg-info">
+                    <div class="col-md-4 col-sm-12">
+                        card-1
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        card-2
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        card-3
+                    </div>
+                </div>
+                <div class="row bg-secondary">
+                    <div class="col-md-6 col-sm-12">
                         texto
                     </div>
+                    <div class="col-md-6 col-sm-12">
+                        imagem
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        cards
+                <div class="row bg-success">
+                    <div class="col-md-3 col-sm-12">
+                        INFO 1
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        INFO 2
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        INFO 3
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        INFO 4
+                    </div>  
+                </div>
+                <div class="row bg-warning">
+                    <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+                        texto de direitos
                     </div>
                 </div>
             </div>
-        </div><!--fim da quinta parta-->
-        <div class="row bg-success"><!--sexta tela-->
-            <div class="col-md-12 col-lg-12">
-                <div class="row">
-                     texo
-                 </div>
-                <div class="row">
-                    carrossel
-                </div>
-                <div class="row">
-                    texto
-                </div>
-            </div>
-        </div><!--fim da sexta tela-->
-        <div class="row bg-primary"><!--setima tela-->
-                <div class="col-md-1 col-lg-1">
-                    nada
-                </div>
-                <div class="col-md-10 col-lg-10">
-                    cards
-                </div>
-                <div class="col-md-1 col-lg-1">
-                    nada
-                </div>
-        </div><!--Fim da setima tela-->
-        <div class="row bg-danger"><!--oitava tela-->
-            <div class="col-md-6 col-lg-6">
-                texto
-            </div>
-            <div class="col-md-6 col-lg-6">
-                imagem
-            </div>
-        </div><!--Fim da oitava tela-->
-        <div class="row bg-info"><!--Nona tela-->
-            <div class="col-md-1 col-lg-1">
-                nada
-            </div>
-            <div class="col-md-10 col-lg-10">
-                cards
-            </div>
-            <div class="col-md-1 col-lg-1">
-                nada
-            </div>
-        </div><!--fim da nona tela-->
-        <div class="row bg-danger"><!--decima tela-->
-            <div class="col-12">
-                texto
-            </div>
-        </div><!--fim da decima tela-->
+        </div>
     </div>
 </body>
 </html>
