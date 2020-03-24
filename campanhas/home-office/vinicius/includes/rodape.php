@@ -14,13 +14,11 @@
                 </div>
                 <div class="col-md-3">
                     <h3 class="footer-subsection-title"><b>Contact Us</b></h3>
-
                     <i class="fas fa-map-marker-alt"></i>
                     <p class="footer-subsection-text">
                         123 Business Centre
                         London SW1A 1AA
                     </p>
-                    
                     <p class="footer-subsection-text">0123456789
                     </p>
                     <p class="footer-subsection-text">mail@domain.com
