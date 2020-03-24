@@ -40,6 +40,9 @@
  }
 
 
-
-
+ @font-face {
+     font-family: Poppins;
+     src: local(css), url(../css/poppins.ttf)
+ }
   
+ 
