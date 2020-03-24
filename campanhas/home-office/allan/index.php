@@ -1,8 +1,11 @@
+
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
     <title>Home-Office</title>
+    <link rel="icon" type="image/png" href="https://www.codefest.co.uk/demo/codelander/assets/images/favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,54 +14,54 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
-    <script src="index.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <script src="js/scroll.js"></script>
     <script src="https://kit.fontawesome.com/9c956899f2.js" crossorigin="anonymous"></script>
 
 
 </head>
 
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif">
 
-    <div id="navbar2" class="col-sm container-fluid p-3" style="background-color: #fcfcfc">
+    <div  id="nav" class="col-sm container-fluid p-3" style="background-color: #fcfcfc">
         <div class="row">
             <div class="col-sm container" style="background-color: #fcfcfc">
                 <div class="row">
-                    <div class="col-sm-2">
-                        <img class="img-fluid " style="width: 15rem"
+                <div class="col-sm-2">
+                        <img class="img-fluid" style="width: 15rem"
                             src="https://www.codefest.co.uk/demo/codelander/assets/images/logo.png" alt="">
-                    </div>
+                    </div> 
 
-                    <nav class="navbar navbar-expand-lg navbar-light mx-auto" style="background-color: #fcfcfc">
+                    <nav class="navbar navbar-expand-lg navbar-light mx-auto " style="background-color: #fcfcfc">
+                    
 
-                        <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                        <button class="navbar-toggler " style="text-align: right" type="button" data-toggle="collapse"
                             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                             aria-label="Alterna navegação">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse mx-auto" id="navbarNavAltMarkup">
 
-                            <div class="navbar-nav " style="width: auto">
+                            <div class="navbar-nav text-center" style="width: auto">
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#"><strong>Home</strong></a>
+                                    href="#home"><strong>Home</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#"><strong>Services</strong></a>
+                                    href="#servicos"><strong>Serviços</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#"><strong>Pricing</strong></a>
+                                    href="#preco"><strong>Preços</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#"><strong>Clients</strong></a>
+                                    href="#clientes"><strong>Clientes</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#"><strong>News</strong></a>
+                                    href="#noticias"><strong>Noticias</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#"><strong>Contact</strong></a>
+                                    href="#contato"><strong>Contato</strong></a>
                             </div>
 
                         </div>
                     </nav>
 
                     <div class="col-sm-2 ">
-                        <button type="button" class="btn my-3 text-white" style="width: 10rem; border-radius: 25px; background-color: #3b88ec; font-size: 25px">Signup</button>
+                        <button type="button" class="btn my-3 text-white d-none d-md-block" style="width: 10rem; border-radius: 25px; background-color: #3b88ec; font-size: 25px">Signup</button>
                     </div>
 
                 </div>
@@ -74,7 +77,7 @@
                         <img class="mx-auto d-bloc" src="imagens/header.png" alt="">
                     </div>
                     <div class="col-sm my-auto mx-auto">
-                        <p style="font-size: 35px">Multipurpose landing template</p>
+                        <p style="font-size: 35px" >Multipurpose landing template</p>
                         <p style="font-size: 45px"><strong> Beautifully simple, code. </strong></p>
                         <p style="font-size: 20px">Codelander is a beautifully simple, clean and lightweight landing
                             page template for all types
@@ -122,31 +125,31 @@
 
         <div class="container pt-5 pb-5">
             <div class="row">
-                <div class="col-sm my-auto">
+                <div id="servicos" class="col-sm my-auto">
                     <p style="font-size: 25px">Our services</p>
                     <p style="font-size: 50px"><strong>Solving Problems</strong></p>
                     <p style="font-size: 25px">This is a great section to introduce your company and showcase your
                         featured services.</p>
-                    <button class="btn btn-primary mt-3" style="border-radius: 45px; height: 45px;  width: 500px; text-align: left" type="button"
+                    <button class="btn btn-primary mt-3" style="border-radius: 45px; height: 45px;  width: 300px; text-align: left" type="button"
                         data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false"
                         aria-controls="collapseExample">
                         Website Design<i class="fas fa-plus float-right pt-1"></i>
                     </button>
                     <div class="collapse" id="collapseExample1">
-                        <div class="card card-body" style="width: 450px; height: 150px;">
+                        <div class="card card-body" style="width: 450px; height: 200px;">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                             squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
                             ea proident.
                         </div>
                     </div>
                     <br>
-                    <button class="btn btn-primary mt-3" style="border-radius: 45px; height: 45px; width: 500px; text-align: left" type="button"
+                    <button class="btn btn-primary mt-3" style="border-radius: 45px; height: 45px; width: 300px; text-align: left" type="button"
                         data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
                         aria-controls="collapseExample">
                         Application Development<i class="fas fa-plus float-right pt-1"></i>
                     </button>
                     <div class="collapse"  id="collapseExample">
-                        <div class="card card-body" style="width: 450px; height: 150px;">
+                        <div class="card card-body" style="width: 450px; height: 200px;">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                             squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
                             ea proident.
@@ -154,8 +157,8 @@
                     </div>
 
                 </div>
-                <div class="col-sm mx-auto dblock">
-                    <img src="imagens/services-header.png" alt="">
+                <div class="col-sm mx-auto d-block ">
+                    <img class="d-none d-md-block" src="imagens/services-header.png" alt="">
                 </div>
             </div>
         </div>
@@ -178,7 +181,7 @@
 
         <div class="container pt-5">
             <div class="col-sm text-center">
-                <h4 style="font-size: 35px"><strong>Pricing</strong></h4>
+                <h4 id="preco" style="font-size: 35px"><strong>Pricing</strong></h4>
             </div>
             <div class="col-sm text-center">
                 <p style="font-size: 20px">Offer multiple packages or monthly subscriptions?<br> Why not showcase your
@@ -269,7 +272,7 @@
             </div>
         </div>
 
-        <div class="contairner text-center pt-5 pb-3">
+        <div id="clientes" class="contairner text-center pt-5 pb-3">
             <div class="col-sm">
                 <p>Our clients</p>
             </div>
@@ -352,7 +355,7 @@
             </center>
         </div>
 
-        <div class="contairner text-center pt-5 pb-3">
+        <div id="noticias" class="contairner text-center pt-5 pb-3">
             <div class="col-sm">
                 <p>Recent updates</p>
             </div>
@@ -376,9 +379,9 @@
                             <p class="p-1" style="font-size: 25px"><strong>Remote Working</strong></p>
 
                             <p class="pt-2 pb-3" style="font-size: 15px">We've ranked number one on Google for multiple
-                                keywords. Read about our SEO strategies</p>
+                               </p>
                             <a href="#">
-                                <p style="font-size: 25px ; text-decoration-color: #78c2ff">Read More</p>
+                                <p class="pb-3"style="font-size: 25px ; text-decoration-color: #78c2ff">Read More</p>
                             </a>
                         </div>
 
@@ -390,7 +393,7 @@
                    -webkit-border-radius: 62px 62px 62px 62px;
                     height: 500px;">
 
-                        <div class="col-sm text-center">
+                        <div  class="col-sm text-center">
                             <img class="p-3" src="imagens/blog-card-2.png" alt="">
                             <p class="p-1" style="font-size: 25px"><strong>Google Rankings</strong></p>
 
@@ -429,7 +432,7 @@
             </div>
         </div>
 
-        <div class="container ">
+        <div id="contato" class="container ">
             <div class="row">
                 <div class="col-sm pt-5">
                     <div class="col-sm mx-auto">

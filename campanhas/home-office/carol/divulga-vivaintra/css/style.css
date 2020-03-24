@@ -42,6 +42,7 @@ color: #313438;
     text-align-all: center;
     background-color: #19867c ;
     border-color: #19867c;
+    margin-bottom: 5px;
 }
 .pessoa-um{
     height: 60%;
@@ -94,7 +95,7 @@ color: #313438;
     height: 200px;
     margin-left: 50px;
 }
-.row-atualizacao{
+.row-atualizacao, .precos{
     margin-left: 15px;
 }
 
