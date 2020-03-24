@@ -4,8 +4,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Codelander | HTML Landing Page by Codefest&trade;</title>
 <link rel="icon" type="image/png" href="https://www.codefest.co.uk/demo/codelander/assets/images/favicon.png">
-<link rel="stylesheet" href="index.css">
-<script src="index.js"></script>
+<link rel="stylesheet" href="../index.css">
+<script src="../index.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
