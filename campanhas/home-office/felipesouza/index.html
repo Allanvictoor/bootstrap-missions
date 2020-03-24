@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
         
           
           
@@ -48,11 +48,12 @@
                         <button type="button" class=" mr-5 btn btn-light"><b>Clients</b></button>
                         <button type="button" class=" mr-5 btn btn-light"><b>News</b></button>
                         <button type="button" class=" mr-5 btn btn-light"><b>Contact</b></button>
-                    </div>
+                    </div> 
 
                     <!-- LOGIN-->
-                    <div class="mt-3">
-                        <button type="button" class="btn btn-primary btn-lg">Signup</button>
+                    <div class="">
+
+                        <button type="button" class="btn my-3 text-white d-none d-md-block" style="width: 10rem; border-radius: 25px; background-color: #3b88ec; font-size: 25px">Signup</button>
                     </div>
                 </div>
             </div>
@@ -78,7 +79,7 @@
                         </div>
                         Codelander is a beautifully simple, clean and lightweight landing page template for all types of businesses, with bold and bright colours.
                         <div class="text-align-left mt-3">
-                            <button type="button" class="btn btn-primary btn-lg">Learn more</button>
+                            <button type="button" class="btn  my-3 p-2 text-white" style="border-radius: 25px; width: 10rem; background-color: #ec407f">Learn more</button>
                         </div>
                     </div>
                 </div>
@@ -171,35 +172,38 @@
             <div class=container>
                 <div class="row">
 
-
-                
-
-
-
-
-                    <!-- accordion-->
-                    <div class="text col-6 mt-5" style="text-align: center;">
-
-                        <p class="services-subtitle">Our services</p>
-                        <font color="#303669"><b></b><h2 class="services-title">Solving Problems</h2></font> 
-                    
-
-
-                        <div>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-                        </div>
-
-                        <div class="mt-3">
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-                        </div>
-
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <div id="servicos" class="col-sm my-auto">
+                        <p style="font-size: 20px">Our services</p>
+                        <font color="#303669" <p style="font-size: 35px"><strong>Solving Problems</strong></p></font>
+                        <p style="font-size: 15px">This is a great section to introduce your company and showcase your
+                            featured services.</p>
+                        <button class="btn btn-primary mt-3" style="border-radius: 45px; height: 45px;  width: 300px; text-align: left" type="button"
+                            data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            Website Design<i class="fas fa-plus float-right pt-1"></i>
+                        </button>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body" style="width: 450px; height: 200px;">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                ea proident.
                             </div>
-                          </div>
+                        </div>
+                        <br>
+                        <button class="btn btn-primary mt-3" style="border-radius: 45px; height: 45px; width: 300px; text-align: left" type="button"
+                            data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            Application Development<i class="fas fa-plus float-right pt-1"></i>
+                        </button>
+                        <div class="collapse"  id="collapseExample">
+                            <div class="card card-body" style="width: 450px; height: 200px;">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                ea proident.
+                            </div>
+                        </div>
+    
                     </div>
-
                     <!-- Imagem-->
                     <div class="col-6"> 
                         <img src="imagens/img2.png" alt="" />
@@ -225,16 +229,12 @@
 
                     <!-- Texto-->
                     <div class="text col-6 mt-5" style="text-align: center;">
-                        <h5><strong>Multipurpose landing template</strong></h5>
-                        <div>
-                            <font color="#303669"><h1>Beautifully<br/> simple, code.</h1></font>
-                        </div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea
-                        <div class="text-align-left mt-3">
-                            <button type="button" class="btn btn-primary btn-lg">Learn more</button>
-                        </div>
+                        <p style="font-size: 20px">Our services</p>
+                        <font color="#303669" <p style="font-size: 35px"><strong>Sales Growth</strong></p></font>
+                        <p style="font-size: 15px">You can talk about your secondary services here, or maybe promote your excellent customer service approach. Always grab your website visitors' attention..</p>
+                            <div class="text-align-left mt-3">
+                                <button type="button" class="btn  my-3 p-2 text-white" style="border-radius: 25px; width: 10rem; background-color: #ec407f">View pricing</button>
+                            </div>
                     </div>
                 </div>
             </div>
