@@ -1,3 +1,24 @@
+.img-nav {
+    margin-left: 73px;
+    margin-top: 18px;
+    height: 52px;
+    width: 190px;
+}
+
+.height-nav {
+    height: 88px;
+    border-bottom: 2px solid blue;
+}
+
+.icone-nav {
+    color: white;
+    cursor: pointer;
+}
+
+.icone-nav:hover {
+    color: #007bff;
+}
+
 .espaco-icons {
     margin-right: 17px;
     font-size: 26px;
@@ -8,6 +29,7 @@
 }
 
 .footer-subsection-text {
+    margin-left: 10px;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -24,7 +46,7 @@
 .footer-section {
     padding-top: 75px;
     padding-bottom: 55px;
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
     position: relative;
     background-color: #303669;
     color: #fff;
@@ -249,7 +271,7 @@
     padding-top: 15px;
     padding-left: 32px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .accordion-section:hover {
@@ -277,68 +299,47 @@
 
 
 body {
-    font-family: Poppins!important;
-    background-color: #f2f2f2!important;
+    font-family: Poppins !important;
+    background-color: #f2f2f2 !important;
     overflow-x: hidden;
 }
 
 /*navBar*/
-.altura-nav {
-    height: 75px;
-    margin-bottom: 75px;
+
+.container-nav{
+    height: 88px;
+    border: 1px solid blue;
 }
 
-.corNav {
-    background-color: white;
+.list-button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: blue;
+    border: none;
 }
 
 .list-nav {
+    margin-bottom: 30px;
+    margin-top: 30px;
     font-size: 18px;
-    color: #000;
-    line-height: 1;
-    margin: auto;
-    margin-right: 48px;
-    text-decoration: none;
-}
-
-.list-nav:hover {
-    color: #ff3e81;
-}
-
-.img-nav {
-    margin-left: 110px;
-    margin-right: 123px;
-}
-
-.img-primary-section {
-    width: 100%;
-}
-
-.nav-link {
-    width: 140px;
-    height: 42px;
-    border-radius: 2.25rem;
+    color: blue;
     cursor: pointer;
-    background-color: #3a88ec;
-    color: white;
-    font-size: 18px;
 }
 
-.nav-link:hover {
-    background-color: #ff3e81;
+.list-tamanho:hover {
+    background-color: cornflowerblue;
 }
 
 .btn-nav {
-    width: 140px;
-    height: 51px;
+    width: 63px;
     background-color: #3a88ec;
     color: white;
-    border: none;
-    border-radius: 2.25rem;
     font-size: 18px;
     cursor: pointer;
-    padding-top: 10px;
-    padding-left: 38px;
+    text-align: center;
+    margin-left: 100px;
 }
 
 .btn-nav:hover {
@@ -363,6 +364,21 @@ body {
 }
 
 
+.btn-section-primeiro {
+    width: 290px;
+    height: 51px;
+    background-color: #ff3e81;
+    color: white;
+    border-radius: 2.25rem;
+    font-size: 18px;
+    padding-top: 11px;
+    padding-left: 36px;
+    cursor: pointer;
+}
+
+.btn-section-primeiro:hover {
+    background-color: #3a88ec;
+}
 /*fontes*/
 .services-title {
     font-weight: 800;
@@ -393,7 +409,7 @@ body {
 
 .header-title {
     font-weight: 800;
-    font-size: 75px;
+    font-size: 65px;
     line-height: 1;
     color: #303669;
 }

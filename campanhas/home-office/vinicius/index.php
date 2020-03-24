@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <head>
     <?php
-    include('head.php');
+    include('../vinicius/includes/head.php');
     ?>
 </head>
 <body>
 <?php
-include('nav.php');
+include('../vinicius/includes/nav.php');
 ?>
 <div class="body">
     <div class="container-fluid">
@@ -16,17 +16,17 @@ include('nav.php');
                 <section class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <img class="img-primary-section"
+                            <img width="500px"
                                  src="https://www.codefest.co.uk/demo/codelander/assets/images/header.png" alt="">
                         </div>
                         <div class="col-md-6 m-auto">
-                            <p class="header-subtitle">Multipurpose landing template</p>
-                            <h1 class="header-title">Beautifully simple, code.</h1>
-                            <p class="header-title-text">Codelander is a beautifully simple, clean and lightweight
-                                landing page template for all types
-                                of businesses, with bold and bright colours.
+                            <p class="header-subtitle">Equipes em home-office?</p>
+                            <h1 class="header-title">Organize e potencialize seus times.</h1>
+                            <p class="header-title-text">Com a adoção de home-office nunca uma intranet foi tão
+                                importante e estratégica para seu negócio como um ambiente que centraliza sua
+                                comunicação e produção.
                             </p>
-                            <div class="btn-section-um"><b>Learn More</b></div>
+                            <div class="btn-section-primeiro"><b> Quero conhecer as vantagens</b></div>
                         </div>
                     </div>
                 </section>
@@ -82,35 +82,57 @@ include('nav.php');
                             <div class="services-title-section">
                                 <p class="services-subtitle">Our services</p>
                                 <h2 class="services-title">Solving Problems</h2>
-                                <p class="services-text">This is a great section to introduce your company and showcase
+                                <p class="services-text services-text-max">This is a great section to introduce your
+                                    company and showcase
                                     your featured services.
                                 </p>
-                                <div class="services-accordion">
-                                    <div class="accordion-section">
+                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/services-header.png"
+                                     width="100%" alt="">
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-md-6">
+                            <div id="accordion">
+                                <div id="headingOne">
+                                    <div class="accordion-section" data-toggle="collapse"
+                                         data-target="#collapseOne" aria-expanded="false"
+                                         aria-controls="collapseOne">
                                         <b>Website Design</b>
                                         <i class="fas fa-plus iconW"></i>
                                     </div>
-                                    <!--<div class="panel">
-                                        <p>
-                                            Some information on your web design and development services can go here. A
-                                            few lines should do the trick.
-                                        </p>
-                                    </div>-->
-                                    <div class="accordion-section">
-                                        <b>Application Development</b>
-                                        <i class="fas fa-plus iconA"></i>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                         data-parent="#accordion" style="width: 387px; margin-left: 18px;">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                            terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                            moon
+                                        
+                                        </div>
                                     </div>
-                                    <!--<div class="panel"><p>
-                                            More information on your application development services can go here, too.
-                                            There's plenty of space available for you.
-                                        </p>
-                                    </div>-->
+                                </div>
+                                
+                                <div id="headingTwo">
+                                    <div class="accordion-section" data-toggle="collapse"
+                                         data-target="#collapseTwo" aria-expanded="false"
+                                         aria-controls="collapseTwo">
+                                        <b>Website Design</b>
+                                        <i class="fas fa-plus iconW"></i>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                         data-parent="#accordion" style="width: 387px; margin-left: 18px;">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                            terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                            moon
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="https://www.codefest.co.uk/demo/codelander/assets/images/services-header.png"
-                                 width="100%" alt="">
                         </div>
                     </div>
                 </section>
@@ -258,32 +280,32 @@ include('nav.php');
                     <p class="services-subtitle d-flex justify-content-center">Recent updates</p>
                     <h1 class="services-title d-flex justify-content-center">Featured Stories</h1>
                     <div class="container pricing-container">
-                        <div class="pricing-title">
-                            <h2>Pricing</h2>
-                            <p>Offer multiple packages or monthly subscriptions? Why not showcase your featured price
-                                plans here, bold and beautifully.</p>
-                        </div>
                         <div class="row">
                             <div class="col-md-4 pricing-card-section">
                                 <div class="pricing-card featured-card">
-                                    <img src="https://www.codefest.co.uk/demo/codelander/assets/images/blog-card-1.png" alt="">
+                                    <img src="https://www.codefest.co.uk/demo/codelander/assets/images/blog-card-1.png"
+                                         alt="">
                                     <h3 class="blog-post-title">Remote Working</h3>
-                                    <p class="blog-post-text">Making it easier to connect with every client worldwide</p>
+                                    <p class="blog-post-text">Making it easier to connect with every client
+                                        worldwide</p>
                                     <div class="blog-post-link">Read More</div>
                                 </div>
                             </div>
                             <div class="col-md-4 pricing-card-section">
                                 <div class="pricing-card featured-card-on">
-                                    <img src="https://www.codefest.co.uk/demo/codelander/assets/images/blog-card-2.png" alt="">
+                                    <img src="https://www.codefest.co.uk/demo/codelander/assets/images/blog-card-2.png"
+                                         alt="">
                                     <h3 class="blog-post-title">Google Rankings</h3>
                                     <h4 class="blog-post-subtitle">Keywords</h4>
-                                    <p class="blog-post-text">We've ranked number one on Google for multiple keywords. Read about our SEO strategies</p>
+                                    <p class="blog-post-text">We've ranked number one on Google for multiple keywords.
+                                        Read about our SEO strategies</p>
                                     <div class="nav-link mt-2">Read More</div>
                                 </div>
                             </div>
                             <div class="col-md-4 pricing-card-section">
                                 <div class="pricing-card featured-card">
-                                    <img src="https://www.codefest.co.uk/demo/codelander/assets/images/blog-card-3.png" alt="">
+                                    <img src="https://www.codefest.co.uk/demo/codelander/assets/images/blog-card-3.png"
+                                         alt="">
                                     <h3 class="blog-post-title">Communication</h3>
                                     <p class="blog-post-text">We've made our client support services easy to access</p>
                                     <div class="blog-post-link">Read More</div>
@@ -298,8 +320,9 @@ include('nav.php');
                             <div class="services-title-section mt-5">
                                 <p class="services-subtitle"><b>Contact</b></p>
                                 <h2 class="services-title-max"><b>Questions?
-                                    Get in touch</b></h2>
-                                <p class="services-text-max">We'll be happy to help answer any of your questions. Send us an email and we'll get back to you shortly.
+                                        Get in touch</b></h2>
+                                <p class="services-text-max">We'll be happy to help answer any of your questions. Send
+                                    us an email and we'll get back to you shortly.
                                 </p>
                                 <div class="btn-section-um"><b>Send an Email</b></div>
                             </div>
@@ -315,7 +338,7 @@ include('nav.php');
     </div>
 </div>
 <?php
-include('rodape.php');
+include('../vinicius/includes/rodape.php');
 ?>
 </body>
 </html>
