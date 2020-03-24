@@ -15,19 +15,54 @@
 
 
 <body>
-<div class="conteiner-fluid">
-    <div class="row cabecalho">
-        <div class="col-sm-12">
-            <img src="images/logo.png" class="logo"> vivaintra HomeOffice
-            <button type="button" class="btn btn-link">Home</button>
-            <button type="button" class="btn btn-link">Services</button>
-            <button type="button" class="btn btn-link">Pricing</button>
-            <button type="button" class="btn btn-link">Clients</button>
-            <button type="button" class="btn btn-link">News</button>
-            <button type="button" class="btn btn-link">Contact</button>
-            <button type="button" class="btn btn-primary btn-sm signup">Signup</button>
-        </div>
+<!--Cabeçalho--->
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-light navbar-expand-lg col-sm-12">
+            <a class="navbar-brand">
+                <img src="images/logo.png">
+                <img src="images/nome.png">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Starter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Enterprise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+                <form class="form-inline d-flex w-100">
+                    <div class="form-group justify-content-end w-100">
+                        <button class="btn btn-outline-primary small" style="margin-right: 10px" type="submit">Login</button>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                1
+                            </button>
+                            <div class="dropdown-menu">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
     </div>
+</div>
+<!--Corpo-->
+<div class="conteiner">
     <div class="row banner">
         <div class="col-sm-12">
             <div class="row">
@@ -45,12 +80,26 @@
     </div>
     <div class="row objetivos">
         <div class="col-sm-12 ">
-            <center>
-<!--            <img src="images/chip.png" class="imagens-objetivos">-->
-<!--            <img src="images/email.png" class="imagens-objetivos">-->
-<!--            <img src="images/modem.png" class="imagens-objetivos">-->
-<!--            <img src="images/ferramentas.png" class="imagens-objetivos">-->
-            </center>
+            <div class="row">
+                <div class="col-sm-12 ">
+                <center>
+                    <img src="images/chip.png" class="imagens-objetivos">
+                    <img src="images/email.png" class="imagens-objetivos">
+                    <img src="images/modem.png" class="imagens-objetivos">
+                    <img src="images/ferramentas.png" class="imagens-objetivos">
+                </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 ">
+                <center>
+                    Comunicação Fácil e Eficiente
+                    Controle de Atividades
+                    Fluxos de Processos e Equipes
+                    Capacitação e Integração
+                </center>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row banner">
@@ -142,8 +191,164 @@
             </div>
         </div>
     </div>
+
+    <div class="row banner">
+        <div class="col-sm-12 row-cards">
+            <center>preços</center>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do card</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do card</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do card</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row banner">
+        <div class="col-sm-12 row-clientes">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-um.svg" alt="Primeiro Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-dois.svg" alt="Primeiro Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-um.svg" alt="Primeiro Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-dois.svg" alt="Primeiro Slide"></center></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-um.svg" alt="Segundo Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-dois.svg" alt="Segundo Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-um.svg" alt="Segundo Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-dois.svg" alt="Segundo Slide"></center></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-um.svg" alt="Terceiro Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-dois.svg" alt="Terceiro Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-um.svg" alt="Terceiro Slide"></center></div>
+                            <div class="col-sm-3"><center><img class="d-block clientes" src="images/cliente-dois.svg" alt="Terceiro Slide"></center></div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row banner">
+        <div class="col-sm-12 row-atualizacao">
+            <center>atualizações</center>
+            <div class="row">
+                <div class="col-sm-12 row-cards">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top imagem-card" src="images/remoting.svg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Remoto</h5>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                    <a href="#" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top imagem-card" src="images/ranking.svg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ranking</h5>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                    <a href="#" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top imagem-card" src="images/comunication.svg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Comunicação</h5>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                    <a href="#" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row banner">
+        <div class="col-sm-12 row-contato">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="texto-dois">Dúvidas?</p>
+                    <strong class="texto-dois"> Nós podemos lhe ajudar</strong>
+                    <p class="texto-dois">Nosso time de vendas poderá responder suas dúvidas e até mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.
+                    </p>
+                    <button type="button" class="btn btn-primary btn-sm view">Entre em contato</button>
+                </div>
+                <div class="col-sm-6"><img src="images/contato.svg" class="pessoas"></div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
+<!--Rodapé-->
+<div class="conteiner-fluid">
+    <div class="row banner">
+        <div class="col-sm-12 row-rodape">
+            <div class="row">
+                <div class="col-sm-12">
+                    <center>textos</center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <center> Direitos autorais</center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

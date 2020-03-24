@@ -1,7 +1,4 @@
-.cabecalho{
-    margin-top: 10px;
-    margin-left: 100px;
-}
+
 .btn-link{
 color: #313438;
 }
@@ -15,8 +12,8 @@ color: #313438;
 
 }
 .signup{
-    background-color: #19867c ;
-    border-color: #19867c;
+    background-color: #337ab6 ;
+    border-color: #337ab6;
 }
 .learn{
     border-radius: 50%;
@@ -80,3 +77,24 @@ color: #313438;
   margin-right: 50px;
     margin-left: 50px;
 }
+.clientes{
+    width: 100px;
+    height: 100px;
+}
+.row-rodape{
+    background-color: #1f2e4d;
+    color: #cccccc;
+}
+.carousel-indicators li{
+    background-color: rgba(47, 136,25, 0.5) ;
+     bottom: -40px;
+}
+.imagem-card{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+.row-atualizacao{
+    margin-left: 15px;
+}
+
