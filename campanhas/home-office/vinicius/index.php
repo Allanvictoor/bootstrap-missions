@@ -40,8 +40,8 @@ include('../vinicius/includes/nav.php');
                                 <div>
                                     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-1.png">
                                 </div>
-                                <h2>Strategy</h2>
-                                <p>We'll work with you to develop the right strategy</p>
+                                <h2 class="Montserrat">Comunicação Fácil e Eficiente</h2>
+                                <p class="Poppins">We'll work with you to develop the right strategy</p>
                             </div>
                         </div>
                         <div class="col-md-3 strategy-card-section">
@@ -49,8 +49,8 @@ include('../vinicius/includes/nav.php');
                                 <div>
                                     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-2.png">
                                 </div>
-                                <h2>Automation</h2>
-                                <p>Work synchronization and automated services</p>
+                                <h2 class="Montserrat">Controle de Atividades</h2>
+                                <p class="Poppins">Work synchronization and automated services</p>
                             </div>
                         </div>
                         <div class="col-md-3 strategy-card-section">
@@ -58,8 +58,8 @@ include('../vinicius/includes/nav.php');
                                 <div>
                                     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-3.png">
                                 </div>
-                                <h2>Automation</h2>
-                                <p>Work synchronization and automated services</p>
+                                <h2 class="Montserrat">Fluxos de Processos e Equipes</h2>
+                                <p class="Poppins">Work synchronization and automated services</p>
                             </div>
                         </div>
                         <div class="col-md-3 strategy-card-section">
@@ -67,8 +67,8 @@ include('../vinicius/includes/nav.php');
                                 <div>
                                     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-4.png">
                                 </div>
-                                <h2>Automation</h2>
-                                <p>Work synchronization and automated services</p>
+                                <h2 class="Montserrat">Capacitação e Integração</h2>
+                                <p class="Poppins">Work synchronization and automated services</p>
                             </div>
                         </div>
                     </div>
@@ -80,8 +80,8 @@ include('../vinicius/includes/nav.php');
                     <div class="row mt-5">
                         <div class="col-md-6">
                             <div class="services-title-section">
-                                <p class="services-subtitle">Our services</p>
-                                <h2 class="services-title">Solving Problems</h2>
+                                <p class="services-subtitle Poppins">Our services</p>
+                                <h2 class="services-title Montserrat">Solving Problems</h2>
                                 <p class="services-text services-text-max">This is a great section to introduce your
                                     company and showcase
                                     your featured services.
@@ -90,8 +90,6 @@ include('../vinicius/includes/nav.php');
                                      width="100%" alt="">
                             </div>
                         </div>
-                        
-                        
                         <div class="col-md-6">
                             <div id="accordion">
                                 <div id="headingOne">
@@ -101,7 +99,43 @@ include('../vinicius/includes/nav.php');
                                         <b>Website Design</b>
                                         <i class="fas fa-plus iconW"></i>
                                     </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                         data-parent="#accordion" style="width: 387px; margin-left: 18px;">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                            terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                            moon
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="headingTwo">
+                                    <div class="accordion-section" data-toggle="collapse"
+                                         data-target="#collapseTwo" aria-expanded="false"
+                                         aria-controls="collapseTwo">
+                                        <b>Website Design</b>
+                                        <i class="fas fa-plus iconW"></i>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                         data-parent="#accordion" style="width: 387px; margin-left: 18px;">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                            terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                            moon
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="headingThree">
+                                    <div class="accordion-section" data-toggle="collapse"
+                                         data-target="#collapseThree" aria-expanded="false"
+                                         aria-controls="collapseThree">
+                                        <b>Website Design</b>
+                                        <i class="fas fa-plus iconW"></i>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                          data-parent="#accordion" style="width: 387px; margin-left: 18px;">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
@@ -113,15 +147,51 @@ include('../vinicius/includes/nav.php');
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div id="headingTwo">
+                                <div id="headingFour">
                                     <div class="accordion-section" data-toggle="collapse"
-                                         data-target="#collapseTwo" aria-expanded="false"
-                                         aria-controls="collapseTwo">
+                                         data-target="#collapseFour" aria-expanded="false"
+                                         aria-controls="collapseFour">
                                         <b>Website Design</b>
                                         <i class="fas fa-plus iconW"></i>
                                     </div>
-                                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                         data-parent="#accordion" style="width: 387px; margin-left: 18px;">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                            terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                            moon
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="headingFive">
+                                    <div class="accordion-section" data-toggle="collapse"
+                                         data-target="#collapseFive" aria-expanded="false"
+                                         aria-controls="collapseFive">
+                                        <b>Website Design</b>
+                                        <i class="fas fa-plus iconW"></i>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                         data-parent="#accordion" style="width: 387px; margin-left: 18px;">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                            terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                            moon
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="headingSix">
+                                    <div class="accordion-section" data-toggle="collapse"
+                                         data-target="#collapseSix" aria-expanded="false"
+                                         aria-controls="collapseSix">
+                                        <b>Website Design</b>
+                                        <i class="fas fa-plus iconW"></i>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
                                          data-parent="#accordion" style="width: 387px; margin-left: 18px;">
                                         <div class="card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
@@ -317,19 +387,19 @@ include('../vinicius/includes/nav.php');
                 <section class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="services-title-section mt-5">
-                                <p class="services-subtitle"><b>Contact</b></p>
-                                <h2 class="services-title-max"><b>Questions?
-                                        Get in touch</b></h2>
-                                <p class="services-text-max">We'll be happy to help answer any of your questions. Send
-                                    us an email and we'll get back to you shortly.
-                                </p>
-                                <div class="btn-section-um"><b>Send an Email</b></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
                             <img src="https://www.codefest.co.uk/demo/codelander/assets/images/contact-header-img.png"
                                  width="100%" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="services-title-section mt-5">
+                                <p class="services-subtitle"><b>Entre em contato</b></p>
+                                <h2 class="services-title-max"><b>Dúvidas?
+                                        Nós podemos lhe ajudar</b></h2>
+                                <p class="services-text-max">Nosso time de vendas poderá responder suas dúvidas e até
+                                    mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de
+                                    nossa intranet.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -337,8 +407,8 @@ include('../vinicius/includes/nav.php');
         </div>
     </div>
 </div>
-    <?php
-    include('../vinicius/includes/rodape.php');
-    ?>
+<?php
+include('../vinicius/includes/rodape.php');
+?>
 </body>
 </html>
