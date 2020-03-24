@@ -22,6 +22,10 @@
 .espaco-icons {
     margin-right: 17px;
     font-size: 26px;
+    cursor: pointer;
+}
+.espaco-icons:hover {
+    color: #007bff;
 }
 
 .footer-text-p {
