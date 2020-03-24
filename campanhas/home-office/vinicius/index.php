@@ -337,8 +337,8 @@ include('../vinicius/includes/nav.php');
         </div>
     </div>
 </div>
-<?php
-include('../vinicius/includes/rodape.php');
-?>
+    <?php
+    include('../vinicius/includes/rodape.php');
+    ?>
 </body>
 </html>
