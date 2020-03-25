@@ -1,4 +1,49 @@
-.card{
-    border-radius: 100px;
-    border: 1px solid red;
+#card-principal{
+  border: 10px dashed rgb(7, 150, 233);
+  border-radius: 40px;
+}
+#card-1{
+    border-radius: 40px;
+}
+#card-2{
+    border-radius: 40px;
+}
+#card-3{
+    border-radius: 40px;
+}
+#card-4{
+    border-radius: 40px;
+}
+#card-5{
+    border-radius: 40px;
+}
+#tudo{
+    background-color: #F4F4F4;
+}
+#total{
+    background-color: #F3F3F3;
+}
+#card-principal:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#card-1:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#card-2:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#card-3:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#card-4:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#card-5:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#rodape-1{
+    background-color: #303669;
+}
+#rodape-2{
+    background-color: #303669;
 }
