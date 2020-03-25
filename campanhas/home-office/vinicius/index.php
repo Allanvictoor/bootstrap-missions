@@ -373,7 +373,113 @@ include('../vinicius/includes/nav.php');
                                     nossa intranet.
                                 </p>
                                 <div class="d-flex justify-content-center">
-                                    <div class="btn-section-segundo"><b>Solicite uma apresentação</b></div>
+                                    <div class="btn-section-segundo" type="button" data-toggle="modal"
+                                         data-target="#exampleModal">
+                                        <b>Solicite uma apresentação</b>
+                                    </div>
+                                    
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title m-auto services-title-max"
+                                                        id="exampleModalLabel">Faça
+                                                        contato</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <p class="mb-auto ml-1 services-subtitle">Nome:</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <input class="w-100 form-control" type="text">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <p class="mb-auto ml-1 services-subtitle">Email:</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <input class="w-100 form-control" type="email">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <p class="mb-auto ml-1 services-subtitle">Nome da
+                                                                        empresa:</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <input class="w-100 form-control" type="text">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <p class="mb-auto ml-1 services-subtitle">
+                                                                        Telefone:</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <input class="w-100 form-control" type="tel">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <p class="mb-auto ml-1 services-subtitle">Como soube
+                                                                        do
+                                                                        vivaIntra:</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <select class="w-100 custom-select" name="" id="">
+                                                                        <option value="">Selecione</option>
+                                                                        <option value="">Google</option>
+                                                                        <option value="">Facebook</option>
+                                                                        <option value="">Revistas</option>
+                                                                        <option value="">E-mail</option>
+                                                                        <option value="">Outros</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <p class="mb-auto ml-1 services-subtitle">
+                                                                        Mensagem:</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <textarea class="w-100 form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Fechar
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary">Enviar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
