@@ -28,21 +28,22 @@ body{
     width: 100%
 }
 
-.texto-inicial, .texto-inicial-title{
+.texto-inicial, .texto-inicial-title, .texto-inicial-title-dois, .texto-inicial-sub-title{
     margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 35px;
 }
 
 .view{
-    background-color: #337ab6 ;
-    border-color: #337ab6;
-    margin-left: 50px;
+    background-color: hotpink ;
+    border-color: hotpink;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 30px;
+    background-clip: padding-box;
 }
 
 .imagem-um{
-     width: 70%;
-     height: 70%;
+     width: 80%;
+     height: 100%;
      margin-left: 100px;
      margin-top: 25px;
  }
@@ -55,7 +56,7 @@ body{
       border-color: #337ab6;
       margin-bottom: 5px;
   }
-.texto-um, .texto-um-title{
+.texto-um, .texto-um-title, .texto-um-sub-title, .texto-um-paragrafo{
        margin-left: 50px;
    }
 .imagem-dois{
@@ -110,7 +111,29 @@ body{
 .texto-strategy{
     margin-left: 25px;
 }
-.texto-inicial-title, .texto-um-title{
-    text-decoration: underline;
+.texto-inicial-title, .texto-inicial-title-dois, .texto-um-title{
     color: #283c5f;
+    font-size: 40px;
+    margin-bottom: auto;
+    font-family: 'Lilita One', cursive;
+}
+.texto-inicial-sub-title, .texto-um-sub-title{
+    margin-bottom: auto;
+    color: #4a4a4a;
+}
+.texto-inicial-paragarafo{
+    font-family: 'Thasadith', sans-serif;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.texto-inicial-title-dois{
+    margin-top: -25px;
+}
+.texto-inicial-title{
+    margin-top: -10px;
+}
+
+.bloco-texto-um{
+    margin-top: 95px;
 }
