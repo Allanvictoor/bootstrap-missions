@@ -13,20 +13,20 @@ include('../vinicius/includes/nav.php');
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <section class="col-md-12">
-                    <div class="row">
+                <section class="col-md-12 mt-5">
+                    <div class="row mt-4">
                         <div class="col-md-6">
                             <img width="500px"
                                  src="https://www.codefest.co.uk/demo/codelander/assets/images/header.png" alt="">
                         </div>
                         <div class="col-md-6 m-auto">
-                            <p class="header-subtitle">Equipes em home-office?</p>
-                            <h1 class="header-title">Organize e potencialize seus times.</h1>
-                            <p class="header-title-text">Com a adoção de home-office nunca uma intranet foi tão
+                            <p class="header-subtitle ml-5">Equipes em home-office?</p>
+                            <h1 class="header-title ml-5"><b>Organize e potencialize seus times.</b></h1>
+                            <p class="header-title-text ml-5">Com a adoção de home-office nunca uma intranet foi tão
                                 importante e estratégica para seu negócio como um ambiente que centraliza sua
                                 comunicação e produção.
                             </p>
-                            <div class="btn-section-primeiro"><b> Quero conhecer as vantagens</b></div>
+                            <div class="btn-section-primeiro ml-5"><b> Quero conhecer as vantagens</b></div>
                         </div>
                     </div>
                 </section>
@@ -40,8 +40,8 @@ include('../vinicius/includes/nav.php');
                                 <div>
                                     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-1.png">
                                 </div>
-                                <h2 class="Montserrat">Comunicação Fácil e Eficiente</h2>
-                                <p class="Poppins">We'll work with you to develop the right strategy</p>
+                                <h2 class="Montserrat-title-strategy">Comunicação Fácil e Eficiente</h2>
+                                <p class="Poppins-text-strategy">We'll work with you to develop the right strategy</p>
                             </div>
                         </div>
                         <div class="col-md-3 strategy-card-section">
@@ -49,8 +49,8 @@ include('../vinicius/includes/nav.php');
                                 <div>
                                     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-2.png">
                                 </div>
-                                <h2 class="Montserrat">Controle de Atividades</h2>
-                                <p class="Poppins">Work synchronization and automated services</p>
+                                <h2 class="Montserrat-title-strategy">Controle de Atividades</h2>
+                                <p class="Poppins-text-strategy">Work synchronization and automated services</p>
                             </div>
                         </div>
                         <div class="col-md-3 strategy-card-section">
@@ -58,8 +58,8 @@ include('../vinicius/includes/nav.php');
                                 <div>
                                     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-3.png">
                                 </div>
-                                <h2 class="Montserrat">Fluxos de Processos e Equipes</h2>
-                                <p class="Poppins">Work synchronization and automated services</p>
+                                <h2 class="Montserrat-title-strategy">Fluxos de Processos e Equipes</h2>
+                                <p class="Poppins-text-strategy">Work synchronization and automated services</p>
                             </div>
                         </div>
                         <div class="col-md-3 strategy-card-section">
@@ -67,8 +67,8 @@ include('../vinicius/includes/nav.php');
                                 <div>
                                     <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-4.png">
                                 </div>
-                                <h2 class="Montserrat">Capacitação e Integração</h2>
-                                <p class="Poppins">Work synchronization and automated services</p>
+                                <h2 class="Montserrat-title-strategy">Capacitação e Integração</h2>
+                                <p class="Poppins-text-strategy">Work synchronization and automated services</p>
                             </div>
                         </div>
                     </div>
@@ -80,33 +80,32 @@ include('../vinicius/includes/nav.php');
                     <div class="row mt-5">
                         <div class="col-md-6">
                             <div class="services-title-section">
-                                <p class="services-subtitle Poppins">Our services</p>
-                                <h2 class="services-title Montserrat">Solving Problems</h2>
-                                <p class="services-text services-text-max">This is a great section to introduce your
-                                    company and showcase
-                                    your featured services.
+                                <p class="services-subtitle">Módulos e Ferramentas</p>
+                                <h2 class="services-title">Dicas que valem ouro</h2>
+                                <p class="services-text">Saiba como alguns de nossas módulos podem
+                                    contribuir para suas atividades de home-office tornando o ambiente muito mais
+                                    organizado e produtivo.
                                 </p>
                                 <img src="https://www.codefest.co.uk/demo/codelander/assets/images/services-header.png"
                                      width="100%" alt="">
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div id="accordion">
+                            <div id="accordion" style="margin-top: 76px">
                                 <div id="headingOne">
                                     <div class="accordion-section" data-toggle="collapse"
                                          data-target="#collapseOne" aria-expanded="false"
                                          aria-controls="collapseOne">
-                                        <b>Website Design</b>
-                                        <i class="fas fa-plus iconW"></i>
+                                        <b>Agenda</b>
+                                        <i class="fas fa-plus" style="padding-left: 276px"></i>
                                     </div>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                          data-parent="#accordion" style="width: 387px; margin-left: 18px;">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                            moon
+                                            Quem possui reuniões externas ou internas ainda que sejam remotas demandam
+                                            organização e detalhamento. Nosso módulo permite criar reuniões com assuntos
+                                            de pauta permitindo organização e também consultar a disponibilidade de cada
+                                            um.
                                         </div>
                                     </div>
                                 </div>
@@ -114,17 +113,15 @@ include('../vinicius/includes/nav.php');
                                     <div class="accordion-section" data-toggle="collapse"
                                          data-target="#collapseTwo" aria-expanded="false"
                                          aria-controls="collapseTwo">
-                                        <b>Website Design</b>
-                                        <i class="fas fa-plus iconW"></i>
+                                        <b>Tarefas</b>
+                                        <i class="fas fa-plus" style="padding-left: 280px"></i>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                          data-parent="#accordion" style="width: 387px; margin-left: 18px;">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                            moon
+                                            Todos realizamos atividades diariamente mas em home-office saber o que cada
+                                            um faz se torna mais difícil. Usando o módulo de tarefas, todo colaborador e
+                                            seu time podem organizar, especificar e distribuir melhor suas atividades
                                         </div>
                                     </div>
                                 </div>
@@ -132,18 +129,16 @@ include('../vinicius/includes/nav.php');
                                     <div class="accordion-section" data-toggle="collapse"
                                          data-target="#collapseThree" aria-expanded="false"
                                          aria-controls="collapseThree">
-                                        <b>Website Design</b>
-                                        <i class="fas fa-plus iconW"></i>
+                                        <b>Requisições</b>
+                                        <i class="fas fa-plus" style="padding-left: 248px"></i>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                          data-parent="#accordion" style="width: 387px; margin-left: 18px;">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                            moon
-                                        
+                                            Processos são um conjunto de fluxos definidos e todo departamento tem
+                                            necessidade de controlar. Desde coisas simples como Solicitação de Férias
+                                            até processo internos da empresa. Requisições te ajuda a organizar isto com
+                                            etapas e responsáveis.
                                         </div>
                                     </div>
                                 </div>
@@ -151,18 +146,15 @@ include('../vinicius/includes/nav.php');
                                     <div class="accordion-section" data-toggle="collapse"
                                          data-target="#collapseFour" aria-expanded="false"
                                          aria-controls="collapseFour">
-                                        <b>Website Design</b>
-                                        <i class="fas fa-plus iconW"></i>
+                                        <b>Timeline</b>
+                                        <i class="fas fa-plus" style="padding-left: 272px"></i>
                                     </div>
                                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                          data-parent="#accordion" style="width: 387px; margin-left: 18px;">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                            moon
-                                        
+                                            Aqui é onde você ganha o engajamento da empresa! Usar a timeline para gerar
+                                            conteúdos de endomarketing e aproximar quem está mais distante seja em outro
+                                            departamento ou mesmo em home-office é fundamental!
                                         </div>
                                     </div>
                                 </div>
@@ -170,35 +162,16 @@ include('../vinicius/includes/nav.php');
                                     <div class="accordion-section" data-toggle="collapse"
                                          data-target="#collapseFive" aria-expanded="false"
                                          aria-controls="collapseFive">
-                                        <b>Website Design</b>
-                                        <i class="fas fa-plus iconW"></i>
+                                        <b>Chat, Comunicado Interno, Avisos</b>
+                                        <i class="fas fa-plus" style="padding-left: 73px"></i>
                                     </div>
                                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                                          data-parent="#accordion" style="width: 387px; margin-left: 18px;">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                            moon
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="headingSix">
-                                    <div class="accordion-section" data-toggle="collapse"
-                                         data-target="#collapseSix" aria-expanded="false"
-                                         aria-controls="collapseSix">
-                                        <b>Website Design</b>
-                                        <i class="fas fa-plus iconW"></i>
-                                    </div>
-                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                                         data-parent="#accordion" style="width: 387px; margin-left: 18px;">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                            moon
+                                            A comunicação centralizada é primordial para o ambiente corporativo uma vez
+                                            ninguém quer que algumas discussões ou assuntos sejam tratados de forma
+                                            desorganizada em grupos de WhatsApp ou em emails que se perderão a tantos
+                                            outros.
                                         </div>
                                     </div>
                                 </div>
@@ -243,7 +216,7 @@ include('../vinicius/includes/nav.php');
                                     <p class="pricing-rate">$199</p>
                                     <p class="pricing-period">Basic</p>
                                     <p class="pricing-text">Starter plan with all the basics included</p>
-                                    <div class="pricing-all-plan-features-section basic-plan-features-section">
+                                    <div class="pricing-all-plan-features-section">
                                         <ul>
                                             <li>Core Business System</li>
                                             <li>Team Management</li>
@@ -251,7 +224,7 @@ include('../vinicius/includes/nav.php');
                                             <li>Customized Features</li>
                                         </ul>
                                     </div>
-                                    <div class="nav-link">Enquire</div>
+                                    <div class="learn-more-btn">Enquire</div>
                                 </div>
                             </div>
                             <div class="col-md-4 pricing-card-section">
@@ -267,7 +240,7 @@ include('../vinicius/includes/nav.php');
                                             <li>Customized Features</li>
                                         </ul>
                                     </div>
-                                    <div class="nav-link">Enquire</div>
+                                    <div class="learn-more-btn">Enquire</div>
                                 </div>
                             </div>
                             <div class="col-md-4 pricing-card-section">
@@ -275,7 +248,7 @@ include('../vinicius/includes/nav.php');
                                     <p class="pricing-rate">$1299</p>
                                     <p class="pricing-period">Corporate</p>
                                     <p class="pricing-text">Everything a global company needs</p>
-                                    <div class="pricing-all-plan-features-section advance-plan-features-section">
+                                    <div class="pricing-all-plan-features-section">
                                         <ul>
                                             <li>Core Business System</li>
                                             <li>Team Management</li>
@@ -283,18 +256,18 @@ include('../vinicius/includes/nav.php');
                                             <li>Customized Features</li>
                                         </ul>
                                     </div>
-                                    <div class="nav-link">Enquire</div>
+                                    <div class="learn-more-btn">Enquire</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="col-md-12 margin-bottom">
+                <section class="col-md-12 mb-5">
                     <p class="services-subtitle d-flex justify-content-center">Our clients</p>
                     <h1 class="services-title d-flex justify-content-center">Client Showcase</h1>
                     <div class="row">
                         <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
-                            <ol class="carousel-indicators">
+                            <ol class="carousel-indicators" style="margin-bottom: -2rem">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -347,8 +320,8 @@ include('../vinicius/includes/nav.php');
                     </div>
                 </section>
                 <section class="col-md-12">
-                    <p class="services-subtitle d-flex justify-content-center">Recent updates</p>
-                    <h1 class="services-title d-flex justify-content-center">Featured Stories</h1>
+                    <p class="blog-subtitle d-flex justify-content-center mt-5">Recent updates</p>
+                    <h1 class="blog-title d-flex justify-content-center">Featured Stories</h1>
                     <div class="container pricing-container">
                         <div class="row">
                             <div class="col-md-4 pricing-card-section">
@@ -369,7 +342,7 @@ include('../vinicius/includes/nav.php');
                                     <h4 class="blog-post-subtitle">Keywords</h4>
                                     <p class="blog-post-text">We've ranked number one on Google for multiple keywords.
                                         Read about our SEO strategies</p>
-                                    <div class="nav-link mt-2">Read More</div>
+                                    <div class="learn-more-btn mt-2">Read More</div>
                                 </div>
                             </div>
                             <div class="col-md-4 pricing-card-section">
@@ -384,7 +357,7 @@ include('../vinicius/includes/nav.php');
                         </div>
                     </div>
                 </section>
-                <section class="col-md-12">
+                <section class="col-md-12" style="margin-bottom: 70px">
                     <div class="row">
                         <div class="col-md-6">
                             <img src="https://www.codefest.co.uk/demo/codelander/assets/images/contact-header-img.png"
@@ -393,12 +366,15 @@ include('../vinicius/includes/nav.php');
                         <div class="col-md-6">
                             <div class="services-title-section mt-5">
                                 <p class="services-subtitle"><b>Entre em contato</b></p>
-                                <h2 class="services-title-max"><b>Dúvidas?
-                                        Nós podemos lhe ajudar</b></h2>
+                                <h2 class="services-title-max"><b>Dúvidas?</b></h2>
+                                <h2 class="services-title-max"><b>Nós podemos lhe ajudar</b></h2>
                                 <p class="services-text-max">Nosso time de vendas poderá responder suas dúvidas e até
                                     mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de
                                     nossa intranet.
                                 </p>
+                                <div class="d-flex justify-content-center">
+                                    <div class="btn-section-segundo"><b>Solicite uma apresentação</b></div>
+                                </div>
                             </div>
                         </div>
                     </div>
