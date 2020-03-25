@@ -14,15 +14,37 @@
                 </div>
                 <div class="col-md-3">
                     <h3 class="footer-subsection-title"><b>Contact Us</b></h3>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p class="footer-subsection-text">
-                        123 Business Centre
-                        London SW1A 1AA
-                    </p>
-                    <p class="footer-subsection-text">0123456789
-                    </p>
-                    <p class="footer-subsection-text">mail@domain.com
-                    </p>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fas fa-map-marker-alt icon-footer"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="footer-subsection-text-icon mt-1">
+                                123 Business Centre
+                                London SW1A 1AA
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fas fa-phone-alt icon-footer"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="footer-subsection-text-icon mt-1">
+                                0123456789
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fas fa-envelope icon-footer"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="footer-subsection-text-icon mt-2">
+                                mail@domain.com
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3">
                     <h3 class="footer-subsection-title"><b>Socials</b></h3>
