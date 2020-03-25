@@ -41,10 +41,27 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <button class="list-button" style="margin-left: 120px">Login</button>
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" arial-expanded="false">
-                        <img src="https://www.vivaintra.com/media/images/br.png" alt="Idioma"> | <span class="caret"></span>
-                    </button>
+                    <div class="row">
+                        <button type="button" class="btn my-4 ml-5 text-white d-none d-md-block"
+                                style=" background-color: #347ab7; ">Login
+                        </button>
+                        <div class="btn-group mt-3">
+                            <button style="height: 39px;" class="btn-sm dropdown-toggle mt-2 m-2 border border-dark"
+                                    type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img style="width: 2rem" src="https://www.vivaintra.com/media/images/br.png" alt="">
+                                |
+                            </button>
+                            <p></p>
+                            <div class="dropdown-menu" x-placement="bottom-start"
+                                 style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(8px, 55px, 0px);">
+            
+                            </div>
+                        </div>
+                        <div class="btn-group">
+        
+                        </div>
+    
+                    </div>
                 </div>
             </div>
         </div>
