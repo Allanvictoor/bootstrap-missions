@@ -1,0 +1,86 @@
+body{
+    background-color: #fafafa;
+}
+.navbar{
+    background-color: #fcfafb;
+}
+.imagem-idioma{
+    width: 50px;
+    height: 50px;
+}
+
+.texto-inicial{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 35px;
+}
+
+.view{
+    background-color: #283c5f ;
+    border-color: #283c5f;
+    margin-left: 50px;
+}
+
+.imagem-um{
+     width: 70%;
+     height: 70%;
+     margin-left: 100px;
+     margin-top: 25px;
+ }
+.botao-block{
+      height: 13%;
+      width: 80%;
+      margin-left: 50px;
+      text-align-all: center;
+      background-color: #283c5f ;
+      border-color: #283c5f;
+      margin-bottom: 5px;
+  }
+.texto-um{
+       margin-left: 50px;
+   }
+.imagem-dois{
+       height: 60%;
+       width: 60%;
+       margin-left: 50px;
+   }
+.card-body{
+    width: 80%;
+    margin-left: 50px;
+}
+.imagem-tres{
+     margin-left: 100px;
+ }
+.banner{
+    margin-top: 35px;
+}
+.imagem-strategy{
+    height: 50px;
+    width: 50px;
+}
+.imagem-quatro{
+    width: 80%;
+    height: 80%;
+}
+.carousel-indicators li{
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: -40px;
+}
+.slide{
+   background-color: #f6f6f6;
+}
+.cliente-um{
+    margin-left: 50px;
+    margin-top: -5px;
+}
+.cliente-dois{
+    margin-top: 45px;
+}
+.cliente-tres{
+    margin-top: 55px;
+    margin-right:50px ;
+}
+.cliente-quatro{
+    margin-right: 11px;
+    margin-top: -10px;
+}

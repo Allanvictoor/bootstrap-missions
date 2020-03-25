@@ -1,0 +1,439 @@
+.logo-image {
+    width: 192px;
+    padding-top: 20px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.height-full {
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+    padding-right: 20px;
+}
+
+header {
+    background: #fcfafb;
+    height: 100px;
+    border-bottom: 3px solid #00649f;
+}
+
+
+.opensans {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right !important;
+}
+
+#menu ul {
+    padding: 0px;
+    margin: 0px;
+
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    background-color: #EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 3px solid #EDEDED;
+    height: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    min-width: 1200px;
+}
+
+/* termino estilizacao header */
+
+/* -- buttons -- */
+
+
+
+/* --- formatacao de todos textos ---*/
+
+.subtitle {
+    font-family: poppins;
+}
+
+.header-title {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1;
+    padding-bottom: 25px;
+    color: #303669;
+}
+
+.services-text {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* -- termino formatacao todos textos *---/
+
+/*------ cards -------*/
+
+.strategy-container {
+    position: relative;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.strategy-card-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.strategy-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+
+    text-align: center;
+
+}
+
+.strategy-card img {
+    height: 80px;
+}
+
+.strategy-card h2 {
+    color: #303669;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 3;
+}
+
+
+.strategy-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    font-family: Poppins;
+    font-weight: 300;
+    max-width: 300px;
+}
+
+
+/*--- end cards ------*/
+
+/*----- collapse -------*/
+
+
+
+.button {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3a88ec;
+    border-radius: 50px;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.btn-invert {
+    background-color: #ff3e81 !important;
+}
+
+.learn-more-btn {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 40px !important;
+    border-radius: 100px;
+}
+
+.learn-more-btn-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/*  pricing e pricing title */
+
+.pricing-title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pricing-title h2 {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1;
+    color: #303669;
+    margin-bottom: 20px;
+}
+
+
+.pricing-title p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+/*---- end pricing e princing title ----*/
+/*--- pricing cards ------*/
+
+
+.pricing-card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 40px 55px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.pricing-rate {
+    color: #303669;
+    font-weight: 800;
+    font-family: Montserrat;
+    font-size: 59px;
+    line-height: 1;
+}
+
+.pricing-period {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #78c2ff;
+}
+
+.pricing-text {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
+}
+
+.pricing-all-plan-features-section {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+}
+
+.learn-more-btn {
+    background-color: #3a88ec;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 40px !important;
+    border-radius: 100px;
+}
+
+.pricing-plan-cards-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-all-plan-features-section {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+}
+
+
+.pricing-all-plan-features-section ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.basic-plan-features-section li:nth-child(3) {
+    background: url(../vitor/imagens/false.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 35px;
+}
+
+.basic-plan-features-section li:nth-child(4) {
+    background: url(../vitor/imagens/false.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 35px;
+}
+
+
+.pricing-all-plan-features-section li {
+    font-size: 14px;
+    color: #000;
+    font-family: Poppins;
+    font-weight: 300;
+    line-height: 2;
+    background: url(../vitor/imagens/ok.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 35px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.pricing-all-plan-features-section {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+}
+
+.featured .pricing-rate:before {
+    content: "Popular";
+    display: block;
+    width: 95px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 auto 15px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #78c2ff;
+    padding: 10px 15px;
+}
+
+.medium-plan-features-section li:nth-child(4) {
+    background: url(../vitor/imagens/false.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 35px;
+}
+
+.pricing-card-section {
+    padding: 20px;
+}
+
+.pricing-card-section {
+    padding: 20px;
+}
+
+.featured {
+    border: 7px dashed #78c2ff;
+}
+
+
+/* --- end pricing cards ---*/
+
+
+/* -- inicio div carousel --*/
+
+
+.clients-title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.clients-subtitle {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.clients-title {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1;
+    color: #303669;
+    margin-bottom: 20px;
+}
+
+
+
+/* ---- ACORDIONS BOTOES ------ */
+
+
+.accordion {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3a88ec;
+    border-radius: 50px;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.active,
+.accordion:hover {
+    background-color:#559dfa;
+}
+
+.panels {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel p {
+    color: #a5a5a5;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
