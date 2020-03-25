@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 
-</head>
-
-<body>
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith&display=swap" rel="stylesheet"><body>
 <!--Cabeçalho--->
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <nav class="navbar navbar-expand-lg col-sm-12">
-            <a class="navbar-brand"><img src="images/logo.png"></a>
+            <a class="navbar-brand"><img src="images/logo.png" class="imagem-logo"></a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item">
@@ -42,10 +41,11 @@
                 </ul>
                 <form class="form-inline d-flex w-100">
                     <div class="form-group justify-content-end w-100">
-                        <button class="btn btn-primary small" type="submit">Login</button>
+                        <button class="btn btn-primary small botao-login" type="submit">Login</button>
                         <div class="btn-group">
-                            <button id="toggle-language" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" arial-expanded="false">
-                                <img src="images/brasil.svg" class="imagem-idioma" alt="Idioma" /> | <span class="caret"></span>
+                            <button class="btn-sm dropdown-toggle border border-dark botao-idioma" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="imagem-idioma" src="images/brasil.svg" alt="">
+                                |
                             </button>
                             <ul class="dropdown-menu" role="menu" id="box-language">
                                 <li>Português</li>
@@ -60,80 +60,96 @@
     </div>
 </div>
 <!--linha entre corpo e cabeçalho-->
-<div>
-    <table border=0 align=left width=100%>
-        <tr><td style="background-color:#283c5f  "></td></tr>
+<div class="row">
+    <table class="linha-separa-nav" >
+        <tr><td></td></tr>
     </table>
 </div>
 
 <div class="conteiner">
+<!--    primeiro banner-->
     <div class="row">
         <div class="col-sm-12">
             <div class="row">
                 <div class="col-sm-6">
                     <img src="images/imagem-um.png" class="imagem-um">
                 </div>
-                <div class="col-sm-6">
-                    <p class="texto-inicial">Equipes em home-office?</p>
-                    <p class="texto-inicial">Organize e potencialize seus times.</p>
-                    <p class="texto-inicial">Com a adoção de home-office nunca uma intranet foi tão importante e estratégica para seu negócio como um ambiente que centraliza sua comunicação e produção.</p>
+                <div class="col-sm-6 bloco-texto-um">
+                    <p class="texto-inicial-sub-title">Equipes em home-office?</p>
+                    <p class="texto-inicial-title">Organize e</p>
+                    <p class="texto-inicial-title-dois">potencialize seus times.</p>
+                    <p class="texto-inicial-paragarafo">Com a adoção de home-office nunca uma intranet foi tão importante e estratégica para seu negócio como um ambiente que centraliza sua comunicação e produção.</p>
                     <button type="button" class="btn btn-primary btn-sm view">Quero conhecer as vantagens</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-12 w-100 d-flex justify-content-center">
-            <img src="images/strategy-1.png" class="imagem-strategy m-4" alt=" ">
-            <img src="images/strategy-2.png" class="imagem-strategy m-4" alt=" ">
-            <img src="images/strategy-3.png" class="imagem-strategy m-4" alt=" ">
-            <img src="images/strategy-4.png" class="imagem-strategy m-4" alt=" ">
+
+
+    <div class="row banner">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="images/strategy-1.png" class="imagem-strategy" alt=" ">
+                    <p class="texto-strategy">Comunicação Fácil e Eficiente</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/strategy-2.png" class="imagem-strategy" alt=" ">
+                    <p class="texto-strategy">Controle de Atividades</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/strategy-3.png" class="imagem-strategy" alt=" ">
+                    <p class="texto-strategy">Fluxos de Processos e Equipes</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/strategy-4.png" class="imagem-strategy" alt=" ">
+                    <p class="texto-strategy">Capacitação e Integração</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row banner">
         <div class="col-sm-12">
             <div class="row">
                 <div class="col-sm-6">
-                    <p class="texto-um">Our Services </p>
-                    <strong class="texto-um">Solving Problems</strong>
-                    <p class="texto-um">This is a great section to intruduce your company and showcase your featured services.</p>
+                    <p class="texto-um-sub-title">Módulos e Ferramentas</p>
+                    <strong class="texto-um-title">Dicas que valem ouro</strong>
+                    <p class="texto-um">Saiba como alguns de nossas módulos podem contribuir para suas atividades de home-office tornando o ambiente muito mais organizado e produtivo.</p>
                     <img src="images/imagem-dois.png" class="imagem-dois">
                 </div>
-                <div class="col-sm-6" id="collapse-botao">
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-um" aria-expanded="false" aria-controls="collapseBotao">Botao 1</button>
+                <div class="col-sm-6 grupo-botao" id="collapse-botao">
+                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-um" aria-expanded="false" aria-controls="collapseBotao">Agenda</button>
                     <div class="collapse" id="collapse-um" data-parent="#collapse-botao">
                         <div class="card card-body">
-                            Botao 1
+                            Quem possui reuniões externas ou internas ainda que sejam remotas demandam organização e detalhamento.
+                            Nosso módulo permite criar reuniões com assuntos de pauta permitindo organização e também consultar a disponibilidade de cada um.
+
                         </div>
                     </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-dois" aria-expanded="false" aria-controls="collapseBotao">Botao 2</button>
+                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-dois" aria-expanded="false" aria-controls="collapseBotao">Tarefas</button>
                     <div class="collapse" id="collapse-dois" data-parent="#collapse-botao">
                         <div class="card card-body">
-                            Botao 1
+                            Todos realizamos atividades diariamente mas em home-office saber o que cada um faz se torna mais difícil.
+                            Usando o módulo de tarefas, todo colaborador e seu time podem organizar, especificar e distribuir melhor suas atividades.
                         </div>
                     </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-tres" aria-expanded="false" aria-controls="collapseBotao">Botao 3</button>
+                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-tres" aria-expanded="false" aria-controls="collapseBotao">Requisições</button>
                     <div class="collapse" id="collapse-tres" data-parent="#collapse-botao">
                         <div class="card card-body">
-                            Botao 1
+                            Processos são um conjunto de fluxos definidos e todo departamento tem necessidade de controlar. Desde coisas simples como Solicitação de Férias até processo internos da empresa.
+                            Requisições te ajuda a organizar isto com etapas e responsáveis.
                         </div>
                     </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-quatro" aria-expanded="false" aria-controls="collapseBotao">Botao 4</button>
+                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-quatro" aria-expanded="false" aria-controls="collapseBotao">Timeline</button>
                     <div class="collapse" id="collapse-quatro" data-parent="#collapse-botao">
                         <div class="card card-body">
-                            Botao 1
+                            Aqui é onde você ganha o engajamento da empresa! Usar a timeline para gerar conteúdos de endomarketing e aproximar quem está mais distante seja em outro departamento ou mesmo em home-office é fundamental!
                         </div>
                     </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-cinco" aria-expanded="false" aria-controls="collapseBotao">Botao 5</button>
+                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-cinco" aria-expanded="false" aria-controls="collapseBotao">Chat - Comunicado Interno - Avisos</button>
                     <div class="collapse" id="collapse-cinco" data-parent="#collapse-botao">
                         <div class="card card-body">
-                            Botao 1
-                        </div>
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-seis" aria-expanded="false" aria-controls="collapseBotao">Botao 6</button>
-                    <div class="collapse" id="collapse-seis" data-parent="#collapse-botao">
-                        <div class="card card-body">
-                            Botao 1
+                            A comunicação centralizada é primordial para o ambiente corporativo uma vez ninguém quer que algumas discussões ou assuntos sejam tratados de forma desorganizada em grupos de WhatsApp ou em emails que se perderão a tantos outros.
                         </div>
                     </div>
                 </div>
@@ -146,8 +162,8 @@
             <div class="row">
                 <div class="col-sm-6"><img src="images/imagem-tres.png" class="imagem-tres"></div>
                 <div class="col-sm-6">
-                    <p class="texto-inicial">Our Services</p>
-                    <strong class="texto-inicial">Sales Growth</strong>
+                    <p class="texto-inicial-sub-title">Our Services</p>
+                    <strong class="texto-inicial-title">Sales Growth</strong>
                     <p class="texto-inicial">You can't talk about your secondary services here, or maybe promote your excellent customer service approach. Always grab your website visitors attention.
                     </p>
                     <button type="button" class="btn btn-primary btn-sm view">View Pricing</button>
@@ -214,9 +230,10 @@
         <div class="col-sm-12 row-contato">
             <div class="row">
                 <div class="col-sm-6">
-                    <p class="texto-um">Dúvidas?</p>
-                    <strong class="texto-um"> Nós podemos lhe ajudar</strong>
-                    <p class="texto-um">Nosso time de vendas poderá responder suas dúvidas e até mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.
+                    <p class="texto-um-sub-title">Entre em contato</p>
+                    <p class="texto-um-title">Dúvidas?</p>
+                    <p class="texto-um-title"> Nós podemos lhe ajudar</p>
+                    <p class="texto-um-paragrafo">Nosso time de vendas poderá responder suas dúvidas e até mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.
                     </p>
                     <button type="button" class="btn btn-primary btn-sm view">Solicite uma apresentação</button>
                 </div>
