@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="css/fonts.css">
     <script src="https://kit.fontawesome.com/9c956899f2.js" crossorigin="anonymous"></script>
 
+    <style>
+        .modal-backdrop {
+            z-index: 0;
+            width: auto;
+        }
+    </style>
+
 
 </head>
 
@@ -67,7 +74,8 @@
                             <button type="button" class="btn my-3 text-white d-none d-md-block"
                                 style=" background-color: #347ab7; ">Login</button>
                             <div class="btn-group pt-2">
-                                <button style="height: 39px;" class="btn-sm dropdown-toggle mt-2 m-2 border border-dark"
+                                <button style="height: 39px;"
+                                    class="btn-sm dropdown-toggle mt-2 m-2 border border-dark d-none d-md-block"
                                     type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img style="width: 2rem" src="imagens/brasil.svg" alt="">
                                     |
@@ -156,8 +164,7 @@
                                 <p
                                     style=" font-weight: 800; line-height: 1 ;font-size: 45px; color: #303669; margin-bottom: 20px">
                                     Dicas que valem ouro.</p>
-                                <p class="pb-5"
-                                    style="font-size: 18px; font-weight: 400; line-height: 1.5;">
+                                <p class="pb-5" style="font-size: 18px; font-weight: 400; line-height: 1.5;">
                                     Saiba como alguns de nossas módulos podem contribuir para suas atividades de
                                     home-office tornando o ambiente muito mais organizado e produtivo.
 
@@ -281,7 +288,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -314,10 +321,13 @@
 
             <div class="container pt-5">
                 <div class="col-sm text-center">
-                    <h4 id="preco" style="font-size: 45px; font-weight: 800; color: #303669; margin-bottom: 20px; line-height: 1">Pricing</h4>
+                    <h4 id="preco"
+                        style="font-size: 45px; font-weight: 800; color: #303669; margin-bottom: 20px; line-height: 1">
+                        Pricing</h4>
                 </div>
                 <div class="col-sm text-center">
-                    <p style="font-size: 18px; font-weight: 400;  line-height: 1.5;">Offer multiple packages or monthly subscriptions?<br> Why not showcase
+                    <p style="font-size: 18px; font-weight: 400;  line-height: 1.5;">Offer multiple packages or monthly
+                        subscriptions?<br> Why not showcase
                         your
                         featured price plans here,
                         bold and beautifully.</p>
@@ -420,7 +430,8 @@
                     <p style="font-size: 22px; font-weight: 400; line-height: 2 ">Our clients</p>
                 </div>
                 <div class="col-sm">
-                    <p style="font-size: 45px; font-weight: 800; color: #303669; margin-bottom: 20px"> Client Showcase </p>
+                    <p style="font-size: 45px; font-weight: 800; color: #303669; margin-bottom: 20px"> Client Showcase
+                    </p>
                 </div>
 
             </div>
@@ -507,7 +518,8 @@
                     <p style="font-size: 22px; font-weight: 400; line-height: 2">Recent updates</p>
                 </div>
                 <div class="col-sm">
-                    <p style="font-size: 45px; font-weight: 800; line-height: 1; color: #303669; margin-bottom: 0">Featured Stories</p>
+                    <p style="font-size: 45px; font-weight: 800; line-height: 1; color: #303669; margin-bottom: 0">
+                        Featured Stories</p>
                 </div>
 
             </div>
@@ -591,17 +603,94 @@
                     <div class="col-sm pt-5">
                         <div class="col-sm mx-auto">
                             <p style="font-size: 22px; font-weight: 400; line-height: 2;">Entre em contato</p>
-                            <p style="font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 20px; color: #303669">
-                                    Dúvidas?<br>
-                                    Nós podemos lhe ajudar</p>
+                            <p
+                                style="font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 20px; color: #303669">
+                                Dúvidas?<br>
+                                Nós podemos lhe ajudar</p>
                             <p style="font-size: 18px ; font-weight: 300; line-height: 1.5; margin-bottom: 20px">Nosso
                                 time de vendas poderá responder suas dúvidas e até mesmo
                                 marcar
                                 uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.</p>
-                            <button type="button" class="btn  my-3 p-2 "
+                            <button type="button" id="exempleModal" class="btn  my-3 p-2 " data-toggle="modal"
+                                data-target="#exampleModal"
                                 style="background-color: #ec407f ;border-radius: 25px; width: 300px; height: 50px; font-size: 20px; font-weight: 800">
                                 <p class="text-white">Solicite uma apresentação</p>
                             </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header mx-auto d-block my-auto"
+                                            style=" width: 100%; background-color: #000000">
+                                            <h5 class="modal-title text-white text-center" id="exampleModalLongTitle"
+                                                style="font-weight: bold; font-size: 1.2rem">Faça Contato</h5>
+
+                                        </div>
+                                        <div class="modal-body" style="background-color: #f6f6f6">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Nome:</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Seu nome aqui">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">E-mail:</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="name@example.com">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Nome da Empresas:</label>
+                                                    <input type="name" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Empresa">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Telefone:</label>
+                                                    <input type="tel" class="form-control" id="exampleFormControlInput1"
+                                                        placeholder="(xx) xxxx-xxxx">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">Como soube do
+                                                        vivaintra?</label>
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>selecionar</option>
+                                                        <option>Google</option>
+                                                        <option>Facebook</option>
+                                                        <option>Revista</option>
+                                                        <option>Email</option>
+                                                        <option>Outro</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Mensagem</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3"></textarea>
+                                                </div>
+
+                                                <div class="col-sm-6 mx-auto d-block">
+                                                        <img class="mb-1" src="https://www.vivaintra.com/uploads/tmp/c707e23e5fa0f1a9cf3ef683b904f59e.png" alt="">
+                                                    </div>
+                                                    <div class="col-sm-8 mx-auto d-block">
+                                                            
+                                                            <input type="name" class="form-control"
+                                                                id="exampleFormControlInput1" placeholder="">
+                                                                <div><p style="font-size: 15px; text-align: center">Digite as letras acima como você as vê.</p></div>
+                                                    </div>
+
+                                            </form>
+
+                                            
+                                        </div>
+                                        <div class="modal-footer" style="background-color: #f6f6f6">
+                                            
+                                            <button type="button" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm">
@@ -668,6 +757,10 @@
             </div>
         </div>
 
+
+
+
+        <!-- Modal -->
 
 
 
