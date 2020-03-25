@@ -23,10 +23,6 @@ header {
 }
 
 
-.opensans {
-    font-family: 'Open Sans', sans-serif !important;
-}
-
 .float-left {
     float: left;
 }
@@ -48,24 +44,30 @@ header {
 
 
 #menu ul li a {
-    padding: 2px 10px;
+    padding: 35px 25px;
     display: inline-block;
-    background-color: #EDEDED;
-    color: #333;
+    background-color: white;
+    color: #00639f;
     text-decoration: none;
-    border-bottom: 3px solid #EDEDED;
     height: 100%;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px;
+
 }
 
-.container {
-    max-width: 1140px;
-    min-width: 1200px;
+#change:hover {
+    height: 100%;
+    background-color: #00659f1e;
+
 }
 
-/* termino estilizacao header */
 
-/* -- buttons -- */
 
+/* termino estilizacao menu header */
+
+.row {
+    padding-top: 35px;
+}
 
 
 /* --- formatacao de todos textos ---*/
@@ -76,11 +78,18 @@ header {
 
 .header-title {
     font-family: Montserrat;
-    font-weight: 800;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 55px;
     line-height: 1;
-    padding-bottom: 25px;
     color: #303669;
+}
+
+.header-subtitle {
+
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.5;
+
 }
 
 .services-text {
@@ -131,8 +140,8 @@ header {
     color: #303669;
     font-family: Montserrat;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 3;
+    font-size: 16px;
+    line-height: 5;
 }
 
 
@@ -150,6 +159,9 @@ header {
 
 /*----- collapse -------*/
 
+.btn-invert {
+    background-color: #ff3e81 !important;
+}
 
 
 .button {
@@ -167,9 +179,7 @@ header {
 }
 
 
-.btn-invert {
-    background-color: #ff3e81 !important;
-}
+
 
 .learn-more-btn {
     font-size: 18px;
@@ -196,6 +206,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 200px;
 }
 
 .pricing-title h2 {
@@ -214,6 +225,12 @@ header {
     font-weight: 300;
     line-height: 1.5;
     max-width: 700px;
+
+}
+
+.pricing-card:hover {
+    box-shadow: 0 4px 47px rgba(0, 0, 0, .15);
+    cursor: pointer;
 }
 
 /*---- end pricing e princing title ----*/
@@ -221,7 +238,7 @@ header {
 
 
 .pricing-card {
-    background-color: #fff;
+    background-color: rgb(245, 245, 245);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,7 +266,7 @@ header {
 .pricing-text {
     font-size: 18px;
     font-family: Poppins;
-    font-weight: 400;
+    font-weight: 300;
     color: #000;
     margin-top: 20px;
 }
@@ -416,18 +433,24 @@ header {
     align-items: center;
     margin-top: 20px;
     width: 100%;
+
 }
 
-.active,
-.accordion:hover {
-    background-color:#559dfa;
+.accordion.active:after {
+    content: "\2212";
 }
 
-.panels {
-    padding: 0 18px;
+
+
+
+.panel {
+    padding: 0 15px;
     display: none;
     background-color: white;
     overflow: hidden;
+    font-family: poppins;
+    padding-top: 20px;
+    
 }
 
 .panel p {
@@ -436,4 +459,67 @@ header {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
+}
+
+.accordion:after {
+    content: '\002B';
+    font-size: 24px;
+    color: #777;
+    font-weight: 700;
+    float: right;
+    margin-left: 5px;
+
+}
+
+.services-accordion .accordion::after {
+    color: #fff !important;
+
+
+}
+
+/* ----- Fim acordion ----*/
+
+/* --- cards before footer --*/
+
+
+
+.blog-post-title {
+    font-size: 20px;
+    color: #303669;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 2;
+    
+}
+
+.blog-post-text {
+    font-size: 14px;
+    color: #000;
+    font-family: Poppins;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.blog-post-link {
+    color: #a4c4f3;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 10px;
+    
+    
+}
+
+
+.blog-post-subtitle {
+    font-size: 18px;
+    color: #ccc;
+    font-family: Montserrat;
+    line-height: 1;
+    margin-bottom: 10px;
 }
