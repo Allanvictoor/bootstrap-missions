@@ -2,8 +2,8 @@
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Codelander | HTML Landing Page by Codefest&trade;</title>
-<link rel="icon" type="image/png" href="https://www.codefest.co.uk/demo/codelander/assets/images/favicon.png">
+<title>VivaIntra - Intranet Colaborativa e Social</title>
+<link rel="icon" type="image/png" href="https://www.vivaintra.com/favicon.ico">
 <link rel="stylesheet" href="../index.css">
 <script src="../index.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
