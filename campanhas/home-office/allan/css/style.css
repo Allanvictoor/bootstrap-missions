@@ -75,3 +75,13 @@ transition: 0s
 background-color: #347ab7 !important;
 transition: 0s
 }
+
+.imagemlogo{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.imagemlogo:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
