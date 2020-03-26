@@ -1,26 +1,4 @@
-body{
-    background-color: #fafafa;
-}
-.navbar{
-    background-color: #fcfafb;
-}
-.nav-link{
-    color: #337ab6;
-    font-weight: bold;
-    font-size: larger;
-}
-.imagem-idioma{
-    width: 2rem;
 
-}
-.botao-idioma{
-    height: 40px;
-    margin-left: 2px;
-    background-color: #fcfafb;
-}
-.botao-login{
-    background-color: #337ab6;
-}
 .linha-separa-nav{
     background-color: #00649e;
     border: 0;
@@ -32,13 +10,18 @@ body{
     margin-right: 50px;
 }
 
-.view{
+.view, .view-apresentacao{
     background-color: hotpink ;
     border-color: hotpink;
     margin-top: 10px;
     height: 40px;
     border-radius: 30px;
     background-clip: padding-box;
+    font-weight: bold;
+}
+.view-apresentacao{
+    margin-left: 50px;
+    font-weight: bold;
 }
 
 .imagem-um{
@@ -54,19 +37,21 @@ body{
       text-align-all: center;
       background-color: #337ab6 ;
       border-color: #337ab6;
+    font-weight: bold;
       margin-bottom: 5px;
   }
 .texto-um, .texto-um-title, .texto-um-sub-title, .texto-um-paragrafo{
        margin-left: 50px;
    }
 .imagem-dois{
-       height: 60%;
-       width: 60%;
+       height: 30rem;
+       width: 30rem;
        margin-left: 50px;
    }
 .card-body{
     width: 80%;
     margin-left: 50px;
+    font-family: 'Thasadith', sans-serif;
 }
 .imagem-tres{
      margin-left: 100px;
@@ -74,11 +59,22 @@ body{
 .banner{
     margin-top: 35px;
 }
+.banner-dois{
+    margin-top: 55px;
+}
 .imagem-strategy{
     height: 50px;
     width: 50px;
-    margin-left: 100px;
 }
+.imagem-strategy-dois{
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+}
+.col-strategy{
+    text-align: center;
+}
+
 .imagem-quatro{
     width: 80%;
     height: 80%;
@@ -106,10 +102,20 @@ body{
     margin-top: -10px;
 }
 .grupo-botao{
-    margin-top: 70px;
+    margin-top: 10%;
 }
 .texto-strategy{
     margin-left: 25px;
+    color: #283c5f;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+}
+.texto-strategy-subtitle{
+    margin-left: 25px;
+    margin-top: -10px;
+    text-align: center;
+    font-family: 'Thasadith', sans-serif;
 }
 .texto-inicial-title, .texto-inicial-title-dois, .texto-um-title{
     color: #283c5f;
@@ -121,10 +127,13 @@ body{
     margin-bottom: auto;
     color: #4a4a4a;
 }
+.texto-um-paragrafo{
+    font-family: 'Thasadith', sans-serif;
+}
+
 .texto-inicial-paragarafo{
     font-family: 'Thasadith', sans-serif;
     margin-top: 15px;
-    font-weight: bold;
 }
 
 .texto-inicial-title-dois{
@@ -136,4 +145,8 @@ body{
 
 .bloco-texto-um{
     margin-top: 95px;
+}
+
+.grade-color{
+
 }
