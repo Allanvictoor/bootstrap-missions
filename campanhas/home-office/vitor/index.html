@@ -28,7 +28,7 @@
 
 <body class="colorb">
     <header>
-        <div class="container" id="top">
+        <div class="container-fluid" id="top">
             <div class="col-xl-12">
                 <h1 class="logo float-left">
                     <a href="#"><img class="logo-image" src="imagens/viva.png" class="logo-image" alt="VivaIntra"></a>
@@ -41,19 +41,22 @@
                         <li><a id="change" href="#about">Blog</a></li>
                         <li><a id="change" href="#about">Parceiros</a></li>
                         <li><a id="change" href="#contato">Contato</a></li>
-
+                        
                     </ul>
+
                 </nav>
             </div>
+           <!-- <input class="btn btn-primary btn-st" type="button" id="login"> -->
         </div>
+        
     </header>
     <div class="container">
-        <div class="col-lg-12">
-            <div class="row m-5">
-                <div class="col-lg-6 p-0">
-                    <img src="../vitor/imagens/1.png" width="100%" alt="logo1">
+        <div class="col-lg-12 col-md-12 col-12">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../vitor/imagens/1.png" class="first" alt="logo1">
                 </div>
-                <div class="col-lg-6 p-5">
+                <div class="col-lg-6 col-md-6 col-12">
                     <p class="header-subtitle">Equipes em home-office?</p>
                     <h1 class="header-title">Organize, e potencialize seus times.</h1>
                     <p class="services-text">Com a adoção de home-office nunca uma intranet foi tão importante e
@@ -69,7 +72,7 @@
     <div class="container strategy-container">
         <div class="col-lg-12">
             <div class="row m-5">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="strategy-card-icon-section">
                         <div class="strategy-card">
                             <img src="../vitor/imagens/strategy-1.png" class="img-fluid" alt="">
@@ -78,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="strategy-card-icon-section">
                         <div class="strategy-card">
                             <img src="../vitor/imagens/strategy-2.png" class="img-fluid" alt="">
@@ -87,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="strategy-card-icon-section">
                         <div class="strategy-card">
                             <img src="../vitor/imagens/strategy-3.png" class="img-fluid" alt="">
@@ -96,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="strategy-card-icon-section">
                         <div class="strategy-card">
                             <img src="../vitor/imagens/strategy-4.png" class="img-fluid" alt="">
@@ -120,7 +123,7 @@
                     <img src="../vitor/imagens/services-header.png" width="100%" alt="services-header">
                 </div>
                 <div class="col-lg-6">
-                    <div class="services-accordion">
+                    <div class="services-accordion" onclick="this.blur();">
                         <button class="accordion">Agendas</button>
                         <div class="panel">
                             <p>Quem possui reuniões externas ou internas ainda que sejam remotas demandam organização e
@@ -190,7 +193,7 @@
                     bold and beautifully.</p>
             </div>
             <div class="pricing-plan-cards-section">
-                <div class="col-lg-4 pricing-card-section">
+                <div class="col-xl-4 col-lg-4 col-md-4 pricing-card-section">
                     <div class="pricing-card">
                         <p class="pricing-rate">$199</p>
                         <p class="pricing-period">Basic</p>
@@ -334,7 +337,7 @@
                     Featured Stories
                 </h2>
                 <div class="row">
-                    <div class="col-lg-4  card-container">
+                    <div class="col-lg-4 col-12  card-container">
                         <div class="pricing-card">
                             <img src="../vitor/imagens/c1.png" width="100%" alt="">
                             <h3 class="blog-post-title">Remote Working</h3>
@@ -344,7 +347,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 card-container">
+                    <div class="col-lg-4 col-12 card-container">
                         <div class="pricing-card middle">
                             <img src="../vitor/imagens/c2.png" width="100%" alt="">
                             <h3 class="blog-post-title">Google Rankings</h3>
@@ -356,7 +359,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 card-container">
+                    <div class="col-lg-4 col-12 card-container">
                         <div class="pricing-card">
                             <img src="../vitor/imagens/c3.png" width="80%" alt="">
                             <h3 class="blog-post-title">Communication</h3>
@@ -389,9 +392,9 @@
     <img src="./imagens/bgbar.png" width="100%" style="padding-top: 11px;" alt="">
     <!-- Footer -->
     <footer class="page-footer font-small indigo">
-        <div class="container text-center text-md-left">
+        <div class="container text-center text-md-left ">
             <div class="row">
-                <div class="col-md-3 mx-auto">
+                <div class="col-md-3 mx-auto text-sm-left">
                     <ul class="columns list-unstyled letras">
                         <li>
                             <a href="#!">Starter</a>
@@ -406,7 +409,10 @@
                             <a href="#!">Treinamentos ao vivo</a>
                         </li>
                     </ul>
-                    <img src="../vitor/imagens/vivfoot.png" width="70%" alt="">
+                    <div class="position-absolute nodisplay-md nodisplay-xs">
+                        <img src="../vitor/imagens/vivfoot.png" width="70%" alt="">
+                    </div>
+                    
                 </div>
                 <hr class="clearfix w-100 d-md-none">
                 <div class="col-md-3 mx-auto">
@@ -471,34 +477,39 @@
                 </div>
             </div>
         </div>
-        <hr class="hr">
-        </hr>
-        <div class="container">
-            <div class="col-lg-12 bar-bottom">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="row">
-                            <ul class="columns list-unstyled letras">
-                                <li><a href="https://status.vivaintra.com" target="_blank"><span
-                                            class="green-dot">Status do sistema</span></a></li>                                            
-                                <!--     <li><a href="#!">Segurança</a></li>
-                                <li><a href="#!">Termos de uso</a></li>
-                                <li><a href="#!">Privacidade</a></li>
-                                <li><a href="#!">Sobre nós</a></li>
-                                <li><a href="#!">Contato</a></li> -->
-                            </ul>
+        <div class="bar-bottom">
+            <div class="container pb-4">
+                <div class="col-lg-12">
+                    <div class="row up">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="row down">
+                                    <ol class="columns list-unstyled letras">
+                                        <a href="https://status.vivaintra.com" target="_blank"><span
+                                                class="green-dot">Status do sistema</span></a>
+                                        <a href="#!">Segurança</a>
+                                        <a href="#!">Termos de uso</a>
+                                        <a href="#!">Privacidade</a>
+                                        <a href="#!">Sobre nós</a>
+                                        <a href="#!">Contato</a>
+                                    </ol>     
+                            </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="col mx-auto text-center">
+                                    <img src="../vitor/imagens/vivafoot.png" class="img-responsive" width="50%"
+                                        alt="viva">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <img src="../vitor/imagens/vivafoot.png" width="50%" alt="viva">
-                    </div>
                 </div>
-            </div>
-        </div>
     </footer>
+    </div>
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
+
+
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
