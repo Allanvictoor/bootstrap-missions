@@ -18,10 +18,10 @@
     border-radius: 40px;
 }
 #tudo{
-    background-color: #F4F4F4;
+    background-colr: #F4F4F4;
 }
 #total{
-    background-color: #F3F3F3;
+    background-colr: #F3F3F3;
 }
 #card-principal:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -48,7 +48,7 @@
     background-color: #303669;
 }
 #mudacor:hover{
-    background-color: blue;
+    background-color: #3a88ec;
 }
 #mudacor{
     background-color: #ff3e81;
@@ -57,5 +57,47 @@
     background-color: #ff3e81;
 }
 #mudacor-1:hover{
-    background-color: blue;
+    background-color: #3a88ec;
+}
+#mudacor-2{
+    background-color: #3a88ec;
+}
+#mudacor-2:hover{
+    background-color: #ff3e81;
+}
+#mudacor-3{
+    background-color: #3a88ec;
+}
+#mudacor-3:hover{
+    background-color: #ff3e81;
+}
+#mudacor-4{
+    background-color: #3a88ec;
+}
+#mudacor-4:hover{
+    background-color: #ff3e81;
+}
+#mudacor-5{
+    color:#3a88ec;
+}
+#mudacor-5:hover{
+    color:#ff3e81;
+}
+#mudacor-6{
+    background-color:#3a88ec;
+}
+#mudacor-6:hover{
+    background-color:#ff3e81;
+}
+#mudacor-7{
+    color:#3a88ec;   
+}
+#mudacor-7:hover{
+    color:#ff3e81;
+}
+#mudacor-8{
+    background-color:#ff3e81;
+}
+#mudacor-8:hover{
+    background-color:#3a88ec; 
 }
