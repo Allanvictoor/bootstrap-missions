@@ -77,11 +77,24 @@ transition: 0s
 }
 
 .imagemlogo{
-    transition: all 0.5s;
-    cursor: pointer;
+transition: all 0.5s;
+cursor: pointer;
 }
 
 .imagemlogo:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+-webkit-transform: scale(1.5);
+transform: scale(1.5);
 }
+
+.menuFixo {
+position: fixed;
+top: 0px;
+z-index: 10;
+
+
+
+}
+
+
+
+

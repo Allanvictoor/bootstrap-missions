@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="https://www.codefest.co.uk/demo/codelander/assets/images/favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -17,17 +19,18 @@
     <link rel="stylesheet" href="fonts/Montserrat/Montserrat-Black.ttf">
     <link rel="stylesheet" href="css/fonts.css">
     <script src="https://kit.fontawesome.com/9c956899f2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
 
-    <div id="nav" class="col-sm container-fluid p-3" style="background-color: #fcfcfc">
+    <div  class="col-sm container-fluid p-3" style="background-color: #fcfcfc">
         <div class="row">
-            <div class="col-sm container" style="background-color: #fcfcfc">
-                <div class="row">
+            <div  class=" col-sm container" style="background-color: #fcfcfc">
+                <div class="menuFixo row">
                     <div class="col-sm-2">
-                        <img class="imagemlogo mt-3" src="imagens/logo-2017.png"
-                            alt="">
+                        <img class="imagemlogo mt-3 img-fluid"  src="imagens/logo-2017.png"
+                            alt="logo-2017">
                     </div>
                     <nav class="navbar navbar-expand-lg navbar-light mx-auto " style="background-color: #fcfcfc">
                         <button class="navbar-toggler " style="text-align: right" type="button" data-toggle="collapse"
@@ -38,15 +41,15 @@
                         <div class="collapse navbar-collapse mx-auto" id="navbarNavAltMarkup">
                             <div class="navbar-nav text-center" style="width: auto">
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#home"><strong>Starter</strong></a>
+                                    href="#starter"><strong>Starter</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#servicos"><strong>Enterprise</strong></a>
+                                    href="#enterprise"><strong>Enterprise</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
                                     href="#preco"><strong>Preços</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#clientes"><strong>Blog</strong></a>
+                                    href="#blog"><strong>Blog</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#noticias"><strong>Parceiros</strong></a>
+                                    href="#parceiros"><strong>Parceiros</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
                                     href="#contato"><strong>Contato</strong></a>
                             </div>
@@ -79,7 +82,7 @@
         </div>
         <div class="container-fluid" style="background-color: #fcfcfc">
             <div class="row">
-                <div class="container mt-3 rounded">
+                <div class="container mt-5 rounded">
                     <div class="row">
                         <div class="col-sm ">
                             <img class=" p-5 mx-auto d-block" src="imagens/header.png" alt="">
@@ -154,12 +157,12 @@
                                     <div>
                                         <div id="headingOne">
                                             <h5 class="mb-2">
-                                                <button class="btn btn text-white"
+                                                <button id="colapsemm" class="btn btn text-white"
                                                     style="font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px"
                                                     data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="true" aria-controls="collapseOne">
                                                     <p style="text-align: left"> Agenda
-                                                        <i class="fa fa-plus float-right mt-1" aria-hidden="true"></i>
+                                                        <i id="plusUm" class="fa fa-plus fas  float-right mt-1" aria-hidden="true"></i>
                                                     </p>
                                                 </button>
                                             </h5>
@@ -388,7 +391,7 @@
                     </div>
                 </div>
             </div>
-            <div id="clientes" class="contairner text-center pt-5 pb-3">
+            <div id="parceiros" class="contairner text-center pt-5 pb-3">
                 <div class="col-sm">
                     <p style="font-size: 22px; font-weight: 400; line-height: 2 ">Our clients</p>
                 </div>
@@ -473,7 +476,7 @@
                     </div>
                 </center>
             </div>
-            <div id="noticias" class="contairner text-center pt-5 pb-3">
+            <div id="#" class="contairner text-center pt-5 pb-3">
                 <div class="col-sm">
                     <p style="font-size: 22px; font-weight: 400; line-height: 2">Recent updates</p>
                 </div>
