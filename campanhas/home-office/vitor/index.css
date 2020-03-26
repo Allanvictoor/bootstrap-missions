@@ -155,6 +155,7 @@ header {
 }
 
 
+
 /*--- end cards ------*/
 
 /*----- collapse -------*/
@@ -164,23 +165,6 @@ header {
 }
 
 
-.button {
-    font-size: 18px;
-    font-family: Poppins;
-    font-weight: 600;
-    color: #fff;
-    background-color: #3a88ec;
-    border-radius: 50px;
-    padding: 10px 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-
-
-
 .learn-more-btn {
     font-size: 18px;
     font-family: Poppins;
@@ -188,6 +172,7 @@ header {
     color: #fff;
     padding: 12px 40px !important;
     border-radius: 100px;
+    text-decoration: none;
 }
 
 .learn-more-btn-section {
@@ -481,7 +466,15 @@ header {
 
 /* --- cards before footer --*/
 
-
+.blog-post-card {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 55px 40px;
+}
 
 .blog-post-title {
     font-size: 20px;
@@ -523,3 +516,72 @@ header {
     line-height: 1;
     margin-bottom: 10px;
 }
+
+
+/* -- contato --*/
+
+
+.contact-subtitle {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+
+.contact-title {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1;
+    color: #303669;
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* ---- Footer ---*/
+
+.page-footer{
+    background-color:#475156;
+    padding-top: 0px;
+}
+
+.columns a {
+    color: #ddd;
+    padding-left: 10px;
+    border-left: 2px dotted #222;
+}
+
+.hr {
+    color: white;
+    background-color: #fff;
+    border-top: 1px solid;
+  }
+
+
+  .letras {
+
+    font-family: 'Open Sans', sans-serif !important;
+  }
+
+
+  .redes {
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #829199;
+}
+  

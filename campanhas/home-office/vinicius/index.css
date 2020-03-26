@@ -1,3 +1,8 @@
+.bgbar {
+    background: url(https://www.vivaintra.com/media/images/v2/bgbar.png) top center;
+    height: 13px;
+}
+
 .img-nav {
     margin-left: 73px;
     margin-top: 18px;
@@ -20,25 +25,8 @@
     color: #007bff;
 }
 
-.espaco-icons {
-    margin-right: 17px;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-.espaco-icons:hover {
-    color: #007bff;
-}
-
 .footer-text-p {
     max-width: 158px;
-}
-
-.icon-footer {
-    color: #a4c4f3;
-    font-size: 32px;
-    margin-top: 5px;
-    margin-left: 8px;
 }
 
 .footer-subsection-text-icon {
@@ -56,20 +44,35 @@
     max-width: 159px;
 }
 
-.footer-subsection-title {
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 2.2;
-    margin-bottom: 10px;
+.icon-footer {
+    font-size: 40px;
+}
+
+.border-left-footer {
+    border-left: 2px dotted black;
+}
+
+.border-left-footer > p {
+    font-size: 13px;
+    margin-bottom: 6px;
 }
 
 .footer-section {
-    padding-top: 75px;
-    padding-bottom: 55px;
-    margin-bottom: 0 !important;
-    position: relative;
-    background-color: #303669;
-    color: #fff;
+    background-color: #485156;
+    color: #829199;
+}
+
+.bolinha {
+    border-radius: 2rem;
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+.border-right-footer {
+    border-right: 1px dotted black;
 }
 
 .footer-section-bg-graphics {
