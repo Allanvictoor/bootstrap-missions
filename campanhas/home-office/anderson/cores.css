@@ -47,3 +47,15 @@
 #rodape-2{
     background-color: #303669;
 }
+#mudacor:hover{
+    background-color: blue;
+}
+#mudacor{
+    background-color: #ff3e81;
+}
+#mudacor-1{
+    background-color: #ff3e81;
+}
+#mudacor-1:hover{
+    background-color: blue;
+}
