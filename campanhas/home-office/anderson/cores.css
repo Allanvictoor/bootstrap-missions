@@ -42,10 +42,10 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 #rodape-1{
-    background-color: #303669;
+    background-color: #485156;
 }
 #rodape-2{
-    background-color: #303669;
+    background-color: #485156;
 }
 #mudacor:hover{
     background-color: #3a88ec;
@@ -100,4 +100,16 @@
 }
 #mudacor-8:hover{
     background-color:#3a88ec; 
+}
+#mudacor-menu-1:hover{
+    
+}
+#mudacor-menu-1:visited{
+
+}
+#cor-link{
+    color:#a0b8c8;
+}
+#cor-link:hover{
+    color:#eeeeee;
 }

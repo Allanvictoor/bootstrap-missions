@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site do Viva Intra</title>
     <link rel="stylesheet" href="cores.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -13,46 +14,57 @@
 </head>
 <body> 
     <div class="container-fluid" id="tudo">
-        <div class="row mt-5 mb-5">
+        <nav class="navbar  nav-fill mx-4 navbar-expand-sm pl- border border-muted ">
+            <img class=" ml-5 my-2 " src="imagens/logo-vivaintra.png" width="220" height="70" alt="">
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mr-5 mt-2 ml-1 col-md d-flex justify-content-start">
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-1" class="nav-link active" href="#home" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Starter</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-2" class="nav-link" href="#services" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Enterprise</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-3" class="nav-link" href="#prices" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Preços</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-4" class="nav-link" href="#clients" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Blog</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-5" class="nav-link" href="#news" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Parceiros</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-6" class="nav-link" href="#contact" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Contato</a>
+                        </li>
+
+                        <li class="nav-item d-flex justify-content-end">
+                            <button class="btn btn-primary ml-5">Login</button>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn btn-light border border-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="mr-1" src="./imagens/brazil.png" width="25" height="25" alt="">|</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href=""><img class="mr-1" src="./imagens/brazil.png" width="25" height="25" alt="">Português</a>
+                                    <a class="dropdown-item" href=""><img class="mr-1" src="./imagens/usa.png" width="25" height="25" alt="">Inglês</a>
+                                    <a class="dropdown-item" href=""><img class="mr-1" src="./imagens/spain.png" width="25" height="25" alt="">Espanhol</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toogler-icon"><img src="imagens/menu.png" width="30" height="30" alt=""></span>
+                  </button>
+             </nav> 
+        <div class="row mb-5">
             <div class="container" id="total">
-                <nav class="navbar bg-white fixed-top nav-fill navbar-expand-sm">
-                    <img class="navbar-brand ml-5" src="imagens/logo.png" width="155" height="80" alt="">
-                        <div class="collapse navbar-collapse" id="menu">
-                            <ul class="navbar-nav mt-2 ml-auto col-md d-flex justify-content-center">
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#home"><h5 class="text-dark">Home</h5></a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#services"><h5>Services</h5></a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#prices">Pricing</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#clients">Clientes</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#news">News</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#contact">Contact</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link mr-5 " href=""><span class="badge badge-primary badge-pill px-4 py-2"><h3 class="text-white"></h3>Singup</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toogler-icon"><img src="imagens/menu.png" width="30" height="30" alt=""></span>
-                          </button>
-                     </nav> 
-                <div class="row my-5" id="home">
+                <div class="row mb-5 id="home">
                     <div class="col-md-6 mt-5 col-sm-12">
                         <img class="mt-5" src="imagens/imagem1.png" width="500" height="500" alt="">
                     </div>
                     <div class="col-md-6 mt-5 col-sm-12">
                         <h1 class=" mt-5 ml-5" style="font-family:'Poppins'; font-size: 30px;">Equipes em home-office?</h1>
-                        <h1 class="mt-3 ml-5"><strong style="font-family: 'Montserrat'; font-size:60px; font-weight:1200; color: #303669;"><u>Organize e potencialize<br>seus times.</u></strong></h1>
+                        <h1 class="mt-3 ml-5"><strong style="font-family: 'Montserrat'; font-size:60px;line-height:100%; font-weight:1200; color: #303669;"><u>Organize e potencialize<br>seus times.</u></strong></h1>
                         <p class=" mt-4 ml-5" style="font-family:'Poppins'; font-size: 18px; color:#212529; font-weight:300;">
                             Com a adoção de home-office nunca uma intranet foi tão importante e estratégica para seu negócio como um ambiente que centraliza sua comunicação e produção.
                         </p>
@@ -93,7 +105,7 @@
                     <div class="col-md-6">
                         <p>
                             <p style="font-family:'Poppins'; font-size:22px; font-weight: 400; color: #212529;">Módulos e Ferramentas</p>
-                            <h2 style="font-family: 'Montserrat'; font-size:45px; font-weight:1000; color: #303669;"><u>Dicas que valem ouro</u></h2>
+                            <h2 style="font-family: 'Montserrat'; font-size:45px; font-weight:1000; line-height:100%; color: #303669;"><u>Dicas que valem ouro</u></h2>
                             <p class="mt-4" style="font-size:20px; font-family:'Poppins'; font-weight:300; color: #212529;">
                                 Saiba como alguns de nossos módulos podem contribuir para suas atividades de home-office
                                 tornando o ambiente muito mais organizado e produtivo.
@@ -438,55 +450,152 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5 py-5" id="rodape-1">
-            <div class="col-md-3 col-sm-12">
-                <div class="row mb-3 d-flex justify-content-center">
-                    <h1 class="text-white" style="font-size: 60px;"><strong>code.</strong></h1>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <h5 class="text-white">A beautiful landing page <br> template by codefest</h5>
-                </div>
+        <div class="row">
+            <div class="col-md-1" style="background-color:#edbd37;">
+            .
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="row mb-3 d-flex justify-content-center">
-                    <h1 class="font-weight-bold text-white" style="font-size: 40px;">About</h1>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <h5 class="text-white">We like to do business <br> at Codelander HQ to our <br> clientes satisfaction</h5>
-                </div>
+            <div class="col-md-1" style="background-color:#fbc80b;">
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="row mb-3 d-flex justify-content-center">
-                    <h1 class="font-weight-bold text-white" style="font-size: 40px;">Contact Us</h1>
-                </div>
-                <div class="row mt-1 d-flex justify-content-center">
-                    <img class="mr-1" src="imagens/pin.png" width="20" height="20" alt="">
-                    <span class="text-white">123 Business Centre </span>
-                </div>
-                <div class="row mt-1 d-flex justify-content-center">
-                    <img class="mr-2" src="imagens/phone.png" width="20" height="20" alt="">
-                    <span class="text-white">012345678423149</span>
-                </div>
-                <div class="row mt-1 d-flex justify-content-center">
-                    <img class="mr-2" src="imagens/mail.png" width="20" height="20" alt="">
-                    <span class="text-white">mail@domain.com</span>
-                </div>
+            <div class="col-md-1" style="background-color:#fba828;">
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="row mb-3 d-flex justify-content-center">
-                    <h1 class="text-white font-weight-bold" style="font-size: 40px;">Sociais</h1>
-                </div>
-                <div class="row d-flex justify-content-center">
-                   <a href=""><img class="mr-4" src="imagens/twitter.png" width="40" height="40" alt=""></a>
-                  <a href=""><img class="mr-4"  src="imagens/instagram.png" width="40" height="40" alt=""></a>
-                   <a href=""><img class="mr-4"  src="imagens/facebook.png" width="40" height="40" alt=""></a>
-                  <a href=""><img class="mr-4"  src="imagens/linkedin.png" width="40" height="40" alt=""></a>
-                </div>
-            </div>  
+            <div class="col-md-1" style="background-color:#dcde01;">
+            </div>
+            <div class="col-md-1" style="background-color:#edbd37;">
+            </div>
+            <div class="col-md-1" style="background-color:#df6e08;">
+            </div>
+            <div class="col-md-1" style="background-color:#4a8b09;">
+            </div>
+            <div class="col-md-1" style="background-color:#7dcb43;">
+            </div>
+            <div class="col-md-1" style="background-color:#4a8b09;">
+            </div>
+            <div class="col-md-1" style="background-color:#2e721d;">
+            </div>
+            <div class="col-md-1" style="background-color:#a9cf46;">
+            </div>
+            <div class="col-md-1" style="background-color:#F58634;">
+            </div>
         </div>
-        <div class="row py-5" id="rodape-2">
-            <div class="col-md-12 col-sm-12 d-flex justify-content-center">
-                <img class="mt-2" src="imagens/copyright.png" width="25" height="25" alt=""><span class="text-white font-weight-bold" style="font-size: 20px;">Codefest.</span><span class="text-white" style="font-size: 20px;">ALL Rights Reserved.</span>
+        <div class="row" id="rodape-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <ul class="list-unstyled mt-3">
+                            <li style=" border-left: dashed #383838;">
+                            <a class="text-white text-decoration-none ml-2" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Starter</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;" class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Experimente, É grátis</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;" class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Ajuda</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;" class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Treinamentos Ao Vivo</a>
+                            </li>
+                            <li class="mt-5">
+                                <img src="./imagens/logo-footer.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                     <div class="col-md-3 col-sm-12 mt-2">
+                         <ul class="list-unstyled">
+                            <li style=" border-left: dashed #383838;" class="mt-2">
+                                <a class="text-decoration-none text-white ml-2"  href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Enterprise</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Comunicação</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Colaboração</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Produtividade</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Recursos Humanos</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Extranet</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class=" text-white text-decoration-none ml-2" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Contato</a>
+                            </li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3 col-sm-12">
+                         <ul class="list-unstyled mt-3">
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-white text-decoration-none ml-2" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Preços</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-white text-decoration-none ml-2" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Blog</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Colaboração</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Comunicação</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Endomarketing</a>
+                            </li>
+                            <li style=" border-left: dashed #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Gestão de Pessoas</a>
+                            </li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3 col-sm-12">
+                         <div class="row mt-3">
+                            <p style="font-size:22px; font-weight:400; font-family:'Open Sans', sans-serif; color: #829199;">
+                                Acompanhe o VivaIntra <br>
+                                <span class="ml-3" style="font-size: 26px;">nas Redes Sociais</span> 
+                            </p>
+                         </div>
+                         <div class="row mt-2 d-flex justify-content-center">
+                            <img class="mr-3" src="./imagens/facebook.png" width="60" height="60" alt="">
+                            <img src="./imagens/youtube.png" width="60" height="60" alt="">
+                         </div>
+                     </div>  
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3" id="rodape-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <a class="text-decoration-none" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Status do Sistema</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class="text-decoration-none" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Segurança</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class="text-decoration-none" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Termos de Uso</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class="text-decoration-none" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Privacidade</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class="text-decoration-none" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Sobre Nós</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class="text-decoration-none" href="" id="cor-link" style="font-size:18px; font-weight: 400; font-family:'Open Sans', sans-serif;">Contato</a>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-1">
+                        <img src="./imagens/vivaweb.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
