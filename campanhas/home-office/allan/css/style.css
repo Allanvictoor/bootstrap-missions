@@ -73,7 +73,8 @@ transition: 0s
 
 .btnduvidas:hover, .btn {
 background-color: #347ab7 !important;
-transition: 0s
+transition: 0s;
+
 }
 
 .imagemlogo{
@@ -86,14 +87,181 @@ cursor: pointer;
 transform: scale(1.5);
 }
 
-.menuFixo {
-position: fixed;
-top: 0px;
-z-index: 10;
 
-
-
+.headum {
+    font-size: 27px;
+     font-weight: 400;
+     line-height: 1.5
 }
+
+.headdois {
+    font-weight: 800;
+     line-height: 1 ;
+     font-size: 60px;
+      color: #303669
+}
+.modulosum{
+    font-size: 22px; font-weight: 400; line-height: 2
+}
+
+.modulodois {
+    font-size: 18px; font-weight: 400; line-height: 1.5;
+}
+
+.modulostres {
+    font-weight: 800; line-height: 1 ;font-size: 45px; color: #303669; margin-bottom: 20px
+}
+
+#colapseOne {
+
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+}
+#colapsedois {
+
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+}
+#colapsetres {
+
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+}
+#colapsequatro {
+
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+}
+#colapsecinco {
+
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+}
+
+.ourservices {
+    font-size: 22px; font-weight: 400px; line-height: 2
+}
+
+.ourservicesdois {
+    font-size: 45px; font-weight: 800; color: #303669; line-height: 1; margin-bottom: 20px
+}
+
+.ourservicestres{
+    font-size: 20px
+}
+
+.btnsales {
+    border-radius: 25px; width: 10rem; ; font-weight: 800 ; background-color: #ec407f
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    #colapseOne {
+        font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px
+    }
+    #colapsedois {
+        font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px
+    }
+    #colapsetres {
+        font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px
+    }
+    #colapsequatro {
+        font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px
+    }
+    #colapsecinco {
+        font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px
+    }
+
+
+
+    .ourservices {
+        padding-top: 25px;
+        text-align: center;
+        font-size: 22px;
+         font-weight: 400;
+         line-height: 1;
+         padding-bottom: 20px
+
+    }
+
+    .ourservicesdois {
+        text-align: center; font-size: 45px; font-weight: 800; color: #303669; line-height: 1; margin-bottom: 20px
+    }
+
+    .ourservicestres {
+        font-size: 20px; text-align: center
+    }
+
+    .btnsales {
+        border-radius: 25px; width: 10rem; ; font-weight: 800 ; background-color: #ec407f; 
+    }
+
+
+
+
+
+
+
+    .container-fluid {
+        width: 100%
+    }
+
+   
+    
+    .headum {
+        
+        text-align: center;
+        font-size: 22px;
+         font-weight: 400;
+         line-height: 1;
+         padding-bottom: 20px
+    }
+
+    .headdois {
+       
+        text-align: center;
+        font-weight: 800;
+         line-height: 1 ;
+         font-size: 40px;
+          color: #303669;
+          padding-bottom: 20px
+    }
+    .modulosum{
+        width: 300px;
+        text-align: center;
+        font-size: 23px;
+         font-weight: 400;
+         line-height: 1;
+         padding-bottom: 20px
+    }
+
+    .modulodois {
+        width: 300px;
+        text-align: center;
+        font-size: 23px;
+         font-weight: 400;
+         line-height: 1;
+         padding-bottom: 20px
+
+    }
+
+    .modulostres{
+        width: 300px; text-align: center; font-weight: 800; line-height: 1 ;font-size: 45px; color: #303669; margin-bottom: 20px
+    }
+
+    .btnmodulos {
+        width: 300px;
+    }
+
+    .imgmodulos {
+        width: 300px;
+    }
+
+
+
+
+
+
+  };
+
+
 
 
 
