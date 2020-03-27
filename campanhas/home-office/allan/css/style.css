@@ -146,7 +146,10 @@ font-size: 18px ; font-weight: 300; line-height: 1.5; margin-bottom: 20px; text-
 
 
 @media screen and (max-width: 500px) {
-
+#btn-login{
+    text-align: center;
+    width: 240px
+}
 #colapseOne {
 font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px; 
 }
