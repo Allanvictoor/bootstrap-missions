@@ -190,7 +190,7 @@ transform: scale(1.5);
     }
 
     .btnsales {
-        border-radius: 25px; width: 10rem; ; font-weight: 800 ; background-color: #ec407f; 
+        padding: 100%; border-radius: 25px; width: 10rem; ; font-weight: 800 ; background-color: #ec407f; 
     }
 
 
