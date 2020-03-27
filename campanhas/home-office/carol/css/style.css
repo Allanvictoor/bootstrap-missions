@@ -106,3 +106,18 @@ nav{
 .footer{
     background-color: #485156;
 }
+.modal-header{
+    color: white;
+    background-color: black;
+}
+.modal-body,.modal-footer{
+    background-color: #f6f6f6;
+}
+.texto-form{
+    color: #727274;
+    font-weight: bold;
+    font-size: smaller;
+}
+.close{
+    color: #F6F6F6;
+}

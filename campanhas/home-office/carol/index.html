@@ -113,7 +113,7 @@
     <div class="row banner">
         <div class="col-lg-6 col-md-6">
             <p class="texto-um-sub-title">Módulos e Ferramentas</p>
-            <strong class="texto-um-title">Dicas que valem ouro</strong>
+            <p class="texto-um-title">Dicas que valem ouro</p>
             <p class="texto-um-paragrafo">Saiba como alguns de nossas módulos podem contribuir para suas atividades de home-office tornando o ambiente muito mais organizado e produtivo.</p>
             <img src="images/imagem-dois.png">
         </div>
@@ -160,7 +160,7 @@
         </div>
         <div class="col-lg-6 col-md-6">
             <p class="texto-inicial-sub-title texto-banner-tres">Our Services</p>
-            <strong class="texto-inicial-title">Sales Growth</strong>
+            <p class="texto-inicial-title">Sales Growth</p>
             <p class="texto-inicial-paragarafo">You can't talk about your secondary services here, or maybe promote your excellent customer service approach. Always grab your website visitors attention.</p>
             <button type="button" class="btn btn-primary btn-sm view">View Pricing</button>
         </div>
@@ -231,7 +231,7 @@ cards
             <p class="texto-um-title">Dúvidas?</p>
             <p class="texto-um-title"> Nós podemos lhe ajudar</p>
             <p class="texto-um-paragrafo">Nosso time de vendas poderá responder suas dúvidas e até mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.</p>
-            <button type="button" class="btn btn-primary btn-sm view-apresentacao">Solicite uma apresentação</button>
+            <button type="button" class="btn btn-primary btn-sm view-apresentacao" data-toggle="modal" data-target="#exampleModal">Solicite uma apresentação</button>
         </div>
         <div class="col-lg-6 col-md-6">
             <img src="images/imagem-quatro.png" class="imagem-quatro">
@@ -244,6 +244,44 @@ cards
         rodape
     </div>
 </div>
+<!--modal formulario-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Faça contato</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label class="texto-form">Nome:</label>
+                <input type="text" class="form-control my-2" name="nome" id="nome">
+                <label class="texto-form">E-mail:</label>
+                <input type="text" class="form-control my-2" name="email" id="email">
+                <label class="texto-form">Nome da Empresa:</label>
+                <input type="text" class="form-control my-2" name="nomeEmpresa" id="nomeEmpresa">
+                <label class="texto-form">Telefone</label>
+                <input type="text" class="form-control my-2" name="Telefone" id="telefone">
 
+                <label for="opcoes" class="texto-form">Como Soube da vivaintra?</label>
+                <select id="opcoes" class="form-control">
+                    <option selected class="text-muted">Selecione</option>
+                    <option class="text-muted">Google</option>
+                    <option class="text-muted">Facebook</option>
+                    <option class="text-muted">Revistas</option>
+                    <option class="text-muted">E-mail</option>
+                    <option class="text-muted">Outros</option>
+                </select>
+                <label class="texto-form">Mensagem</label>
+                <textarea  class="form-control " id="mensagem" style="resize: none"  rows="3"  required></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
