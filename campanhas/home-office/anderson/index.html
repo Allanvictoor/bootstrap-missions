@@ -5,62 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site do Viva Intra</title>
     <link rel="stylesheet" href="cores.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body> 
-    <div class="container-fluid" id="tudo">
-        <div class="row mt-5 mb-5">
-            <div class="container" id="total">
-                <nav class="navbar bg-white fixed-top nav-fill navbar-expand-sm">
-                    <img class="navbar-brand ml-5" src="imagens/logo.png" width="155" height="80" alt="">
-                        <div class="collapse navbar-collapse" id="menu">
-                            <ul class="navbar-nav mt-2 ml-auto col-md d-flex justify-content-center">
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#home"><h5 class="text-dark">Home</h5></a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#services"><h5>Services</h5></a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#prices">Pricing</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#clients">Clientes</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#news">News</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link" href="#contact">Contact</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-end">
-                                    <a class="nav-link mr-5 " href=""><span class="badge badge-primary badge-pill px-4 py-2"><h3 class="text-white"></h3>Singup</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toogler-icon"><img src="imagens/menu.png" width="30" height="30" alt=""></span>
-                          </button>
-                     </nav> 
-                <div class="row my-5" id="home">
+    <div class="container-fluid" id="tudo" style="background-color: #f5f5f5;">
+        <nav class="navbar  nav-fill mx-4 navbar-expand-sm pl-">
+            <img class=" ml-5 my-2 " src="imagens/logo-vivaintra.png" width="220" height="70" alt="">
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mr-5 mt-2 ml-1 col-md d-flex justify-content-start">
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-1" class="nav-link active" href="#home" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Starter</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-2" class="nav-link" href="#services" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Enterprise</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-3" class="nav-link" href="#prices" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Preços</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-4" class="nav-link" href="#clients" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Blog</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-5" class="nav-link" href="#news" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Parceiros</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a id="mudacor-menu-6" class="nav-link" href="#contact" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Contato</a>
+                        </li>
+
+                        <li class="nav-item d-flex justify-content-end">
+                            <button class="btn btn-primary ml-5">Login</button>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn btn-light border border-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="mr-1" src="./imagens/brazil.png" width="25" height="25" alt="">|</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href=""><img class="mr-1" src="./imagens/brazil.png" width="25" height="25" alt="">Português</a>
+                                    <a class="dropdown-item" href=""><img class="mr-1" src="./imagens/usa.png" width="25" height="25" alt="">Inglês</a>
+                                    <a class="dropdown-item" href=""><img class="mr-1" src="./imagens/spain.png" width="25" height="25" alt="">Espanhol</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toogler-icon"><img src="imagens/menu.png" width="30" height="30" alt=""></span>
+                  </button>
+             </nav> 
+        <div class="row pb-5">
+            <div class="container" id="total" style="background-color: #f5f5f5;">
+                <div class="row mb-5 id="home" style="background-color: #F5F5F5;">
                     <div class="col-md-6 mt-5 col-sm-12">
                         <img class="mt-5" src="imagens/imagem1.png" width="500" height="500" alt="">
                     </div>
                     <div class="col-md-6 mt-5 col-sm-12">
                         <h1 class=" mt-5 ml-5" style="font-family:'Poppins'; font-size: 30px;">Equipes em home-office?</h1>
-                        <h1 class="mt-3 ml-5"><strong style="font-family: 'Montserrat'; font-size:60px; font-weight:1200; color: #303669;"><u>Organize e potencialize<br>seus times.</u></strong></h1>
+                        <h1 class="mt-3 ml-5"><strong style="font-family: 'Montserrat'; font-size:60px;line-height:100%; font-weight:1200; color: #303669;"><u>Organize e potencialize<br>seus times.</u></strong></h1>
                         <p class=" mt-4 ml-5" style="font-family:'Poppins'; font-size: 18px; color:#212529; font-weight:300;">
                             Com a adoção de home-office nunca uma intranet foi tão importante e estratégica para seu negócio como um ambiente que centraliza sua comunicação e produção.
                         </p>
                         <a class="ml-5" href=""><span id="mudacor" class=" mb-5 mt-3 badge badge-pill text-white px-5 py-4"><strong style="font-size: 20px;">Quero conhecer as vantagens</strong></span></a>
                     </div>
                 </div>
-                <div class="row my-5">
-                   <div class="col-md-3 col-sm-12 mt-5 mb-5">
+                <div class="row my-5" style="background-color:#F5F5F5;">
+                   <div class="col-md-3 col-sm-12 pt-5 pb-5">
                         <img class="ml-5 mb-4" src="imagens/strategy-1.png" alt="">
                         <h2 style="font-family: 'Montserrat'; color: #303669;font-size:18px; font-weight: 700;">Comunicação Fácil e Inteligente</h2>
                         <p style="font-family:'Poppins'; font-size: 16px; font-weight:300;">
@@ -89,11 +101,11 @@
                         </p>
                    </div>
                 </div>
-                <div class="row my-5" id="services">
+                <div class="row my-5" id="services" style="background-color:#F5F5F5;">
                     <div class="col-md-6">
                         <p>
                             <p style="font-family:'Poppins'; font-size:22px; font-weight: 400; color: #212529;">Módulos e Ferramentas</p>
-                            <h2 style="font-family: 'Montserrat'; font-size:45px; font-weight:1000; color: #303669;"><u>Dicas que valem ouro</u></h2>
+                            <h2 style="font-family: 'Montserrat'; font-size:45px; font-weight:1000; line-height:100%; color: #303669;"><u>Dicas que valem ouro</u></h2>
                             <p class="mt-4" style="font-size:20px; font-family:'Poppins'; font-weight:300; color: #212529;">
                                 Saiba como alguns de nossos módulos podem contribuir para suas atividades de home-office
                                 tornando o ambiente muito mais organizado e produtivo.
@@ -101,21 +113,21 @@
                         </p>
                         <img class="mt-4" src="imagens/services-header.png" width="300" height="300" alt="">
                     </div>
-                    <div class="col-md-6 mt-5" style="background-color: #F3F3F3;">
+                    <div class="col-md-6 mt-5">
                         <div class="accordion"  id="textos">
-                            <div class="card z-depth-0 bordered border border-white ml-5 pl-5" style="background-color: #F3F3F3;"> 
-                              <div class="card-header" id="titulo-1" style="background-color: #f3f3f3;">
+                            <div class="card z-depth-0 bordered border border-white ml-5"> 
+                              <div class="card-header" id="titulo-1">
                                 <h5 class="mb-0">
                                   <a class="ml-4 " type="button" data-toggle="collapse" href="#texto-1"
                                     aria-expanded="true" aria-controls="texto-1">
-                                    <span class="badge badge-warning badge-pill px-5 py-2"><h5 class="px-5">Agenda</h5></span>
+                                    <span class="badge badge-pill px-5 py-2 text-white" id="mudacor"><h5 class="px-5" style="font-size:22; font-weight: 800; font-family: 'Montserrat';"><img class="mr-2" src="./imagens/notebook.png" width="25" height="25" alt="">Agenda</h5></span>
                                 </a>
                                 </h5>
                               </div>
                               <div id="texto-1" class="collapse" aria-labelledby="titulo-1"
                                 data-parent="#textos">
-                                <div class="card-body border border-warning">
-                                   <p class="text-warning">
+                                <div class="card-body" style="background-color: #F5F5F5;">
+                                   <p style="font-size:17px; font-weight:600; font-family: 'Poppins'; color: #212529;">
                                     Quem possui reuniões externas ou internas ainda que sejam remotas demandam
                                     organização e detalhamento. Nosso módulo permite criar reuniões com assuntos de 
                                     pauta permitindo organização e também consultar a disponibilidade de cada um.   
@@ -123,19 +135,19 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="card z-depth-0 bordered border border-white ml-5 pl-5" style="background-color: #F3F3F3;">
-                              <div class="card-header" id="titulo-2" style="background-color: #F3F3F3;">
+                            <div class="card z-depth-0 bordered border border-white ml-5">
+                              <div class="card-header" id="titulo-2">
                                 <h5 class="mb-0">
                                   <a class="ml-4" type="button" data-toggle="collapse"
                                     href="#texto-2" aria-expanded="false" aria-controls="texto-2">
-                                    <span class="badge badge-danger badge-pill px-5 py-2"><h5 class="px-5">Tarefas</h5></span>
+                                    <span class="badge badge-pill px-5 py-2 text-white" id="mudacor"><h5 class="px-5"  style="font-size:22; font-weight: 800; font-family: 'Montserrat';"><img src="./imagens/list.png" width="25" height="25" alt=""> Tarefas</h5></span>
                                     </a>
                                 </h5>
                               </div>
                               <div id="texto-2" class="collapse" aria-labelledby="titulo-2"
                                 data-parent="#textos">
-                                <div class="card-body border border-danger">
-                                    <p class="text-danger">
+                                <div class="card-body" style="background-color:#F5F5F5">
+                                    <p style="font-size:17px; font-weight:600; font-family: 'Poppins'; color: #212529;">
                                         Todos realizamos atividades diariamente mas em home-office saber o que cada um faz
                                         se torna mais difícil. Usando o módulo de tarefas, todo colaborador e seu time podem
                                         organizar, especificar e distribuir melhor suas atividades 
@@ -143,19 +155,19 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="card z-depth-0 bordered border border-white ml-5 pl-5"  style="background-color: #F3F3F3;">
-                              <div class="card-header" id="titulo-3"  style="background-color: #F3F3F3;">
+                            <div class="card z-depth-0 bordered border border-white ml-5">
+                              <div class="card-header" id="titulo-3">
                                 <h5 class="mb-0">
                                   <a class="ml-4" type="button" data-toggle="collapse"
                                     href="#texto-3" aria-expanded="false" aria-controls="texto-3">
-                                    <span class="badge badge-success badge-pill px-5 py-2"><h5 class="px-5">Requisições</h5></span>
+                                    <span class="badge badge-pill px-5 py-2 text-white" id="mudacor"><h5 class="px-4"  style="font-size:22; font-weight: 800; font-family: 'Montserrat';"><img class="mr-2" src="./imagens/request.png" width="25" height="25" alt=""> Requisições</h5></span>
                                 </a>
                                 </h5>
                               </div>
                               <div id="texto-3" class="collapse" aria-labelledby="titulo-3"
                                 data-parent="#textos">
-                                <div class="card-body border border-success">
-                                    <p class="text-success">
+                                <div class="card-body" style="background-color: #F5F5F5;">
+                                    <p style="font-size:17px; font-weight:600; font-family: 'Poppins'; color: #212529;">
                                         Processos são um conjunto de fluxos definidos e todo departamento tem necessidade 
                                         de controlar. Desde coisas simples como Solicitação de Férias até processo internos da
                                         empresa. Requisições te ajuda a organizar isto com etapas e responsáveis.   
@@ -163,19 +175,19 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="card z-depth-0 bordered border border-white ml-5 pl-5"style="background-color: #F3F3F3;">
-                                <div class="card-header" id="titulo-4"style="background-color: #F3F3F3;">
+                            <div class="card z-depth-0 bordered border border-white ml-5">
+                                <div class="card-header" id="titulo-4">
                                   <h5 class="mb-0">
                                     <a class="ml-4" type="button" data-toggle="collapse"
                                       href="#texto-4" aria-expanded="false" aria-controls="texto-4">
-                                      <span class="badge badge-secondary badge-pill px-5 py-2"><h5 class="px-5">Timeline</h5></span >
+                                      <span class="badge badge-pill px-5 py-2 text-white" id="mudacor"><h5 class="px-5"  style="font-size:22; font-weight: 800; font-family: 'Montserrat';"><img class="mr-1" src="./imagens/network.png" width="25" height="25" alt=""> Timeline</h5></span >
                                     </a>
                                   </h5>
                                 </div>
                                 <div id="texto-4" class="collapse" aria-labelledby="titulo-4"
                                   data-parent="#textos">
-                                  <div class="card-body border border-secondary">
-                                    <p class="text-secondary">
+                                  <div class="card-body"  style="background-color: #F5F5F5;">
+                                    <p style="font-size:17px; font-weight:600; font-family: 'Poppins'; color: #212529;" >
                                         Aqui é onde você ganha o engajamento da empresa! Usar a timeline para gerar
                                         conteúdos de endomarketing e aproximar quem está mais distante seja em outro 
                                         departamento ou mesmo em home-office é fundamental! 
@@ -183,19 +195,19 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="card z-depth-0 bordered border border-white ml-5 pl-5"style="background-color: #F3F3F3;">
-                                <div class="card-header" id="titulo-5"style="background-color: #F3F3F3;">
+                              <div class="card z-depth-0 bordered border border-white ml-5">
+                                <div class="card-header" id="titulo-5">
                                   <h5 class="mb-0">
                                     <a class="ml-4" type="button" data-toggle="collapse"
                                       href="#texto-5" aria-expanded="false" aria-controls="texto-5">
-                                      <span class="badge badge-info badge-pill px-0 py-2"><h5 class="px-5">Chat,Comunicado Interno <br> Avisos</h5></span>
+                                      <span class="badge badge-pill px-2 py-2 text-white" id="mudacor"><h6 class="px-5" style="font-size:22; font-weight: 800; font-family: 'Montserrat';"> <img src="./imagens/chat.png" width="25" height="25" alt=""> Chat, Comunicado Interno, <br> Avisos</h6></span>
                                     </a>
                                   </h5>
                                 </div>
                                 <div id="texto-5" class="collapse" aria-labelledby="titulo-5"
                                   data-parent="#textos">
-                                  <div class="card-body border border-info">
-                                    <p class="text-info">
+                                  <div class="card-body" style="background-color: #F5F5F5;">
+                                    <p style="font-size:17px; font-weight:600; font-family: 'Poppins'; color: #212529;">
                                         A comunicação centralizada é primordial para o ambiente corporativo uma vez ninguém 
                                         quer que algumas discussões ou assuntos sejam tratados de forma desorganizada em
                                         grupos de WhatsApp ou em emails que se perderão a tantos outros.  
@@ -206,27 +218,26 @@
                           </div>
                     </div>
                  </div>
-                <div class="row my-5" id="nossos-servicos">
+                <div class="row my-5" id="nossos-servicos" style="background-color: #F5F5F5;">
                     <div class="col-md-6 col-sm-12 my-5">
-                        <img class="mr-5 pr-5" src="imagens/services-sales-header.png" width="600" height="500" alt="">
+                        <img class="mr-5 pr-5" src="imagens/services-sales-header.png" width="620" height="550" alt="">
                     </div>
                     <div class="col-md-6 mt-5 col-sm-12">
                         <p class="mr-5 mb-5">
                             <p>
                                 <p class="ml-5" style="font-family:'Poppins'; font-size:22px; font-weight: 400; color: #212529;">Nossos Serviços</p>
-                                <h2 class="ml-5" style="font-family: 'Montserrat'; font-size:45px; line-height:; font-weight:1000; color: #303669;">Sales Growth</h2>
-                                <p class="mt-4 ml-5 mb-5" style="font-size:20px; font-family:'Poppins'; font-weight:300; color: #212529;">
+                                <h2 class="ml-5" style="font-family: 'Montserrat'; font-size:45px; font-weight:1000; color: #303669;">Sales Growth</h2>
+                                <p class="mt-4 ml-5 mb-4" style="font-size:20px; font-family:'Poppins'; font-weight:300; color: #212529;">
                                     You can talk about your secondary services
                                     here, or maybe promote your excellent
                                     customer service approach. Always grab your
                                     website visitors' attention.
                                 </p>
-                                <a class="ml-5 mt-5"><span id="mudacor-1" class="badge badge-danger badge-pill"><h5 class="py-3 px-4">View Pricing</h5></span></a>
-                        </p>
-                       
+                                <a class="ml-5 mt-2"><span id="mudacor-1" class="badge text-white badge-pill px-4 py-3" style="font-family: 'Poppins'; font-weight:600; font-size:19px;">Ver Preços</span></a>
+                            </p>
                     </div>
                 </div>
-                <div class="row my-5" id="precos-titulos">
+                <div class="row my-5" id="precos-titulos" style="background-color: #F7F7F7;">
                     <div class="col-md-12 col-sm-12 mt-5">
                         <p>
                             <h2 class="d-flex justify-content-center" style="font-family: 'Montserrat'; font-size: 45px; font-weight: 800; color: #303669;">Pricing</h2>
@@ -237,93 +248,94 @@
                         </p>
                     </div>
                 </div>
-                <div class="row my-5" id="cards-1">
+                <div class="row my-5" id="cards-1" style="background-color: #F6F6F6;">
                     <div class="col-md-4 col-sm-12">
                         <div class="card border  mt-5" id="card-1">
-                            <h1 class="card-title font-weight-bold d-flex justify-content-center mt-4">$199</h1>
-                            <h6 class="card-title text-info font-weight-bold d-flex justify-content-center pt-0 mt-0">Basic</h6>
+                            <p class="d-flex justify-content-center mt-4" style="font-family: 'Montserrat';font-size:59px; font-weight: 800; color: #303669;">$199</p>
+                            <p class="d-flex justify-content-center" style="font-size: 18px; font-family: 'Poppins'; font-weight:600;color: #78c2ff;">Básico</p>
                             <div class="card-body">
-                                <h5 class="mt-4 d-flex justify-content-center">
-                                    Starter plan with all the <br> basics included
-                                </h5>
-                                <ul class="list-unstyled my-5 ">
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Core Business System</span>
+                                <p style="font-family: 'Poppins'; font-size: 20px; font-weight: 400;" class="mt-4 d-flex justify-content-center">
+                                    Plano inicial com tudo do <br> básico incluso.
+                                </p>
+                                <ul class="list-unstyled my-3 ">
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Core Business System</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Team Management</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Team Management</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist-branco.png" width="25" height="25" alt="">Dual Infrastructure</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist-branco.png" width="25" height="25" alt="">Dual Infrastructure</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist-branco.png" width="25" height="25" alt="">Customized Features</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist-branco.png" width="25" height="25" alt="">Customized Features</span>
                                     </li>
                                 </ul>
+                                <a class="d-flex justify-content-center" style="text-decoration: none;" href=""><span id="mudacor-2" class="badge badge-pill text-white px-4 py-3" style="font-size: 20px; font-weight: 600; font-family:'Poppins';">Obtenha</span></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="card" id="card-principal">
-                            <span class=" badge badge-info badge-pill text-white my-5"><h6></h6></span>
-                            <h1 class="card-title  font-weight-bold d-flex justify-content-center mt-4">$499</h1>
-                            <h6 class="card-title text-info font-weight-bold d-flex justify-content-center pt-0 mt-0">Growth</h6>
+                            <a class="d-flex justify-content-center mt-4" href=""><span style="font-size: 15px;" class="badge badge-pill badge-info px-4 py-2">Popular</span></a>
+                            <p class="d-flex justify-content-center mt-4" style="font-family: 'Montserrat';font-size:59px; font-weight: 800; color: #303669;">$499</p>
+                            <p class="d-flex justify-content-center" style="font-size: 18px; font-family: 'Poppins'; font-weight:600;color: #78c2ff;">Crescimento</p>
                             <div class="card-body">
-                                <h5 class="mt-4 d-flex justify-content-center">
-                                    The sensible option for <br> growing companies
-                                </h5>
-                                <ul class="list-unstyled mt-5 ">
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Core Business System</span>
+                                <p style="font-family: 'Poppins'; font-size: 20px; font-weight: 400;" class="mt-1 d-flex justify-content-center">
+                                    A melhor opção para empresas em crescimento.
+                                <ul class="list-unstyled mt-3 mb-5">
+                                    <li  class="pb-1">
+                                        <span class="ml-4"style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Core Business System</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Team Management</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Team Management</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Dual Infrastructure</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Dual Infrastructure</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist-branco.png" width="25" height="25" alt="">Customized Features</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist-branco.png" width="25" height="25" alt="">Customized Features</span>
                                     </li>
                                 </ul>
+                                <a class="d-flex justify-content-center pb-3" style="text-decoration: none;" href=""><span id="mudacor-3" class="badge badge-pill text-white px-4 py-3" style="font-size: 20px; font-weight: 600; font-family:'Poppins';">Obtenha</span></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="card mt-5" id="card-2">
-                            <h1 class="card-title  font-weight-bold d-flex justify-content-center mt-4">$1299</h1>
-                            <h6 class="card-title text-info font-weight-bold d-flex justify-content-center pt-0 mt-0">Corporate</h6>
+                            <p class="d-flex justify-content-center mt-4" style="font-family: 'Montserrat';font-size:59px; font-weight: 800; color: #303669;">$1299</p>
+                            <p class="d-flex justify-content-center" style="font-size: 18px; font-family: 'Poppins'; font-weight:600;color: #78c2ff;">Corporativo</p>
                             <div class="card-body">
-                                <h5 class="mt-4 d-flex justify-content-center">
-                                    Everthing a global <br> companies needs
-                                </h5>
-                                <ul class="list-unstyled mt-5 ">
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Core Business System</span>
+                                <p style="font-family: 'Poppins'; font-size: 20px; font-weight: 400;" class="mt-4 d-flex justify-content-center">
+                                    Tudo o que uma empresa <br> mundial precisa.
+                                <ul class="list-unstyled my-3 ">
+                                    <li class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Core Business System</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Team Management</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Team Management</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Dual Infrastructure</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Dual Infrastructure</span>
                                     </li>
-                                    <li>
-                                        <span><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Customized Features</span>
+                                    <li  class="pb-1">
+                                        <span class="ml-4" style="font-family: 'Poppins'; font-size: 18px; font-weight: 300;"><img class="mr-1" src="imagens/checklist.png" width="25" height="25" alt="">Customized Features</span>
                                     </li>
                                 </ul>
+                                <a class="d-flex justify-content-center" style="text-decoration: none;" href=""><span id="mudacor-4" class="badge badge-pill text-white px-4 py-3" style="font-size: 20px; font-weight: 600; font-family:'Poppins';">Obtenha</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row my-5" id="nossos-clientes">
+                <div class="row my-5" id="nossos-clientes" style="background-color: #F5F5F5;">
                     <div class="col-md-12 col-sm-12">
-                       <p>
-                            <h4 class="d-flex justify-content-center"> Our Clients</h4>
-                            <h1 class="d-flex justify-content-center" style="font-size: 50px;"><strong>Clients Showcase</strong></h1>
+                       <p class="mt-5">
+                            <p class="d-flex justify-content-center" style="font-family: 'Poppins'; font-size:22px; font-weight: 400; color: #212529;"> Our Clients</p>
+                            <h1 class="d-flex justify-content-center" style="font-size: 45px; font-family: 'Montserrat'; font-weight: 800; color: #303669;"><strong>Clients Showcase</strong></h1>
                        </p>
                     </div>
                 </div>
-                <div class="row my-5" id="clients">
+                <div class="row mb-5 " id="clients" style="background-color: #F4F4F4;">
                    <div class="col-md-12 col-sm-12">
                     <div id="carouselExampleIndicators d-flex justify-content-center" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -334,26 +346,34 @@
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <div class="row d-flex justify-content-center">
-                                <img class="px-4" src="imagens/logo1.png" alt="">
-                                <img class="px-4" src="imagens/logo2.png" alt="">
-                                <img class="px-4" src="imagens/logo3.png" alt="">
-                                <img class="px-4" src="imagens/logo4.png" alt="">
+                                <img class="px-4" src="imagens/parceiras/acp.png" width="270" height="120"  alt="">
+                                <img class="px-4" src="imagens/parceiras/competition.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/hydronorth.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/positivo.png" width="270" height="120" alt="">
                             </div>
                           </div>
                           <div class="carousel-item">
                             <div class="row d-flex justify-content-center">
-                                <img class="px-4" src="imagens/logo1.png" alt="">
-                                <img class="px-4" src="imagens/logo2.png" alt="">
-                                <img class="px-4" src="imagens/logo3.png" alt="">
-                                <img class="px-4" src="imagens/logo4.png" alt="">
+                                <img class="px-4" src="imagens/parceiras/prever.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/sebrae-logo.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/unnamed.png"width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/valdar.png" width="270" height="120" alt="">
                             </div>
                           </div>
                           <div class="carousel-item">
                             <div class="row d-flex justify-content-center">
-                                <img class="px-4" src="imagens/logo1.png" alt="">
-                                <img class="px-4" src="imagens/logo2.png" alt="">
-                                <img class="px-4" src="imagens/logo3.png" alt="">
-                                <img class="px-4" src="imagens/logo4.png" alt="">
+                                <img class="px-4" src="imagens/parceiras/acp.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/competition.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/hydronorth.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/positivo.png" width="270" height="120" alt="">
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row d-flex justify-content-center">
+                                <img class="px-4" src="imagens/parceiras/prever.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/sebrae-logo.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/unnamed.png" width="270" height="120" alt="">
+                                <img class="px-4" src="imagens/parceiras/valdar.png" width="270" height="120" alt="">
                             </div>
                           </div>
                         </div>
@@ -364,65 +384,65 @@
                       </div>
                    </div>
                 </div>
-                <div class="row my-5" id="atualizacoes">
+                <div class="row my-5" id="atualizacoes" style="background-color: #F4F4F4;">
                     <div class="col-sm-12 col-md-12">
                         <p>
-                            <h4 class="d-flex justify-content-center">Recent updates</h4>
-                            <h1 class="d-flex justify-content-center" style="font-size: 50px;"><strong>Featured Stories</strong></h1>
+                            <p class="d-flex justify-content-center" style="font-family: 'Poppins'; font-size:22px; font-weight: 400; color: #212529;">Recent Updates</p>
+                            <h1 class="d-flex justify-content-center" style="font-size: 45px; font-family: 'Montserrat'; font-weight: 800; color: #303669;"><strong>Featured Stories</strong></h1>
                        </p>
                     </div>
                 </div>
-                <div class="row my-5" id="news">
+                <div class="row my-5" id="news" style="background-color: #F3F3F3;">
                     <div class="col-md-4  col-sm-12">
                         <div class="card mt-5" id="card-3">
-                            <img class="img-card-top mt-2 ml-3" src="imagens/blog-card-1.png" width="300" height="250" alt="">
+                            <img class="img-card-top mt-5 ml-3" src="imagens/blog-card-1.png" width="300" height="250" alt="">
                             <div class="card-body">
-                                <h5 class="font-weight-bold d-flex justify-content-center">Remote Working</h5>
-                                <p>
+                                <h3 class="d-flex justify-content-center" style="font-size:20px; font-family: 'Montserrat'; font-weight: 700; color: #303669;">Remote Working</h3>
+                                <p class="ml-3 mt-4" style="font-weight:300; font-family:'Poppins'; font-size:16px;">
                                     Making it easier to connect with every client worldwide
                                 </p>
-                                <a class="text-info font-weight-bold d-flex justify-content-center" href="">Read More</a>
+                                <a id="mudacor-5" class="d-flex justify-content-center" href="" style="text-decoration: none; font-size: 17px; font-family:'Poppins'; font-weight: 700; ">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="card" id="card-4">
-                            <img class="img-card-top mt-3 ml-3" src="imagens/blog-card-2.png" width="300" height="300" alt="">
+                            <img class="img-card-top mt-5 ml-3" src="imagens/blog-card-2.png" width="300" height="300" alt="">
                             <div class="card-body">
-                                <h5 class="font-weight-bold d-flex justify-content-center">Google Ranking</h5>
-                                <h6 class="text-mutted d-flex justify-content-center">Keywords</h6>
-                                <p>
+                                <h3 class="d-flex justify-content-center" style="font-size:20px; font-family: 'Montserrat'; font-weight: 700; color: #303669;">Google Ranking</h3>
+                                <h4 class="d-flex justify-content-center" style="font-family: 'Montserrat'; font-weight:500; font-size:19px; color: #cccccc;">Keywords</h4>
+                                <p class="ml-3 mt-4" style="font-weight:300; font-family:'Poppins'; font-size:16px;">
                                     We've ranked number one on Google for multiple keywords, Read about our SEO strategies.
                                 </p>
-                                <a class="d-flex justify-content-center" href=""><span class="badge badge-primary badge-pill text-white font-weight-bold py-3 px-4 ">Read More</span></a>
+                                <a class="d-flex justify-content-center" href="" style="text-decoration: none;"><span id="mudacor-6" class="badge badge-primary badge-pill py-3 px-5" style="font-size: 19px; font-weight: 600;">Read More</span></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="card mt-5" id="card-5">
-                            <img class="img-card-top mt-2 ml-3" src="imagens/blog-card-3.png" width="300" height="250" alt="">
+                            <img class="img-card-top mt-5 ml-3" src="imagens/blog-card-3.png" width="300" height="250" alt="">
                             <div class="card-body">
-                                <h5 class="font-weight-bold d-flex justify-content-center">Communication</h5>
-                                <p>
+                                <h3 class=" d-flex justify-content-center"style="font-size:20px; font-family: 'Montserrat'; font-weight: 700; color: #303669;">Communication</h3>
+                                <p  class="ml-3 mt-4" style="font-weight:300; font-family:'Poppins'; font-size:16px;">
                                     We've made our client support services easy to acess
                                 </p>
-                                <a class="text-info font-weight-bold d-flex justify-content-center" href="">Read More</a>
+                                <a id="mudacor-7" class=" d-flex justify-content-center" href="" style="text-decoration: none; font-size: 17px; font-family:'Poppins'; font-weight: 700; ">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row my-5" id="contact">
+                <div class="row my-5" id="contact" style="background-color: #F3F3F3;">
                     <div class="col-md-6 mt-5 col-sm-12">
-                        <h3 class="mt-5">Entre em contato</h3>
-                        <p class="font-weight-bold" style="font-size: 30px;">
+                        <h3 class="mt-5" style="font-family: 'Poppins'; font-size: 25px; font-weight: 400; color: #212529;">Entre em contato</h3>
+                        <p class="" style="font-size: 45px; font-family: 'Montserrat'; font-weight:800; color: #303669;">
                            <u>Dúvidas?</u> <br> <u>Nos podemos lhe ajudar</u>
                            
                         </p>
-                        <p class="text-muted mb-5" style="font-size: 20px;">
+                        <p class="mb-5" style="font-size: 20px; font-family: 'Poppins'; font-weight: 300; color: #212529;">
                             Nosso time de vendas poderá responder suas dúvidas e até mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.
 
                         </p>
-                        <a href=""><span class="badge badge-danger badge-pill px-4 py-3"><strong style="font-size: 20px;">Solicite uma apresentação</strong></span></a>
+                        <a href=""><span id="mudacor-8" class="badge text-white badge-pill px-4 py-3" style="font-size:19px; font-weight: 600; font-family: 'Poppins';">Solicite uma Apresentação</span></a>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <img class="mr-4" src="imagens/contact-header-img.png" alt="">
@@ -430,55 +450,152 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5 py-5" id="rodape-1">
-            <div class="col-md-3 col-sm-12">
-                <div class="row mb-3 d-flex justify-content-center">
-                    <h1 class="text-white" style="font-size: 60px;"><strong>code.</strong></h1>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <h5 class="text-white">A beautiful landing page <br> template by codefest</h5>
-                </div>
+        <div class="row">
+            <div class="col-md-1" style="background-color:#edbd37;">
+            .
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="row mb-3 d-flex justify-content-center">
-                    <h1 class="font-weight-bold text-white" style="font-size: 40px;">About</h1>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <h5 class="text-white">We like to do business <br> at Codelander HQ to our <br> clientes satisfaction</h5>
-                </div>
+            <div class="col-md-1" style="background-color:#fbc80b;">
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="row mb-3 d-flex justify-content-center">
-                    <h1 class="font-weight-bold text-white" style="font-size: 40px;">Contact Us</h1>
-                </div>
-                <div class="row mt-1 d-flex justify-content-center">
-                    <img class="mr-1" src="imagens/pin.png" width="20" height="20" alt="">
-                    <span class="text-white">123 Business Centre </span>
-                </div>
-                <div class="row mt-1 d-flex justify-content-center">
-                    <img class="mr-2" src="imagens/phone.png" width="20" height="20" alt="">
-                    <span class="text-white">012345678423149</span>
-                </div>
-                <div class="row mt-1 d-flex justify-content-center">
-                    <img class="mr-2" src="imagens/mail.png" width="20" height="20" alt="">
-                    <span class="text-white">mail@domain.com</span>
-                </div>
+            <div class="col-md-1" style="background-color:#fba828;">
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="row mb-3 d-flex justify-content-center">
-                    <h1 class="text-white font-weight-bold" style="font-size: 40px;">Sociais</h1>
-                </div>
-                <div class="row d-flex justify-content-center">
-                   <a href=""><img class="mr-4" src="imagens/twitter.png" width="40" height="40" alt=""></a>
-                  <a href=""><img class="mr-4"  src="imagens/instagram.png" width="40" height="40" alt=""></a>
-                   <a href=""><img class="mr-4"  src="imagens/facebook.png" width="40" height="40" alt=""></a>
-                  <a href=""><img class="mr-4"  src="imagens/linkedin.png" width="40" height="40" alt=""></a>
-                </div>
-            </div>  
+            <div class="col-md-1" style="background-color:#dcde01;">
+            </div>
+            <div class="col-md-1" style="background-color:#edbd37;">
+            </div>
+            <div class="col-md-1" style="background-color:#df6e08;">
+            </div>
+            <div class="col-md-1" style="background-color:#4a8b09;">
+            </div>
+            <div class="col-md-1" style="background-color:#7dcb43;">
+            </div>
+            <div class="col-md-1" style="background-color:#4a8b09;">
+            </div>
+            <div class="col-md-1" style="background-color:#2e721d;">
+            </div>
+            <div class="col-md-1" style="background-color:#a9cf46;">
+            </div>
+            <div class="col-md-1" style="background-color:#F58634;">
+            </div>
         </div>
-        <div class="row py-5" id="rodape-2">
-            <div class="col-md-12 col-sm-12 d-flex justify-content-center">
-                <img class="mt-2" src="imagens/copyright.png" width="25" height="25" alt=""><span class="text-white font-weight-bold" style="font-size: 20px;">Codefest.</span><span class="text-white" style="font-size: 20px;">ALL Rights Reserved.</span>
+        <div class="row" id="rodape-1">
+            <div class="container" id="rodape-1">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <ul class="list-unstyled mt-3">
+                            <li style=" border-left: dotted #222222;">
+                            <a class="text-white text-decoration-none ml-2" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Starter</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;" class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Experimente, É grátis</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;" class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Ajuda</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;" class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Treinamentos Ao Vivo</a>
+                            </li>
+                            <li class="mt-5">
+                                <img src="./imagens/logo-footer.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                     <div class="col-md-3 col-sm-12 mt-2">
+                         <ul class="list-unstyled">
+                            <li style=" border-left: dotted #222222;" class="mt-2">
+                                <a class="text-decoration-none text-white ml-2"  href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Enterprise</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Comunicação</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Colaboração</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Produtividade</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Recursos Humanos</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" href="" id="cor-link" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Extranet</a>
+                            </li>
+                            <li style=" border-left: dotted #222222;"class="mt-2">
+                                <a class=" text-white text-decoration-none ml-2" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Contato</a>
+                            </li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3 col-sm-12">
+                         <ul class="list-unstyled mt-3">
+                            <li style=" border-left: dotted #222222;"class="mt-2">
+                                <a class="text-white text-decoration-none ml-2" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Preços</a>
+                            </li>
+                            <li style=" border-left: dotted #222222;"class="mt-2">
+                                <a class="text-white text-decoration-none ml-2" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Blog</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Colaboração</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Comunicação</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Endomarketing</a>
+                            </li>
+                            <li style=" border-left: dotted #383838;"class="mt-2">
+                                <a class="text-decoration-none ml-2" id="cor-link" href="" style="font-size:16px; font-weight: 400; font-family:'Open Sans', sans-serif;">Gestão de Pessoas</a>
+                            </li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3 col-sm-12">
+                         <div class="row mt-3">
+                            <p style="font-size:22px; font-weight:400; font-family:'Open Sans', sans-serif; color: #829199;">
+                                Acompanhe o VivaIntra <br>
+                                <span class="ml-3" style="font-size: 26px;">nas Redes Sociais</span> 
+                            </p>
+                         </div>
+                         <div class="row mt-2 d-flex justify-content-center">
+                            <img class="mr-3" src="./imagens/facebook.png" width="60" height="60" alt="">
+                            <img src="./imagens/youtube.png" width="60" height="60" alt="">
+                         </div>
+                     </div>  
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3 pb-1 " id="rodape-2"  style="border-top: 1px solid #6c757c ;">
+            <div class="container" id="rodape-2">
+                <div class="row mt-1">
+                    <div class="col-md-2">
+                        <img src="./imagens/circle.png" width="12" height="12" alt=""> <a class="text-decoration-none mr-4 text-white href=" style="font-size:14px; font-weight: 400; font-family:'Open Sans', sans-serif;">Status do Sistema</a>
+                    </div>
+                    <div class="col-md-1"  style=" border-left: dotted #383838; border-right: dotted #383838;">
+                        <a class="text-decoration-none text-white" href="" style="font-size:14px; font-weight: 400; font-family:'Open Sans', sans-serif;">Segurança</a>
+                    </div>
+                    <div class="col-md-2"  style=" border-right: dotted #383838;">
+                        <a class="text-decoration-none text-white ml-4" href="" style="font-size:14px; font-weight: 400; font-family:'Open Sans', sans-serif;">Termos de Uso</a>
+                    </div>
+                    <div class="col-md-1"  style=" border-right: dotted #383838;">
+                        <a class="text-decoration-none text-white" href="" style="font-size:14px; font-weight: 400; font-family:'Open Sans', sans-serif;">Privacidade</a>
+                    </div>
+                    <div class="col-md-2"  style=" border-right: dotted #383838;">
+                        <a class="text-decoration-none text-white ml-5" href="" style="font-size:14px; font-weight: 400; font-family:'Open Sans', sans-serif;">Sobre Nós</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class="text-decoration-none text-white" href="" style="font-size:14px; font-weight: 400; font-family:'Open Sans', sans-serif;">Contato</a>
+                    </div>
+                   <!-- <div class="col-md-0">
+                    </div>
+                    <div class="col-md-0">
+                    </div>
+                    <div class="col-md-0">
+                    </div>-->
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-1">
+                        <img src="./imagens/vivaweb.png" width="150" height="45" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
