@@ -1,15 +1,26 @@
-
+body {
+    background-color: #fafafa;
+}
+.imagem-um{
+    /*width: 80%;*/
+    /*height: 100%;*/
+    margin-top: 25px;
+}
+nav{
+    background-color: #fcfafb;
+}
 .linha-separa-nav{
     background-color: #00649e;
     border: 0;
     align: left;
-    width: 100%
+    width: 100%;
 }
-
-.texto-inicial, .texto-inicial-title, .texto-inicial-title-dois, .texto-inicial-sub-title{
-    margin-right: 50px;
+.texto-inicial-title, .texto-inicial-title-dois, .texto-um-title{
+    color: #283c5f;
+    font-size: 40px;
+    margin-bottom: auto;
+    font-family: 'Lilita One', cursive;
 }
-
 .view, .view-apresentacao{
     background-color: hotpink ;
     border-color: hotpink;
@@ -19,48 +30,15 @@
     background-clip: padding-box;
     font-weight: bold;
 }
-.view-apresentacao{
-    margin-left: 50px;
-    font-weight: bold;
+.bloco-texto-um, .texto-banner-tres{
+    margin-top: 5%;
 }
-
-.imagem-um{
-     width: 80%;
-     height: 100%;
-     margin-left: 100px;
-     margin-top: 25px;
- }
-.botao-block{
-      height: 13%;
-      width: 80%;
-      margin-left: 50px;
-      text-align-all: center;
-      background-color: #337ab6 ;
-      border-color: #337ab6;
-    font-weight: bold;
-      margin-bottom: 5px;
-  }
-.texto-um, .texto-um-title, .texto-um-sub-title, .texto-um-paragrafo{
-       margin-left: 50px;
-   }
-.imagem-dois{
-       height: 30rem;
-       width: 30rem;
-       margin-left: 50px;
-   }
-.card-body{
-    width: 80%;
-    margin-left: 50px;
+.texto-inicial-paragarafo, .texto-um-paragrafo{
     font-family: 'Thasadith', sans-serif;
 }
-.imagem-tres{
-     margin-left: 100px;
- }
-.banner{
-    margin-top: 35px;
-}
-.banner-dois{
-    margin-top: 55px;
+.texto-inicial-sub-title, .texto-um-sub-title{
+    margin-bottom: auto;
+    color: #4a4a4a;
 }
 .imagem-strategy{
     height: 50px;
@@ -69,40 +47,9 @@
 .imagem-strategy-dois{
     height: 50px;
     width: 50px;
-    margin-left: 30px;
 }
 .col-strategy{
     text-align: center;
-}
-
-.imagem-quatro{
-    width: 80%;
-    height: 80%;
-}
-.carousel-indicators li{
-    background-color: rgba(0, 0, 0, 0.5);
-    bottom: -40px;
-}
-.slide{
-   background-color: #f6f6f6;
-}
-.cliente-um{
-    margin-left: 50px;
-    margin-top: -5px;
-}
-.cliente-dois{
-    margin-top: 45px;
-}
-.cliente-tres{
-    margin-top: 55px;
-    margin-right:50px ;
-}
-.cliente-quatro{
-    margin-right: 11px;
-    margin-top: -10px;
-}
-.grupo-botao{
-    margin-top: 10%;
 }
 .texto-strategy{
     margin-left: 25px;
@@ -117,36 +64,45 @@
     text-align: center;
     font-family: 'Thasadith', sans-serif;
 }
-.texto-inicial-title, .texto-inicial-title-dois, .texto-um-title{
-    color: #283c5f;
-    font-size: 40px;
-    margin-bottom: auto;
-    font-family: 'Lilita One', cursive;
+.banner{
+    margin-top: 35px;
 }
-.texto-inicial-sub-title, .texto-um-sub-title{
-    margin-bottom: auto;
-    color: #4a4a4a;
+.grupo-botao{
+    margin-top: 10%;
 }
-.texto-um-paragrafo{
+.botao-block{
+    height: 13%;
+    width: 80%;
+    text-align-all: center;
+    background-color: #337ab6 ;
+    border-color: #337ab6;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card-body{
+    width: 80%;
     font-family: 'Thasadith', sans-serif;
 }
-
-.texto-inicial-paragarafo{
-    font-family: 'Thasadith', sans-serif;
-    margin-top: 15px;
+.carousel-indicators{
+    bottom: -40px;
 }
-
-.texto-inicial-title-dois{
-    margin-top: -25px;
+.fluid{
+    background-color: #f6f6f6;
 }
-.texto-inicial-title{
-    margin-top: -10px;
+.imagem-carousel{
+    height: 100px;
+    background-color: #f6f6f6;
 }
-
-.bloco-texto-um{
-    margin-top: 95px;
+.carousel-indicators li{
+    background-color: #969696;
 }
-
-.grade-color{
-
+.carousel-item{
+    margin-top: 1%;
+}
+.imagem-quatro{
+    width: 90%;
+    height: 90%;
+}
+.footer{
+    background-color: #485156;
 }
