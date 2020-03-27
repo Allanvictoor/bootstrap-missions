@@ -6,7 +6,11 @@
     <title>Site do Viva Intra</title>
     <link rel="stylesheet" href="cores.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">   
+    <script src="./controle.js"></script>
+    <script src="./jquery/textarea-limit-counter/plugin-jqtarea.js"></script>
+    <script src="./jquery/jquery-1.11.3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1"></script>   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -36,7 +40,6 @@
                         <li class="nav-item d-flex justify-content-end">
                             <a id="mudacor-menu-6" class="nav-link" href="#contact" style="font-size:20px; font-family:'Open Sans', sans-serif; font-weight: 700; color: #00649f;">Contato</a>
                         </li>
-
                         <li class="nav-item d-flex justify-content-end">
                             <button class="btn btn-primary ml-5">Login</button>
                         </li>
@@ -50,8 +53,7 @@
                                 </div>
                             </div>
                         </li>
-                    </ul>
-                </div>
+                    </ul>                </div>
                 <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toogler-icon"><img src="imagens/menu.png" width="30" height="30" alt=""></span>
                   </button>
@@ -433,6 +435,69 @@
                 </div>
                 <div class="row my-5" id="contact" style="background-color: #F3F3F3;">
                     <div class="col-md-6 mt-5 col-sm-12">
+                        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark">
+                                    <h3 class="text-white ml-5">Faça Contato</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body bg-light">
+                                    <div class="container-fluid">
+                                        <div class="row my-3">
+                                            <label for="">Nome:</label>
+                                            <input class="col-12 border border-muted" type="text">
+                                        </div>
+                                        <div class="row my-3">
+                                            <label for="">E-mail:</label>
+                                            <input class="col-12 border border-muted" type="text">
+                                        </div>
+                                        <div class="row my-3">
+                                            <label for="">Nome da Empresa:</label>
+                                            <input class="col-12 border border-muted" type="text">
+                                        </div>
+                                        <div class="row my-3">
+                                            <label for="">Telefone:</label>
+                                            <input class="col-12 border border-muted" type="text">
+                                        </div>
+                                        <div class="row my-3">
+                                            <label for="">Como soube do VivaIntra?</label>
+                                            <div class="input-group">
+                                                <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                  <option selected>Selecione</option>
+                                                  <option value="1">Google</option>
+                                                  <option value="2">Facebook</option>
+                                                  <option value="3">Revistas</option>
+                                                  <option value="4">Email</option>
+                                                  <option value="5">Outros</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3 mb-5">
+                                            <label for="">Mensagem:</label>
+                                            <textarea class="col-12 border border-muted" name="" id="" cols="30" onkeyup="countChar(this)" rows="6"></textarea>
+                                            <h6 style="font-weight:600; font-family: 'Poppins'; font-size: 14px;" class="bg-danger text-white text-bold rounded-pill d-inline px-1 mt-1">Caracteres Restantes:<span id="contador" class="badge badge-danger"></span></h6>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                            </div>
+                                            <div class="col-8">
+                                               <input class="col-12" type="text">
+                                               <label class="mt-1" for="" style="font-size:15px;">Digite as letras acima como você as vê</label> 
+                                            </div>
+                                            <div class="col-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href=""><span id="mudacor-8" class="badge text-white badge-pill px-4 py-3" style="font-size:19px; font-weight: 600; font-family: 'Poppins';">Enviar</span></a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                         <h3 class="mt-5" style="font-family: 'Poppins'; font-size: 25px; font-weight: 400; color: #212529;">Entre em contato</h3>
                         <p class="" style="font-size: 45px; font-family: 'Montserrat'; font-weight:800; color: #303669;">
                            <u>Dúvidas?</u> <br> <u>Nos podemos lhe ajudar</u>
@@ -442,10 +507,10 @@
                             Nosso time de vendas poderá responder suas dúvidas e até mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.
 
                         </p>
-                        <a href=""><span id="mudacor-8" class="badge text-white badge-pill px-4 py-3" style="font-size:19px; font-weight: 600; font-family: 'Poppins';">Solicite uma Apresentação</span></a>
+                        <a href="" data-target="#modal" data-toggle="modal"><span id="mudacor-8" class="badge text-white badge-pill px-4 py-3" style="font-size:19px; font-weight: 600; font-family: 'Poppins';">Solicite uma Apresentação</span></a>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <img class="mr-4" src="imagens/contact-header-img.png" alt="">
+                        <img class="mr-4 mt-5" src="imagens/contact-header-img.png" alt="">
                     </div>
                 </div>
             </div>
