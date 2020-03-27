@@ -75,14 +75,16 @@ transform: scale(1.5);
 text-align: justify;
 font-size: 27px;
 font-weight: 400;
-line-height: 1.5
+line-height: 1.5;
+
 }
 .headdois {
 text-align: left;
 font-weight: 800;
 line-height: 1 ;
 font-size: 60px;
-color: #303669
+color: #303669;
+text-decoration: underline
 }
 .modulosum{
 text-align: justify;
@@ -93,14 +95,15 @@ padding-top: 50px;
 padding-bottom: 20px
 }
 .headtres {
-font-size: 18px; font-weight: 300; line-height: 1.5; text-align: justify;
+font-size: 18px; font-weight: 300; line-height: 1.5; text-align: justify; 
 }
 .modulodois {
 text-align: justify;
 font-size: 23px;
 font-weight: 400;
 line-height: 1;
-padding-bottom: 20px
+padding-bottom: 20px;
+
 
 }
 
@@ -109,7 +112,7 @@ padding-bottom: 20px
 }
 
 .modulostres{
-text-align: justify; font-weight: 800; line-height: 1 ;font-size: 45px; color: #303669; margin-bottom: 20px
+text-align: justify; font-weight: 800; line-height: 1 ;font-size: 45px; color: #303669; margin-bottom: 20px; text-decoration: underline
 }
 #colapseOne {
 font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px; 
@@ -146,7 +149,7 @@ padding: 100%; border-radius: 25px; width: 10rem; ; font-weight: 800 ; backgroun
 font-size: 22px; font-weight: 400; line-height: 2; text-align: justify;
 }
 .contatofooterdois {
-font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 20px; color: #303669; text-align: justify;
+font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 20px; color: #303669; text-align: justify; text-decoration: underline
 }
 .contatofootertres {
 font-size: 18px ; font-weight: 300; line-height: 1.5; margin-bottom: 20px; text-align: justify;
@@ -258,7 +261,7 @@ width: 100%;
 font-size: 22px; font-weight: 400; line-height: 2; text-align: center;
 }
 .contatofooterdois {
-font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 20px; color: #303669; text-align: center;
+font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 20px; color: #303669; text-align: center; 
 }
 .contatofootertres {
 font-size: 18px ; font-weight: 300; line-height: 1.5; margin-bottom: 20px; text-align: center;
