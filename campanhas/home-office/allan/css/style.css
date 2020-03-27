@@ -100,61 +100,82 @@ transform: scale(1.5);
      font-size: 60px;
       color: #303669
 }
+
 .modulosum{
-    font-size: 22px; font-weight: 400; line-height: 2
+    
+    text-align: center;
+    font-size: 23px;
+     font-weight: 400;
+     line-height: 1;
+     padding-bottom: 20px
 }
 
 .modulodois {
-    font-size: 18px; font-weight: 400; line-height: 1.5;
+   
+    text-align: center;
+    font-size: 23px;
+     font-weight: 400;
+     line-height: 1;
+     padding-bottom: 20px
+
 }
 
-.modulostres {
-    font-weight: 800; line-height: 1 ;font-size: 45px; color: #303669; margin-bottom: 20px
+.modulostres{
+     text-align: center; font-weight: 800; line-height: 1 ;font-size: 45px; color: #303669; margin-bottom: 20px
 }
+
+
+
+
+
 
 #colapseOne {
 
-    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px;  margin-top: 75px
 }
 #colapsedois {
 
-    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px;
 }
 #colapsetres {
 
-    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px;
 }
 #colapsequatro {
 
-    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px; 
 }
 #colapsecinco {
 
-    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px
-}
-
-.ourservices {
-    font-size: 22px; font-weight: 400px; line-height: 2
+    font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px; 
 }
 
 .ourservicesdois {
-    font-size: 45px; font-weight: 800; color: #303669; line-height: 1; margin-bottom: 20px
+    text-align: center; font-size: 45px; font-weight: 800; color: #303669; line-height: 1; margin-bottom: 20px
 }
 
-.ourservicestres{
-    font-size: 20px
+.ourservicestres {
+    font-size: 20px; text-align: center
 }
 
 .btnsales {
-    border-radius: 25px; width: 10rem; ; font-weight: 800 ; background-color: #ec407f
+    padding: 100%; border-radius: 25px; width: 10rem; ; font-weight: 800 ; background-color: #ec407f; 
 }
+
+
+
+
+
+
+
+
 
 
 
 @media screen and (max-width: 500px) {
 
     #colapseOne {
-        font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px
+        font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px; margin-right: 50px
     }
     #colapsedois {
         font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 15px; width: 300px
@@ -190,7 +211,7 @@ transform: scale(1.5);
     }
 
     .btnsales {
-        padding: 100%; border-radius: 25px; width: 10rem; ; font-weight: 800 ; background-color: #ec407f; 
+         border-radius: 25px; width: 20rem;; height: 50px; ; font-weight: 800 ; background-color: #ec407f; 
     }
 
 
@@ -253,6 +274,18 @@ transform: scale(1.5);
     .imgmodulos {
         width: 300px;
     }
+
+    #rodape {
+        text-align: center
+    }
+    #rodapedois {
+        text-align: center
+    }
+
+    #redes {
+        width: 100%;
+    }
+
 
 
 
