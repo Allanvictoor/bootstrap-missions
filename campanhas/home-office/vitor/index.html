@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../vitor/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&amp;display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -16,7 +20,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -27,61 +30,86 @@
 </head>
 
 <body class="colorb">
-    <header>
-        <div class="container-fluid" id="top">
-            <div class="col-xl-12">
-                <h1 class="logo float-left">
-                    <a href="#"><img class="logo-image" src="imagens/viva.png" class="logo-image" alt="VivaIntra"></a>
-                </h1>
-                <nav id="menu">
-                    <ul class="col-xl-12 d-none d-lg-block">
-                        <li><a id="change" href="#home">Starter</a></li>
-                        <li><a id="change" href="#news">Enterprise</a></li>
-                        <li><a id="change" href="#pricing">Preços</a></li>
-                        <li><a id="change" href="#about">Blog</a></li>
-                        <li><a id="change" href="#about">Parceiros</a></li>
-                        <li><a id="change" href="#contato">Contato</a></li>
-                        
-                    </ul>
-
-                </nav>
-            </div>
-           <!-- <input class="btn btn-primary btn-st" type="button" id="login"> -->
-        </div>
-        
-    </header>
     <div class="container">
-        <div class="col-lg-12 col-md-12 col-12">
-            <div class="row">
-                <div class="col-lg-6">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg col-sm-12 pt-0">
+                <a class="navbar-brand"><img src="imagens/viva.png" width="192px" class="imagem-logo"></a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Starter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Enterprise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Preços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline d-flex w-100">
+                        <div class="form-group justify-content-end w-100">
+                            <div class="btn btn-primary btn-blue" type="submit">Login</div>
+                            <div class="btn-group ml-2">
+                                <button class="btn-sm dropdown-toggle border border-dark botao-idioma" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="" src="imagens/brasil.png" alt="">
+                                    |
+                                </button>
+                                <ul class="dropdown-menu" role="menu" id="box-language">
+                                    <li>Português</li>
+                                    <li >Inglês</li>
+                                    <li>Espanhol</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <hr class="bor d-block">
+<!-- Término navbar-->
+    <div class="container mt-5">
+        <div class="col-12 col-xl-12 col-lg-12">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 col-xl-6">
                     <img src="../vitor/imagens/1.png" class="first" alt="logo1">
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
+                <div class="col-12 col-lg-6 col-md-12 text-xl-left text-lg-left text-center mt-5">
                     <p class="header-subtitle">Equipes em home-office?</p>
                     <h1 class="header-title">Organize, e potencialize seus times.</h1>
                     <p class="services-text">Com a adoção de home-office nunca uma intranet foi tão importante e
                         estratégica
                         para seu negócio como um ambiente que centraliza sua comunicação e produção. </p>
-                    <div class="learn-more-btn-section">
+                    <div class="col-12 col-md-12 d-flex float-right learn-more-btn-section">
                         <a class="learn-more-btn" href="#ler">Ler Mais</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="container strategy-container">
-        <div class="col-lg-12">
-            <div class="row m-5">
-                <div class="col-lg-3 col-md-6">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="strategy-card-icon-section">
                         <div class="strategy-card">
                             <img src="../vitor/imagens/strategy-1.png" class="img-fluid" alt="">
                             <h2>Comunicação Fácil e Eficiente</h2>
-                            <!--  <p>We'll work with you to develop the right strategy</p> -->
+                            <!--<p>We'll work with you to develop the right strategy</p>-->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="strategy-card-icon-section">
                         <div class="strategy-card">
                             <img src="../vitor/imagens/strategy-2.png" class="img-fluid" alt="">
@@ -90,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="strategy-card-icon-section">
                         <div class="strategy-card">
                             <img src="../vitor/imagens/strategy-3.png" class="img-fluid" alt="">
@@ -99,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="strategy-card-icon-section">
                         <div class="strategy-card">
                             <img src="../vitor/imagens/strategy-4.png" class="img-fluid" alt="">
@@ -113,31 +141,34 @@
     </div>
     <div class="container" id="ler">
         <div class="col-lg-12">
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-xl-left text-center">
                     <p class="header-subtitle">Módulos e Ferramentas</p>
                     <h2 class="header-title">Dicas que valem ouro</h2>
-                    <p class="services-text">Saiba como alguns de nossas módulos podem contribuir para suas atividades
+                    <p class="services-text">Saiba como alguns de nossas módulos podem contribuir para suas
+                        atividades
                         de home-office tornando o ambiente muito mais organizado e produtivo.
                     </p>
                     <img src="../vitor/imagens/services-header.png" width="100%" alt="services-header">
                 </div>
-                <div class="col-lg-6">
-                    <div class="services-accordion" onclick="this.blur();">
-                        <button class="accordion">Agendas</button>
+                <div class="col-lg-6 pt-5">
+                    <div class="services-accordion">
+                        <div class="accordion" data-toggle="collapse">Agendas</div>
                         <div class="panel">
-                            <p>Quem possui reuniões externas ou internas ainda que sejam remotas demandam organização e
+                            <p>Quem possui reuniões externas ou internas ainda que sejam remotas demandam
+                                organização e
                                 detalhamento. Nosso módulo permite criar reuniões com assuntos de pauta permitindo
                                 organização e também consultar a disponibilidade de cada um.</p>
                         </div>
-                        <button class="accordion">Tarefas</button>
+                        <div class="accordion" data-toggle="collapse">Tarefas</div>
                         <div class="panel">
                             <p>Todos realizamos atividades diariamente mas em home-office saber o que cada um faz se
                                 torna
-                                mais difícil. Usando o módulo de tarefas, todo colaborador e seu time podem organizar,
+                                mais difícil. Usando o módulo de tarefas, todo colaborador e seu time podem
+                                organizar,
                                 especificar e distribuir melhor suas atividades</p>
                         </div>
-                        <button class="accordion">Requisições</button>
+                        <div class="accordion">Requisições</div>
                         <div class="panel">
                             <p>Processos são um conjunto de fluxos definidos e todo departamento tem necessidade de
                                 controlar. Desde coisas simples como Solicitação de Férias até processo internos da
@@ -145,15 +176,18 @@
                                 Requisições te ajuda a organizar isto com etapas e responsáveis.
                                 .</p>
                         </div>
-                        <button class="accordion">Timeline</button>
+                        <div class="accordion">Timeline</div>
                         <div class="panel">
-                            <p>Aqui é onde você ganha o engajamento da empresa! Usar a timeline para gerar conteúdos de
-                                endomarketing e aproximar quem está mais distante seja em outro departamento ou mesmo em
+                            <p>Aqui é onde você ganha o engajamento da empresa! Usar a timeline para gerar conteúdos
+                                de
+                                endomarketing e aproximar quem está mais distante seja em outro departamento ou
+                                mesmo em
                                 home-office é fundamental!</p>
                         </div>
-                        <button class="accordion">Chat, Comunicado Interno, Avisos</button>
+                        <div class="accordion" aria-expanded="false">Chat, Comunicado Interno, Avisos</div>
                         <div class="panel">
-                            <p>A comunicação centralizada é primordial para o ambiente corporativo uma vez ninguém quer
+                            <p>A comunicação centralizada é primordial para o ambiente corporativo uma vez ninguém
+                                quer
                                 que
                                 algumas discussões ou assuntos sejam tratados de forma desorganizada em grupos de
                                 WhatsApp
@@ -166,12 +200,12 @@
     </div>
     <div class="container">
         <div class="col-lg-12">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <img src="../vitor/imagens/services-sales-header.png" width="100%" alt="services-sale">
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-lg-6 text-lg-left text-center pt-5">
                     <p class="header-subtitle">Our services</p>
                     <h2 class="header-title">Sales Growth</h2>
                     <p class="services-text">You can talk about your secondary services here, or maybe promote your
@@ -192,55 +226,66 @@
                     here,
                     bold and beautifully.</p>
             </div>
-            <div class="pricing-plan-cards-section">
-                <div class="col-xl-4 col-lg-4 col-md-4 pricing-card-section">
-                    <div class="pricing-card">
-                        <p class="pricing-rate">$199</p>
-                        <p class="pricing-period">Basic</p>
-                        <p class="pricing-text">Starter plan with all the basics included</p>
-                        <div class="pricing-all-plan-features-section basic-plan-features-section">
-                            <ul>
-                                <li>Core Business System</li>
-                                <li>Team Management</li>
-                                <li>Dual Infrastructure</li>
-                                <li>Customized Features</li>
-                            </ul>
-                        </div>
-                        <a class="enquire" href="#contact">Enquire</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 pricing-card-section">
-                    <div class="pricing-card featured">
-                        <p class="pricing-rate">$499</p>
 
-                        <p class="pricing-period">Growth</p>
-                        <p class="pricing-text">The sensible option for growing companies</p>
-                        <div class="pricing-all-plan-features-section medium-plan-features-section">
-                            <ul>
-                                <li>Core Business System</li>
-                                <li>Team Management</li>
-                                <li>Dual Infrastructure</li>
-                                <li>Customized Features</li>
-                            </ul>
+            <div class="pricing-plan-cards-section">
+                <div class="row justify-content-center">
+                    <!-- Card 1-->
+                    <div class="col-12 col-lg-4 col-md-8 pricing-card-section">
+                        <div class="pricing-card">
+                            <p class="pricing-rate">$199</p>
+                            <p class="pricing-period">Basic</p>
+                            <p class="pricing-text">Starter plan with all the basics included</p>
+                            <div class="pricing-all-plan-features-section basic-plan-features-section">
+                                <ul>
+                                    <li>Core Business System</li>
+                                    <li>Team Management</li>
+                                    <li>Dual Infrastructure</li>
+                                    <li>Customized Features</li>
+                                </ul>
+                            </div>
+                            <a class="enquire" href="#contact">Enquire</a>
                         </div>
-                        <a class="enquire" href="#contact">Enquire</a>
                     </div>
-                </div>
-                <div class="col-lg-4 pricing-card-section">
-                    <div class="pricing-card">
-                        <p class="pricing-rate">$1299</p>
-                        <p class="pricing-period">Corporate</p>
-                        <p class="pricing-text">Everything a global company needs</p>
-                        <div class="pricing-all-plan-features-section advance-plan-features-section">
-                            <ul>
-                                <li>Core Business System</li>
-                                <li>Team Management</li>
-                                <li>Dual Infrastructure</li>
-                                <li>Customized Features</li>
-                            </ul>
+                    <!-- end card 1-->
+
+                    <!-- card 2  -->
+                    <div class="col-12 col-lg-4 col-md-8 col-md-none pricing-card-section my-1">
+                        <div class="pricing-card featured">
+                            <p class="pricing-rate">$499</p>
+
+                            <p class="pricing-period">Growth</p>
+                            <p class="pricing-text">The sensible option for growing companies</p>
+                            <div class="pricing-all-plan-features-section medium-plan-features-section">
+                                <ul>
+                                    <li>Core Business System</li>
+                                    <li>Team Management</li>
+                                    <li>Dual Infrastructure</li>
+                                    <li>Customized Features</li>
+                                </ul>
+                            </div>
+                            <a class="enquire" href="#contact">Enquire</a>
                         </div>
-                        <a class="enquire" href="#contact">Enquire</a>
                     </div>
+                    <!-- end card 2-->
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-lg-4 col-md-8 pricing-card-section">
+                        <div class="pricing-card">
+                            <p class="pricing-rate">$1299</p>
+                            <p class="pricing-period">Corporate</p>
+                            <p class="pricing-text">Everything a global company needs</p>
+                            <div class="pricing-all-plan-features-section advance-plan-features-section">
+                                <ul>
+                                    <li>Core Business System</li>
+                                    <li>Team Management</li>
+                                    <li>Dual Infrastructure</li>
+                                    <li>Customized Features</li>
+                                </ul>
+                            </div>
+                            <a class="enquire" href="#contact">Enquire</a>
+                        </div>
+                    </div>
+                    <!-- end card 3 -->
                 </div>
             </div>
         </div>
@@ -263,60 +308,60 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-sm-3">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-3 col-8 col">
                                     <center><img class="d-block" src="../vitor/imagens/caro1.png" width="70%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro2.png" width="100%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro3.png" width="100%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro4.png" width="70%" alt="">
                                     </center>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-3">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-3 col-8 col">
                                     <center><img class="d-block" src="../vitor/imagens/caro1.png" width="70%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro2.png" width="100%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro3.png" width="100%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro4.png" width="70%" alt="">
                                     </center>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-3">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-3 col-8 col">
                                     <center><img class="d-block" src="../vitor/imagens/caro1.png" width="70%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro2.png" width="100%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro3.png" width="100%" alt="">
                                     </center>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 col-8">
                                     <center><img class="d-block" src="../vitor/imagens/caro4.png" width="70%" alt="">
                                     </center>
                                 </div>
@@ -328,7 +373,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="col-lg-12">
+        <div class="col-xl-12 col-lg-12">
             <div class="clients-title-section">
                 <p class="clients-subtitle">
                     Recent updates
@@ -336,20 +381,25 @@
                 <h2 class="clients-title">
                     Featured Stories
                 </h2>
-                <div class="row">
-                    <div class="col-lg-4 col-12  card-container">
+
+                <div class="row justify-content-center">
+
+                    <!-- Card 1-->
+                    <div class="col-lg-4 col-md-8 col-8 w-100 card-container pt-1">
                         <div class="pricing-card">
-                            <img src="../vitor/imagens/c1.png" width="100%" alt="">
+                            <img src="../vitor/imagens/c1.png" alt="">
                             <h3 class="blog-post-title">Remote Working</h3>
                             <p class="blog-post-text">Making it easier to connect with every client worldwide
                             </p>
                             <a class="blog-post-link" href="#news">Read More</a>
                         </div>
                     </div>
+                    <!-- End Card 1-->
 
-                    <div class="col-lg-4 col-12 card-container">
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-8 col-12 w-100 card-container pt-1">
                         <div class="pricing-card middle">
-                            <img src="../vitor/imagens/c2.png" width="100%" alt="">
+                            <img src="../vitor/imagens/c2.png" alt="">
                             <h3 class="blog-post-title">Google Rankings</h3>
                             <h4 class="blog-post-subtitle">Keywords</h4>
                             <p class="blog-post-text mb-4">We've ranked number one on Google for multiple
@@ -358,46 +408,53 @@
                             <a class="enquire" href="#news">Read More</a>
                         </div>
                     </div>
+                    <!-- End card 2 -->
 
-                    <div class="col-lg-4 col-12 card-container">
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-8 col-12 w-100 card-container pt-1">
                         <div class="pricing-card">
-                            <img src="../vitor/imagens/c3.png" width="80%" alt="">
+                            <img src="../vitor/imagens/c3.png" alt="">
                             <h3 class="blog-post-title">Communication</h3>
                             <p class="blog-post-text">We've made our client support services easy to access</p>
                             <a class="blog-post-link" href="#news">Read More</a>
                         </div>
                     </div>
+                    <!-- End Card 3 -->
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container" id="contato">
-        <div class="col-lg-12 p-5">
-            <div class="row">
-                <div class="col-md-6 p-3">
+        <div class="col-lg-12">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-6 text-lg-left text-md-center text-center">
                     <p class="contact-subtitle">Entre em contato</p>
                     <h2 class="contact-title">Dúvidas?<br>Nós podemos lhe ajudar</h2>
                     <p class="contact-text">Nosso time de vendas poderá responder suas dúvidas e até mesmo
                         marcar uma
                         apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.</p>
-                    <a class="learn-more-btn" href="#ler">Solicite uma apresentação</a>
+                    <div class="col-12 col-md-12">
+                        <a class="learn-more-btn" href="#ler">Solicite uma apresentação</a>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="../vitor/imagens/send1.png" width="100%" alt="">
+                <div class="col-md-12 col-12 col-lg-6 col-xl-6 pt-4">
+                    <img src="../vitor/imagens/send1.png" class="img-fluid" width="100%" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <img src="./imagens/bgbar.png" width="100%" style="padding-top: 11px;" alt="">
+    <div class="">
+        <img src="./imagens/bgbar.png" class="img-f" alt="">
+    </div>
     <!-- Footer -->
     <footer class="page-footer font-small indigo">
-        <div class="container text-center text-md-left ">
+        <div class="container">
             <div class="row">
-                <div class="col-md-3 mx-auto text-sm-left">
+                <div class="col-md-3 col-sm-6 mx-auto text-sm-left text-left">
                     <ul class="columns list-unstyled letras">
                         <li>
-                            <a href="#!">Starter</a>
+                            <a href="#">Starter</a>
                         </li>
                         <li>
                             <a href="#!">Experimente, é gratis</a>
@@ -409,13 +466,13 @@
                             <a href="#!">Treinamentos ao vivo</a>
                         </li>
                     </ul>
-                    <div class="position-absolute nodisplay-md nodisplay-xs">
+                    <div class="nodisplay-sm nodisplay-md nodisplay-lg padding-top">
                         <img src="../vitor/imagens/vivfoot.png" width="70%" alt="">
                     </div>
-                    
+
                 </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-3 mx-auto">
+                <hr class="clearfix w-100 d-md-none d-none">
+                <div class="col-md-3 col-sm-6 mx-auto text-sm-left text-left">
                     <ul class="columns list-unstyled letras">
                         <li>
                             <a href="#!">Enterprise</a>
@@ -440,8 +497,8 @@
                         </li>
                     </ul>
                 </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-3 mx-auto">
+                <hr class="clearfix w-100 d-md-none d-none">
+                <div class="col-md-3 mx-auto text-sm-left text-left">
                     <ul class="columns list-unstyled letras">
                         <li>
                             <a href="#!">Preços</a>
@@ -463,54 +520,54 @@
                         </li>
                     </ul>
                 </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-3 mx-auto">
+                <hr class="clearfix w-100 d-md-none d-none">
+                <div class="col-md-3 mx-auto text-center padding-top position-relative">
                     <p class="redes">
                         Acompanhe o vivaintra<br>
                         <span>nas redes sociais</span>
                     </p>
                     <!-- icons sociais -->
-                    <div class="redez ml-5">
-                        <img src="../vitor/imagens/facebook.png" alt="">
-                        <img src="../vitor/imagens/youtube.png" alt="">
+                    <div class="col-12">
+                        <ol class="list-unstyled noppading-sm">
+                            <a href="http://https://www.facebook.com/vivaintra"><img src="../vitor/imagens/facebook.png"
+                                    alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCCZ9_sCKPTM_aCnXNgzU7QA"><img
+                                    src="../vitor/imagens/youtube.png" alt=""></a>
+                        </ol>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bar-bottom">
-            <div class="container pb-4">
-                <div class="col-lg-12">
-                    <div class="row up">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="row down">
-                                    <ol class="columns list-unstyled letras">
-                                        <a href="https://status.vivaintra.com" target="_blank"><span
-                                                class="green-dot">Status do sistema</span></a>
-                                        <a href="#!">Segurança</a>
-                                        <a href="#!">Termos de uso</a>
-                                        <a href="#!">Privacidade</a>
-                                        <a href="#!">Sobre nós</a>
-                                        <a href="#!">Contato</a>
-                                    </ol>     
-                            </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="col mx-auto text-center">
-                                    <img src="../vitor/imagens/vivafoot.png" class="img-responsive" width="50%"
-                                        alt="viva">
-                                </div>
-                            </div>
+        <div class="bar-bottom"></div>
+        <div class="container pb-4">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-xl-8 mx-auto col-md-12">
+                        <div class="row">
+                            <ol class="columns list-unstyled letras">
+                                <a href="https://status.vivaintra.com" target="_blank"><span class="green-dot">Status do
+                                        sistema</span></a>
+                                <a href="#!">Segurança</a>
+                                <a href="#!">Termos de uso</a>
+                                <a href="#!">Privacidade</a>
+                                <a href="#!">Sobre nós</a>
+                                <a href="#!">Contato</a>
+                            </ol>
                         </div>
                     </div>
+                    <div class="col-xl-4 mx-auto">
+                        <img src="../vitor/imagens/vivafoot.png" class="img-fluid" width="50%" alt="viva">
+                    </div>
                 </div>
+            </div>
+        </div>
     </footer>
-    </div>
+
     <script>
-        var acc = document.getElementsByClassName("accordion");
+        // script para o accordion 
+
+       var acc = document.getElementsByClassName("accordion");
         var i;
-
-
-
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
                 this.classList.toggle("active");
@@ -521,7 +578,7 @@
                     panel.style.display = "block";
                 }
             });
-        }
+        } 
     </script>
 </body>
 
