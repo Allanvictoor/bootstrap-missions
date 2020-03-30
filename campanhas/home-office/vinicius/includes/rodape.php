@@ -1,7 +1,7 @@
 <section>
     <div class="bgbar"></div>
     <footer class="footer-section">
-        <div class="container-fluid border-bottom" style="height: 213px">
+        <div class="container-fluid border-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
@@ -95,35 +95,35 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="height: 85px">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 mt-auto">
+                    <div class="col-lg-10 mt-4 mb-4">
                         <div class="row">
-                            <div class="col-md-2 border-right-footer">
+                            <div class="col-lg-2 border-right-footer">
                                 <div class="row">
-                                    <div class="bolinha"></div>
-                                    <span class="text-light">Status do sistema</span>
+                                    <div class="ml-auto border-radius-footer"></div>
+                                    <span class="mr-auto text-light">Status do sistema</span>
                                 </div>
                             </div>
-                            <div class="col-md-2 border-right-footer">
+                            <div class="col-lg-2 border-right-footer">
                                 <span class="d-flex justify-content-center text-light">Segurança</span>
                             </div>
-                            <div class="col-md-2 border-right-footer">
+                            <div class="col-lg-2 border-right-footer">
                                 <span class="d-flex justify-content-center text-light">Termos de Uso</span>
                             </div>
-                            <div class="col-md-2 border-right-footer">
+                            <div class="col-lg-2 border-right-footer">
                                 <span class="d-flex justify-content-center text-light">Privacidade</span>
                             </div>
-                            <div class="col-md-2 border-right-footer">
+                            <div class="col-lg-2 border-right-footer">
                                 <span class="d-flex justify-content-center text-light">Sobre Nós</span>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-lg-2">
                                 <span class="d-flex justify-content-center text-light">Contato</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-4">
+                    <div class="col-lg-2 mt-4 mb-4">
                         <div class="row">
                             <div class="m-auto">
                                 <img src="https://www.vivaintra.com/media/images/v2/vivaweb.png" alt="">
@@ -132,9 +132,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-section-bg-graphics">
-            <img src="https://www.codefest.co.uk/demo/codelander/assets/images/footer-section-bg.png" alt="">
         </div>
     </footer>
 </section>
