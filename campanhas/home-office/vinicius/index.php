@@ -488,9 +488,9 @@
                                 <div class="col-lg-6 col-sm-12">
                                     <div class="row">
                                         <div class="services-title-section w-100 section-text-top-contact">
-                                            <p class="services-subtitle m-auto"><b>Entre em contato</b></p>
-                                            <h2 class="services-title m-auto"><b>Dúvidas?</b></h2>
-                                            <h2 class="services-title m-auto"><b>Nós podemos lhe ajudar</b></h2>
+                                            <p class="services-subtitle"><b>Entre em contato</b></p>
+                                            <h2 class="services-title"><b>Dúvidas?</b></h2>
+                                            <h2 class="services-title"><b>Nós podemos lhe ajudar</b></h2>
                                             <p class="services-text">Nosso time de vendas poderá responder suas dúvidas
                                                 e até
                                                 mesmo marcar uma apresentação sem compromisso para lhe explicar as
