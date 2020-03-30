@@ -1,68 +1,34 @@
-.logo-image {
-    width: 192px;
-    padding-top: 20px;
-}
 
-img {
-    vertical-align: middle;
-}
-
-.height-full {
-    height: 100%;
-}
-
-.logo {
-    height: 100%;
-    padding-right: 20px;
-}
-
-header {
-    background: #fcfafb;
-    height: 100px;
-    border-bottom: 3px solid #00649f;
-}
-
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right !important;
-}
-
-#menu ul {
-    padding: 0px;
-    margin: 0px;
-
-    list-style: none;
-}
-
-#menu ul li {
-    display: inline;
-}
-
-
-#menu ul li a {
-    padding: 35px 25px;
-    display: inline-block;
-    background-color: white;
-    color: #00639f;
-    text-decoration: none;
-    height: 100%;
+.nav-link{
+    color: #337ab6;
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 18px;
-
+    font-weight: bold;
+    font-size: larger;
+   
 }
 
-#change:hover {
-    height: 100%;
-    background-color: #00659f1e;
-
+.dropdown-menu {
+    right: 0;
+    left: initial;
 }
 
 
-/* termino estilizacao menu header */
+
+
+.btn-blue {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.bor {
+    border-bottom: 1px solid !important; 
+    background-color: #337ab6;
+
+    
+}
+
+/* término estilização menu header */
 
 .row {
     padding-top: 35px;
@@ -76,6 +42,9 @@ header {
 
 /* fim de cor de todo body */
 
+.first{
+    width: 100%;
+}
 
 
 /* --- formatacao de todos textos ---*/
@@ -85,7 +54,7 @@ header {
 }
 
 .header-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 55px;
     line-height: 1;
@@ -93,7 +62,7 @@ header {
 }
 
 .header-subtitle {
-
+    font-family: 'poppins';
     font-size: 27px;
     font-weight: 400;
     line-height: 1.5;
@@ -101,7 +70,7 @@ header {
 }
 
 .services-text {
-    font-family: Poppins;
+    font-family: 'poppins';
     font-size: 18px;
     font-weight: 300;
     line-height: 1.5;
@@ -127,6 +96,7 @@ header {
 
 
 .strategy-card {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -145,10 +115,10 @@ header {
 }
 
 .strategy-card h2 {
+    font-family: 'Montserrat', sans-serif;
     color: #303669;
-    font-family: Montserrat;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 5;
 }
 
@@ -157,7 +127,7 @@ header {
     font-size: 16px;
     line-height: 1.5;
     color: #000;
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-weight: 300;
     max-width: 300px;
 }
@@ -167,6 +137,16 @@ header {
 /*--- end cards ------*/
 
 /*----- BOTOES  -------*/
+
+
+
+
+.learn-more-btn-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+}
 
 .learn-more-btn {
     background-color: #ff3e81;
@@ -213,9 +193,11 @@ header {
 
 
 
+
 /*-----  pricing e pricing title -----*/
 
 .pricing-title {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
@@ -225,7 +207,7 @@ header {
 }
 
 .pricing-title h2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 800;
     font-size: 45px;
     line-height: 1;
@@ -271,7 +253,7 @@ header {
 .pricing-rate {
     color: #303669;
     font-weight: 800;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 59px;
     line-height: 1;
 }
@@ -419,7 +401,7 @@ header {
 }
 
 .clients-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 45px;
     line-height: 1;
@@ -445,11 +427,14 @@ header {
     align-items: center;
     margin-top: 20px;
     width: 100%;
+    
+    
 
 }
 
 .accordion.active:after {
     content: "\2212";
+    
 }
 
 
@@ -458,10 +443,11 @@ header {
 .panel {
     padding: 0 15px;
     display: none;
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
     font-family: poppins;
     padding-top: 20px;
+    outline: none;
 
 }
 
@@ -483,8 +469,13 @@ header {
 
 }
 
+.active{
+    outline: none;
+}
+
 .services-accordion .accordion::after {
     color: #fff !important;
+    outline: none;
 
 
 }
@@ -506,7 +497,7 @@ header {
 .blog-post-title {
     font-size: 20px;
     color: #303669;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 2;
 
@@ -521,6 +512,17 @@ header {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    
+}
+
+.blog-post-link:hover{
+    color: rgb(250, 73, 73);
+    text-decoration: none;
+}
+
+.blog-post-text a:link{
+
+    text-decoration: none;
 }
 
 
@@ -531,6 +533,7 @@ header {
     font-weight: 700;
     line-height: 1;
     margin-top: 10px;
+    
 
 
 }
@@ -539,7 +542,7 @@ header {
 .blog-post-subtitle {
     font-size: 18px;
     color: #ccc;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1;
     margin-bottom: 10px;
 }
@@ -557,7 +560,7 @@ header {
 
 
 .contact-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 45px;
     line-height: 1;
@@ -583,28 +586,36 @@ header {
 
 .page-footer {
     background-color: #475156;
-    padding-top: 0px;
+
 }
 
 .columns a {
-    color: #ddd;
+    color: #aaa;
     padding-left: 10px;
     border-left: 2px dotted #222;
+    
 }
 
-.hr {
-    color: white;
-    background-color: #fff;
-    border-top: 1px solid;
+.columns a:link {
+    text-decoration: none;
 }
 
-.letras {
+.columns a:hover{
+    color:white
 
-    font-family: 'Open Sans', sans-serif !important;
 }
 
+.bar-bottom {
+    border-top: 1px solid #6c757c;
+}
+
+/* --- fim footer ---*/
+
+
+
+/* redes sociais */
 .redes {
-
+    font-family: 'Open Sans', sans-serif !important;
     font-size: 20px;
     line-height: 20px;
     color: #829199;
@@ -616,6 +627,16 @@ header {
 }
 
 
+.img-f {
+    max-width: 100%;
+    height: auto;
+    padding-top: 19px;
+}
+
+
+
+
+/* status do sistema: verde  */
 .green-dot {
     position: relative;
     padding-left: 20px;
@@ -625,7 +646,7 @@ header {
     content: '\2022';
     font-size: 50px;
     position: absolute;
-    top: -45px;
+    top: -32px;
     left: 0;
     color: #047C05;
     padding-bottom: 0px;
