@@ -2,182 +2,178 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Thasadith&display=swap" rel="stylesheet"><body>
-<!--Cabeçalho--->
+    <link href="https://fonts.googleapis.com/css?family=Thasadith&display=swap" rel="stylesheet">
+
+    <title>Vivaintra Home Office</title>
+</head>
+
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed">
+    <a class="navbar-brand"><img src="images/logo.png" class="imagem-logo"></a>
+    <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="nav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold px-3" style="color: #337ab6; font-size: large" href="#">Starter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold px-3" style="color: #337ab6; font-size: large" href="#">Enterprise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold px-3" style="color: #337ab6; font-size: large" href="#">Preços</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold px-3" style="color: #337ab6; font-size: large" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold px-3" style="color: #337ab6; font-size: large" href="#">Parceiros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold px-3" style="color: #337ab6; font-size: large" href="#">Contato</a>
+            </li>
+        </ul>
+        <form class="form-inline ml-3">
+            <div class="form-group justify-content-end w-100">
+                <button class="btn btn-primary small" style="background-color:  #337ab6" type="submit">Login</button>
+                <div class="btn-group">
+                    <button class="btn-sm dropdown-toggle border border-dark ml-2" style="background-color: #fcfafb; height: 40px" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/brasil.svg" style=" width: 2rem" alt="">
+                        |
+                    </button>
+                    <ul class="dropdown-menu" role="menu" id="box-language">
+                        <li>Português</li>
+                        <li>Inglês</li>
+                        <li>Espanhol</li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row p-0">
+        <table class="linha-separa-nav">
+            <tr><td></td></tr>
+        </table>
+    </div>
+</div>
+
 <div class="container">
+    <!--    primeiro banner-->
     <div class="row">
-        <nav class="navbar navbar-expand-lg col-sm-12">
-            <a class="navbar-brand"><img src="images/logo.png" class="imagem-logo"></a>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav w-100">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Starter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Enterprise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Preços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Parceiros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
-                <form class="form-inline d-flex w-100">
-                    <div class="form-group justify-content-end w-100">
-                        <button class="btn btn-primary small botao-login" type="submit">Login</button>
-                        <div class="btn-group">
-                            <button class="btn-sm dropdown-toggle border border-dark botao-idioma" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="imagem-idioma" src="images/brasil.svg" alt="">
-                                |
-                            </button>
-                            <ul class="dropdown-menu" role="menu" id="box-language">
-                                <li>Português</li>
-                                <li>Inglês</li>
-                                <li>Espanhol</li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
+        <div class="col-lg-6 col-md-6">
+            <img src="images/imagem-um.png" class="imagem-um">
+        </div>
+        <div class="col-lg-6 col-md-6 bloco-texto-um">
+            <p class="texto-inicial-sub-title">Equipes em home-office?</p>
+            <p class="texto-inicial-title">Organize e</p>
+            <p class="texto-inicial-title-dois">potencialize seus times.</p>
+            <p class="texto-inicial-paragarafo">Com a adoção de home-office nunca uma intranet foi tão importante e estratégica para seu negócio como um ambiente que centraliza sua comunicação e produção.</p>
+            <button type="button" class="btn btn-primary btn-sm view">Quero conhecer as vantagens</button>
+        </div>
+    </div>
+    <!--    lista de vantagens-->
+    <div class="row banner">
+        <div class="col-md-3 col-strategy ">
+            <img src="images/strategy-1.png" class="imagem-strategy" alt=" ">
+            <p class="texto-strategy">Comunicação Fácil e Eficiente</p>
+            <p class="texto-strategy-subtitle">We'll work with you to develop</p>
+            <p class="texto-strategy-subtitle">the right strategy</p>
+        </div>
+        <div class="col-md-3  col-strategy">
+            <img src="images/strategy-2.png" class="imagem-strategy-dois" alt=" ">
+            <p class="texto-strategy">Controle de Atividades</p>
+            <p class="texto-strategy-subtitle">Work synchronization and </p>
+            <p class="texto-strategy-subtitle">automated services</p>
+        </div>
+        <div class="col-md-3  col-strategy">
+            <img src="images/strategy-3.png" class="imagem-strategy" alt=" ">
+            <p class="texto-strategy">Fluxos de Processos e Equipes</p>
+            <p class="texto-strategy-subtitle">Dedicated servers to deploy</p>
+            <p class="texto-strategy-subtitle">and test applications</p>
+        </div>
+        <div class="col-md-3  col-strategy">
+            <img src="images/strategy-4.png" class="imagem-strategy-dois" alt=" ">
+            <p class="texto-strategy">Capacitação e Integração</p>
+            <p class="texto-strategy-subtitle">Stay informed on all our tools</p>
+            <p class="texto-strategy-subtitle">and technologies</p>
+        </div>
+    </div>
+    <!--    segundo banner - botoes collapse-->
+    <div class="row banner">
+        <div class="col-lg-6 col-md-6">
+            <p class="texto-um-sub-title">Módulos e Ferramentas</p>
+            <p class="texto-um-title">Dicas que valem ouro</p>
+            <p class="texto-um-paragrafo">Saiba como alguns de nossas módulos podem contribuir para suas atividades de home-office tornando o ambiente muito mais organizado e produtivo.</p>
+            <img src="images/imagem-dois.png">
+        </div>
+        <div class="col-lg-6 col-md-6 grupo-botao" id="collapse-botao">
+            <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-um" aria-expanded="false" aria-controls="collapseBotao">Agenda</button>
+            <div class="collapse" id="collapse-um" data-parent="#collapse-botao">
+                <div class="card card-body">
+                    Quem possui reuniões externas ou internas ainda que sejam remotas demandam organização e detalhamento.
+                    Nosso módulo permite criar reuniões com assuntos de pauta permitindo organização e também consultar a disponibilidade de cada um.
+                </div>
             </div>
-        </nav>
+            <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-dois" aria-expanded="false" aria-controls="collapseBotao">Tarefas</button>
+            <div class="collapse" id="collapse-dois" data-parent="#collapse-botao">
+                <div class="card card-body">
+                    Todos realizamos atividades diariamente mas em home-office saber o que cada um faz se torna mais difícil.
+                    Usando o módulo de tarefas, todo colaborador e seu time podem organizar, especificar e distribuir melhor suas atividades.
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-tres" aria-expanded="false" aria-controls="collapseBotao">Requisições</button>
+            <div class="collapse" id="collapse-tres" data-parent="#collapse-botao">
+                <div class="card card-body">
+                    Processos são um conjunto de fluxos definidos e todo departamento tem necessidade de controlar. Desde coisas simples como Solicitação de Férias até processo internos da empresa.
+                    Requisições te ajuda a organizar isto com etapas e responsáveis.
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-quatro" aria-expanded="false" aria-controls="collapseBotao">Timeline</button>
+            <div class="collapse" id="collapse-quatro" data-parent="#collapse-botao">
+                <div class="card card-body">
+                    Aqui é onde você ganha o engajamento da empresa! Usar a timeline para gerar conteúdos de endomarketing e aproximar quem está mais distante seja em outro departamento ou mesmo em home-office é fundamental!
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-cinco" aria-expanded="false" aria-controls="collapseBotao">Chat - Comunicado Interno - Avisos</button>
+            <div class="collapse" id="collapse-cinco" data-parent="#collapse-botao">
+                <div class="card card-body">
+                    A comunicação centralizada é primordial para o ambiente corporativo uma vez ninguém quer que algumas discussões ou assuntos sejam tratados de forma desorganizada em grupos de WhatsApp ou em emails que se perderão a tantos outros.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--terceiro banner-->
+    <div class="row banner">
+        <div class="col-lg-6 col-md-6">
+            <img src="images/imagem-tres.png">
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <p class="texto-inicial-sub-title texto-banner-tres">Our Services</p>
+            <p class="texto-inicial-title">Sales Growth</p>
+            <p class="texto-inicial-paragarafo">You can't talk about your secondary services here, or maybe promote your excellent customer service approach. Always grab your website visitors attention.</p>
+            <button type="button" class="btn btn-primary btn-sm view">View Pricing</button>
+        </div>
+    </div>
+    <!--    cards um-->
+    <div class="row banner" style="background-color: #cccccc">
+cards
     </div>
 </div>
-<!--linha entre corpo e cabeçalho-->
-<div class="row">
-    <table class="linha-separa-nav" >
-        <tr><td></td></tr>
-    </table>
-</div>
-
-<div class="conteiner">
-<!--    primeiro banner-->
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="images/imagem-um.png" class="imagem-um">
-                </div>
-                <div class="col-sm-6 bloco-texto-um">
-                    <p class="texto-inicial-sub-title">Equipes em home-office?</p>
-                    <p class="texto-inicial-title">Organize e</p>
-                    <p class="texto-inicial-title-dois">potencialize seus times.</p>
-                    <p class="texto-inicial-paragarafo">Com a adoção de home-office nunca uma intranet foi tão importante e estratégica para seu negócio como um ambiente que centraliza sua comunicação e produção.</p>
-                    <button type="button" class="btn btn-primary btn-sm view">Quero conhecer as vantagens</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+<!--    carousel com imagem-->
+<div class="container-fluid imagem-carousel">
     <div class="row banner">
-        <div class="col-sm-12">
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="images/strategy-1.png" class="imagem-strategy" alt=" ">
-                    <p class="texto-strategy">Comunicação Fácil e Eficiente</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="images/strategy-2.png" class="imagem-strategy" alt=" ">
-                    <p class="texto-strategy">Controle de Atividades</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="images/strategy-3.png" class="imagem-strategy" alt=" ">
-                    <p class="texto-strategy">Fluxos de Processos e Equipes</p>
-                </div>
-                <div class="col-sm-3">
-                    <img src="images/strategy-4.png" class="imagem-strategy" alt=" ">
-                    <p class="texto-strategy">Capacitação e Integração</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row banner">
-        <div class="col-sm-12">
-            <div class="row">
-                <div class="col-sm-6">
-                    <p class="texto-um-sub-title">Módulos e Ferramentas</p>
-                    <strong class="texto-um-title">Dicas que valem ouro</strong>
-                    <p class="texto-um">Saiba como alguns de nossas módulos podem contribuir para suas atividades de home-office tornando o ambiente muito mais organizado e produtivo.</p>
-                    <img src="images/imagem-dois.png" class="imagem-dois">
-                </div>
-                <div class="col-sm-6 grupo-botao" id="collapse-botao">
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-um" aria-expanded="false" aria-controls="collapseBotao">Agenda</button>
-                    <div class="collapse" id="collapse-um" data-parent="#collapse-botao">
-                        <div class="card card-body">
-                            Quem possui reuniões externas ou internas ainda que sejam remotas demandam organização e detalhamento.
-                            Nosso módulo permite criar reuniões com assuntos de pauta permitindo organização e também consultar a disponibilidade de cada um.
-
-                        </div>
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-dois" aria-expanded="false" aria-controls="collapseBotao">Tarefas</button>
-                    <div class="collapse" id="collapse-dois" data-parent="#collapse-botao">
-                        <div class="card card-body">
-                            Todos realizamos atividades diariamente mas em home-office saber o que cada um faz se torna mais difícil.
-                            Usando o módulo de tarefas, todo colaborador e seu time podem organizar, especificar e distribuir melhor suas atividades.
-                        </div>
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-tres" aria-expanded="false" aria-controls="collapseBotao">Requisições</button>
-                    <div class="collapse" id="collapse-tres" data-parent="#collapse-botao">
-                        <div class="card card-body">
-                            Processos são um conjunto de fluxos definidos e todo departamento tem necessidade de controlar. Desde coisas simples como Solicitação de Férias até processo internos da empresa.
-                            Requisições te ajuda a organizar isto com etapas e responsáveis.
-                        </div>
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-quatro" aria-expanded="false" aria-controls="collapseBotao">Timeline</button>
-                    <div class="collapse" id="collapse-quatro" data-parent="#collapse-botao">
-                        <div class="card card-body">
-                            Aqui é onde você ganha o engajamento da empresa! Usar a timeline para gerar conteúdos de endomarketing e aproximar quem está mais distante seja em outro departamento ou mesmo em home-office é fundamental!
-                        </div>
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block botao-block" type="button" data-toggle="collapse" data-target="#collapse-cinco" aria-expanded="false" aria-controls="collapseBotao">Chat - Comunicado Interno - Avisos</button>
-                    <div class="collapse" id="collapse-cinco" data-parent="#collapse-botao">
-                        <div class="card card-body">
-                            A comunicação centralizada é primordial para o ambiente corporativo uma vez ninguém quer que algumas discussões ou assuntos sejam tratados de forma desorganizada em grupos de WhatsApp ou em emails que se perderão a tantos outros.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row banner">
-        <div class="col-sm-12">
-            <div class="row">
-                <div class="col-sm-6"><img src="images/imagem-tres.png" class="imagem-tres"></div>
-                <div class="col-sm-6">
-                    <p class="texto-inicial-sub-title">Our Services</p>
-                    <strong class="texto-inicial-title">Sales Growth</strong>
-                    <p class="texto-inicial">You can't talk about your secondary services here, or maybe promote your excellent customer service approach. Always grab your website visitors attention.
-                    </p>
-                    <button type="button" class="btn btn-primary btn-sm view">View Pricing</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row banner">
-        <div class="col-sm-12" style="background-color: #cccccc">
-            cards preços
-        </div>
-    </div>
-    <div class="row banner">
-        <div class="col-sm-12">
+        <div class="col px-0 mb-5 fluid">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -187,26 +183,26 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-sm-3"><center><img class="d-block cliente-um" src="images/cliente-um.png" alt="Primeiro Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-dois" src="images/cliente-dois.png" alt="Primeiro Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-tres" src="images/cliente-tres.png" alt="Primeiro Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-quatro" src="images/cliente-quatro.png" alt="Primeiro Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-um" src="images/cliente-um.png" alt="Primeiro Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-dois" src="images/cliente-dois.png" alt="Primeiro Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-tres" src="images/cliente-tres.png" alt="Primeiro Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-quatro" src="images/cliente-quatro.png" alt="Primeiro Slide"></center></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-sm-3"><center><img class="d-block cliente-um" src="images/cliente-um.png" alt="Segundo Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-dois" src="images/cliente-dois.png" alt="Segundo Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-tres" src="images/cliente-tres.png" alt="Segundo Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-quatro" src="images/cliente-quatro.png" alt="Segundo Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-um" src="images/cliente-um.png" alt="Segundo Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-dois" src="images/cliente-dois.png" alt="Segundo Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-tres" src="images/cliente-tres.png" alt="Segundo Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-quatro" src="images/cliente-quatro.png" alt="Segundo Slide"></center></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-sm-3"><center><img class="d-block cliente-um" src="images/cliente-um.png" alt="Terceiro Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-dois" src="images/cliente-dois.png" alt="Terceiro Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-tres" src="images/cliente-tres.png" alt="Terceiro Slide"></center></div>
-                            <div class="col-sm-3"><center><img class="d-block cliente-quatro" src="images/cliente-quatro.png" alt="Terceiro Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-um" src="images/cliente-um.png" alt="Terceiro Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-dois" src="images/cliente-dois.png" alt="Terceiro Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-tres" src="images/cliente-tres.png" alt="Terceiro Slide"></center></div>
+                            <div class="col-md-3"><center><img class="d-block cliente-quatro" src="images/cliente-quatro.png" alt="Terceiro Slide"></center></div>
                         </div>
                     </div>
                 </div>
@@ -221,40 +217,68 @@
             </div>
         </div>
     </div>
-    <div class="row banner">
-        <div class="col-sm-12" style="background-color: #cccccc">
-            cards updates
-        </div>
+
+</div>
+<div class="container">
+    <!--    cards dois-->
+    <div class="row banner" style="background-color: blue">
+cards
     </div>
+    <!--    banner contato-->
     <div class="row banner">
-        <div class="col-sm-12 row-contato">
-            <div class="row">
-                <div class="col-sm-6">
-                    <p class="texto-um-sub-title">Entre em contato</p>
-                    <p class="texto-um-title">Dúvidas?</p>
-                    <p class="texto-um-title"> Nós podemos lhe ajudar</p>
-                    <p class="texto-um-paragrafo">Nosso time de vendas poderá responder suas dúvidas e até mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.
-                    </p>
-                    <button type="button" class="btn btn-primary btn-sm view">Solicite uma apresentação</button>
-                </div>
-                <div class="col-sm-6"><img src="images/imagem-quatro.png" class="imagem-quatro"></div>
-            </div>
+        <div class="col-lg-6 col-md-6">
+            <p class="texto-um-sub-title">Entre em contato</p>
+            <p class="texto-um-title">Dúvidas?</p>
+            <p class="texto-um-title"> Nós podemos lhe ajudar</p>
+            <p class="texto-um-paragrafo">Nosso time de vendas poderá responder suas dúvidas e até mesmo marcar uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.</p>
+            <button type="button" class="btn btn-primary btn-sm view-apresentacao" data-toggle="modal" data-target="#exampleModal">Solicite uma apresentação</button>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <img src="images/imagem-quatro.png" class="imagem-quatro">
         </div>
     </div>
 </div>
-<!--Rodapé-->
-<div class="conteiner-fluid">
-    <div class="row banner">
-        <div class="col-sm-12 row-rodape">
-            <div class="row">
-                <div class="col-sm-12">
-                    <center>textos</center>
-                </div>
+<!--rodapé-->
+<div class="container-fluid footer">
+    <div class="row">
+        rodape
+    </div>
+</div>
+<!--modal formulario-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Faça contato</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <center> Direitos autorais</center>
-                </div>
+            <div class="modal-body">
+                <label class="texto-form">Nome:</label>
+                <input type="text" class="form-control my-2" name="nome" id="nome">
+                <label class="texto-form">E-mail:</label>
+                <input type="text" class="form-control my-2" name="email" id="email">
+                <label class="texto-form">Nome da Empresa:</label>
+                <input type="text" class="form-control my-2" name="nomeEmpresa" id="nomeEmpresa">
+                <label class="texto-form">Telefone</label>
+                <input type="text" class="form-control my-2" name="Telefone" id="telefone">
+
+                <label for="opcoes" class="texto-form">Como Soube da vivaintra?</label>
+                <select id="opcoes" class="form-control">
+                    <option selected class="text-muted">Selecione</option>
+                    <option class="text-muted">Google</option>
+                    <option class="text-muted">Facebook</option>
+                    <option class="text-muted">Revistas</option>
+                    <option class="text-muted">E-mail</option>
+                    <option class="text-muted">Outros</option>
+                </select>
+                <label class="texto-form">Mensagem</label>
+                <textarea  class="form-control " id="mensagem" style="resize: none"  rows="3"  required></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

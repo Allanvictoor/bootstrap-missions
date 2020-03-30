@@ -62,12 +62,20 @@ header {
 }
 
 
-
 /* termino estilizacao menu header */
 
 .row {
     padding-top: 35px;
 }
+
+
+/* cor de todo body */
+.colorb {
+    background-color: #f3f3f3;
+}
+
+/* fim de cor de todo body */
+
 
 
 /* --- formatacao de todos textos ---*/
@@ -158,32 +166,54 @@ header {
 
 /*--- end cards ------*/
 
-/*----- collapse -------*/
-
-.btn-invert {
-    background-color: #ff3e81 !important;
-}
-
+/*----- BOTOES  -------*/
 
 .learn-more-btn {
+    background-color: #ff3e81;
     font-size: 18px;
     font-family: Poppins;
     font-weight: 600;
     color: #fff;
     padding: 12px 40px !important;
     border-radius: 100px;
+}
+
+.learn-more-btn:hover {
+
+    background-color: #3a88ec !important;
+    color: #fff;
     text-decoration: none;
+
 }
 
-.learn-more-btn-section {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 20px;
+.enquire {
+
+    background-color: #3a88ec;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 40px !important;
+    border-radius: 100px;
+
+}
+
+.enquire:hover {
+
+    background-color: #ff3e81 !important;
+    color: #fff;
+    text-decoration: none;
+
+
 }
 
 
-/*  pricing e pricing title */
+/* ------ END BOTOES -------- */
+
+
+
+
+/*-----  pricing e pricing title -----*/
 
 .pricing-title {
     text-align: center;
@@ -213,6 +243,11 @@ header {
 
 }
 
+.middle {
+
+    padding-top: 10px;
+}
+
 .pricing-card:hover {
     box-shadow: 0 4px 47px rgba(0, 0, 0, .15);
     cursor: pointer;
@@ -223,7 +258,7 @@ header {
 
 
 .pricing-card {
-    background-color: rgb(245, 245, 245);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,15 +298,7 @@ header {
     margin: 15px 0;
 }
 
-.learn-more-btn {
-    background-color: #3a88ec;
-    font-size: 18px;
-    font-family: Poppins;
-    font-weight: 600;
-    color: #fff;
-    padding: 12px 40px !important;
-    border-radius: 100px;
-}
+
 
 .pricing-plan-cards-section {
     display: flex;
@@ -435,7 +462,7 @@ header {
     overflow: hidden;
     font-family: poppins;
     padding-top: 20px;
-    
+
 }
 
 .panel p {
@@ -482,7 +509,7 @@ header {
     font-family: Montserrat;
     font-weight: 700;
     line-height: 2;
-    
+
 }
 
 .blog-post-text {
@@ -504,8 +531,8 @@ header {
     font-weight: 700;
     line-height: 1;
     margin-top: 10px;
-    
-    
+
+
 }
 
 
@@ -554,8 +581,8 @@ header {
 
 /* ---- Footer ---*/
 
-.page-footer{
-    background-color:#475156;
+.page-footer {
+    background-color: #475156;
     padding-top: 0px;
 }
 
@@ -569,19 +596,37 @@ header {
     color: white;
     background-color: #fff;
     border-top: 1px solid;
-  }
+}
 
-
-  .letras {
+.letras {
 
     font-family: 'Open Sans', sans-serif !important;
-  }
+}
 
-
-  .redes {
+.redes {
 
     font-size: 20px;
     line-height: 20px;
     color: #829199;
 }
-  
+
+.redes span {
+    font-size: 27px;
+    line-height: 35px;
+}
+
+
+.green-dot {
+    position: relative;
+    padding-left: 20px;
+}
+
+.green-dot:before {
+    content: '\2022';
+    font-size: 50px;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    color: #047C05;
+    padding-bottom: 0px;
+}

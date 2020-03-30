@@ -3,10 +3,12 @@
 <html lang="pt-br">
 
 <head>
-    <title>Home-Office</title>
-    <link rel="icon" type="image/png" href="https://www.codefest.co.uk/demo/codelander/assets/images/favicon.png">
+    <title>Vivaintra-Intranet Colaborativa</title>
+    <link rel="icon" type="image/png"  href="https://www.vivaintra.com/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -14,133 +16,104 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-
-
     <link rel="stylesheet" href="fonts/Montserrat/Montserrat-Black.ttf">
     <link rel="stylesheet" href="css/fonts.css">
     <script src="https://kit.fontawesome.com/9c956899f2.js" crossorigin="anonymous"></script>
-
-    <style>
-        .modal-backdrop {
-            z-index: 0;
-            width: auto;
-        }
-    </style>
-
-
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
 
-    <div id="nav" class="col-sm container-fluid p-3" style="background-color: #fcfcfc">
+    <div class="col-sm container-fluid p-3" style="background-color: #fcfcfc">
         <div class="row">
-            <div class="col-sm container" style="background-color: #fcfcfc">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <img class="img-fluid mt-3" src="https://www.vivaintra.com/media/images/v2/logo-2017.png"
-                            alt="">
-                    </div>
-
-                    <nav class="navbar navbar-expand-lg navbar-light mx-auto " style="background-color: #fcfcfc">
-
-
-                        <button class="navbar-toggler " style="text-align: right" type="button" data-toggle="collapse"
+            <div class=" col-sm container mx-auto d-block" style="background-color: #fcfcfc">
+                <div class="menuFixo row">
+                    
+                    <nav class=" navbar navbar-expand-lg navbar-light mx-auto " style="background-color: #fcfcfc">
+                        <a href="#">
+                            <img class="imagemlogo m-2 mx-5" style="width: 10rem" src="imagens/logo-2017.png"
+                            alt="logo-2017">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                             aria-label="Alterna navegação">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse mx-auto" id="navbarNavAltMarkup">
-
+                        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                             <div class="navbar-nav text-center" style="width: auto">
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#home"><strong>Starter</strong></a>
+                                    href="#starter"><strong>Starter</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#servicos"><strong>Enterprise</strong></a>
+                                    href="#enterprise"><strong>Enterprise</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
                                     href="#preco"><strong>Preços</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#clientes"><strong>Blog</strong></a>
+                                    href="#blog"><strong>Blog</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
-                                    href="#noticias"><strong>Parceiros</strong></a>
+                                    href="#parceiros"><strong>Parceiros</strong></a>
                                 <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
                                     href="#contato"><strong>Contato</strong></a>
+                                    <button type="button" id="btn-login" class="btn text-white "
+                                    style=" margin-left: 55px; background-color: #347ab7; height: 40px;">Login</button>
+                                
+                                    <button style="height: 40px;"
+                                        class="btn-sm dropdown-toggle mx-1 border border-dark d-none d-md-block"
+                                        type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img style="width: 2rem" src="imagens/brasil.svg" alt="">
+                                        |
+                                    </button>
                             </div>
 
                         </div>
+
                     </nav>
-
-                    <div class="col-sm-2 ">
-                        <div class="row">
-                            <button type="button" class="btn my-3 text-white d-none d-md-block"
-                                style=" background-color: #347ab7; ">Login</button>
-                            <div class="btn-group pt-2">
-                                <button style="height: 39px;"
-                                    class="btn-sm dropdown-toggle mt-2 m-2 border border-dark d-none d-md-block"
-                                    type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img style="width: 2rem" src="imagens/brasil.svg" alt="">
-                                    |
-                                </button>
-                                <p></p>
-                                <div class="dropdown-menu">
-
-                                </div>
-                            </div>
-                            <div class="btn-group">
-
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-
         <div class="container-fluid" style="background-color: #fcfcfc">
             <div class="row">
-                <div class="container" style="background-color: #1ba0db">
+                <div class="container mt-5 rounded" style="width: 100%">
                     <div class="row">
                         <div class="col-sm ">
-                            <img class=" p-5 mx-auto d-block" src="imagens/header.png" alt="">
+                            <img class=" p-2 mx-auto d-block img-fluid"  src="imagens/header.png" alt="">
                         </div>
-                        <div class="col-sm my-auto float-center p-5">
-                            <p style="font-size: 27px; font-weight: 400; line-height: 1.5">Equipes em home-office?</p>
-                            <p style=" font-weight: 800; line-height: 1 ;font-size: 60px; color: #303669">
+                        <div class="texthead col-sm my-auto p-5">
+                            <p class="headum">Equipes em home-office?</p>
+                            <p class="headdois">
                                 Organize e potencialize seus times.</p>
-                            <p style="font-size: 18px; font-weight: 300; line-height: 1.5;">Com a
+                            <p class="headtres">Com a
                                 adoção de home-office nunca uma intranet foi tão importante
                                 e estratégica para seu negócio como um ambiente que centraliza sua comunicação e
                                 produção.
                             </p>
-                            <button type="button " class="btn  my-3 p-3 text-white btn1"
-                                style="border-radius: 100px; width: 17rem; background-color: #ec407f; font-weight: 800">Quero
+                            <button id="btnbanner" type="button"  class="btnbtn my-3 p-2 text-white btn1;">Quero
                                 conhecer as
                                 vantagens</button>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="container pt-5 pb-5">
                 <div class="row">
                     <div class="col-sm ">
                         <img class="mx-auto d-block" src="imagens/strategy-1.png" alt="">
                         <div class="text-center p-1">
                             <strong>Comunicação Fácil e Eficiente</strong>
-                            <p>We'll work with you to develop the right strategy</p>
+
                         </div>
                     </div>
                     <div class="col-sm ">
                         <img class="mx-auto d-block" src="imagens/strategy-2.png" alt="">
                         <div class="text-center p-1">
                             <strong>Controle de Atividades</strong>
-                            <p>Work synchronization and automated services</p>
+
                         </div>
                     </div>
                     <div class="col-sm">
                         <img class="mx-auto d-block" src="imagens/strategy-3.png" alt="">
                         <div class="text-center p-1">
                             <strong>Fluxos de Processos e Equipes</strong>
-                            <p>Dedicated servers to deploy and test applications</p>
+
                         </div>
                     </div>
                     <div class="col-sm">
@@ -148,45 +121,39 @@
                         <div class="text-center p-1">
                             <strong>Capacitação e Integração
                             </strong>
-                            <p>Stay informed on all our tools and technologies</p>
+
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div class="container-fluid" style="background-color: #fcfcfc">
                 <div class="row">
-                    <div class="container">
+                    <div class="modulos container">
                         <div class="row">
                             <div class="col-sm my-suto mx-auto d-block">
-                                <p style="font-size: 22px; font-weight: 400; line-height: 2">Módulos e Ferramentas</p>
-                                <p
-                                    style=" font-weight: 800; line-height: 1 ;font-size: 45px; color: #303669; margin-bottom: 20px">
-                                    Dicas que valem ouro.</p>
-                                <p class="pb-5" style="font-size: 18px; font-weight: 400; line-height: 1.5;">
+                                <p class="modulosum">Módulos e Ferramentas</p>
+                                <p class="modulostres"> Dicas que valem ouro.</p>
+                                <p class="modulodois pb-5">
                                     Saiba como alguns de nossas módulos podem contribuir para suas atividades de
                                     home-office tornando o ambiente muito mais organizado e produtivo.
-
                                 </p>
-                                <img src="imagens/services-header.png" alt="servicos">
+                                <img class="imgmodulos pb-5" src="imagens/services-header.png" alt="servicos">
                             </div>
-                            <div class="col-sm my-auto " style="text-align: center">
+                            <div class="btnmodulos col-sm my-auto ">
                                 <div id="accordion">
                                     <div>
                                         <div id="headingOne">
-                                            <h5 class="mb-2">
-                                                <button class="btn btn text-white"
-                                                    style="font-weight: 800; border-radius: 50px ;background-color: #3b88ec; height: 50px; font-size: 18px; width: 350px"
+                                            <h5 class="mb-3">
+                                                <button id="colapseOne" class="btn btn text-white"
                                                     data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="true" aria-controls="collapseOne">
                                                     <p style="text-align: left"> Agenda
-                                                        <i class="fa fa-plus float-right mt-1" aria-hidden="true"></i>
+                                                        <i id="plusUm" class="fa fa-plus fas  float-right mt-1"
+                                                            aria-hidden="true"></i>
                                                     </p>
                                                 </button>
                                             </h5>
                                         </div>
-
                                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                             data-parent="#accordion">
                                             <div class="card-body">
@@ -199,9 +166,8 @@
                                     </div>
                                     <div>
                                         <div id="headingTwo">
-                                            <h5 class="mb-2">
-                                                <button class="btn btn collapsed text-white"
-                                                    style="font-weight: 800; border-radius: 40px ;background-color: #3b88ec ; width: 350px; height: 50px; font-size: 18px;"
+                                            <h5 class="mb-3">
+                                                <button id="colapsedois" class="btn btn collapsed text-white"
                                                     data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo">
                                                     <p style="text-align: left"> Tarefas <i
@@ -222,9 +188,8 @@
                                     </div>
                                     <div>
                                         <div id="headingtres">
-                                            <h5 class="mb-2">
-                                                <button class="btn btn collapsed text-white"
-                                                    style="font-weight: 800; border-radius: 40px ;background-color: #3b88ec ; width: 350px; height: 50px; font-size: 18px;"
+                                            <h5 class="mb-3">
+                                                <button id="colapsetres" class="btn btn collapsed text-white"
                                                     data-toggle="collapse" data-target="#collapsetres"
                                                     aria-expanded="false" aria-controls="collapsetres">
                                                     <p style="text-align: left"> Requisições <i
@@ -245,9 +210,8 @@
                                     </div>
                                     <div>
                                         <div id="headingquatro">
-                                            <h5 class="mb-2">
-                                                <button class="btn btn collapsed text-white"
-                                                    style="font-weight: 800; border-radius: 40px ;background-color: #3b88ec ; width: 350px; height: 50px; font-size: 18px;"
+                                            <h5 class="mb-3">
+                                                <button id="colapsequatro" class="btn btn collapsed text-white"
                                                     data-toggle="collapse" data-target="#collapsequatro"
                                                     aria-expanded="false" aria-controls="collapsequatro">
                                                     <p style="text-align: left"> Timeline <i
@@ -267,9 +231,8 @@
                                     </div>
                                     <div>
                                         <div id="headingcinco">
-                                            <h5 class="mb-2">
-                                                <button class="btn btn collapsed text-white"
-                                                    style="font-weight: 800; border-radius: 40px ;background-color: #3b88ec ; width: 350px; height: 50px; font-size: 18px;"
+                                            <h5 class="mb-3">
+                                                <button id="colapsecinco" class="btn btn collapsed text-white"
                                                     data-toggle="collapse" data-target="#collapsecinco"
                                                     aria-expanded="false" aria-controls="collapsecinco">
                                                     <p style="text-align: left"> Chat, Comunicado Interno, Avisos
@@ -294,31 +257,24 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-
-            <div class="container pt-5 pb-5" style="background-color: #0168a3">
+            <div class="container pt-5 pb-5 rounded">
                 <div class="row">
                     <div class="col-sm ">
                         <img class="mx-auto d-bloc" src="imagens/services-sales-header.png" alt="">
                     </div>
-                    <div class="col-sm my-auto mx-auto">
-                        <p style="font-size: 22px; font-weight: 400px; line-height: 2">Our services</p>
-                        <p
-                            style="font-size: 45px; font-weight: 800; color: #303669; line-height: 1; margin-bottom: 20px">
+                    <div class="services col-sm my-auto mx-auto">
+                        <p class="ourservices">Our services</p>
+                        <p class="ourservicesdois">
                             Sales Growth</p>
-                        <p style="font-size: 20px">You can talk about your secondary services here, or maybe promote
+                        <p class="ourservicestres">You can talk about your secondary services here, or maybe promote
                             your
                             excellent customer service approach. Always grab your website visitors' attention.</p>
-                        <button type="button" class="btn my-3 p-2 text-white"
-                            style="border-radius: 25px; width: 10rem; ; font-weight: 800 ; background-color: #ec407f">Learn
+                        <button type="button" class=" btnsales my-3 p-2 text-white">Learn
                             moure</button>
                     </div>
                 </div>
             </div>
-
             <div class="container pt-5">
                 <div class="col-sm text-center">
                     <h4 id="preco"
@@ -333,7 +289,6 @@
                         bold and beautifully.</p>
                 </div>
             </div>
-
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-sm-4 my-auto mx-auto d-block pb-5 ">
@@ -341,9 +296,7 @@
                             -moz-border-radius: 62px 62px 62px 62px;
                             -webkit-border-radius: 62px 62px 62px 62px;
                             ; height: 450px;">
-
                             <div class="col-sm text-center">
-
                                 <p style="font-size: 50px">$499</p>
                                 <p style="text-decoration-color: aqua">Growth</p>
                                 <p class="mt-3">The sensible option for growing companies</p>
@@ -361,7 +314,6 @@
                                     style="border-radius: 35px; background-color: #3b88ec; width: 150px; font-weight: 800"
                                     type="button">COMPRAR</button>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-sm-4 mx-auto d-block pb-5 ">
@@ -369,7 +321,6 @@
                    -moz-border-radius: 62px 62px 62px 62px;
                    -webkit-border-radius: 62px 62px 62px 62px;
                    border: 6px dashed #78c2ff; height: 500px;">
-
                             <div class="col-sm text-center">
                                 <p class="mt-3 mx-auto d-block"
                                     style="background-color: aqua ; border-radius: 35px; width: 100px; text-align: center">
@@ -391,7 +342,6 @@
                                     style="border-radius: 35px; background-color: #3b88ec; width: 150px; font-weight: 800"
                                     type="button">COMPRAR</button>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-sm-4 my-auto mx-auto d-block pb-5 ">
@@ -399,9 +349,7 @@
                         -moz-border-radius: 62px 62px 62px 62px;
                         -webkit-border-radius: 62px 62px 62px 62px;
                         ; height: 450px;">
-
                             <div class="col-sm text-center">
-
                                 <p style="font-size: 50px">$499</p>
                                 <p style="text-decoration-color: aqua">Growth</p>
                                 <p class="mt-3">The sensible option for growing companies</p>
@@ -424,8 +372,7 @@
                     </div>
                 </div>
             </div>
-
-            <div id="clientes" class="contairner text-center pt-5 pb-3">
+            <div id="parceiros" class="contairner text-center pt-5 pb-3">
                 <div class="col-sm">
                     <p style="font-size: 22px; font-weight: 400; line-height: 2 ">Our clients</p>
                 </div>
@@ -433,9 +380,7 @@
                     <p style="font-size: 45px; font-weight: 800; color: #303669; margin-bottom: 20px"> Client Showcase
                     </p>
                 </div>
-
             </div>
-
             <div class="container col-sm  pb-5" style="align-content: center">
                 <center>
                     <div id="carouselExampleIndicators " class="carousel slide " data-ride="carousel">
@@ -512,8 +457,7 @@
                     </div>
                 </center>
             </div>
-
-            <div id="noticias" class="contairner text-center pt-5 pb-3">
+            <div id="#" class="contairner text-center pt-5 pb-3">
                 <div class="col-sm">
                     <p style="font-size: 22px; font-weight: 400; line-height: 2">Recent updates</p>
                 </div>
@@ -521,22 +465,17 @@
                     <p style="font-size: 45px; font-weight: 800; line-height: 1; color: #303669; margin-bottom: 0">
                         Featured Stories</p>
                 </div>
-
             </div>
-
-            <div class="container pt-5" style="background-color: #1ba0db">
+            <div class="container pt-5 rounded">
                 <div class="row">
                     <div class="col-sm-4 my-auto mx-auto d-block pb-5 ">
                         <div class="my-auto d-block card-1" style="border-radius: 62px 62px 62px 62px;
                             -moz-border-radius: 62px 62px 62px 62px;
                             -webkit-border-radius: 62px 62px 62px 62px;
                             ; height: 450px;">
-
                             <div class="col-sm text-center">
-
                                 <img class="p-3" src="imagens/blog-card-1.png" alt="">
                                 <p class="p-1" style="font-size: 25px"><strong>Remote Working</strong></p>
-
                                 <p class="pt-2 pb-3" style="font-size: 15px">We've ranked number one on Google for
                                     multiple
                                 </p>
@@ -547,7 +486,6 @@
                                     </p>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-sm-4 mx-auto d-block pb-5 ">
@@ -555,7 +493,6 @@
                    -moz-border-radius: 62px 62px 62px 62px;
                    -webkit-border-radius: 62px 62px 62px 62px;
                     height: 500px;">
-
                             <div class="col-sm text-center ">
                                 <img class="p-5" src="imagens/blog-card-2.png" alt="">
                                 <p class="p-1" style="font-size: 25px"><strong>Google Rankings</strong></p>
@@ -568,7 +505,6 @@
                                     <p style="font-size: 20px;">Read More</p>
                                 </button>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-sm-4 my-auto mx-auto d-block pb-5">
@@ -576,10 +512,8 @@
                         -moz-border-radius: 62px 62px 62px 62px;
                         -webkit-border-radius: 62px 62px 62px 62px;
                         ; height: 450px;">
-
                             <div class="col-sm text-center ">
                                 <div class="col-sm text-center ">
-
                                     <img class="p-3 " src="imagens/blog-card-3.png" alt="">
                                     <p class="p-1" style="font-size: 25px"><strong>Communication</strong></p>
 
@@ -597,25 +531,26 @@
                     </div>
                 </div>
             </div>
-
             <div id="contato" class="container ">
                 <div class="row">
                     <div class="col-sm pt-5">
-                        <div class="col-sm mx-auto">
-                            <p style="font-size: 22px; font-weight: 400; line-height: 2;">Entre em contato</p>
-                            <p
-                                style="font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 20px; color: #303669">
+                        <div class="contato col-sm mx-auto">
+                            <p class="contatofooter" >Entre em contato</p>
+                            <p class="contatofooterdois"
+                                >
                                 Dúvidas?<br>
                                 Nós podemos lhe ajudar</p>
-                            <p style="font-size: 18px ; font-weight: 300; line-height: 1.5; margin-bottom: 20px">Nosso
+                            <p class="contatofootertres">Nosso
                                 time de vendas poderá responder suas dúvidas e até mesmo
                                 marcar
                                 uma apresentação sem compromisso para lhe explicar as vantagens de nossa intranet.</p>
-                            <button type="button" id="exempleModal" class="btn  my-3 p-2 " data-toggle="modal"
-                                data-target="#exampleModal"
-                                style="background-color: #ec407f ;border-radius: 25px; width: 300px; height: 50px; font-size: 20px; font-weight: 800">
-                                <p class="text-white">Solicite uma apresentação</p>
-                            </button>
+                            <div class="contatobtn">
+                                <button id="btncontato" type="button" id="exempleModal" class="btnduvidas  my-3 p-2 "
+                                    data-toggle="modal" data-target="#exampleModal"
+                                    >
+                                    <p class="text-white">Solicite uma apresentação</p>
+                                </button>
+                            </div>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -625,7 +560,6 @@
                                             style=" width: 100%; background-color: #000000; border-bottom: 5px solid #00649f">
                                             <h5 class="modal-title text-white text-center" id="exampleModalLongTitle"
                                                 style="font-weight: bold; font-size: 1.2rem">Faça Contato</h5>
-
                                         </div>
                                         <div class="modal-body" style="background-color: #f6f6f6">
                                             <form>
@@ -669,7 +603,7 @@
                                                 </div>
 
                                                 <div class="col-sm-6 mx-auto d-block">
-                                                    <img class="mb-1"
+                                                    <img class="p-2"
                                                         src="https://www.vivaintra.com/uploads/tmp/c707e23e5fa0f1a9cf3ef683b904f59e.png"
                                                         alt="">
                                                 </div>
@@ -682,53 +616,43 @@
                                                             acima como você as vê.</p>
                                                     </div>
                                                 </div>
-
                                             </form>
-
-
                                         </div>
                                         <div class="modal-footer" style="background-color: #f6f6f6">
 
                                             <button type="button" class="btn btn-primary">Enviar</button>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm mt-5">
-                        <img src="imagens/contact-header-img.png" alt="">
+                        <img class="pb-5" src="imagens/contact-header-img.png" alt="">
                     </div>
                 </div>
             </div>
-
-
         </div>
-
-
-
-        <div class="container-fluid" style="background-color: #485156; ;">
+        <div class="container-fluid col-sm " style="background-color: #485156; ;">
             <div class="row">
-                <div class="container" style="width: 100%; height: 300px;">
-                    <div class="row">
-                        <div class="col-sm" style="border-left: solid 2px #000000">
+                <div class="container col-sm" style="width: 100%; height: 100%;">
+                    <div id="rodape" class="row">
+                        <div class="col-sm" style="border-left: dotted 2px #000000">
 
-                            <ul class="pt-3 pb-5">
+                            <ul class="pt-3 pb-5" style="font-size: 14px; font-weight: 800">
                                 <li class="p-1">
                                     <a class="text-white" href="#">
                                         Starter
                                     </a>
                                 </li>
                                 <li class="p-1">
-                                    <a class="text-white" href="#"> Experimente, é Grátis
+                                    <a style="color: #9d9d9e" href="#"> Experimente, é Grátis
                                     </a>
                                 </li>
-                                <li class="p-1"><a class="text-white" href="#"> Ajuda
+                                <li class="p-1"><a style="color: #9d9d9e" href="#"> Ajuda
                                     </a>
                                 </li>
-                                <li class="p-1"><a class="text-white" href="#"> Treinamento Ao Vivo
+                                <li class="p-1"><a style="color: #9d9d9e" href="#"> Treinamento Ao Vivo
                                     </a>
                                 </li>
                             </ul>
@@ -738,42 +662,40 @@
                             </div>
                         </div>
                         <div class="col-sm">
-                            <div class="col-sm" style="border-left: solid 2px  #000000">
+                            <div class="col-sm" style="border-left: dotted 2px  #000000">
 
-                                <ul class="pt-3 pb-5">
+                                <ul class="pt-3 pb-5" style="font-size: 14px ; font-weight: 800">
                                     <li class="p-1">
                                         <a class="text-white" href="#">
                                             Enterprise
                                         </a>
                                     </li>
                                     <li class="p-1">
-                                        <a class="text-white" href="#"> Comunicação
+                                        <a style="color: #9d9d9e" href="#"> Comunicação
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Colaboração
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Colaboração
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Produtividade
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Produtividade
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Recursos Humanos
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Recursos Humanos
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Extranet
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Extranet
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Contato
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Contato
                                         </a>
                                     </li>
                                 </ul>
-
-
                             </div>
                         </div>
                         <div class="col-sm">
-                            <div class="col-sm" style="border-left: solid 2px #000000">
+                            <div class="col-sm" style="border-left: dotted 2px #000000">
 
-                                <ul class="pt-3 pb-5">
+                                <ul class="pt-3 pb-5" style="font-size: 14px; font-weight: 800">
                                     <li class="p-1">
                                         <a class="text-white" href="#">
                                             Preços
@@ -783,33 +705,31 @@
                                         <a class="text-white" href="#"> Blog
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Colaboração
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Colaboração
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Comunicação
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Comunicação
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Endomarketing
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Endomarketing
 
                                         </a>
                                     </li>
-                                    <li class="p-1"><a class="text-white" href="#"> Gestão de Pessoas
+                                    <li class="p-1"><a style="color: #9d9d9e" href="#"> Gestão de Pessoas
                                         </a>
                                     </li>
                                 </ul>
-
-
                             </div>
                         </div>
-                        <div class="col-sm" style="border-left: solid 2px #000000; text-align: center;">
-                            <p class="pt-3"
+                        <div class="col-sm" style="border-left: dotted 2px #000000; text-align: center;">
+                            <p class="pt-3 d-none d-md-block"
                                 style=" font-size: 25px; line-height: 1.42; color: #829199; font-family: Arial, Helvetica, sans-serif">
                                 Acompanhe o vivaintra <br>
-                                <p
+                                <p class="d-none d-md-block"
                                     style=" font-size: 25px; line-height: 1.42; color: #829199; font-family: Arial, Helvetica, sans-serif">
                                     nas redes sociais</p>
                             </p>
-                            <div class="row">
+                            <div id="redes" class="row d-none d-md-block">
                                 <div class="col-sm">
                                     <img class="float-right" src="imagens/facebook.png" alt="">
                                 </div>
@@ -823,12 +743,11 @@
                 </div>
             </div>
             <hr style="background-color: gray" style="height: 100px">
-
-            <div class="container pb-3" >
-                <div class="row">
-                    <div class="col-sm-8" style="font-size: 14px">
+            <div class="container pb-3">
+                <div id="rodapedois" class="row">
+                    <div class="col-sm-8" style="font-size: 14px; font-weight: 800">
                         <div class="row">
-                            <div class="p-1 ">
+                            <div class="p-1 tesxt-sm-left">
                                 <a style="text-align: center; color: white" class="mx-1" href="#">
                                     Status do sistema
                                 </a>
@@ -862,22 +781,10 @@
                     </div>
                     <div class="col-sm">
                         <img class="float-right" src="imagens/vivaweb.png" alt="">
-                        
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
