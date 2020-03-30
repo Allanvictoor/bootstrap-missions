@@ -1,78 +1,108 @@
-<div class="container-fluid height-nav">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="https://www.vivaintra.com/media/images/v2/logo-2017.png" class="img-nav"
-                         alt="">
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 list-tamanho">
-                            <div class="list-nav">
-                                <h5><b class="d-flex justify-content-center">Starter</b></h5>
+<div class="container-fluid border-bottom-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-12">
+                        <div class="row">
+                            <div class="img-nav">
+                                <img src="https://www.vivaintra.com/media/images/v2/logo-2017.png" width="95%"
+                                     class="py-3"
+                                     alt="">
                             </div>
-                        </div>
-                        <div class="col-md-2 list-tamanho">
-                            <div class="list-nav">
-                                <b class="d-flex justify-content-center mt-4">Enterprise</b>
-                            </div>
-                        </div>
-                        <div class="col-md-2 list-tamanho">
-                            <div class="list-nav">
-                                <b class="d-flex justify-content-center mt-4">Preços</b>
-                            </div>
-                        </div>
-                        <div class="col-md-2 list-tamanho">
-                            <div class="list-nav">
-                                <b class="d-flex justify-content-center mt-4">Blog</b>
-                            </div>
-                        </div>
-                        <div class="col-md-2 list-tamanho">
-                            <div class="list-nav">
-                                <b class="d-flex justify-content-center mt-4">Parceiros</b>
-                            </div>
-                        </div>
-                        <div class="col-md-2 list-tamanho">
-                            <div class="list-nav">
-                                <b class="d-flex justify-content-center mt-4">Contato</b>
+                            <div class="hamburg">
+                                <i class="fas fa-bars" id="icon-hamburg"></i>
+                                <i class="fas fa-times" id="icon2-hamburg"></i>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <button type="button" class="btn my-4 ml-5 text-white d-none d-md-block"
-                                style=" background-color: #347ab7; ">Login
-                        </button>
-                        <div class="btn-group mt-3">
-                            <button style="height: 39px;" class="btn-sm dropdown-toggle mt-2 m-2 border border-dark"
-                                    type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img style="width: 2rem" src="https://www.vivaintra.com/media/images/br.png" alt="">
-                                |
-                            </button>
-                            <p></p>
-                            <div class="dropdown-menu" x-placement="bottom-start"
-                                 style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(8px, 55px, 0px);">
-            
+                    <script>
+                        $(document).ready(function () {
+                            $('#icon-hamburg').click(function () {
+                                $('.menu-hamburg').show();
+                                $('#icon-hamburg').hide().delay(5000);
+                                $('#icon2-hamburg').show();
+                            });
+                            $('#icon2-hamburg').click(function () {
+                                $('.menu-hamburg').hide();
+                                $('#icon2-hamburg').hide().delay(5000);
+                                $('#icon-hamburg').show();
+                            });
+                        });
+                    
+                    </script>
+                    <div class="col-lg-8 menu-hamburg">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="row">
+                                    <a class="w-100 color-center">
+                                        <h5 class="d-flex justify-content-center py-4"><b>Starter</b></h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="row">
+                                    <a class="w-100 color-center">
+                                        <h5 class="d-flex justify-content-center py-4"><b>Enterprise</b></h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="row">
+                                    <a class="w-100 color-center">
+                                        <h5 class="d-flex justify-content-center py-4"><b>Preços</b></h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="row">
+                                    <a class="w-100 color-center">
+                                        <h5 class="d-flex justify-content-center py-4"><b>Blog</b></h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="row">
+                                    <a class="w-100 color-center">
+                                        <h5 class="d-flex justify-content-center py-4"><b>Parceiros</b></h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="row">
+                                    <a class="w-100 color-center">
+                                        <h5 class="d-flex justify-content-center py-4"><b>Contato</b></h5>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="btn-group">
-        
+                    </div>
+                    <div class="col-lg-2 menu-hamburg">
+                        <div class="row">
+                            <div class="btn-group ml-auto mr-2 my-3">
+                                <button type="button" class="btn btn-login dropdown" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    Login
+                                </button>
+                                <div class="dropdown-menu">
+                                
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle border border-dark my-3"
+                                        type="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                    <img src="https://www.vivaintra.com/media/images/br.png" width="50%" alt="">
+                                    |
+                                </button>
+                                <div class="dropdown-menu">
+                                
+                                </div>
+                            </div>
                         </div>
-    
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--<script>
-    $(window).on("scroll", function () {
-        if ($(window).scrollTop()) {
-            $('nav').addClass('corNav');
-        } else {
-            $('nav').removeClass('corNav');
-        }
-    });
-</script>-->
