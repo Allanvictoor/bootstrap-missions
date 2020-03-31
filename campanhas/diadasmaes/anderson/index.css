@@ -1,0 +1,12 @@
+html,body{
+height: 100%;
+}
+#inicial{
+    background-image: url(imagens/fundo.jpg);
+    background-attachment: fixed;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.8;
+    
+}
