@@ -8,6 +8,7 @@ height: 100%;
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 0.8;
+    filter: brightness(95%);
     
 }
 .card{
@@ -21,4 +22,21 @@ h5{
     font-size: 20px;
     font-family: 'Poppins';
     font-weight: 500;
+}
+#naomuda{
+    filter: brightness();
+}
+#cordaempresa{
+    background-color:blue ;
+    color:blue;
+}
+#cordaempresahover{
+    border:1px solid blue;
+}
+#cordaempresahover:hover{
+    background-color:blue;
+    
+}
+.nomemae{
+ color: blue;
 }
