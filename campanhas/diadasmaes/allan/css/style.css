@@ -11,6 +11,11 @@ html{
         text-align: center
     }
 
+    .modal-backdrop {
+      z-index: 0;
+      width: auto;
+      }
+
     .fade
 {
         
@@ -45,12 +50,20 @@ html{
     justify-content: center;
     align-items: center;
   }
+  .imagem3{
+    transition: all 0.5s;
+    cursor: pointer;
+}
 
+.imagem3:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
 
 
 
 #headmom {
-    background-image: url(/imagens/INDpa18a.jpg);
+    background-image: url(/imagens/mom2.jpg);
     width: 100%;
     height: 1000px;
     background-size: cover;
