@@ -10,3 +10,15 @@ height: 100%;
     opacity: 0.8;
     
 }
+.card{
+    opacity:0.2;
+}
+.card:hover{
+    opacity:0.9;
+
+}
+h5{
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
