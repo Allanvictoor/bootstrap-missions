@@ -81,7 +81,8 @@ html{
     margin-left: auto;
     position: relative;
     max-width: 1140px;
-    border-radius: 20px
+    border-radius: 20px;
+    opacity: 0.9;
     
 }
 
