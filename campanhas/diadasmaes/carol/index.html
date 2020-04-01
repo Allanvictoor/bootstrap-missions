@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Dia das Mães</title>
+</head>
+<body>
+<div class="container-fluid page-um">
+    <div class="col-md-12 col-sm-12">
+        <nav class="navbar">
+            <div class="navbar-brand"><img src="images/image-one.png" alt=" " style="height: 55px"> </div>
+        </nav>
+
+        <div id="secao-01" class="secao">
+            <h2 class="title">Photography Is An Immediate Reaction,</h2>
+            <h2 class="title-dois">Drawing Is A Meditation Props.</h2>
+            <p class="subtitle">Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever... it</p>
+            <p class="subtitle-dois">remembers little things, long after you have forgotten everything.</p>
+            <div class="botao w-100 d-flex justify-content-center">
+                <button type="button" class="btn btn-warning">CONTACT US</button>
+                <button type="button" class="btn btn-outline-warning">PORTIFÓLIO</button>
+            </div>
+            <span class="icone-scroll">
+                <span class="scroll-next scroll"></span>
+                <span class="scroll-next scroll"></span>
+            </span>
+        </div>
+        <label>All | Design | Photography | Ui Design | Branding | Prototype</label>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 secao" id="secao-02">
+
+            <div id="mdb-lightbox-ui"></div>
+                <div class="mdb-lightbox no-margin">
+                    <div class="row">
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(94).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(94).jpg" class="img-fluid">
+                            </a>
+                        </figure>
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(96).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(96).jpg" class="img-fluid" />
+                            </a>
+                        </figure>
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(95).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(95).jpg" class="img-fluid" />
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="row">
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(92).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(92).jpg" class="img-fluid" />
+                            </a>
+                        </figure>
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(137).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(137).jpg" class="img-fluid" />
+                            </a>
+                        </figure>
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(132).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(132).jpg" class="img-fluid" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="row">
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(129).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(129).jpg" class="img-fluid" />
+                            </a>
+                        </figure>
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(130).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(130).jpg" class="img-fluid" />
+                            </a>
+                        </figure>
+                        <figure class="col-md-4 col-sm-6">
+                            <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(131).jpg" data-size="1600x1067">
+                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(131).jpg" class="img-fluid" />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+ <script>
+     // MDB Lightbox Init
+     $(function () {
+         $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+     });
+
+    var _AlturaDocumento = $(window).height(); //pega altura da janela
+
+    function AlturaSecao() {
+        $('.secao').height(_AlturaDocumento); //atribui o valor da variável a todas as divs com a classe secao
+    }
+
+    function ScrollSecao() {
+        console.log('entrou');
+        var body = $('html, body');
+        if($(this).parent('.secao').is('#secao-01')) {
+            //verifica se está na primeira seção e rola para a segunda
+            body.animate({scrollTop: _AlturaDocumento}, '500');
+        }
+    }
+
+    $('.icone-scroll').click(ScrollSecao); //chama a função na ação de click no ícone
+
+    $(AlturaSecao); //chama a nossa função só depois que o documento estiver completamente carregado
+ </script>
+</body>
+</html>
