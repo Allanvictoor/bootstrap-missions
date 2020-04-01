@@ -1,22 +1,81 @@
 .navbar-brand{
     background-color: #eea228;
-    margin-top: 4%;
+    /*margin-top: 4%;*/
     width: 100%;
 }
-.page-um{
-    background-image: url("https://cdn.pixabay.com/photo/2017/11/10/08/10/son-2935723_960_720.jpg");
-    height: 100vh;
-    width: 100%;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+.col-md-4, .col-sm-6{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
 }
-.title{
+/*.page-um{*/
+/*    background-image: url("https://cdn.pixabay.com/photo/2017/11/10/08/10/son-2935723_960_720.jpg");*/
+/*    height: 100vh;*/
+/*    width: 100%;*/
+/*    background-position: top;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+.title, .title-dois{
     color: #F6F6F6;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+    margin-top: 5%;
+    font-size: 55px;
+    font-weight: bold;
+}
+.title-dois{
+    color: #F6F6F6;
+    margin-top: -5px;
+}
+.subtitle, .subtitle-dois{
+    color: #F6F6F6;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 .btn{
     color: #F6F6F6;
+    margin-top: 8px;
+}
+.btn-outline-warning{
+    margin-left: 5px;
+}
 
+.secao {
+    position: relative;
+}
+body{
+    background-color: black;
+}
+label{
+    color: #F6F6F6;
+    margin-left: 100px
+}
+
+.icone-scroll {
+    position: absolute;
+    bottom: 8em;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+}
+.scroll {
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #eea228;
+    border-bottom: 2px solid #eea228;
+    display: inline-block;
+    position: relative;
+}
+.scroll-next {
+    transform: rotate(45deg);
+    margin: 0 0 0 16.5px;
+}
+
+.scroll-next + .scroll-next {
+    top: -15px;
+    margin-top: 0;
 }
