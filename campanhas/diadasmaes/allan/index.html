@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <script src="https://kit.fontawesome.com/9c956899f2.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/magicscroll.js"></script>
-    
+    <link type="text/css" rel="stylesheet" href="/css/scroll.css" />
     <link type="text/css" rel="stylesheet" href="/css/hover.css" />
     <link rel="stylesheet" href="css/animation.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
@@ -27,19 +27,18 @@
 <body style="font-family: 'Poppins', sans-serif;">
 
     <div id="headmom" class="container-fluid pb-5">
-        <div id="containerUm" class="container">
+        <div id="containerUm" class="container col-sm">
             <nav id="nav" class="navbar col-sm " style="background-color: #eb9d37; border-radius: 10px">
                 <a class="navbar-brand" href="#">
                     <img class="mx-3 img-fluid" src="https://www.vivaintra.com/media/images/v2/logo-2017.png"
                         width="250rem" alt="">
                 </a>
             </nav>
-            <div class="container" style="margin: 150px auto; margin-top: 200px">
-                <h2 class="text-center fadeIn" ;
-                    style="font-family: 'Poppins', sans-serif; color: white; font-size: 48px; line-height: 60px; font-weight: 1000; text-transform: capitalize">
-                    Photography Is An Immediate Reaction, Drawing Is A Meditation Props.</h2>
-                <p class="fadeIn"
-                    style="font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 28px; color: #fff; padding: 5px; max-width: 900px; margin: 15px auto; text-align: center; width: 800; font-weight: 700">
+            <div id="headhead" class="container col-sm">
+                <h3 id="titlehead" class="fadeIn" ;
+                    >
+                    Photography Is An Immediate Reaction, Drawing Is A Meditation Props.</h3>
+                <p id="phead" class="fadeIn">
                     Photography is a way of feeling, of touching, of loving. What you have caught on film is captured
                     forever... it remembers little things, long after you have forgotten everything.</p>
                 <div class="row text-center">
@@ -57,7 +56,7 @@
                     </div>
                 </div>
 
-                <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
+                <a class="d-none d-md-block nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
                     href="#portifolio"><img src="/imagens/down-arrow.svg" class="mx-auto d-block pt-5"
                         style="width: 2rem" alt=""></a>
 
@@ -70,7 +69,7 @@
         <div id="colorblack" class="col-sm container ">
             <center>
                 <div id="titleportifolio" class="col-sm text-center pt-5">
-                    <p id="color2" style="font-size: 18px; font-weight: 600; line-height: 24px; "> OUR RECENT WORKS</p>
+                    <p  id="color2" style="font-size: 18px; font-weight: 600; line-height: 24px; "> OUR RECENT WORKS</p>
                     <h3 id="color2"
                         style="font-size: 36px; line-height: 44px; font-weight: 500; text-transform: uppercase">
                         OUR PORTFOLIO</h3>
@@ -162,7 +161,7 @@
 
 
         <div class="col-sm mt-5 mb-5 MagicScroll" data-options="mode: cover-flow; height: 275px;">
-            <img src="imagens/scroll1.jpg" />
+            <img class="col-sm" src="imagens/scroll1.jpg" />
             <img src="imagens/scroll2.png" />
             <img src="imagens/scroll3.jpg" />
             <img src="imagens/scroll4.png" />
