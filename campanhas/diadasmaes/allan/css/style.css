@@ -74,10 +74,12 @@ transform: scale(1.5);
 
 #headmom {
 background-image: url(/imagens/mom2.jpg);
-width: 100%;
+width: auto;
+text-align: center;
 height: 1000px;
 background-size: cover;
 background-attachment: fixed, scroll;
+max-width: 100%
 
 
 }
@@ -154,7 +156,7 @@ height: 100%;
 
     #headmom {
       background-image: url(/imagens/mom2.jpg);
-      width: 300px;
+      width: 100px;
       height: 800pxpx;
       background-size: cover;
       background-attachment: fixed, scroll;
