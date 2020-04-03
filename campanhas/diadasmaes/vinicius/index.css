@@ -1,18 +1,45 @@
-.section-principal {
-    background-image: url("https://demo.voidcoders.com/htmldemo/potoliaV2/main-files/assets/img/bg/hero-1.jpg");
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    padding: 520px 0px 117px;
-    z-index: -1;
+@media screen and (min-width: 991.98px) {
+    .section-principal {
+        background-image: url("https://demo.voidcoders.com/htmldemo/potoliaV2/main-files/assets/img/bg/hero-1.jpg");
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        padding: 520px 0px 117px;
+        z-index: -1;
+    }
 }
-.section-principal:before {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(16, 16, 21, 0.8);
+
+@media screen and (max-width: 991.97px) {
+    .section-principal {
+        background-image: url("https://demo.voidcoders.com/htmldemo/potoliaV2/main-files/assets/img/bg/hero-1.jpg");
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        padding: 418px 0px 117px;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .section-principal:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(16, 16, 21, 0.8);
+    }
+}
+
+@media screen and (max-width: 991.97px) {
+    .section-principal:before {
+        position: absolute;
+        content: '';
+        height: 638px;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(16, 16, 21, 0.8);
+    }
 }
 
 .color-header {
@@ -20,23 +47,59 @@
     background-color: #eb9d37;
 }
 
-.hero-text-h2 {
-    color: #fff;
-    font-size: 54px;
-    line-height: 60px;
-    font-weight: 500;
-    letter-spacing: 0px;
-    text-transform: capitalize;
-    max-width: 963px;
+@media screen and (max-width: 767px) {
+    .hero-text-h2 {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+
+    .hero-text-p {
+        color: #fff;
+        padding: 5px;
+        max-width: 900px;
+        margin: 15px auto;
+    }
 }
 
-.hero-text-p {
-    font-size: 18px;
-    line-height: 28px;
-    color: #fff;
-    padding: 5px;
-    max-width: 900px;
-    margin: 15px auto;
+@media (min-width: 768px) and (max-width: 991.97px) {
+    .hero-text-h2 {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        max-width: 963px;
+    }
+
+    .hero-text-p {
+        color: #fff;
+        padding: 5px;
+        max-width: 900px;
+        margin: 41px auto;
+        margin-left: 33px;
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .hero-text-h2 {
+        color: #fff;
+        font-size: 54px;
+        line-height: 60px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        max-width: 963px;
+    }
+
+    .hero-text-p {
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff;
+        padding: 5px;
+        max-width: 900px;
+        margin: 15px auto;
+    }
 }
 
 .hero-btn {
@@ -66,12 +129,20 @@
     border: 1px solid #eb9d37 !important;
 }
 
-.hero-top {
-    margin-top: 207px;
+@media screen and (min-width: 991.98px) {
+    .hero-top {
+        margin-top: 207px;
+    }
+
+    .hero-top-primary {
+        margin-top: 60px;
+    }
 }
 
-.hero-top-primary {
-    margin-top: 60px;
+@media screen and (max-width: 991.97px) {
+    .hero-top {
+        margin-top: 99px;
+    }
 }
 
 .hero-icon {
@@ -82,20 +153,21 @@
 .img-transition {
     -webkit-filter: brightness(0.20);
     cursor: pointer;
+    color: transparent;
 }
 
 .img-transition:hover {
-    -webkit-filter:brightness(1.0);
+    -webkit-filter: brightness(1.0);
     transition: 1s;
+    color: orange;
 }
 
 .text-img {
     position: absolute;
     margin-left: 25px;
-    margin-right: 25px;
+    margin-top: 100%;
     width: 50px;
     height: 2px;
-    background-color: orange;
 }
 
 .borda-img {
@@ -103,4 +175,18 @@
     width: 100%;
     height: 5px;
     background-color: orange;
+}
+
+.links-photo a {
+    text-decoration: none !important;
+    color: orange;
+}
+
+.links-photo a:hover {
+    text-decoration: none !important;
+    color: black;
+}
+
+.color-section-photos {
+    background-color: #000;
 }
