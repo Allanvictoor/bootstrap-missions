@@ -1,6 +1,6 @@
 <section class="w-100 hero-top-primary position-absolute">
     <div class="container">
-        <div class="col-md-12">
+        <div class="col-lg-12">
             <div class="row">
                 <div class="w-100 color-header">
                     <div class="row">
@@ -17,7 +17,7 @@
 </section>
 <section class="w-100 position-absolute hero-top">
     <div class="container">
-        <div class="col-md-12">
+        <div class="col-lg-12">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
