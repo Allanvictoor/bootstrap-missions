@@ -34,7 +34,7 @@ nav{
     margin-top: 5%;
 }
 .texto-inicial-paragarafo, .texto-um-paragrafo{
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 .texto-inicial-sub-title, .texto-um-sub-title{
     margin-bottom: auto;
@@ -62,7 +62,7 @@ nav{
     margin-left: 25px;
     margin-top: -10px;
     text-align: center;
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 .banner{
     margin-top: 35px;
@@ -81,7 +81,7 @@ nav{
 }
 .card-body{
     width: 80%;
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 .carousel-indicators{
     bottom: -40px;
@@ -120,4 +120,49 @@ nav{
 }
 .close{
     color: #F6F6F6;
+}
+.card-title{
+    text-align: center;
+}
+.card-body{
+    align-self: center;
+}
+.botao-card{
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 30px;
+    background-clip: padding-box;
+    font-weight: bold;
+
+}
+.card-sub-title{
+    color: #61cdfd;
+    font-family: 'Lilita One', cursive;
+    margin-top: -10px;
+}
+.card-sub-title-dois{
+font-weight: bold
+}
+.card-text{
+    color: black;
+}
+.card-preco{
+    border-radius: 3.25rem;
+    margin-bottom: 5px;
+}
+.principal{
+    border: dashed;
+    border-color: #61cdfd;
+}
+.banner-container{
+    margin-top: 10rem;
+}
+.label-block{
+    background-color: #61cdfd;
+    border-colorcolor:  #61cdfd;
+    font-weight: bold;
+    color: white;
+    font-size: xx-small;
+    width: 4rem;
+    border-radius: 30px;
 }

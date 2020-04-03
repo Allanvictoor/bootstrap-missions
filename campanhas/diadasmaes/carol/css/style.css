@@ -15,6 +15,7 @@
 /*    background-position: top;*/
 /*    background-size: cover;*/
 /*    background-repeat: no-repeat;*/
+/*    background-attachment: fixed, scroll;*/
 /*}*/
 .title, .title-dois{
     color: #F6F6F6;
@@ -48,9 +49,14 @@
 body{
     background-color: black;
 }
-label{
-    color: #F6F6F6;
-    margin-left: 100px
+/*label{*/
+/*    !*color: #F6F6F6;*!*/
+/*    font-family: 'Quicksand', sans-serif;*/
+/*    font-weight: bold;*/
+/*}*/
+.menu{
+    margin-top: -80px;
+    margin-bottom: 30px;
 }
 
 .icone-scroll {
@@ -79,3 +85,15 @@ label{
     top: -15px;
     margin-top: 0;
 }
+
+
+/*.img-fluid{*/
+/*    opacity: 0.3;*/
+/*    transition: opacity 1s ease-in-out;*/
+/*    margin-bottom: 1px;*/
+/*    solid-color: #eb9d37;*/
+/*}*/
+/*{*/
+/*    opacity: 2.0;*/
+/*    transition: opacity .55s ease-in-out;*/
+/*}*/

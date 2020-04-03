@@ -18,30 +18,27 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <script src="https://kit.fontawesome.com/9c956899f2.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/magicscroll.js"></script>
-
-    <link type="text/css" rel="stylesheet" href="/css/magicscroll.css" />
+    <link type="text/css" rel="stylesheet" href="/css/scroll.css" />
     <link type="text/css" rel="stylesheet" href="/css/hover.css" />
     <link rel="stylesheet" href="css/animation.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
-
 </head>
 
 <body style="font-family: 'Poppins', sans-serif;">
 
     <div id="headmom" class="container-fluid pb-5">
-        <div id="containerUm" class="container">
+        <div id="containerUm" class="container col-sm">
             <nav id="nav" class="navbar col-sm " style="background-color: #eb9d37; border-radius: 10px">
                 <a class="navbar-brand" href="#">
                     <img class="mx-3 img-fluid" src="https://www.vivaintra.com/media/images/v2/logo-2017.png"
                         width="250rem" alt="">
                 </a>
             </nav>
-            <div class="container" style="margin: 150px auto; margin-top: 200px">
-                <h2 class="text-center fadeIn" ;
-                    style="font-family: 'Poppins', sans-serif; color: white; font-size: 48px; line-height: 60px; font-weight: 1000; text-transform: capitalize">
-                    Photography Is An Immediate Reaction, Drawing Is A Meditation Props.</h2>
-                <p class="fadeIn"
-                    style="font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 28px; color: #fff; padding: 5px; max-width: 900px; margin: 15px auto; text-align: center; width: 800; font-weight: 700">
+            <div id="headhead" class="container col-sm">
+                <h3 id="titlehead" class="fadeIn" ;
+                    >
+                    Photography Is An Immediate Reaction, Drawing Is A Meditation Props.</h3>
+                <p id="phead" class="fadeIn">
                     Photography is a way of feeling, of touching, of loving. What you have caught on film is captured
                     forever... it remembers little things, long after you have forgotten everything.</p>
                 <div class="row text-center">
@@ -59,7 +56,7 @@
                     </div>
                 </div>
 
-                <a class="nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
+                <a class="d-none d-md-block nav-item nav-link mx-2" style="font-size: 20px; text-decoration-color: black"
                     href="#portifolio"><img src="/imagens/down-arrow.svg" class="mx-auto d-block pt-5"
                         style="width: 2rem" alt=""></a>
 
@@ -72,7 +69,7 @@
         <div id="colorblack" class="col-sm container ">
             <center>
                 <div id="titleportifolio" class="col-sm text-center pt-5">
-                    <p id="color2" style="font-size: 18px; font-weight: 600; line-height: 24px; "> OUR RECENT WORKS</p>
+                    <p  id="color2" style="font-size: 18px; font-weight: 600; line-height: 24px; "> OUR RECENT WORKS</p>
                     <h3 id="color2"
                         style="font-size: 36px; line-height: 44px; font-weight: 500; text-transform: uppercase">
                         OUR PORTFOLIO</h3>
@@ -108,282 +105,52 @@
         <div class="row">
             <div class=" col-sm img-fluid m-0">
                 <img data-toggle="modal" data-target="#exampleModalfoto1" class="image-fade-in-out " src="/imagens/mulher1.jpg" alt="">
-                <div class="modal fade" id="exampleModalfoto1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/mulher1.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
             </div>
             <div class="col-sm img-fluid m-0">
                 <img data-toggle="modal" data-target="#exampleModalfoto2" class="image-fade-in-out " src="/imagens/mulher2.jpg" alt=""></div>
-                <div class="modal fade" id="exampleModalfoto2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/mulher2.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
             <div class="col-sm img-fluid m-0">
                 <img data-toggle="modal" data-target="#modalfoto3" class="image-fade-in-out m-0" src="imagens/mulher3.jpg" alt=""></div>
-                <div class="modal fade" id="modalfoto3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/mulher3.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
             <div class="col-sm img-fluid">
                 <img data-toggle="modal" data-target="#modalfoto4" class="image-fade-in-out m-0" src="imagens/mulher4.jpg" alt=""></div>
-                <div class="modal fade" id="modalfoto4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/mulher4.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
         </div>
 
         <div class="row  mt-1">
             <div class="col-sm img-fluid">
                 <img data-toggle="modal" data-target="#modalfoto5" class="image-fade-in-out" src="imagens/mulher5.jpg" alt=""></div>
-                <div class="modal fade" id="modalfoto5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/mulher5.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-            <div data-target="#modalfoto6" data-toggle="modal" class="col-sm img-fluid">
-                <img class="image-fade-in-out" src="imagens/mulher6.jpg" alt=""></div>
-                <div class="modal fade" id="modalfoto6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/mulher6.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              
+                <div data-target="#modalfoto6" data-toggle="modal" class="col-sm img-fluid">
+                  <img class="image-fade-in-out" src="imagens/mulher6.jpg" alt=""></div>
 
             <div data-toggle="modal" data-target="#modalfoto7" class="col-sm img-fluid">
                 <img class="image-fade-in-out" src="imagens/mulher7.jpg" alt=""></div>
-                <div class="modal fade" id="modalfoto7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/mulher7.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+               
 
             <div data-target="#modalfoto8" data-toggle="modal" class="col-sm img-fluid">
                 <img class="image-fade-in-out" src="imagens/casal.jpg" alt=""></div>
-                <div class="modal fade" id="modalfoto8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/casal.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
 
         </div>
 
         <div class="row mb-5 mt-1">
             <div class="col-sm img-fluid">
                 <img data-toggle="modal"  data-target="#modal9" class="image-fade-in-out" src="imagens/row3.jpg"></div>
-                <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/row3.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
 
             <div class="col-sm img-fluid">
                 <img data-target="#modal10" data-toggle="modal" class="image-fade-in-out" src="imagens/row3_2.jpg" alt=""></div>
-                <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/row3_2.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
 
             <div class="col-sm img-fluid">
                 <img data-toggle="modal" data-target="#modal11" class="image-fade-in-out" src="imagens/row3_3.jpg" alt=""></div>
-                <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/row3_3.jpg" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
 
             <div class="col-sm img-fluid">
                 <img data-target="#modal12" data-toggle="modal" class="image-fade-in-out" src="imagens/row3_4.png" alt=""></div>
-                <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header colorblack">
-                          <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
-                        
-                        </div>
-                        <div class="modal-body colorblack">
-                          <img src="/imagens/row3_4.png" alt="">
-                        </div>
-                        <div class="colorblack">
-                            <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
-                        </div>
-                        <div class="modal-footer colorblack">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
 
         </div>
 
@@ -394,7 +161,7 @@
 
 
         <div class="col-sm mt-5 mb-5 MagicScroll" data-options="mode: cover-flow; height: 275px;">
-            <img src="imagens/scroll1.jpg" />
+            <img class="col-sm" src="imagens/scroll1.jpg" />
             <img src="imagens/scroll2.png" />
             <img src="imagens/scroll3.jpg" />
             <img src="imagens/scroll4.png" />
@@ -407,18 +174,18 @@
 
     </div>
      <!-- Modal -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+     <div class="modal"  id="exampleModal" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
      <div class="modal-dialog" role="document">
-         <div class="modal-content">
+         <div class="modal-content mx-auto d-block">
              <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">Enviar foto</h5>
+                 <h5 class="modal-title mx-auto" id="exampleModalLabel">Enviar foto</h5>
 
              </div>
-             <div class="modal-body">
+             <div class="modal-body text-center">
                  <form>
                      <div class="form-group">
-                         <label for="exampleFormControlInput1">Nome</label>
+                         <label style="text-align: left" for="exampleFormControlInput1">Nome</label>
                          <input type="text" class="form-control" id="exampleFormControlInput1"
                              placeholder="Seu nome aqui">
                      </div>
@@ -440,21 +207,272 @@
                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                        </div>
                        <div class="form-group">
-                        <label for="exampleFormControlFile1">Example file input</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <label for="exampleFormControlFile1"></label>
+                        <input  type="file" class="form-control-file" id="exampleFormControlFile1">
                       </div>
                  </form>
              </div>
              <div class="modal-footer">
                  <button type="button" class="btn btn-secondary"
                      data-dismiss="modal">Cancelar</button>
-                 <button type="button" class="btn btn-primary">Enviar</button>
+                 <button  type="button" class="btn btn-primary">Enviar</button>
              </div>
          </div>
      </div>
  </div>
+<!-- Modal foto 1 -->
+ <div class="modal" id="exampleModalfoto1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/mulher1.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 2 -->
+<div class="modal " id="exampleModalfoto2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/mulher2.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 3 -->
+<div class="modal " id="modalfoto3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/mulher3.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 4 -->
+<div class="modal " id="modalfoto4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/mulher4.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 5 -->
+<div class="modal" id="modalfoto5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/mulher5.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 6 -->
 
-
+  <div class="modal" id="modalfoto6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header colorblack">
+            <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+          
+          </div>
+          <div class="modal-body colorblack">
+            <img src="/imagens/mulher6.jpg" alt="">
+          </div>
+          <div class="colorblack">
+              <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+          </div>
+          <div class="modal-footer colorblack">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal foto 7 -->
+<div class="modal" id="modalfoto7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/mulher7.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 8 -->
+<div class="modal" id="modalfoto8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/casal.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 9 -->
+<div class="modal" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/row3.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 10 -->
+<div class="modal" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/row3_2.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 11 -->
+<div class="modal " id="modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/row3_3.jpg" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal foto 12 -->
+<div class="modal " id="modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header colorblack">
+        <h5 class="modal-title text-white" style="font-weight: 800" id="exampleModalLabel">Nome da mãe</h5>
+      
+      </div>
+      <div class="modal-body colorblack">
+        <img src="/imagens/row3_4.png" alt="">
+      </div>
+      <div class="colorblack">
+          <p class="text-white"> AQUI PODE ESTAR O NOME DO FILHO, DEPARTAMENTO E MENSAGEM </p>
+      </div>
+      <div class="modal-footer colorblack">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
