@@ -720,6 +720,15 @@ body {
     margin-bottom: 6px;
 }
 
+.border-left-footer > p > a {
+    text-decoration: none!important;
+    color: #7b8990;
+}
+
+.border-left-footer > p > a:hover {
+    color: white;
+}
+
 .footer-section {
     background-color: #485156;
     color: #829199;
@@ -734,8 +743,22 @@ body {
     margin-top: 6px;
 }
 
-.border-right-footer {
-    border-right: 1px dotted black;
+.border-right-footer > span > a {
+    text-decoration: none!important;
+    color: #7b8990;
+}
+
+.border-right-footer > span > a:hover {
+    color: white;
+}
+
+.color-footer {
+    text-decoration: none!important;
+    color: #7b8990;
+}
+
+.color-footer:hover {
+    color: white;
 }
 
 .bgbar {
