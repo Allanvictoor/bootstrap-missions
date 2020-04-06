@@ -218,7 +218,7 @@
                                                      data-target="#collapseFive" aria-expanded="false"
                                                      aria-controls="collapseFive">
                                                     <div class="d-flex justify-content-between">
-                                                        <p>Chat, Comunicado Interno, Avisos</p>
+                                                        <p class="mob-grand">Chat, Comunicado Interno, Avisos</p>
                                                         <i class="fas fa-plus"></i>
                                                     </div>
                                                 </div>
