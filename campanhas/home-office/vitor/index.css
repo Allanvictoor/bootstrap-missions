@@ -13,12 +13,10 @@
 }
 
 
-
-
 .btn-blue {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7;
+    background-color: #337ab7 !important;
+    border-color: #337ab7 !important;
 }
 
 .bor {
