@@ -1,36 +1,162 @@
-.cor {
-    border-radius: 10px;
-    background-color: #eb9d37;
-}
 
-.hero_V1 {
-    background-image: url(../vitor/imagens/laughter-775062_1920.jpg);
-    padding-bottom: 60px;
+
+
+
+/* imagem total do fundo da pagina */
+
+.front {
+    background-image: url('imagens/mother-429158_1920.jpg');
     background-attachment: fixed;
-  
-}
-
-.hero-area {
     position: relative;
-    padding: 160px 0px 80px;
+    padding: 50px 0px 80px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
 }
 
-.hero_V1:before {
+/* máscara do background foto */
+
+.front::before {
     position: absolute;
     content: '';
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
+    background-color: rgba(16, 16, 21, 0.637);
+
+}
+
+/* fim imagem */
+
+
+/* cor do navbar */
+.navbar-light {
+    background-color: #eb9d37;
+
+}
+
+/* fim cor navbar */
+
+
+/* buttons  estilizacao */
+.btn-2 {
+
+    padding: 15px 20px !important;
+    border-radius: 5px;
+    margin: 10px;
+    text-transform: uppercase;
+    background-color: transparent !important;
+    border: solid 1px #fff;
+    color: #fff !important;
+}
+
+.btn-2:hover {
+    background-color: #eb9d37 !important;
+}
+
+.btn-1 {
+    font-size: 16px !important;
+    padding: 15px 20px !important;
+    border-radius: 5px;
+    margin: 10px;
+    text-transform: uppercase;
+    background-color: #eb9d37 !important;
+    border-color: #eb9d37;
+    color: #fff !important;
+}
+
+/* fim buttons estilizacao */
+
+
+
+/* estilizacao icon scroll down */
+.hb-scroll-btn a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.hb-scroll-btn a:hover {
+    color: white;
+}
+
+/* fim estilizacao icon scroll down */
+
+/* inicio estilizacao textos */
+.sub {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.textos {
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+
+.textos p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    padding: 5px;
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+/* fim estilizacao textos */
+
+
+/* div grid fotos */
+
+.black {
+    background-color: #0f0f15;
    
 }
 
-.section-padding {
-    padding: 80px 0px;
-    background-color: black;
-    color: blanchedalmond;
+.photo {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
 }
+
+
+.stl {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.stl:hover {
+    color: #eb9d37
+}
+
+
+/* imagens e hover */
+
+
+.image-fade {
+    opacity: 0.2;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.image-fade:hover {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+
+}
+
+
+
+.alls {
+
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 

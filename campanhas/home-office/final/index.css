@@ -14,61 +14,71 @@ body {
 .btn-login {
     color: #fff !important;
     background-color: #347ab7 !important;
-    border-radius: 10%!important;
+    border-radius: 10% !important;
 }
 
 .color-center {
-    color: #00649f!important;
+    color: #00649f !important;
     font-family: Poppins;
     cursor: pointer;
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 .color-center:hover {
     background-color: #aed5ec;
 }
+
 /*celulares*/
 @media (min-width: 0px) and (max-width: 720px) {
     .menu-hamburg {
         display: none;
         border-top: 2px solid blue;
     }
+
     .img-nav {
         width: 70%;
     }
+
     .hamburg {
         margin-left: 62px;
         font-size: 24px;
         margin-top: 23px;
     }
+
     #icon2-hamburg {
         display: none;
     }
 }
+
 /*tablets*/
 @media (min-width: 720px) and (max-width: 960px) {
     .menu-hamburg {
         display: none;
         border-top: 2px solid blue;
     }
+
     .img-nav {
         width: 70%;
     }
+
     .hamburg {
         margin-left: 87px;
         font-size: 75px;
         margin-top: 23px;
     }
+
     #icon2-hamburg {
         display: none;
     }
 }
+
 /*Desktop*/
 @media (min-width: 960px) {
     .hamburg {
         display: none;
     }
 }
+
 /*Final Cabeçalho*/
 
 /*Primeira section*/
@@ -265,9 +275,16 @@ body {
     font-size: 18px;
 }
 
+@media screen and (max-width: 767px) {
+    .mob-grand {
+        margin-top: 0!important;
+        margin-left: 28px;
+        font-size: 18px;    }
+}
+
 @media screen and (min-width: 992px) {
     #accordion {
-        margin-top: 18%;
+        margin-top: 12%;
     }
 }
 
@@ -721,7 +738,7 @@ body {
 }
 
 .border-left-footer > p > a {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: #7b8990;
 }
 
@@ -744,7 +761,7 @@ body {
 }
 
 .border-right-footer > span > a {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: #7b8990;
 }
 
@@ -753,7 +770,7 @@ body {
 }
 
 .color-footer {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: #7b8990;
 }
 
@@ -765,4 +782,5 @@ body {
     background: url(https://www.vivaintra.com/media/images/v2/bgbar.png) top center;
     height: 13px;
 }
+
 /*final footer*/
