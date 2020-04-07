@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia das Mães</title>
     <link rel="stylesheet" href="index.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -17,117 +19,191 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- background picture -->
-    <section class="hero-area hero_V1">
+    <div class="front">
+        <!-- imagem fundo / pseudo-elemento-->
 
-<!-- Inicio header -->
+        <!--navbar-->
+        <div class="container">
+            <nav class="navbar navbar-light" id="navbar">
+                <a class="navbar-brand" href="#">
+                    <img src="../vitor/imagens/logo-2017.png" width="230px" height="60px" alt="">
+                </a>
+            </nav>
+        </div>
+        <!--end navbar-->
+
         <div class="container">
             <div class="col-lg-12">
-                <div class="row cor">
-                    <div class="p-3">
-                        <img src="./imagens/viva.png" width="240px" alt="">
+                <!-- inicio texto-->
+                <div class="textos">
+                    <h3 class="text-lg-center sub">
+                        <span>Photography</span>
+                        Is an Immediate Reaction,
+                        <br> Drawing is A
+                        <span>Meditation</span> Props.
+                    </h3>
+                    <p>
+                        Photography is a way of feeling, of touching, of loving. What you have caught on film is
+                        captured forever... it <br>
+                        remembers little things, long after you have forgotten everything.
+                    </p>
+                </div>
+                <!-- fim texto-->
+
+
+                <!-- Inicio buttons-->
+                <div class="row justify-content-center">
+                    <button type="button" class="btn btn-warning btn-1">CONTACT US
+                    </button>
+                    <button type="button" class="btn btn-light btn-2">PORTFOLIO</button>
+                </div>
+                <!-- fim buttons-->
+                <!-- scroll icon -->
+                <div class="row py-5 justify-content-center">
+                    <div class="hb-scroll-btn">
+                        <a href="#portf"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-<!-- fim header -->
-
-        <div class="container">
-            <div class="hero-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="hero-text">
-                            <h2 class="wow fadeIn" data-wow-delay=".5s"
-                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-                                <span>Photography</span> is an Immediate Reaction,
-                                Drawing is a <span>Meditation</span> Props.</h2>
-                            <p class="wow fadeIn" data-wow-delay=".99s"
-                                style="visibility: visible; animation-delay: 0.99s; animation-name: fadeIn;">
-                                Photography is a way of feeling, of touching, of loving. What you have
-                                caught on film is captured forever... it
-                                remembers little things, long after you have forgotten everything.</p>
-                            <div class="hero-btn wow fadeIn" data-wow-delay="1.49s"
-                                style="visibility: visible; animation-delay: 1.49s; animation-name: fadeIn;">
-                                <a href="contact.html" class="btn-style-1 btns1b">Contact Us</a>
-                                <a href="portfolio-1.html" class="btn-style-1">Portfolio</a>
-                            </div>
-                        </div>
-                        <div class="hb-scroll-btn">
-                            <a href="#about" class="smoothscroll"><i class="fa fa-angle-double-down"
-                                    aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about-area about-1 section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-img wow fadeInLeft" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInLeft;">
-                        <img src="assets/img/section-img/about-1-1.jpg" alt="">
-                    </div>
-                    
-                </div>
-                <div class="col-md-6">
-                    <div class="about-text">
-                        <div class="section-text">
-                            <div class="section-titleV1">
-                                <p class="wow fadeInUp" data-wow-delay=".15s" style="visibility: visible; animation-delay: 0.15s; animation-name: fadeInUp;">About us</p>
-                                <h3 class="wow fadeInUp" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">Photography Is Great</h3>
-                            </div>
-                            <p class="wow fadeInUp" data-wow-delay=".35s" style="visibility: visible; animation-delay: 0.35s; animation-name: fadeInUp;">Photography is like a moment, an instant. You need a half-second to get the
-                                photo. So it's good to capture people when they are themselves.I became
-                                passionate about design filmmaking when I graduated from UCLA, and one
-                                of the things I always wanted to do was shoot really high quality film, so I got
-                                into time-lapse photography - so that means when you shoot a flower.</p>
-                            <ul>
-                                <li class="wow fadeInUp" data-wow-delay=".45s" style="visibility: visible; animation-delay: 0.45s; animation-name: fadeInUp;">You're shooting, like, one frame every twenty minutes, so that's</li>
-                                <li class="wow fadeInUp" data-wow-delay=".55s" style="visibility: visible; animation-delay: 0.55s; animation-name: fadeInUp;">Seconds of a film per day. Photography is a pursuit that allows</li>
-                                <li class="wow fadeInUp" data-wow-delay=".65s" style="visibility: visible; animation-delay: 0.65s; animation-name: fadeInUp;">Hands-on with what you show people of either yourself or the</li>
-                            </ul>
-                            <p class="wow fadeInUp" data-wow-delay=".75" style="visibility: visible; animation-name: fadeInUp;">You do have a modicum of creative freedom as an actor, but you're still very
-                                much a cipher for other people's art. Photography gives you the opportunity
-                                to use your sensibility and everything you are to say something.</p>
-                            <a href="contact.html" class="btn-style-1 wow fadeInUp" data-wow-delay=".99s" style="visibility: visible; animation-delay: 0.99s; animation-name: fadeInUp;">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <div class="container">
-        <div class="col-lg-12">
-            <div class="row justify-content-center">
-
-                x
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="col-lg-12">
-            <div class="row justify-content-center">
-                x
+                <!-- fim scroll icon-->
 
             </div>
         </div>
     </div>
+    <!-- fim imagem fundo / pseudo-elemento -->
+
+
+    <div class="container-fluid black" id="portf">
+        <div class="col-lg-12 py-3 text-center text-lg-center">
+            <div class="row justify-content-center">
+                <div class="photo">
+                    <h5>OUR RECENT WORKS</h5>
+                    <h2>OUR PORTFOLIO</h2>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="stl">All</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="stl">Design</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="stl">Photography</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="stl">UI Design</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="stl">UX Design</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="stl">Branding</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="stl">Prototype</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row pt-4 col-12 p-0 m-0">
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/3.jpg" class="img-fluid" style="width: 100%;" alt=""></a>
+            </div>
+
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width:100%"></a>
+            </div>
+
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/3.jpg" class="" style="width: 100%"></a>
+            </div>
+            <div class="col-xl-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
+            </div>
+
+        </div>
+
+
+        <div class="row col-12 p-0 m-0">
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 100% "></a>
+            </div>
+
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/3.jpg" class="" style="width: 100%;"></a>
+            </div>
+
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
+            </div>
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/3.jpg" class="" style="width: 100%"></a>
+            </div>
+        </div>
 
 
 
+        <div class="row col-12 p-0 m-0">
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 100% "></a>
+            </div>
 
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/3.jpg" class="" style="width: 100%;"></a>
+            </div>
+
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
+            </div>
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/3.jpg" class="" style="width: 100%"></a>
+            </div>
+        </div>
+
+        <div class="row col-12 p-0 m-0">
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 100% "></a>
+            </div>
+
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/3.jpg" class="" style="width: 100%;"></a>
+            </div>
+
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
+            </div>
+            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/3.jpg" class="" style="width: 100%"></a>
+            </div>
+        </div>
+
+
+
+    </div><!-- cor background-->
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-120px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
