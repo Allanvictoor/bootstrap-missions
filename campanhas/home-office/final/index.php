@@ -13,7 +13,7 @@
         ?>
     </div>
     <div class="body">
-        <section>
+        <section class="mt-5">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -66,7 +66,7 @@
                                     <div class="col-lg-3 col-md-6 strategy-card-section">
                                         <div class="strategy-card">
                                             <div class="strategy-card-icon-section">
-                                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-1.png">
+                                                <img src="./imagens/internet.png" alt="">
                                             </div>
                                             <h2>Comunicação Fácil e Eficiente</h2>
                                             <p>Work synchronization and automated services</p>
@@ -75,7 +75,7 @@
                                     <div class="col-lg-3 col-md-6 strategy-card-section">
                                         <div class="strategy-card">
                                             <div class="strategy-card-icon-section">
-                                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-2.png">
+                                                <img src="./imagens/list.png">
                                             </div>
                                             <h2>Controle de Atividades</h2>
                                             <p>Work synchronization and automated services</p>
@@ -84,7 +84,7 @@
                                     <div class="col-lg-3 col-md-6 strategy-card-section">
                                         <div class="strategy-card">
                                             <div class="strategy-card-icon-section">
-                                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-3.png">
+                                                <img src="./imagens/group.png">
                                             </div>
                                             <h2>Fluxos de Processos e Equipes</h2>
                                             <p>Work synchronization and automated services</p>
@@ -93,7 +93,7 @@
                                     <div class="col-lg-3 col-md-6 strategy-card-section">
                                         <div class="strategy-card">
                                             <div class="strategy-card-icon-section">
-                                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-4.png">
+                                                <img src="./imagens/webinar.png">
                                             </div>
                                             <h2>Capacitação e Integração</h2>
                                             <p>Work synchronization and automated services</p>
