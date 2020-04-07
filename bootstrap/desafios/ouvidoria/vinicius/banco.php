@@ -5,6 +5,9 @@ $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 $cpf = filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_STRING);
 $rg = filter_input(INPUT_POST, 'rg', FILTER_SANITIZE_STRING);
 
+/*$name = $_POST['nome'];
+$name = $_POST['manifestacao'];*/
+
 $cep = filter_input(INPUT_POST, 'cep', FILTER_SANITIZE_STRING);
 $logradouro = filter_input(INPUT_POST, 'logradouro', FILTER_SANITIZE_STRING);
 $numero = filter_input(INPUT_POST, 'numero', FILTER_SANITIZE_STRING);
