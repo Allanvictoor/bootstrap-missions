@@ -13,6 +13,8 @@ scroll-behavior: smooth;
 }
 
 
+
+
 #titleportifolio {
 padding-top: 80px;
 margin-bottom: 30px;
@@ -44,12 +46,14 @@ position: relative;
 .image-fade-in-out {
 opacity: 0.3;
 transition: opacity 1s ease-in-out;
-margin-bottom: 1px solid color #eb9d37;
+
 }
 
 .image-fade-in-out:hover {
 opacity: 2.0;
 transition: opacity .55s ease-in-out;
+border-bottom: solid 7px #eb9d37;
+
 }
 
 h3 { 
