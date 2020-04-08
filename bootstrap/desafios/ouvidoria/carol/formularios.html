@@ -42,13 +42,15 @@
                         </div>
                     </fieldset>
                     <form name="formulario" method="post">
-                    <div class="col my-1">
-                        <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" required>
-                        <div class="invalid-feedback">
-                            Por favor, informe um nome válido.
+                        <div class="col my-1">
+                            <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome Completo" required>
+                            <div class="invalid-feedback">
+                                Por favor, informe um nome válido.
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
+
 
                 <div class="form-row">
                     <div class="col my-1">
@@ -86,32 +88,32 @@
                 </div>
             </form>
 
-                <form class="form-inline" novalidate>
-                    <label class="mr-sm-2 mt-3" for="tipoUsuario"><p class="small text-muted m-0">Tipo de Usuario</p> </label>
-                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 mt-3" id="tipoUsuario">
-                        <option selected></option>
-                        <option value="1">Estudante</option>
-                        <option value="2">Colaborador</option>
-                        <option value="3">Outros</option>
-                    </select>
-                </form>
-                <div class="form-group">
-                    <label for="manifestoUsuario" style="margin-top: 5%"><p class="small text-muted m-0">Digite seu Manifesto</p> </label>
-                    <textarea  class="form-control" id="manifestoUsuario" style="resize: none"  rows="3"  required></textarea>
+            <form class="form-inline" novalidate>
+                <label class="mr-sm-2 mt-3" for="tipoUsuario"><p class="small text-muted m-0">Tipo de Usuario</p> </label>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 mt-3" id="tipoUsuario">
+                    <option selected></option>
+                    <option value="1">Estudante</option>
+                    <option value="2">Colaborador</option>
+                    <option value="3">Outros</option>
+                </select>
+            </form>
+            <div class="form-group">
+                <label for="manifestoUsuario" style="margin-top: 5%"><p class="small text-muted m-0">Digite seu Manifesto</p> </label>
+                <textarea  class="form-control" id="manifestoUsuario" style="resize: none"  rows="3"  required></textarea>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Concordo com os termos e condições
+                </label>
+                <div class="invalid-feedback">
+                    Você deve concordar, antes de continuar.
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox"id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Concordo com os termos e condições
-                    </label>
-                    <div class="invalid-feedback">
-                        Você deve concordar, antes de continuar.
-                    </div>
-                    <div class="row">
-                       <button class="btn btn-primary btn-lg my-1" data-target="#modalFormularioManifesto" data-toggle="modal" id="enviarFormularioManifesto" type="submit">Enviar</button>
-                    </div>
+                <div class="row">
+                    <button class="btn btn-primary btn-lg my-1" data-target="#modalFormularioManifesto" data-toggle="modal" id="enviarFormularioManifesto" type="submit">Enviar</button>
                 </div>
-                <script src="js.js"></script>
+            </div>
+            <script src="js.js"></script>
             </form>
         </div>
     </div>

@@ -13,20 +13,20 @@
         ?>
     </div>
     <div class="body">
-        <section class="mt-5">
+        <section class="color-one">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-sm-12">
                             <div class="row">
-                                <div class="col-lg-6 col-sm-12 w-100">
+                                <div class="col-lg-6 col-sm-12 w-100 mt-5">
                                     <div class="row">
                                         <img width="100%"
                                              src="https://www.codefest.co.uk/demo/codelander/assets/images/header.png"
                                              alt="">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-sm-12 w-100">
+                                <div class="col-lg-6 col-sm-12 w-100 mt-5">
                                     <div class="row">
                                         <div class="m-lg-5">
                                             <p class="header-subtitle w-100">Equipes em home-office?</p>
@@ -56,7 +56,7 @@
                 <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-section-bg.png">
             </div>
         </section>
-        <section>
+        <section class="color-two" >
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -66,7 +66,7 @@
                                     <div class="col-lg-3 col-md-6 strategy-card-section">
                                         <div class="strategy-card">
                                             <div class="strategy-card-icon-section">
-                                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-1.png">
+                                                <img src="./imagens/internet.png" alt="">
                                             </div>
                                             <h2>Comunicação Fácil e Eficiente</h2>
                                             <p>Work synchronization and automated services</p>
@@ -75,7 +75,7 @@
                                     <div class="col-lg-3 col-md-6 strategy-card-section">
                                         <div class="strategy-card">
                                             <div class="strategy-card-icon-section">
-                                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-2.png">
+                                                <img src="./imagens/list.png">
                                             </div>
                                             <h2>Controle de Atividades</h2>
                                             <p>Work synchronization and automated services</p>
@@ -84,7 +84,7 @@
                                     <div class="col-lg-3 col-md-6 strategy-card-section">
                                         <div class="strategy-card">
                                             <div class="strategy-card-icon-section">
-                                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-3.png">
+                                                <img src="./imagens/group.png">
                                             </div>
                                             <h2>Fluxos de Processos e Equipes</h2>
                                             <p>Work synchronization and automated services</p>
@@ -93,7 +93,7 @@
                                     <div class="col-lg-3 col-md-6 strategy-card-section">
                                         <div class="strategy-card">
                                             <div class="strategy-card-icon-section">
-                                                <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-4.png">
+                                                <img src="./imagens/webinar.png">
                                             </div>
                                             <h2>Capacitação e Integração</h2>
                                             <p>Work synchronization and automated services</p>
@@ -110,7 +110,7 @@
                      src="https://www.codefest.co.uk/demo/codelander/assets/images/services-section-bg.png">
             </div>
         </section>
-        <section>
+        <section class="color-three">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -244,7 +244,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="color-four">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -276,7 +276,7 @@
                 <img src="https://www.codefest.co.uk/demo/codelander/assets/images/pricing-section-left-bg.png">
             </div>
         </section>
-        <section>
+        <section class="color-five">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -345,7 +345,7 @@
                 <img src="https://www.codefest.co.uk/demo/codelander/assets/images/pricing-section-right-bg.png">
             </div>
         </section>
-        <section>
+        <section class="color-six">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -417,7 +417,7 @@
                 <img src="https://www.codefest.co.uk/demo/codelander/assets/images/blog-section-right-bg.png">
             </div>
         </section>
-        <section>
+        <section class="color-seven">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -471,7 +471,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="color-eight">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
