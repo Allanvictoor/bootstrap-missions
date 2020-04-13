@@ -1,0 +1,17 @@
+.primarycolor {
+    background-color: #dfe6e9
+    
+}
+
+.textnav{
+    font-weight: 700;
+    color: black
+}
+
+.colorbody{
+    background-color: #bdc3c7
+}
+
+html{
+    scroll-behavior: smooth;
+    }
