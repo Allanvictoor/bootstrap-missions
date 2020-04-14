@@ -1,0 +1,39 @@
+.primarycolor {
+    background-color: #bdc3c7
+    
+}
+
+.textnav{
+    font-weight: 700;
+    font-size: 20px;
+    color: black
+}
+
+.textetapa {
+    font-weight: 500;
+    font-size: 17px;
+    color: black
+}
+
+.colorbody{
+   
+    background-color: #dfe6e9
+}
+
+html{
+    scroll-behavior: smooth;
+    }
+
+    #headum {
+        background-image: url(/imagens/EDITORES-CÓDIGOS.png);
+        width: auto;
+        text-align: center;
+       
+        height: 1000px;
+        background-size: cover;
+        background-attachment: fixed, scroll;
+        max-width: 100%;
+        font-weight: 900
+        
+        
+        }
