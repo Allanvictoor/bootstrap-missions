@@ -27,8 +27,8 @@ h5{
     filter: brightness();
 }
 #cordaempresa{
-    background-color:blue ;
-    color:blue;
+    background-color:rgb(8, 0, 128) ;
+    color:rgb(8, 0, 128);
 }
 #cordaempresahover{
     border:1px solid blue;
@@ -39,4 +39,11 @@ h5{
 }
 .nomemae{
  color: blue;
+}
+.links-navbar{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-decoration: none;
 }
