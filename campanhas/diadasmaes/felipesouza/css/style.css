@@ -140,7 +140,7 @@ div .containerprimary {
   #inicial{
     background-image: url("imagens/hd.jpg");
     background-attachment: fixed;
-    height: 100%;
+    height: ;
     background-repeat: no-repeat;
     background-size:cover;
     opacity: 0.8;
