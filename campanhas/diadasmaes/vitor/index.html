@@ -19,26 +19,60 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <!-- imagem fundo / pseudo-elemento-->
     <div class="front">
-        <!-- imagem fundo / pseudo-elemento-->
-
         <!--navbar-->
-        <div class="container">
-            <nav class="navbar navbar-light" id="navbar">
-                <a class="navbar-brand" href="#">
-                    <img src="../vitor/imagens/logo-2017.png" width="230px" height="60px" alt="">
-                </a>
+        <div class="">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand p-0 ml-0" href="#">
+                    <img src="../vitor/imagens/vivaweblogo.png" width="146px" height="31px" alt="">
+
+                    <a class="nav-item nav-link ml-auto" href="#"><i class="fas fa-home icone"></i></a>
+                    <a class="nav-item nav-link navtitle" data-toggle="modal" data-target="#myModal" href="#">SOBRE A
+                        CAMPANHA</a>
+<!--Inicio modal-->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog posicao">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <div class="ml-auto">
+                                        <img src="../vitor/imagens/capt.png" width="50px" alt="">
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                </div>
+                                <p class="h4 modtitle text-lg-center">SOBRE A CAMPANHA</p>
+                                <div class="modal-body">
+                                    <p class="h5 text-lg-center">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                    <p class="h6">
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    </p>
+                                     
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+<!--Termino modal-->
+
+                    <a class="nav-item nav-link navtitle" href="#">RANKING</a>
+
             </nav>
         </div>
         <!--end navbar-->
-
         <div class="container">
             <div class="col-lg-12">
                 <!-- inicio texto-->
@@ -49,6 +83,7 @@
                         <br> Drawing is A
                         <span>Meditation</span> Props.
                     </h3>
+
                     <p>
                         Photography is a way of feeling, of touching, of loving. What you have caught on film is
                         captured forever... it <br>
@@ -60,9 +95,8 @@
 
                 <!-- Inicio buttons-->
                 <div class="row justify-content-center">
-                    <button type="button" class="btn btn-warning btn-1">CONTACT US
+                    <button type="button" class="btn btn-primary btn-1">ENVIAR FOTO
                     </button>
-                    <button type="button" class="btn btn-light btn-2">PORTFOLIO</button>
                 </div>
                 <!-- fim buttons-->
                 <!-- scroll icon -->
@@ -72,7 +106,6 @@
                     </div>
                 </div>
                 <!-- fim scroll icon-->
-
             </div>
         </div>
     </div>
@@ -83,32 +116,29 @@
         <div class="col-lg-12 py-3 text-center text-lg-center">
             <div class="row justify-content-center">
                 <div class="photo">
-                    <h5>OUR RECENT WORKS</h5>
-                    <h2>OUR PORTFOLIO</h2>
+                    <h5>GALERIA DO DIA DAS MÃES</h5>
+                    <h2>2020</h2>
                 </div>
             </div>
             <div class="row text-center justify-content-center">
                 <ul class="list-inline">
                     <li class="list-inline-item">
-                        <a href="#" class="stl">All</a>
+                        <a href="#" class="stl">Comercial</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#" class="stl">Design</a>
+                        <a href="#" class="stl">Marketing</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#" class="stl">Photography</a>
+                        <a href="#" class="stl">Engenharia</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#" class="stl">UI Design</a>
+                        <a href="#" class="stl">Limpeza</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#" class="stl">UX Design</a>
+                        <a href="#" class="stl">Admnistração</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#" class="stl">Branding</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="stl">Prototype</a>
+                        <a href="#" class="stl">Financeiro</a>
                     </li>
                 </ul>
             </div>
@@ -116,94 +146,45 @@
 
 
         <div class="row pt-4 col-12 p-0 m-0">
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+            <div class="col-lg-4 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
                         src="../vitor/imagens/3.jpg" class="img-fluid" style="width: 100%;" alt=""></a>
             </div>
 
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+            <div class="col-lg-4 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
                         src="../vitor/imagens/1.jpeg" class="" style="width:100%"></a>
             </div>
 
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+            <div class="col-lg-4 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
                         src="../vitor/imagens/3.jpg" class="" style="width: 100%"></a>
             </div>
-            <div class="col-xl-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
-            </div>
+
 
         </div>
 
 
         <div class="row col-12 p-0 m-0">
             <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/1.jpeg" class="" style="width: 100% "></a>
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 350px" height="335px"></a>
             </div>
 
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+            <div class="col-lg-2 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
                         src="../vitor/imagens/3.jpg" class="" style="width: 100%;"></a>
             </div>
 
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+            <div class="col-lg-2 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
+                        src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
+            </div>
+            <div class="col-lg-2 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
                         src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
             </div>
             <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/3.jpg" class="" style="width: 100%"></a>
+                        src="../vitor/imagens/3.jpg" class="" style="width: 350px" height="335px"></a>
             </div>
         </div>
-
-
-
-        <div class="row col-12 p-0 m-0">
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/1.jpeg" class="" style="width: 100% "></a>
-            </div>
-
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/3.jpg" class="" style="width: 100%;"></a>
-            </div>
-
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
-            </div>
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/3.jpg" class="" style="width: 100%"></a>
-            </div>
-        </div>
-
-        <div class="row col-12 p-0 m-0">
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/1.jpeg" class="" style="width: 100% "></a>
-            </div>
-
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/3.jpg" class="" style="width: 100%;"></a>
-            </div>
-
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/1.jpeg" class="" style="width: 100%"></a>
-            </div>
-            <div class="col-lg-3 col-3 m-0 p-0"><a rel="group" href="#!"><img class="image-fade"
-                        src="../vitor/imagens/3.jpg" class="" style="width: 100%"></a>
-            </div>
-        </div>
-
-
 
     </div><!-- cor background-->
 
 
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-120px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
 </body>
 
 </html>

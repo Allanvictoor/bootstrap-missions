@@ -1,21 +1,15 @@
-
-
-
-
 /* imagem total do fundo da pagina */
-
 .front {
     background-image: url('imagens/mother-429158_1920.jpg');
     background-attachment: fixed;
     position: relative;
-    padding: 50px 0px 80px;
+    padding: 0px 0px 100px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
 }
 
 /* máscara do background foto */
-
 .front::before {
     position: absolute;
     content: '';
@@ -23,47 +17,60 @@
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(16, 16, 21, 0.637);
-
+    background-color: rgba(16, 16, 21, 0.620);
 }
 
 /* fim imagem */
 
 
-/* cor do navbar */
+/*  navbar */
 .navbar-light {
-    background-color: #eb9d37;
-
+    background-color: #011a47;
 }
 
-/* fim cor navbar */
+.icone {
+    color: #ffff;
+}
+
+.navtitle {
+    color: #fff;
+}
+
+.navtitle:hover {
+    color: #fff;
+}
+
+/* fim  navbar */
+
+/* modal estilizacao */
+
+.modtitle {
+   
+    background-color:#f1f1f1 ;
+}
+
+.posicao {
+
+    right: 10px;
+}
+
+
+
+
+/* fim modal *?
 
 
 /* buttons  estilizacao */
-.btn-2 {
-
-    padding: 15px 20px !important;
-    border-radius: 5px;
-    margin: 10px;
-    text-transform: uppercase;
-    background-color: transparent !important;
-    border: solid 1px #fff;
-    color: #fff !important;
-}
-
-.btn-2:hover {
-    background-color: #eb9d37 !important;
-}
-
 .btn-1 {
-    font-size: 16px !important;
+    font-size: 16px;
     padding: 15px 20px !important;
     border-radius: 5px;
     margin: 10px;
     text-transform: uppercase;
-    background-color: #eb9d37 !important;
-    border-color: #eb9d37;
+    background-color: #011a47 !important;
+    border-color: #011a47 !important;
     color: #fff !important;
+    text-decoration: ;
 }
 
 /* fim buttons estilizacao */
@@ -113,7 +120,7 @@
 
 .black {
     background-color: #0f0f15;
-   
+
 }
 
 .photo {
@@ -129,7 +136,7 @@
 }
 
 .stl:hover {
-    color: #eb9d37
+    color: #011f578c;
 }
 
 
@@ -158,5 +165,3 @@
     margin-right: auto;
     margin-left: auto;
 }
-
-
