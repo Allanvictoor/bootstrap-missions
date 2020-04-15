@@ -22,18 +22,61 @@
 
 html{
     scroll-behavior: smooth;
-    }
+}
 
-    #headum {
-        background-image: url(/imagens/EDITORES-CÓDIGOS.png);
-        width: auto;
-        text-align: center;
-       
-        height: 1000px;
-        background-size: cover;
-        background-attachment: fixed, scroll;
-        max-width: 100%;
-        font-weight: 900
-        
-        
-        }
+#containerHead {
+    background-image: url(/imagens/imagemfundohead.png);
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+    
+}
+
+#titleHead {
+    color: #000;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#textHead {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#titleBody {
+
+    color: #000;
+    font-weight: 700;
+    font-size: 45px;
+    
+}
+
+#imgCode {
+    background-image: url(/imagens/codeimg.jpeg);
+    width: auto;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+#hrMenu {
+    border: 2px solid;
+    color: white
+}
+#btnLogin {
+    width: 150px;
+}
+
+#textHead {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+}
+
+
+
