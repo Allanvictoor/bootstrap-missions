@@ -45,19 +45,40 @@
 /* modal estilizacao */
 
 .modtitle {
-   
-    background-color:#f1f1f1 ;
+    background-color: #f1f1f1;
 }
 
-.posicao {
+.x {
+    color: #011a47 !important;
+    font-weight: bold !important;
+}
 
-    right: 10px;
+.y {
+    font-size: small;
+    font-weight: bold;
+    color: #011a47;
+}
+
+.z {
+    font-size: small;
+    color: #011a47;
+}
+
+/* fim modal 1*/
+
+
+/* inicio modal 2 */
+
+.altmod {
+
+    padding-top: 180px;
+}
+
+.tam {
+    padding: 0px !important;
 }
 
 
-
-
-/* fim modal *?
 
 
 /* buttons  estilizacao */
