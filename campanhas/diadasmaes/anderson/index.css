@@ -47,3 +47,6 @@ h5{
     font-family: 'Poppins';
     text-decoration: none;
 }
+.escurecer-fundo-modal{
+    background-color: black;
+}
