@@ -685,7 +685,7 @@ img.ug-sepia-effect{
 
 .ug-tiletype-justified .ug-thumb-wrapper.ug-tile .ug-tile-image-overlay img{
 	height:100%;
-	max-width:none !important;	
+	max-width:100% !important;	
 }
 
 .ug-thumb-wrapper.ug-tile .ug-tile-icon{
