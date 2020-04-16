@@ -17,15 +17,16 @@
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(16, 16, 21, 0.620);
+    background-color: rgba(16, 16, 21, 0.6);
 }
-
 /* fim imagem */
 
 
 /*  navbar */
+
 .navbar-light {
     background-color: #011a47;
+    
 }
 
 .icone {
@@ -39,11 +40,9 @@
 .navtitle:hover {
     color: #fff;
 }
-
 /* fim  navbar */
 
 /* modal estilizacao */
-
 .modtitle {
     background-color: #f1f1f1;
 }
@@ -63,37 +62,56 @@
     font-size: small;
     color: #011a47;
 }
-
 /* fim modal 1*/
 
 
 /* inicio modal 2 */
 
-.altmod {
+.modal {
 
-    padding-top: 180px;
+    top: 55px !important;
+
+}
+.altmod {
+    
+    max-width: 927px !important;
 }
 
 .tam {
     padding: 0px !important;
 }
 
+.fadez {
+    width: 100%;
+    background-color:#101015;
+    padding-top: 20px;
+}
 
+.color1 {
+    color: white;
+    font-size: x-large;
+}
 
+.color2 {
+    color: white;
+}
+/* fim modal 2 */
 
 /* buttons  estilizacao */
 .btn-1 {
-    font-size: 16px;
+  
     padding: 15px 20px !important;
     border-radius: 5px;
-    margin: 10px;
-    text-transform: uppercase;
     background-color: #011a47 !important;
     border-color: #011a47 !important;
     color: #fff !important;
-    text-decoration: ;
+ 
 }
 
+.btn-1:hover {
+    background-color: transparent !important;
+    border-color: white !important;
+}
 /* fim buttons estilizacao */
 
 
@@ -133,14 +151,12 @@
     max-width: 900px;
     margin: 15px auto;
 }
-
 /* fim estilizacao textos */
 
 
 /* div grid fotos */
-
 .black {
-    background-color: #0f0f15;
+    background-color: black;
 
 }
 
@@ -159,11 +175,9 @@
 .stl:hover {
     color: #011f578c;
 }
-
+/* fim div grid fotos */
 
 /* imagens e hover */
-
-
 .image-fade {
     opacity: 0.2;
     transition: opacity 1s ease-in-out;
@@ -176,8 +190,6 @@
 
 }
 
-
-
 .alls {
 
     width: 100%;
@@ -186,3 +198,4 @@
     margin-right: auto;
     margin-left: auto;
 }
+/*  fim imagens  */
