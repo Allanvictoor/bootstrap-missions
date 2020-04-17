@@ -55,7 +55,7 @@ html{
 #imgCode {
     background-image: url(/imagens/codeimg.jpeg);
     width: auto;
-    height: 300px;
+    height: 180px;
     background-size: cover;
     background-attachment: fixed, scroll;
 }

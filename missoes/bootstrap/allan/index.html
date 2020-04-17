@@ -20,9 +20,11 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="jquery.validate.min.js"></script>
 </head>
 
-<body>
+<body id="loader">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg" style="background-color: #011b47">
         <a class="navbar-brand col-sm" href="#"><img class="img-fluid" style="width: 10rem;"
@@ -42,27 +44,38 @@
             </div>
             <hr id="hrMenu">
             <div class="dropdown col-sm-3 ">
-                <button id="btnLogin" class="btn btn-secondary dropdown-toggle float-right" type="button"
-                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Login
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <form class="menuitem">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="email@email.com">
-
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Senha</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="********">
-                        </div>
-
-                        <button type="submit" class="btn btn-primary mx-auto d-block">Logar</button>
-                    </form>
+                <div class="row">
+                        <button id="btnLogin" class="btn btn-secondary dropdown-toggle float-right mx-1" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </button>
+                    <button id="btnCadastro" class="btn btn-primary float-right" type="button"
+                        id="dropdownMenuButton" data-toggle="modal" data-target="#staticBackdrop" aria-haspopup="true" aria-expanded="false">
+                        Cadastre-se
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <div id="imgLogin">
+                                    <img  src="https://gatesbbq.com/wp-content/uploads/2017/04/checkmarksuccess.gif" alt="" style="width: 100%" class="mx-auto d-block">
+                                </div>
+                        <form class="menuitem" id="formLogin">
+                            
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input id="formEmail" type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="email@email.com">
+    
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="********">
+                            </div>
+    
+                            <button id="btnLogar" type="button" class="btn btn-primary mx-auto d-block">Logar</button>
+                        </form>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </nav>
@@ -71,14 +84,13 @@
     <div id="containerHead" class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-sm p-5">
-                    <img class="img-fluid" src="imagens/dev.svg" alt="">
+                   
+                <div id="imagembemvindo" class="col-sm p-5 ">
+                        
+                    <img class="img-fluid mx-auto d-block" src="imagens/dev.svg" alt="">
                 </div>
-                <div class="col-sm p-5 my-auto">
-                    <h4 id="titleHead" class="text-left" >Por que contratar uma empresa de desenvolvimento de software?</h4>
-                    <p id="textHead" class="text-left">A primeira dúvida que deve surgir na sua cabeça é por que a TI atualmente precisa contar com uma
-                        parceria em desenvolvimento de software, já que existem tantas soluções prontas, pagas e
-                        gratuitas à disposição para uso corporativo.</p>
+
+                  
                 </div>
             </div>
         </div>
@@ -90,40 +102,28 @@
                 <h3 id="titleBody">Tire sua idéia do papel</h3>
             </div>
             <div class="col-sm ">
-                <img class="img-fluid mx-auto d-block" src="imagens/img_4.png" alt="">
+            
+                <img  class="img-fluid mx-auto d-block" src="imagens/img_4.png" alt="">
             </div>
         </div>
     </div>
 
     <div id="imgCode" class="container-fluid">
         <div class="container ">
-            <div class="row"> 
-                <div class="col-sm pt-5 pb-5 mx-auto">
-                    <div class="card mx-auto d-block" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Planejamento antes da execução</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm pt-5 pb-5">
-                    <img class="img-fluid mx-auto d-block" src="imagens/work.png" alt="">
-                </div>
-            </div>
+           
+                <h3 class="pb-5 pt-5" style="color: #fff; font-weight: 800; font-size: 40px; text-align: center; ">
+                    Etapas para o desenvolvimento
+                  </h3>
+
         </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid pt-5">
             <div class="container ">
                 <div class="row">
                   <div class="col-sm my-auto mx-auto d-block ">
-                    <div>
-                      <h3 class="pb-5 pt-5" style="color: #011b47; font-weight: 800; font-size: 40px; text-align: center">
-                        Etapas para o desenvolvimento
-                      </h3>
+                    <div class="col-sm">
+                      
                       <div class="col-sm">
                         <img style="width: 30rem" class="mx-auto d-block pb-5 img-fluid" src="/imagens/01(6).png" alt="">
                       </div>
@@ -161,7 +161,71 @@
 
 
     
-
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress2">Address 2</label>
+                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                          </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 </body>
