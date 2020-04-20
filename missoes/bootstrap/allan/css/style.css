@@ -27,7 +27,7 @@ html{
 #containerHead {
     background-image: url(/imagens/imagemfundohead.png);
     width: auto;
-    height: 100%;
+    height: 1000px;
     background-size: cover;
     background-attachment: fixed, scroll;
     
