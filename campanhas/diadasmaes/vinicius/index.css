@@ -134,15 +134,16 @@
         margin-top: 207px;
     }
 
-    .hero-top-primary {
-        margin-top: 60px;
-    }
 }
 
 @media screen and (max-width: 991.97px) {
     .hero-top {
         margin-top: 99px;
     }
+}
+
+#cordaempresa {
+    background-color: darkorange;
 }
 
 .hero-icon {

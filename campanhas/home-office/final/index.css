@@ -785,7 +785,7 @@ body {
 }
 
 .footer-section {
-    background-color: #485156;
+    background-color: #d2d2d2;
     color: #829199;
 }
 
@@ -821,4 +821,41 @@ body {
     height: 13px;
 }
 
+#social ul.socialList li a {
+    display: block;
+    border: 2px solid #999;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    color: #555;
+    margin-left: 12px;
+}
+
+#social ul.socialList li a:hover {
+    border: 2px solid #555;
+    color: #999;
+}
+
+.socialList {
+    display: flex;
+    list-style: none;
+}
+
+.menuList {
+    display: flex;
+    list-style: none;
+}
+
+.menuList li a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+}
+
+.menuList li a:hover {
+    border-bottom: 1px solid black;
+}
 /*final footer*/

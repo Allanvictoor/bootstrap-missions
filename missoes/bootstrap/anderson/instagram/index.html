@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.Instagram.com/favicon.ico">
+    <title>Instagram</title>
+    <!--Puxando o Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Terminando de puxar o bootstrap-->
+    <!--chamar a folha de estilos do css-->
+    <link rel="stylesheet" href="./index.css">
+    <!--finalizado-->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <nav class="navbar d-flex justify-content-around fixed-top col-sm navbar-light border border-top-0 border-right-0 border-left-0 border bottom-mutted cor-nav">
+                <div class="col-sm-">
+                    <img class="mr-5 mt-2" src="./imagens/instragram-logo.png" height="35px"  alt="">
+                </div>
+                <div class="d-none d-md-block">
+                    <input class="border border-mutted col-sm-12" placeholder="Pesquisar" type="text">
+                </div>
+                <div class="mr-5 col-sm-">
+                    <a href=""><img class="ml-3" src="./imagens/casa.png" width="25" height="25" alt=""></a>
+                    <a href=""><img class="ml-3" src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                    <a href=""><img class="ml-3" src="./imagens/bussola.png" width="25" height="25" alt=""></a>
+                    <a href=""><img class="ml-3" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                    <a href=""><img class="ml-3" src="./imagens/do-utilizador.png" width="25" height="25" alt=""></a>
+                </div>
+            </nav>
+        </div>
+        <div class="row mt-5 pt-5 cor-fundo">
+            <div class="col-md-2 d-none d-md-block ">
+            </div>
+            <div class="col-md-5"><!--inicio conteudo-->
+
+                <div class="card text-center"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-secondary">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-danger">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem-2.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-success">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem-3.jpeg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-warning">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem-4.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-primary">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem-5.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-info">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem-2.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem-3.jpeg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-success">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem-4.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-danger">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem-5.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-info">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5 mb-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-warning">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  <div class="card text-center mt-5"><!--post inicio-->
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col-1">
+                                <a href=""><img class="d-flex justify-content-start"  src="./imagens/do-utilizador.png" width="30" height="30" alt=""></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="text-decoration-none text-dark" href=""><h6 class="font-weight-bold mt-2">nomedousuario</h6></a>
+                            </div>
+                            <div class="col-10 d-flex justify-content-end">
+                               <a href=""><img class="mt-1" src="./imagens/more.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-danger">
+                      <img class="img-fluid" class="imagem-post" src="./imagens/postagem.jpg" width="500px"  alt="">
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start">
+                               <a href=""><img class="mr-4" src="./imagens/coracao.png" width="25" height="25" alt=""></a>
+                                <a href=""><img class="mr-4" src="./imagens/balao-de-fala.png" width="25" height="25" alt=""></a>
+                                <a href=""><img src="./imagens/enviar.png" width="25" height="25" alt=""></a>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <a href=""><img src="./imagens/flag.png" width="25" height="25" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <img class="ml-1" src="./imagens/do-utilizador.png" width="20" height="20" alt="">
+                            <span>curtido por</span><span class="font-weight-bold ml-1 mr-1">nomedousuario</span><span>e outras</span><span class="font-weight-bold ml-1">70 pessoas.</span>
+                        </div>
+                        <div class="row">
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-1.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-2.</span>
+                            <span class="font-weight-bold ml-2 mr-1">nomedousuario</span><span>comentario que o usuario fez sobre esse post-3.</span>
+                        </div>
+                        <div class="row mt-3 border border-top-mutted">
+                            <div class="col-9">
+                                <input class="col-12 border border-light py-1" type="text" placeholder="Adicionar um comentário...">
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
+                                <a class="text-decoration-none text-info font-weight-bold" href="">Publicar</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div><!--post fim-->
+
+                  
+            </div><!--fim conteudo-->
+            <div class="col-md-3 d-none d-md-block">
+                <div class="position-fixed"><!--lateral fixo-->
+                    <div class="row ml-2">
+                        <img src="./imagens/do-utilizador.png" width="50" height="50" alt="">
+                        <p class="ml-3 mt-1">
+                            <span class="font-weight-bold">nomedousuario</span><br>
+                            <span>Nome completo do usuário</span>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="border border-mutted ml-2 mt-2 mini-menu">
+                            STORIES
+                        </div>
+                        <div class="border border-mutted ml-2 mt-4 mini-menu">
+                            QUEM SEGUIR
+                        </div>
+                    </div>
+                </div><!--FIM LATERAL FIXO-->
+            </div>
+            <div class="col-md-2 d-none d-none d-md-block">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
