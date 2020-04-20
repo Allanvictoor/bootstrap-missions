@@ -2,14 +2,14 @@
 <html lang="pt-br">
 <head>
     <?php
-    include('../vinicius/includes/head.php');
+    include('../final/includes/head.php');
     ?>
 </head>
 <body>
 <div class="clearfix">
     <div class="header">
         <?php
-        include('../vinicius/includes/nav.php');
+        include('../final/includes/nav.php');
         ?>
     </div>
     <div class="body">
@@ -56,7 +56,7 @@
                 <img src="https://www.codefest.co.uk/demo/codelander/assets/images/strategy-section-bg.png">
             </div>
         </section>
-        <section class="color-two" >
+        <section class="color-two">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -126,6 +126,19 @@
                                         <img src="https://www.codefest.co.uk/demo/codelander/assets/images/services-header.png"
                                              width="100%">
                                     </div>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('.icone-minus').hide();
+                                            $('.accordion-section').click(function () {
+                                                $('.icone-plus').hide();
+                                                $('.icone-minus').show();
+                                            });
+                                            $('.accordion-section-one').click(function () {
+                                                $('.icone-plus').show();
+                                                $('.icone-minus').hide();
+                                            });
+                                        });
+                                    </script>
                                     <div class="col-lg-6">
                                         <div id="accordion">
                                             <div id="headingOne">
@@ -134,7 +147,8 @@
                                                      aria-controls="collapseOne">
                                                     <div class="d-flex justify-content-between">
                                                         <p>Agenda</p>
-                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-plus icone-plus"></i>
+                                                        <i class="fas fa-minus icone-minus"></i>
                                                     </div>
                                                 </div>
                                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
@@ -585,7 +599,7 @@
                                                                                 </select>
                                                                             </div>
                                                                         </div>
-                                                                        
+
                                                                         <div class="col-md-12">
                                                                             <div class="row">
                                                                                 <p class="mb-auto ml-1 services-subtitle">
@@ -624,7 +638,7 @@
     </div>
     <div class="footer">
         <?php
-        include('../vinicius/includes/rodape.php');
+        include('../final/includes/rodape.php');
         ?>
     </div>
 </div>
