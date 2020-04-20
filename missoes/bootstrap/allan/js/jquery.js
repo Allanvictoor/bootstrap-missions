@@ -17,6 +17,18 @@ $(document).ready(function(){
     $('#containerHead').fadeOut();
     $('#facaLogin').fadeIn();
   })
+
+
+
+  $('#modalTextoDois').hide()
+  $('#imgEmailModal').hide()
+  $('#btnModal').click(function(){
+    $('#modalTextoUm').hide()
+    $('#modalTextoDois').fadeIn()
+    $('#formModal').hide()
+    $('#imgEmailModal').fadeIn()
+    $('#btnbtnmodal').hide()
+  });
   
 
   });
