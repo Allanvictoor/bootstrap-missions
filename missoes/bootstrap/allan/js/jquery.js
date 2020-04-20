@@ -12,9 +12,14 @@ $(document).ready(function () {
 
 //Evento do No body apos Logar
   $('#bemvindo').hide()
+  $('#avatar').hide()
   $('#btnLogar').click(function () {
     $('#containerHead').fadeOut();
     $('#facaLogin').fadeIn();
+    $('#btnLogin').hide();
+    $('#btnCadastro').hide();
+    $('#avatar').fadeIn()
+
   })
 
 
