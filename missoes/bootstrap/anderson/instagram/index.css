@@ -1,0 +1,17 @@
+body{
+    position: relative;
+}
+.cor-fundo{
+    background-color: #FAFAFA;
+}
+.cor-nav{
+    background-color: white;
+}
+.mini-menu{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+}
+.imagem-post{
+    object-fit: cover;
+}
