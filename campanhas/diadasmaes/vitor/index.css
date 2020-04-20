@@ -1,21 +1,15 @@
-
-
-
-
 /* imagem total do fundo da pagina */
-
 .front {
     background-image: url('imagens/mother-429158_1920.jpg');
     background-attachment: fixed;
     position: relative;
-    padding: 50px 0px 80px;
+    padding: 0px 0px 100px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
 }
 
 /* máscara do background foto */
-
 .front::before {
     position: absolute;
     content: '';
@@ -23,49 +17,101 @@
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(16, 16, 21, 0.637);
-
+    background-color: rgba(16, 16, 21, 0.6);
 }
-
 /* fim imagem */
 
 
-/* cor do navbar */
-.navbar-light {
-    background-color: #eb9d37;
+/*  navbar */
 
+.navbar-light {
+    background-color: #011a47;
+    
 }
 
-/* fim cor navbar */
+.icone {
+    color: #ffff;
+}
 
+.navtitle {
+    color: #fff;
+}
+
+.navtitle:hover {
+    color: #fff;
+}
+/* fim  navbar */
+
+/* modal estilizacao */
+.modtitle {
+    background-color: #f1f1f1;
+}
+
+.x {
+    color: #011a47 !important;
+    font-weight: bold !important;
+}
+
+.y {
+    font-size: small;
+    font-weight: bold;
+    color: #011a47;
+}
+
+.z {
+    font-size: small;
+    color: #011a47;
+}
+/* fim modal 1*/
+
+
+/* inicio modal 2 */
+
+.modal {
+
+    top: 55px !important;
+
+}
+.altmod {
+    
+    max-width: 927px !important;
+}
+
+.tam {
+    padding: 0px !important;
+}
+
+.fadez {
+    width: 100%;
+    background-color:#101015;
+    padding-top: 20px;
+}
+
+.color1 {
+    color: white;
+    font-size: x-large;
+}
+
+.color2 {
+    color: white;
+}
+/* fim modal 2 */
 
 /* buttons  estilizacao */
-.btn-2 {
-
-    padding: 15px 20px !important;
-    border-radius: 5px;
-    margin: 10px;
-    text-transform: uppercase;
-    background-color: transparent !important;
-    border: solid 1px #fff;
-    color: #fff !important;
-}
-
-.btn-2:hover {
-    background-color: #eb9d37 !important;
-}
-
 .btn-1 {
-    font-size: 16px !important;
+  
     padding: 15px 20px !important;
     border-radius: 5px;
-    margin: 10px;
-    text-transform: uppercase;
-    background-color: #eb9d37 !important;
-    border-color: #eb9d37;
+    background-color: #011a47 !important;
+    border-color: #011a47 !important;
     color: #fff !important;
+ 
 }
 
+.btn-1:hover {
+    background-color: transparent !important;
+    border-color: white !important;
+}
 /* fim buttons estilizacao */
 
 
@@ -105,15 +151,13 @@
     max-width: 900px;
     margin: 15px auto;
 }
-
 /* fim estilizacao textos */
 
 
 /* div grid fotos */
-
 .black {
-    background-color: #0f0f15;
-   
+    background-color: black;
+
 }
 
 .photo {
@@ -129,13 +173,11 @@
 }
 
 .stl:hover {
-    color: #eb9d37
+    color: #011f578c;
 }
-
+/* fim div grid fotos */
 
 /* imagens e hover */
-
-
 .image-fade {
     opacity: 0.2;
     transition: opacity 1s ease-in-out;
@@ -148,8 +190,6 @@
 
 }
 
-
-
 .alls {
 
     width: 100%;
@@ -158,5 +198,4 @@
     margin-right: auto;
     margin-left: auto;
 }
-
-
+/*  fim imagens  */
