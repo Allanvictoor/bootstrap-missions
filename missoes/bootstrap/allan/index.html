@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <script src="js/jquery.js"></script>
-  <script src="jquery.validate.min.js"></script>
+  
 </head>
 
 <body style="font-family: 'Montserrat', sans-serif;">
@@ -37,17 +37,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav text-center" style="font-weight: 800">
-        <a class="nav-item nav-link active text-white mx-3" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active text-white mx-3" href="index.html">Home <span
+            class="sr-only">(current)</span></a>
         <a class="nav-item nav-link text-white mx-3" href="#curso">Cursos</a>
         <a class="nav-item nav-link text-white mx-3" href="#">Certificado</a>
         <a class="nav-item nav-link text-white mx-3" href="#">Financeiro</a>
       </div>
       <hr id="hrMenu">
       <div class="dropdown col-sm-3 ">
-          <div id="avatar" class="row"><img class="rounded-circle" style="width: 3rem" src="imagens/avataravatar.png" alt="">
-            <p class="text-white p-1 my-auto">Bem vindo Allan</p></div>
+        <div id="avatar" class="row"><img class="rounded-circle" style="width: 3rem" src="imagens/avataravatar.png"
+            alt="">
+          <p class="text-white p-1 my-auto">Bem vindo Allan</p>
+        </div>
         <div class="row">
-            
+
           <button id="btnLogin" class="btn btn-secondary dropdown-toggle float-right mx-1" type="button"
             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Login
@@ -61,11 +64,11 @@
               <img src="https://gatesbbq.com/wp-content/uploads/2017/04/checkmarksuccess.gif" alt="" style="width: 100%"
                 class="mx-auto d-block">
             </div>
-            
+
             <form class="menuitem" id="formLogin">
-                
+
               <div class="form-group p-2">
-                
+
                 <label for="exampleInputEmail1">Email</label>
                 <input id="formEmail" type="email" class="form-control" id="exampleInputEmail1"
                   aria-describedby="emailHelp" placeholder="email@email.com">
@@ -132,7 +135,7 @@
           <div class="col-sm">
 
             <div class="col-sm">
-              <img style="width: 30rem" class="mx-auto d-block pb-5 img-fluid" src="/imagens/01(6).png" alt="">
+              
             </div>
           </div>
           <div id="curso" class="row">
@@ -170,52 +173,61 @@
           <h2 class="text-center pt-3">Módulos do curso de desenvolvimento web</h2>
           <div class="row ">
             <div class="col-sm p-3">
-                <div class="card mx-auto d-block " style="width: 18rem;">
-                    <img class="card-img-top" src="imagens/cardhtml5.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Módulo HTML5</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Continuar Módulo">Continuar Módulo</a>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
-                      </div>
-                  </div>
-                  
+              <div class="card mx-auto d-block " style="width: 18rem;">
+                <img class="card-img-top" src="imagens/cardhtml5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Módulo HTML5</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                    title="Continuar Módulo">Continuar Módulo</a>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100">45%</div>
+                </div>
+              </div>
+
             </div>
             <div class="col-sm p-3">
-                <div class="card mx-auto d-block" style="width: 18rem;">
-                    <img class="card-img-top" src="imagens/cardcss3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Módulo CSS3</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Iniciar Módulo">Iniciar Módulo</a>
-                    </div>
-                  </div>
+              <div class="card mx-auto d-block" style="width: 18rem;">
+                <img class="card-img-top" src="imagens/cardcss3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Módulo CSS3</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                    title="Iniciar Módulo">Iniciar Módulo</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row ">
-              <div class="col-sm p-3">
-                  <div class="card mx-auto d-block" style="width: 18rem;">
-                      <img class="card-img-top" src="imagens/cardbootstrap.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Módulo Bootstrap</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Iniciar Módulo">Iniciar Módulo</a>
-                      </div>
-                    </div>
-              </div>
-              <div class="col-sm p-3">
-                  <div class="card mx-auto d-block" style="width: 18rem;">
-                      <img class="card-img-top" src="imagens/cardjs.png" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Módulo Javascript</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Iniciar Módulo">Iniciar Módulo</a>
-                      </div>
-                    </div>
+            <div class="col-sm p-3">
+              <div class="card mx-auto d-block" style="width: 18rem;">
+                <img class="card-img-top" src="imagens/cardbootstrap.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Módulo Bootstrap</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                    title="Iniciar Módulo">Iniciar Módulo</a>
+                </div>
               </div>
             </div>
+            <div class="col-sm p-3">
+              <div class="card mx-auto d-block" style="width: 18rem;">
+                <img class="card-img-top" src="imagens/cardjs.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Módulo Javascript</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                    title="Iniciar Módulo">Iniciar Módulo</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
