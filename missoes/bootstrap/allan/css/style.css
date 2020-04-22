@@ -76,12 +76,20 @@ html{
     color: white
 }
 #btnLogin {
-    width: 150px;
+    width: 100px;
 }
 
 #textHead {
     font-weight: 500;
     font-size: 20px;
+}
+
+#footerAligniment {
+    text-align: center;
+}
+
+.borderFooter {
+    padding: 8px
 }
 
 }
