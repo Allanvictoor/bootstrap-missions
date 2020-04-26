@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
 
+  
+
 
 //Efeito no Dropdown apos Login
   $('#imgLogin').hide()
@@ -13,14 +15,17 @@ $(document).ready(function () {
 //Evento do No body apos Logar
   $('#bemvindo').hide()
   $('#avatar').hide()
+  $('#posLogin').hide()
   $('#btnLogar').click(function () {
     $('#containerHead').fadeOut();
     $('#facaLogin').fadeIn();
     $('#btnLogin').hide();
     $('#btnCadastro').hide();
     $('#avatar').fadeIn()
+    $('#posLogin').fadeIn().slideDown()
 
   })
+
 
 
 //Evento do Modal de Cadastro

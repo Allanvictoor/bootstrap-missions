@@ -2,6 +2,12 @@
     background-color: #bdc3c7
     
 }
+#navBar {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+}
+
 
 .textnav{
     font-weight: 700;
@@ -24,10 +30,25 @@ html{
     scroll-behavior: smooth;
 }
 
+footer {
+    position: absolute;
+    border: 0;
+    width:100%;
+    
+}
+
 #containerHead {
     background-image: url(/imagens/imagemfundohead.png);
     width: auto;
     height: 1000px;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+    
+}
+#posLogin {
+    background-image: url(/imagens/codeimg.jpeg);
+    width: auto;
+    height: 800px;
     background-size: cover;
     background-attachment: fixed, scroll;
     
@@ -72,11 +93,11 @@ html{
 
 @media only screen and (max-width: 600px) {
 #hrMenu {
-    border: 2px solid;
+    border: 1px solid;
     color: white
 }
 #btnLogin {
-    width: 100px;
+    /* width: 100px; */
 }
 
 #textHead {
@@ -88,9 +109,6 @@ html{
     text-align: center;
 }
 
-.borderFooter {
-    padding: 8px
-}
 
 }
 
