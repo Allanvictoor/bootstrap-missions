@@ -51,7 +51,3 @@
     </div>
   </div>
     
-  <?php
-    include('../gabarito/template/footer.php')
-?>
-</body>
