@@ -60,3 +60,103 @@
     </div>
   </nav>
   <!--Fim Navbar-->
+
+   <!-- Modal -->
+   <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTextoUm">Faça seu cadastro</h5>
+              <h5 class="modal-title" id="modalTextoDois">Confirme seu cadastro no email enviado para sua conta</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <img id="imgEmailModal" style="width: 100%"
+                src="https://web4franquia.com/wp-content/uploads/2019/02/mail-icon-mail-icon.gif" alt="">
+              <form id="formModal">
+                <div class="form">
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Senha</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Confirmar Senha</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Endereço</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Estado</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Estado...</option>
+                      <option>Acre</option>
+                      <option>Alagoas </option>
+                      <option>Amapá</option>
+                      <option>Amazonas </option>
+                      <option>Bahia </option>
+                      <option>Ceará </option>
+                      <option>Distrito Federal</option>
+                      <option>Espírito Santo</option>
+                      <option>Goiás</option>
+                      <option>Maranhão</option>
+                      <option>Mato Grosso</option>
+                      <option>Mato Grosso do Sul</option>
+                      <option>Minas Gerais</option>
+                      <option>Pará</option>
+                      <option>Paraíba</option>
+                      <option>Paraná</option>
+                      <option>Pernambuco</option>
+                      <option>Piauí</option>
+                      <option>Rio de Janeiro</option>
+                      <option>Rio Grande do Norte</option>
+                      <option>Rio Grande do Sul</option>
+                      <option>Rondônia</option>
+                      <option>Roraima</option>
+                      <option>Santa Catarina</option>
+                      <option>São Paulo</option>
+                      <option>Sergipe</option>
+                      <option>Tocantins</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">CEP</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Eu aceito os termos.
+                    </label>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <div id="btnbtnmodal" class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button id="btnModal" type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
