@@ -9,7 +9,7 @@
     ?>
 
 
-<div class="container-fluid pt-5" >
+<div class="container-fluid pt-5  bodyMaior" >
     <div class="container ">
       <div class="row">
         <div class="col-sm my-auto mx-auto d-block ">

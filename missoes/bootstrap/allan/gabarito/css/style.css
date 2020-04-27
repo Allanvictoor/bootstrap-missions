@@ -8,11 +8,19 @@
     opacity: 1;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .textnav{
     font-weight: 700;
     font-size: 20px;
     color: black
+}
+
+.bodyMaior {
+    height: 800px;
 }
 
 .textetapa {
@@ -34,6 +42,7 @@ footer {
     position: absolute;
     border: 0;
     width:100%;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -97,7 +106,7 @@ footer {
     color: white
 }
 #btnLogin {
-    /* width: 100px; */
+    width: 100px;
 }
 
 #textHead {

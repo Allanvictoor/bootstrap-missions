@@ -9,7 +9,7 @@
     ?>
 
 
-<div class="col-sm">
+<div class="col-sm  bodyMaior">
   <table class="table table-striped" >
     <thead class="col-sm">
       <tr>

@@ -1,0 +1,125 @@
+.primarycolor {
+    background-color: #bdc3c7
+    
+}
+#navBar {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.textnav{
+    font-weight: 700;
+    font-size: 20px;
+    color: black
+}
+
+.bodyMaior {
+    height: 800px;
+}
+
+.textetapa {
+    font-weight: 500;
+    font-size: 17px;
+    color: black
+}
+
+.colorbody{
+   
+    background-color: #dfe6e9
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+footer {
+    position: absolute;
+    border: 0;
+    width:100%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#containerHead {
+    background-image: url(/imagens/imagemfundohead.png);
+    width: auto;
+    height: 1000px;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+    
+}
+#posLogin {
+    background-image: url(/imagens/codeimg.jpeg);
+    width: auto;
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+    
+}
+
+#titleHead {
+    color: #000;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#textHead {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#titleBody {
+
+    color: #000;
+    font-weight: 700;
+    font-size: 45px;
+    
+}
+
+#imgCode {
+    background-image: url(/imagens/codeimg.jpeg);
+    width: auto;
+    height: 180px;
+    background-size: cover;
+    background-attachment: fixed, scroll;
+}
+
+.backgroundCursosModulo {
+    background-color: #dfe6e9;
+}
+
+.borderFooter {
+    border-left: solid 2px  white ;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+#hrMenu {
+    border: 1px solid;
+    color: white
+}
+#btnLogin {
+    width: 100px;
+}
+
+#textHead {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#footerAligniment {
+    text-align: center;
+}
+
+
+}
+
+
+

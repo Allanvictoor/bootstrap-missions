@@ -31,7 +31,7 @@
               </div>
 
             </div>
-            <div class="col-sm p-3">
+            <div  class="col-sm p-3" >
               <div class="card mx-auto d-block" style="width: 18rem;">
                 <img class="card-img-top" src="imagens/cardcss3.jpg" alt="Card image cap">
                 <div class="card-body">
