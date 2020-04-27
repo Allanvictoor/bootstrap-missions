@@ -14,6 +14,7 @@
         <a class="nav-item nav-link text-white mx-3" href="cursos.php">Cursos</a>
         <a class="nav-item nav-link text-white mx-3" href="modulos.php">Módulos</a>
         <a class="nav-item nav-link text-white mx-3" href="certificados.php">Certificados</a>
+        <a class="nav-item nav-link text-white mx-3" href="certificados.php">Meu Plano</a>
       </div>
       <hr id="hrMenu">
       <div class="dropdown col-sm-3 ">
