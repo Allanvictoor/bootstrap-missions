@@ -1,11 +1,11 @@
 <head>
     <?php
-    include('../allan/tamplates/head.php');
+    include('../gabarito/template/head.php');
     ?>
 </head>
 <body>
     <?php
-    include('../allan/tamplates/nav.php')
+    include('../gabarito/template/nav.php')
     ?>
 
 
@@ -73,8 +73,7 @@
         </div>
       </div>
 
-
-<?php
-    include('../allan/tamplates/footer.php')
+      <?php
+    include('../gabarito/template/footer.php')
 ?>
 </body>
