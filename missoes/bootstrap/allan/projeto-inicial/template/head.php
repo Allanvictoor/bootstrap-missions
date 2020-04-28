@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Missão</title>
+  <title>Missão projeto-inicial</title>
   <link rel="icon" type="image/png" href="https://www.vivaintra.com/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
