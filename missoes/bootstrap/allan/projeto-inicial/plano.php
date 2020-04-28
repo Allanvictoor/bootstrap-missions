@@ -5,8 +5,7 @@ include('../projeto-inicial/template/head.php')
 include('../projeto-inicial/template/nav.php')
 ?>
 
-
-<!-- INICIO DO CODIGO -->
+<!-- INSIRA ABAIXO SEU CODIGO HTML E BOOTSTRAP -->
 
 
 
