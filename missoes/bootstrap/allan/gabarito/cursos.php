@@ -1,25 +1,26 @@
 <head>
-    <?php
-    include('../gabarito/template/head.php');
-    ?>
+  <?php
+  include('../gabarito/template/head.php');
+  ?>
 </head>
+
 <body>
-    <?php
-    include('../gabarito/template/nav.php')
-    ?>
+  <?php
+  include('../gabarito/template/nav.php')
+  ?>
 
 
-<div class="container-fluid pt-5  bodyMaior" >
+  <div class="container-fluid pt-5" style="background-color: #f1f1f1">
     <div class="container ">
       <div class="row">
         <div class="col-sm my-auto mx-auto d-block ">
           <div class="col-sm">
 
             <div class="col-sm">
-              
+
             </div>
           </div>
-          <div id="curso" class="row" >
+          <div id="curso" class="row">
             <div class="col-sm ">
               <p style="text-align: center; font-weight: 800;"><strong>HTML5</strong></p>
               <img style="width: 8rem" class="mx-auto d-block" src="/imagens/html.png" alt="">
@@ -48,6 +49,50 @@
         </div>
 
       </div>
+      <h4 class="text-center m-3">Próximos Cursos na nossa plataforma</h4>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner  pb-5">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="imagens/flutter2.png" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-dark">Desenvolvimento Mobile com Flutter</h4>
+              <p class="text-dark">Flutter Framework</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagens/nodejs2.png" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-dark">NodeJs</h4>
+              <p class="text-dark">Node.js é um interpretador de JavaScript assíncrono com código aberto orientado a eventos, criado por Ryan Dahl em 2009</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagens/php2.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-dark">PHP</h4>
+              <p class="text-dark">PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
     </div>
   </div>
-    
+
+
+  <?php
+  include('../gabarito/template/footer.php')
+  ?>

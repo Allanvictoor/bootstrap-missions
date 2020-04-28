@@ -13,7 +13,7 @@ body {
 }
 
 #cardPlano {
-    height: 630px;
+    height: 850px;
 }
 
 
@@ -28,6 +28,7 @@ body {
 
 .bodyMaior {
     height: 800px;
+    background-color: #dfe6e9;
 }
 
 .textetapa {
@@ -54,9 +55,9 @@ footer {
 }
 
 #containerHead {
-    background-image: url(/imagens/imagemfundohead.png);
+    background-image: url(/imagens/imagemfundo2.png);
     width: auto;
-    height: 1000px;
+    height: 720px;
     background-size: cover;
     background-attachment: fixed, scroll;
     
@@ -97,9 +98,15 @@ footer {
     background-attachment: fixed, scroll;
 }
 
+#imagemAvatarPlano {
+    width: 10rem;
+}
+
 .backgroundCursosModulo {
     background-color: #dfe6e9;
 }
+
+
 
 .borderFooter {
     border-left: solid 2px  white ;

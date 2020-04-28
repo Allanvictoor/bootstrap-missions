@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
 
-  
 
 
-//Efeito no Dropdown apos Login
+
+  //Efeito no Dropdown apos Login
   $('#imgLogin').hide()
   $('#btnLogar').click(function () {
     $('#formLogin').hide();
@@ -12,7 +12,7 @@ $(document).ready(function () {
   })
 
 
-//Evento do No body apos Logar
+  //Evento do No body apos Logar
   $('#bemvindo').hide()
   $('#avatar').hide()
   $('#posLogin').hide()
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
 
 
-//Evento do Modal de Cadastro
+  //Evento do Modal de Cadastro
   $('#modalTextoDois').hide()
   $('#imgEmailModal').hide()
   $('#btnModal').click(function () {
@@ -45,8 +45,11 @@ $(document).ready(function () {
 
 //localizacao do usuario
 
-navigator.geolocation.getCurrentPosition(function(position) {
+navigator.geolocation.getCurrentPosition(function (position) {
   console.log(position)
 });
+
+
+
 
 
