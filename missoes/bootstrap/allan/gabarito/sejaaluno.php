@@ -24,15 +24,59 @@
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
 
-                  <button type="submit" class="btn btn-primary w-75 ml-5">Entrar</button>
+                  <button type="submit" class="btn btn-primary w-75 mt-4 ml-5">Entrar</button>
               </form>
                 
             </div>
             <div id="borderSejaAluno" class="m-5"></div>
             <div class="col-sm">
-                <h3 class="text-center pt-5">
+                <h3 class="text-center pt-5 pb-5">
                   Cadastre-se
                 </h3>
+                <form class="pt-5">
+                  <div class="form-row">
+                    <div class="form-group col-md">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label for="inputPassword4">Senha</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Repetir Senha</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">Cidade</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputState">Estado</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label for="inputZip">CEP</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        concordo com os termos
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
                 </div>
         </div>
     </div>
