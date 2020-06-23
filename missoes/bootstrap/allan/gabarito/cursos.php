@@ -45,6 +45,18 @@
               <p class="text-center p-2">JavaScript é uma linguagem de programação interpretada estruturada, de
                 script em alto nível com tipagem dinâmica fraca e multiparadigma. </p>
             </div>
+            <div class="col-sm">
+              <p style="text-align: center; font-weight: 800;"><strong>JS</strong></p>
+              <img style="width: 8rem" class="mx-auto d-block" src="/imagens/javascript-1.svg" alt="">
+              <p class="text-center p-2">JavaScript é uma linguagem de programação interpretada estruturada, de
+                script em alto nível com tipagem dinâmica fraca e multiparadigma. </p>
+            </div>
+            <div class="col-sm">
+              <p style="text-align: center; font-weight: 800;"><strong>JS</strong></p>
+              <img style="width: 8rem" class="mx-auto d-block" src="/imagens/javascript-1.svg" alt="">
+              <p class="text-center p-2">JavaScript é uma linguagem de programação interpretada estruturada, de
+                script em alto nível com tipagem dinâmica fraca e multiparadigma. </p>
+            </div>
           </div>
         </div>
 

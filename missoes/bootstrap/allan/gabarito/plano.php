@@ -27,16 +27,7 @@ include('../gabarito/template/nav.php')
                         <div class="mt-3"><a href="#" class="btn btn-primary">Ir para Cursos</a></div>
                         <hr class="m-5">
                         <div class="text-center">
-                            <img id="imagemAvatarPlano" class="img-fluid" src="imagens/avataravatar.png" alt="">
-                        </div>
-                        <div class="list-group mt-3">
-                            <a href="#" class="list-group-item list-group-item-action active text-center">
-                                Maria
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action text-center mt-3">Perfil</a>
-                            <a href="#" class="list-group-item list-group-item-action text-center">Conta</a>
-                            <a href="#" class="list-group-item list-group-item-action text-center">Notificações</a>
-                            <a href="#" class="list-group-item list-group-item-action text-center">Privacidade</a>
+                            <img id="imagemAvatarPlano" class="img-fluid rounded-circle" src="imagens/perfil2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -104,22 +95,24 @@ include('../gabarito/template/nav.php')
                                             </div>
                                     </form>
                                 <div class="d-none d-md-block">
-                                    <div class="row">
-                                <div class="col-sm">
+                                
+                                    <div class="row ml-5 pt-3">
+                                <div class="col-sm ml-3">
                                     <img class="img-fluid my-auto" style="width: 3rem" src="imagens/visa-logo.png" alt="">
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm ml-3">
                                 <img class="img-fluid my-auto" style="width: 3rem" src="imagens/mastercard2.png" alt="">
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm ml-3">
                                 <img class="img-fluid my-auto" style="width: 3rem" src="imagens/hipercard.png" alt="">
                                 </div>
-                                <div class="col-sm">
+                                <div class="col-sm ml-3">
                                 <img class="img-fluid my-auto" style="width: 3rem" src="imagens/elo.png" alt="">
                                 </div>
                             </div>
+                           
                             </div>
-                                <div class="w-100">
+                                <div class="w-100 pt-4">
                                     <a href="#" class="btn btn-success w-100 mt-2">Mudar Plano atual</a>
                                 </div>
                                

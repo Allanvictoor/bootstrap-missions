@@ -16,8 +16,19 @@ body {
     height: 850px;
 }
 
+#logonav {
+    width: 35px;
+    height: 35px;
+    margin-left: 80px;
+}
 
+.navlink {
+    position: initial;
+}
 
+.navlink:hover {
+    border-bottom: solid 3px white;
+}
 
 
 .textnav{
@@ -100,6 +111,7 @@ footer {
 
 #imagemAvatarPlano {
     width: 10rem;
+    height: 10rem;
 }
 
 .backgroundCursosModulo {

@@ -19,9 +19,9 @@
               <a class="text-white" href="#">Mapa do site</a><br>
               <a class="text-white" href="#">Cursos</a><br>
             </div>
-            <div class="col-sm my-auto borderFooter">
+            <div class="col-sm my-auto">
               <a href="#">
-                <img class="img-fluid mx-auto d-block"  src="https://d1g1z9wxad75uh.cloudfront.net/public/uploads/vivaweb/logo/phpMhQYku_5e131abb4c9d5.png" alt="logo">
+                <img class="img-fluid float-right"  src="https://d1g1z9wxad75uh.cloudfront.net/public/uploads/vivaweb/logo/phpMhQYku_5e131abb4c9d5.png" alt="logo">
               </a>
             </div>
           </div>      
