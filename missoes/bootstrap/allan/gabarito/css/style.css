@@ -22,12 +22,9 @@ body {
     margin-left: 80px;
 }
 
-.navlink {
-    position: initial;
-}
-
 .navlink:hover {
     border-bottom: solid 3px white;
+
 }
 
 
