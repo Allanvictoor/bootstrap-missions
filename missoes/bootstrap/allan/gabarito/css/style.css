@@ -16,6 +16,15 @@ body {
     height: 850px;
 }
 
+#sejaAluno {
+    height: 750px;
+}
+
+#borderSejaAluno {
+    border-right: solid 2px black;
+    height: 650;
+}
+
 #logonav {
     width: 35px;
     height: 35px;
