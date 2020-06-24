@@ -10,7 +10,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav text-center" style="font-weight: 800">
-        <a class="nav-item nav-link text-white mx-3 navlink" href="modulos.php">Cursos</a>
+        <a class="nav-item nav-link text-white mx-3 navlink" href="cursos.php">Cursos</a>
         <a class="nav-item nav-link text-white mx-3 navlink" href="sejaaluno.php">Seja Aluno</a>
         <a class="nav-item nav-link text-white mx-3 navlink" href="blog.php">Blog</a>
       </div>
@@ -19,8 +19,8 @@
       
         <div class="row">
         
-        <img id="logonav" class="img-fluid rounded-circle  my-auto float-right" src="imagens/perfil2.jpg" alt="">
-        <p class="col-sm text-white my-auto text-right" style="font-weight: 800">João Guilherme</p>
+        <img id="logonav" class="img-fluid rounded-circle  my-auto float-right" src="imagens/4.webp" alt="">
+        <p class="col-sm text-white my-auto text-right" style="font-weight: 800">Steve Wozniak</p>
           <button href="plano.php" id="btnCadastro" class="btn btn-primary float-right" type="button">
            <a class="text-white" href="plano.php">Meu Plano</a>
           </button>

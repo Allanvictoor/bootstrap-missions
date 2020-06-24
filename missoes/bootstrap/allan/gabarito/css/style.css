@@ -131,11 +131,16 @@ footer {
 
 #imagemAvatarPlano {
     width: 10rem;
-    height: 10rem;
+    height: 8rem;
 }
 
 .backgroundCursosModulo {
     background-color: #dfe6e9;
+}
+
+#nomeplano {
+    font-weight: 800;
+    color: #011b47;
 }
 
 

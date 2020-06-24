@@ -13,7 +13,7 @@
     <div id="sejaAluno" class="container">
         <div class="row">
             <div class="col-sm pt-5">
-                <h3 class="text-center pb-5">Já tem cadastro? Faça o Login</h3>
+                <h3 class="text-center pb-5" id="blog">Já tem cadastro? Faça o Login</h3>
                 <form class="pt-5">
                   <div class="form-group w-100">
                     <label for="exampleInputEmail1">Endereço de Email</label>
@@ -30,7 +30,7 @@
             </div>
             <div id="borderSejaAluno" class="m-5"></div>
             <div class="col-sm">
-                <h3 class="text-center pt-5 pb-5">
+                <h3 class="text-center pt-5 pb-5" id="blog">
                   Cadastre-se
                 </h3>
                 <form class="pt-5">

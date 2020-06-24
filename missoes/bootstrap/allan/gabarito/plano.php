@@ -24,10 +24,17 @@ include('../gabarito/template/nav.php')
                             <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Restam 215 dias</div>
 
                         </div>
-                        <div class="mt-3"><a href="#" class="btn btn-primary">Ir para Cursos</a></div>
+                        <div class="mt-3"><a href="#" class="btn btn-link">Ir para Cursos</a></div>
                         <hr class="m-5">
                         <div class="text-center">
-                            <img id="imagemAvatarPlano" class="img-fluid rounded-circle" src="imagens/perfil2.jpg" alt="">
+                            <img id="imagemAvatarPlano" class="img-fluid rounded-circle" src="imagens/4.webp" alt="">
+                            <h5 class="pt-2" id="nomeplano">Steve Wozniak</h5>
+                            <div class="btn-group-vertical mt-5 w-75" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button m-3" class="btn btn-primary">Editar Perfil</button>
+                            <button type="button" class="btn btn-secondary mt-2">Notificações</button>
+                            <button type="button" class="btn btn-secondary">Clientes API</button>
+                            <button type="button" class="btn btn-secondary">Encerrar Conta</button>
+                            </div>
                         </div>
                     </div>
                 </div>
