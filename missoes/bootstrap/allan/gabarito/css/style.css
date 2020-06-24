@@ -14,9 +14,7 @@
     font-size: 35px;
 }
 
-#blogcontainer {
-    height: 2000px;
-} 
+
 
 
 
@@ -28,9 +26,9 @@ body {
     height: 850px;
 }
 
-#sejaAluno {
+/* #sejaAluno {
     height: 750px;
-}
+} */
 
 #borderSejaAluno {
     border-right: solid 2px black;
@@ -159,6 +157,10 @@ footer {
     #btnLogin {
         width: 100px;
     }
+    #borderSejaAluno {
+       display: none;
+    }
+    
 
     #textHead {
         font-weight: 500;

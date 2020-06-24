@@ -16,30 +16,30 @@
         <p class="col-sm pt-5 pb-3 text-center">Confira dicas da semana</p>
          <div class="row">
             <div class="col-sm">
-              <h5>GIT</h5>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/6Czd1Yetaac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h5 class="pt-4">GIT</h5>
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/6Czd1Yetaac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-sm">
-            <h5>FLUTTER</h5>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/gMIv5WCiU5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5 class="pt-4">FLUTTER</h5>
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/gMIv5WCiU5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-sm">
-            <h5>REACT-NATIVE</h5>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/DDm0M_rZLJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5 class="pt-4">REACT-NATIVE</h5>
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/DDm0M_rZLJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
          </div>
-         <div class="row pt-5 mb-5">
+         <div class="row pt-3 mb-5">
             <div class="col-sm">
-            <h5>DENO</h5>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/Vw9BG9fauIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5 class="pt-4">DENO</h5>
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/Vw9BG9fauIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-sm">
-            <h5>MULTIBOT</h5>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/iPuFjBo9s5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5 class="pt-4">MULTIBOT</h5>
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/iPuFjBo9s5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-sm">
-            <h5>SASS</h5>
-            <iframe width="350" height="250" src="https://www.youtube.com/embed/rRGWiztH4bY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5 class="pt-4">SASS</h5>
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/rRGWiztH4bY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
          </div>
               
