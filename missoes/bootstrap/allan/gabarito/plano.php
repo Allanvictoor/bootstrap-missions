@@ -24,7 +24,7 @@ include('../gabarito/template/nav.php')
                             <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Restam 215 dias</div>
 
                         </div>
-                        <div class="mt-3"><a href="#" class="btn btn-link">Ir para Cursos</a></div>
+                        <div class="mt-3"><a href="cursos.php" class="btn btn-link">Ir para Cursos</a></div>
                         <hr class="m-5">
                         <div class="text-center">
                             <img id="imagemAvatarPlano" class="img-fluid rounded-circle" src="imagens/4.webp" alt="">
