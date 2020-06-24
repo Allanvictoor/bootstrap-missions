@@ -12,6 +12,7 @@
       <div class="navbar-nav text-center" style="font-weight: 800">
         <a class="nav-item nav-link text-white mx-3 navlink" href="modulos.php">Cursos</a>
         <a class="nav-item nav-link text-white mx-3 navlink" href="sejaaluno.php">Seja Aluno</a>
+        <a class="nav-item nav-link text-white mx-3 navlink" href="blog.php">Blog</a>
       </div>
       <hr id="hrMenu">
       <div class="col-sm-5">

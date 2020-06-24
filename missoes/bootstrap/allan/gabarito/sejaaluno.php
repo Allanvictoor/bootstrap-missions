@@ -58,7 +58,7 @@
                     <div class="form-group col-md-4">
                       <label for="inputState">Estado</label>
                       <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
+                        <option selected>Selecionar</option>
                         <option>...</option>
                       </select>
                     </div>
