@@ -9,7 +9,6 @@
   include('../gabarito/template/nav.php')
   ?>
 
-
 <div class="container-fluid " id="blogcontainer" >
 <img class="img-fluid w-100 " src="imagens/banner1.png" alt="">
     <div class="container" id="blog">
@@ -58,8 +57,8 @@
             <div class="col-sm">
             <img src="imagens/depoimento.png" class="d-block w-100 img-fluid" alt="...">
             </div>
-            <div class="col-sm"><img src="imagens/depoimento.png" class="d-block w-100 img-fluid" alt="..."></div>
-            <div class="col-sm"><img src="imagens/depoimento.png" class="d-block w-100 img-fluid" alt="..."></div>
+            <div class="col-sm caroselnone"><img src="imagens/depoimento.png" class="d-block w-100 img-fluid" alt="..."></div>
+            <div class="col-sm caroselnone"><img src="imagens/depoimento.png" class="d-block w-100 img-fluid" alt="..."></div>
         </div>
     </div>
     <div class="carousel-item">
@@ -67,8 +66,8 @@
             <div class="col-sm">
             <img src="imagens/depoimento1.png" class="d-block w-100 img-fluid" alt="...">
             </div>
-            <div class="col-sm"><img src="imagens/depoimento1.png" class="d-block w-100 img-fluid" alt="..."></div>
-            <div class="col-sm"><img src="imagens/depoimento1.png" class="d-block w-100 img-fluid" alt="..."></div>
+            <div class="col-sm caroselnone"><img src="imagens/depoimento1.png" class="d-block w-100 img-fluid" alt="..."></div>
+            <div class="col-sm caroselnone"><img src="imagens/depoimento1.png" class="d-block w-100 img-fluid" alt="..."></div>
         </div>
     </div>
     <div class="carousel-item">
@@ -76,8 +75,8 @@
             <div class="col-sm">
             <img src="imagens/depoimento2.png" class="d-block w-100 img-fluid" alt="...">
             </div>
-            <div class="col-sm"><img src="imagens/depoimento2.png" class="d-block w-100 img-fluid" alt="..."></div>
-            <div class="col-sm"><img src="imagens/depoimento2.png" class="d-block w-100 img-fluid" alt="..."></div>
+            <div class="col-sm caroselnone"><img src="imagens/depoimento2.png" class="d-block w-100 img-fluid" alt="..."></div>
+            <div class="col-sm caroselnone"><img src="imagens/depoimento2.png" class="d-block w-100 img-fluid" alt="..."></div>
         </div>
     </div>
   </div>

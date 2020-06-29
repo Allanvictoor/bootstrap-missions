@@ -15,9 +15,6 @@
 }
 
 
-
-
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -42,11 +39,13 @@ body {
 }
 
 .navlink:hover {
-
-    -webkit-transform: scale(1.2);
+    border-bottom: solid white 3px;
+    /* -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(1.2); */
 }
+
+
 
 
 .textnav{
@@ -128,7 +127,7 @@ footer {
 }
 
 #imagemAvatarPlano {
-    width: 10rem;
+    width: 8rem;
     height: 8rem;
 }
 
@@ -144,7 +143,7 @@ footer {
 
 
 .borderFooter {
-    border-left: solid 2px  white ;
+    border-left: solid 1px  white ;
     height: 100%;
 }
 
@@ -154,11 +153,37 @@ footer {
         border: 1px solid;
         color: white
     }
+    .borderFooter {
+        height: 100%;
+    }
+
     #btnLogin {
         width: 100px;
     }
+
+    #logonav {
+        display: none;
+    }
+
+    #nomenav{
+        display: none !important;
+    } 
+
+    #btnCadastro {
+        text-align: center;
+        margin: auto;
+    }
+
+    #perfilfoto {
+        display: none;
+    }
+    
     #borderSejaAluno {
        display: none;
+    }
+
+    #logofooter {
+       margin-right: 65px;
     }
     
 
@@ -169,6 +194,15 @@ footer {
 
     #footerAligniment {
         text-align: center;
+    }
+
+    #imagemAvatarPlano {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .caroselnone {
+        display: none;
     }
 
 

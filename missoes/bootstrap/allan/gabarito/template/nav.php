@@ -1,4 +1,3 @@
- <!--Navbar-->
  <nav class="container-fluid" style="background-color: #011b47">
  <nav id="navBar" class="navbar navbar-expand-lg navbar-light bg container" style="background-color: #011b47">
     <a class="navbar-brand" href="index.php"><img class="img-fluid" style="width: 10rem;"
@@ -9,18 +8,24 @@
       <i class="fas fa-bars" style="color: white"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav text-center" style="font-weight: 800">
-        <a class="nav-item nav-link text-white mx-3 navlink" href="cursos.php">Cursos</a>
-        <a class="nav-item nav-link text-white mx-3 navlink" href="sejaaluno.php">Seja Aluno</a>
-        <a class="nav-item nav-link text-white mx-3 navlink" href="blog.php">Blog</a>
+      <div class="navbar-nav " style="font-weight: 800">
+      <ul class="navbar-nav text-center">
+      <li class="nav-item ">
+        <a class="nav-link text-white mx-3 navlink " href="cursos.php">Cursos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white mx-3 navlink" href="sejaaluno.php">Seja Aluno</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white mx-3 navlink" href="blog.php">Blog</a>
+      </li>
+    </ul>
       </div>
       <hr id="hrMenu">
       <div class="col-sm-5">
-      
         <div class="row">
-        
         <img id="logonav" class="img-fluid rounded-circle  my-auto float-right" src="imagens/4.webp" alt="">
-        <p class="col-sm text-white my-auto text-right" style="font-weight: 800">Steve Wozniak</p>
+        <p id="nomenav" class="col-sm text-white my-auto text-right"  style="font-weight: 800">Steve Wozniak</p>
           <button href="plano.php" id="btnCadastro" class="btn btn-primary float-right" type="button">
            <a class="text-white" href="plano.php">Meu Plano</a>
           </button>
@@ -29,4 +34,3 @@
     </div>
   </nav>
   </nav>
-  <!--Fim Navbar-->
